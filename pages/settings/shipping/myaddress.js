@@ -97,7 +97,7 @@ const Myaddress = () => {
                                                                     {({open}) => (<>
                                                                         <div className="my-1.5 relative ml-4">
                                                                             <Listbox.Button
-                                                                                className="bg-white relative w-full border border-transparent pl-3 pr-6 py-1 text-left cursor-default sm:text-sm">
+                                                                                className="bg-white relative w-full border border-transparent focus:outline-none pl-3 pr-6 py-1 text-left cursor-default sm:text-sm">
                                     <span
                                         className="block truncate">{selectedCountry.flag}</span>
                                                                                 <span
@@ -238,7 +238,7 @@ const Myaddress = () => {
                                                         </div>
                                                     </div>
 
-                                                    <div className="mt-4 px-1 flex flex-col">
+                                                    <div className="mt-4 px-1">
                                                         <motion.button
                                                             onClick={() => setOpenAddressModal(false)}
                                                             whileHover={{scale: 1.02}}
@@ -247,15 +247,6 @@ const Myaddress = () => {
                                                             className={`inline-flex items-center px-28 py-1.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                                                             <BookmarkAltIcon className="w-5 h-5 mr-2 items-center"/>
                                                             Save Changes
-                                                        </motion.button>
-                                                        <motion.button
-                                                            onClick={(x) => {
-                                                                alert('Redirect to help page')
-                                                            }}
-                                                            whileHover={{scale: 1.02}}
-                                                            whileTap={{scale: 0.98}}
-                                                            className={`inline-flex items-center px-40 py-1.5 border border-red-300 shadow-sm text-base font-medium rounded-md text-susty bg-red-100 hover:bg-susty hover:text-white hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
-                                                            Cancel
                                                         </motion.button>
                                                     </div>
                                                 </motion.div>
