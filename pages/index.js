@@ -13,7 +13,7 @@ const Index = () => {
                 <a>About</a>
             </Link>
             <div>
-            <Link href="/profile/profile">
+            <Link href="settings/profile/profile">
                 <a>Profile</a>
             </Link>
             </div>
