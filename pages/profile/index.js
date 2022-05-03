@@ -7,9 +7,9 @@ import Language from "./language";
 const Profile = () => {
   return (
     <>
-    <div><Name /></div>
-    <div><Location /></div>
-    <div><Language /></div>
+    <Name />
+    <Location />
+    <Language />
     </>
   );
 };
