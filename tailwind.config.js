@@ -9,6 +9,9 @@ module.exports = {
                 "susty": "#f08080"
             }
         },
+        fontFamily: {
+            susty: ["Poppins", "sans-serif"],
+        },
     },
     plugins: [
         require('@tailwindcss/aspect-ratio'),

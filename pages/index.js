@@ -5,7 +5,7 @@ const Index = () => {
     return (
         <div className={`bg-susty`}>
             <ul>
-                <h1 className="text-3xl font-bold underline text-susty">
+                <h1 className="text-3xl font-bold underline font-susty">
                     Hello world!
                 </h1>
             </ul>

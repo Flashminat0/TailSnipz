@@ -6,10 +6,12 @@
     "start": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "@headlessui/react": "^1.6.0",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.0",
     "cross-env": "^7.0.2",
     "express": "^4.17.1",
+    "framer-motion": "^6.3.3",
     "http-proxy-middleware": "^2.0.4",
     "next": "latest",
     "react": "^17.0.2",
