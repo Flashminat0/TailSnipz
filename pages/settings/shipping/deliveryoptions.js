@@ -22,7 +22,7 @@ const Deliveryoptions = () => {
                             <Switch
                                 checked={enabled}
                                 onChange={setEnabled}
-                                className={`${enabled ? 'bg-susty' : 'bg-red-200'}
+                                className={`${enabled ? 'bg-susty' : 'bg-gray-300'}
           relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                             >
                                 <span className="sr-only">Use setting</span>
