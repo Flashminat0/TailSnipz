@@ -1,5 +1,5 @@
 import React, {Fragment, useState} from 'react';
-import {Dialog, Disclosure, Listbox, Transition} from "@headlessui/react";
+import {Dialog, Listbox, Transition} from "@headlessui/react";
 import {
     BookmarkAltIcon,
     CheckIcon,
