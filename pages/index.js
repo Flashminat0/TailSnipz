@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const Index = () => {
     return (
-        <div>
+        <div className={`bg-susty`}>
             <ul>
-                <h1 className="text-3xl font-bold underline">
+                <h1 className="text-3xl font-bold underline text-susty">
                     Hello world!
                 </h1>
             </ul>
