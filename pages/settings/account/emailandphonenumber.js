@@ -94,7 +94,6 @@ const EmailAndPhoneNumber = () => {
                                             opacity: 0,
                                             duration: 0.2,
                                         }}
-
                                         className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                                         <Dialog.Title
                                             as="h3"
@@ -211,7 +210,8 @@ const EmailAndPhoneNumber = () => {
                                                     placeholder="New phone number"
                                                 />
                                                 <div className={`grid place-items-center mt-2`}
-                                                ><p className={`font-thin mx-1 text-sm text-gray-500`}>You’ll receive a verification
+                                                ><p className={`font-thin mx-1 text-sm text-gray-500`}>You’ll receive a
+                                                    verification
                                                     code to this
                                                     number</p></div>
                                             </div>
