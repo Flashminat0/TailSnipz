@@ -26,12 +26,12 @@ const Myaddress = () => {
                             {({open}) => (
                                 <>
                                     <Disclosure.Button
-                                        className="flex justify-between w-full px-4 py-2 text-md font-bold text-left text-red-400 bg-gray-100 rounded-lg hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-gray-500 focus-visible:ring-opacity-75">
+                                        className="flex justify-between w-full px-4 py-2 text-md font-bold text-left text-susty bg-gray-100 rounded-lg hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-gray-500 focus-visible:ring-opacity-75">
                                         <span>Add Address</span>
                                         <ChevronUpIcon
                                             className={`${
                                                 open ? '' : 'transform rotate-180'
-                                            } w-5 h-5 text-red-500`}
+                                            } w-5 h-5 text-susty`}
                                         />
                                     </Disclosure.Button>
                                     <Disclosure.Panel>
@@ -41,7 +41,7 @@ const Myaddress = () => {
                                                 <div
                                                     className="block px-4 text-md font-medium text-gray-700 my-1">Country
                                                 </div>
-                                                <div className={'flex gap-0 absolute rounded-md shadow-sm border border-gray-300 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500'}>
+                                                <div className={'flex gap-0 absolute rounded-md shadow-sm border border-gray-300 focus:outline-none focus:ring-1 focus:ring-susty focus:border-susty'}>
                                                     <Listbox value={selectedCountry.flag} onChange={setSelectedCountry}>
                                                         {({open}) => (<>
                                                             <div className="my-1.5 relative ml-4">
@@ -65,7 +65,7 @@ const Myaddress = () => {
                                                                         className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
                                                                         {countries.map((country) => (<Listbox.Option
                                                                             key={country.id}
-                                                                            className={({active}) => classNames(active ? 'text-white bg-red-600' : 'text-gray-900', 'cursor-default select-none relative py-2 pl-3 pr-9')}
+                                                                            className={({active}) => classNames(active ? 'text-white bg-susty' : 'text-gray-900', 'cursor-default select-none relative py-2 pl-3 pr-9')}
                                                                             value={country}
                                                                         >
                                                                             {({selected, active}) => (<>
@@ -74,7 +74,7 @@ const Myaddress = () => {
                                                     {country.flag}
                                                 </span>
                                                                                 {selected ? (<span
-                                                                                    className={classNames(active ? 'text-white' : 'text-red-600', 'absolute inset-y-0 right-0 flex items-center pr-4')}
+                                                                                    className={classNames(active ? 'text-white' : 'text-susty', 'absolute inset-y-0 right-0 flex items-center pr-4')}
                                                                                 >
                                                     <CheckIcon className="h-5 w-5"
                                                                aria-hidden="true"/>
@@ -110,7 +110,7 @@ const Myaddress = () => {
                                                                         className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
                                                                         {countries.map((country) => (<Listbox.Option
                                                                             key={country.id}
-                                                                            className={({active}) => classNames(active ? 'text-white bg-red-600' : 'text-gray-900', 'cursor-default select-none relative py-2 pl-3 pr-9')}
+                                                                            className={({active}) => classNames(active ? 'text-white bg-susty' : 'text-gray-900', 'cursor-default select-none relative py-2 pl-3 pr-9')}
                                                                             value={country}
                                                                         >
                                                                             {({selected, active}) => (<>
@@ -119,7 +119,7 @@ const Myaddress = () => {
                                                     {country.name}
                                                 </span>
                                                                                 {selected ? (<span
-                                                                                    className={classNames(active ? 'text-white' : 'text-red-600', 'absolute inset-y-0 right-0 flex items-center pr-4')}
+                                                                                    className={classNames(active ? 'text-white' : 'text-susty', 'absolute inset-y-0 right-0 flex items-center pr-4')}
                                                                                 >
                                                     <CheckIcon className="h-5 w-5"
                                                                aria-hidden="true"/>
