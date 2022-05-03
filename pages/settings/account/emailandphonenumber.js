@@ -16,7 +16,7 @@ const EmailAndPhoneNumber = () => {
     const [openPhoneModal, setOpenPhoneModal] = useState(false);
 
     return (
-        <div className={`h-screen w-screen grid place-content-center`}>
+        <div className={`h-screen w-screen grid place-content-center font-susty`}>
             <>
                 <div className={`bg-gray-50`}>
                     <div className={`grid grid-cols-4 p-5 pr-0`}>
@@ -78,29 +78,37 @@ const EmailAndPhoneNumber = () => {
                                 transition: {duration: 0.4}
                             }}
                         >
-                            <div className="fixed inset-0 overflow-y-auto">
+                            <div className="fixed inset-0 overflow-y-auto font-susty">
                                 <div
                                     className="flex min-h-full items-center justify-center p-4 text-center bg-gray-700 bg-opacity-80">
                                     <motion.div
                                         key={`modal-for-email`}
-                                        initial={{opacity: 0, y: -10}}
+                                        initial={{scale: 0.8, opacity: 0}}
                                         animate={{
-                                            scale: [0.5, 1.2, 1.1, 1],
-                                            opacity: [0.7, 1],
-                                            y: [-10, 0],
+                                            scale: 1,
+                                            opacity: 1,
+                                            duration: 0.01,
                                         }}
                                         exit={{
-                                            scale: 1,
-                                            opacity: [1, 0],
-                                            y: [0, -10000],
+                                            scale: 0,
+                                            opacity: 0,
                                             duration: 0.2,
                                         }}
+
                                         className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                                         <Dialog.Title
                                             as="h3"
-                                            className="text-lg font-medium leading-6 text-gray-900"
+                                            className={`mb-5`}
                                         >
-                                            Confirm change
+                                            <p className="text-lg font-medium leading-5 text-gray-500 flex justify-between">
+                                                Confirm change
+                                                <span
+                                                    onClick={() => setOpenMailModal(false)}
+                                                    className={`mr-2 cursor-pointer`}>
+                                                      Close
+                                                </span>
+                                            </p>
+
                                         </Dialog.Title>
                                         <div className="mt-2">
                                             <p className="text-base text-gray-500">
@@ -155,30 +163,36 @@ const EmailAndPhoneNumber = () => {
                                 transition: {duration: 0.4}
                             }}
                         >
-                            <div className="fixed inset-0 overflow-y-auto">
+                            <div className="fixed inset-0 overflow-y-auto font-susty">
                                 <div
                                     className="flex min-h-full items-center justify-center p-4 text-center bg-gray-700 bg-opacity-80">
                                     <motion.div
                                         key={`modal-for-phoneNumber`}
-                                        initial={{opacity: 0, y: -10}}
+                                        initial={{scale: 0.8, opacity: 0}}
                                         animate={{
-                                            scale: [0.5, 1.2, 1.1, 1],
-                                            opacity: [0.7, 1],
-                                            y: [-10, 0],
+                                            scale: 1,
+                                            opacity: 1,
+                                            duration: 0.01,
                                         }}
                                         exit={{
-                                            scale: 1,
-                                            opacity: [1, 0],
-                                            // y: [0, -10000],
-                                            x: [0, 10000],
+                                            scale: 0,
+                                            opacity: 0,
                                             duration: 0.2,
                                         }}
                                         className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                                         <Dialog.Title
                                             as="h3"
-                                            className="text-lg font-medium leading-6 text-gray-900"
+                                            className={`mb-5`}
                                         >
-                                            Change phone number
+                                            <p className="text-lg font-medium leading-5 text-gray-500 flex justify-between">
+                                                Change phone number
+                                                <span
+                                                    onClick={() => setOpenPhoneModal(false)}
+                                                    className={`mr-2 cursor-pointer text-susty`}>
+                                                      Close
+                                                </span>
+                                            </p>
+
                                         </Dialog.Title>
                                         <div className="mt-2">
                                             <div
@@ -196,7 +210,10 @@ const EmailAndPhoneNumber = () => {
                                                     className="pl-2 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 block w-full rounded-md sm:text-sm border border-gray-300 h-10"
                                                     placeholder="New phone number"
                                                 />
-                                                <p className={`font-thin`}>You’ll receive a verification code to this number</p>
+                                                <div className={`grid place-items-center mt-2`}
+                                                ><p className={`font-thin mx-1 text-sm text-gray-500`}>You’ll receive a verification
+                                                    code to this
+                                                    number</p></div>
                                             </div>
                                         </div>
 
