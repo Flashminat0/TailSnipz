@@ -36,7 +36,7 @@ const Myaddress = () => {
                                     </Disclosure.Button>
                                     <Disclosure.Panel>
                                         <div
-                                            className={"grid grid-cols-1 grid-rows-7 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-4 lg:grid-rows-2 gap-5"}>
+                                            className={"grid grid-cols-1 grid-rows-7 gap-y-5"}>
                                             <div>
                                                 <div
                                                     className="block px-4 text-md font-medium text-gray-700 my-1">Country
@@ -44,7 +44,7 @@ const Myaddress = () => {
                                                 <div className={'flex gap-0 absolute rounded-md shadow-sm border border-gray-300 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500'}>
                                                     <Listbox value={selectedCountry.flag} onChange={setSelectedCountry}>
                                                         {({open}) => (<>
-                                                            <div className="mt-1 relative ml-4">
+                                                            <div className="my-1.5 relative ml-4">
                                                                 <Listbox.Button
                                                                     className="bg-white relative w-full border border-transparent pl-3 pr-6 py-1 text-left cursor-default sm:text-sm">
                                     <span
@@ -133,13 +133,48 @@ const Myaddress = () => {
                                                     </Listbox>
                                                 </div>
                                             </div>
-                                            <div>
+                                            <div className={"relative mt-14"}>
                                                 <div className="block px-4 text-md font-medium text-gray-700 my-1">Full
                                                     name
                                                 </div>
                                                 <div>
                                                     <input type={"text"}
-                                                           className={"px-8 py-1.5 rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}/>
+                                                           className={"px-8 py-1.5 rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
+                                                           placeholder={"eg: John Snow"}
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div className="block px-4 text-md font-medium text-gray-700 my-1">
+                                                    Address line 1
+                                                </div>
+                                                <div>
+                                                    <input type={"text"}
+                                                           className={"px-8 py-1.5 rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
+                                                           placeholder={"eg: 136, Hill Street"}
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div className="block px-4 text-md font-medium text-gray-700 my-1">
+                                                    Address line 2 (Optional)
+                                                </div>
+                                                <div>
+                                                    <input type={"text"}
+                                                           className={"px-8 py-1.5 rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
+                                                           placeholder={"eg: Auckland"}
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div className="block px-4 text-md font-medium text-gray-700 my-1">
+                                                    Zip code
+                                                </div>
+                                                <div>
+                                                    <input type={"number"}
+                                                           className={"px-8 py-1.5 rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
+                                                           placeholder={"eg: 0604"}
+                                                    />
                                                 </div>
                                             </div>
                                         </div>
