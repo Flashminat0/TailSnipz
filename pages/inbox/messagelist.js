@@ -1,35 +1,22 @@
 import React from 'react';
-import {motion} from "framer-motion";
 import {PlusIcon} from "@heroicons/react/solid";
 
 const messages = [
     {
-        personImg: <img
-            className="inline-block h-14 w-14 rounded-full"
-            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-            alt=""
-        />, name: "Susty", message: "Let's get started on vinted", createdAt: "1 week ago"
+        src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        alt: "", name: "Susty", message: "Let's get started on vinted", createdAt: "1 week ago"
     },
     {
-        personImg: <img
-            className="inline-block h-14 w-14 rounded-full"
-            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-            alt=""
-        />, name: "John Smith", message: "Invite friends and get vouchers", createdAt: "1 week ago"
+        src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        alt: "", name: "John Smith", message: "Invite friends and get vouchers", createdAt: "1 week ago"
     },
     {
-        personImg: <img
-            className="inline-block h-14 w-14 rounded-full"
-            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-            alt=""
-        />, name: "David Rodenas", message: "A gift to help you sell faster", createdAt: "1 week ago"
+        src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        alt: "", name: "David Rodenas", message: "A gift to help you sell faster", createdAt: "1 week ago"
     },
     {
-        personImg: <img
-            className="inline-block h-14 w-14 rounded-full"
-            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-            alt=""
-        />, name: "Steven Sim", message: "Your free bump will expire soon", createdAt: "1 day ago"
+        src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        alt: "", name: "Steven Sim", message: "Your free bump will expire soon", createdAt: "1 day ago"
     },
 ];
 
@@ -48,7 +35,8 @@ const Messagelist = () => {
                     <div className={"flex flex-col-reverse mt-10"}>
                         {messages.map((msg) => (
                             <div className={"grid grid-cols-12 border-b-2 border-gray-200 py-5 px-4 hover:bg-red-50"}>
-                                <div className={"col-span-1"}>{msg.personImg}</div>
+                                <div className={"col-span-1"}><img className={"inline-block h-14 w-14 rounded-full"}
+                                                                   src={msg.src} alt={msg.alt}/></div>
                                 <div className={"col-span-10 flex flex-col"}>
                                     <div className={"font-medium text-lg capitalize"}>{msg.name}</div>
                                     <div className={"text-gray-500"}>{msg.message}</div>
