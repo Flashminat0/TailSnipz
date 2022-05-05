@@ -1,6 +1,8 @@
-import { Switch } from '@headlessui/react'
+import { Switch, Dialog } from '@headlessui/react'
 import Link from 'next/link';
 import React, {useState} from 'react'
+import {AnimatePresence, motion} from "framer-motion"
+import {ArrowUpIcon, SupportIcon, ArrowRightIcon} from "@heroicons/react/solid";
 
 const index = () => {
 
@@ -8,6 +10,7 @@ const index = () => {
     const [notifyOwners, setNotifyOwners] = useState(false);
     const [allowThirdPartyTracking, setAllowThirdPartyTracking] = useState(false);
     const [allowToPersonalize, setAllowToPersonalize] = useState(false);
+    const [enableDownloadData, setEnableDownloadData] = useState(false)
 
   return (
         <div className={"h-screen w-screen grid place-content-center font-susty"}>
@@ -108,22 +111,99 @@ const index = () => {
                     <hr className={`my-1`}/>
                 </div>
 
-                <div className={"w-full bg-gray-50 p-5 hover:bg-gray-100 transition ease-in-out delay-50"}>
-                    <Link href= '/settings/privacySettings/downloadaccountdata' >
-                            <li className="group flex justify-between">
-                                <div>
-                                    <p className={"font-semibold"}>Download account data</p>
-                                    <p className={"font-thin"}>Request account data</p>
-                                </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#7d7d7d" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                                </svg>
-                            </li>
-                    </Link>
+                <div className={"w-full bg-gray-50 p-5 hover:bg-gray-100 transition ease-in-out delay-50 cursor-pointer"}
+                    onClick = {() => setEnableDownloadData(true)}
+                >
+                    <li className="group flex justify-between">
+                        <div>
+                            <p className={"font-semibold"}>Download account data</p>
+                            <p className={"font-thin"}>Request account data</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#7d7d7d" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </li>
                 </div>
-            
-        
             </>
+
+            <>
+                <AnimatePresence>
+                    {enableDownloadData && (
+                        <Dialog
+                            static
+                            as={motion.div}
+                            open={enableDownloadData}
+                            className="relative z-10"
+                            onClose={() => setEnableDownloadData(false)}
+                            animate={{
+                                opacity: 1,
+                            }}
+                            exit={{
+                                opacity: 0,
+                                transition: {duration: 0.4}
+                            }}
+                        >
+                            <div className="fixed inset-0 overflow-y-auto font-susty">
+                                <div
+                                    className="flex min-h-full items-center justify-center p-4 text-center bg-gray-700 bg-opacity-80">
+                                    <motion.div
+                                        key={`modal-for-email`}
+                                        initial={{scale: 0.8, opacity: 0}}
+                                        animate={{
+                                            scale: 1,
+                                            opacity: 1,
+                                            duration: 0.01,
+                                        }}
+                                        exit={{
+                                            scale: 0,
+                                            opacity: 0,
+                                            duration: 0.2,
+                                        }}
+
+                                        className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                                        <Dialog.Title
+                                            as="h3"
+                                            className={`mb-5`}
+                                        >
+                                            <p className="text-lg font-medium leading-5 text-gray-500 flex justify-between">
+                                                &nbsp;
+                                                <span
+                                                    onClick={() => setEnableDownloadData(false)}
+                                                    className={`mr-2 cursor-pointer`}>
+                                                        Close
+                                                </span>
+                                            </p>
+                                        </Dialog.Title>
+
+                                        <div className='grid place-content-center'>                                        
+                                            <div className=' p-4'>
+                                                <h1 className='font-bold justify-items-center text-xl'>Download account data</h1>
+
+                                                <p className='pt-8'>Your account data includes information that you’ve shared on your profile, your items, messages, and more.</p>
+                                                <p className='pt-4'>It can take up to a month to process your request. You’ll then receive a copy of your account data via email. The data will be in HTML files contained within a ZIP file.</p>
+                                                <p className='pt-4'>We’ll contact you at susty.co.nz@gmail.com to confirm your request.</p>
+
+                                                <div className='pt-6'>
+                                                    <div className={`grid place-items-center`}>
+                                                        <motion.button
+                                                            // onClick={() => setOpenPhoneModal(true)}
+                                                            whileHover={{scale: 1.02}}
+                                                            whileTap={{scale: 0.98}}
+                                                            className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                                            Request data
+                                                        </motion.button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </motion.div>
+                                </div>
+                            </div>
+                        </Dialog>
+                )}
+                </AnimatePresence>
+            </> 
+
         </div>
   )
 }
