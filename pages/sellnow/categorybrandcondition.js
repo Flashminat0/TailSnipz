@@ -30,7 +30,7 @@ const Categorybrandcondition = () => {
 
 
     return (
-        <div>
+        <div className={`h-screen w-screen grid place-content-center font-susty`}>
             <>
                 <div className={`bg-gray-50 w-54 p-4 shadow rounded-sm`}>
                     <div className={`grid grid-cols-5 pb-2`}>
@@ -65,7 +65,7 @@ const Categorybrandcondition = () => {
                                     <>
                                         <div className="mt-1 relative">
                                             <Listbox.Button
-                                                className="relative w-full bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-susty focus:border-susty sm:text-sm">
+                                                className="relative w-full bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-0 focus:ring-susty focus:border-susty sm:text-sm">
                                                <span className="w-full inline-flex truncate">
                                                    <span className="truncate">{selected.name}</span>
                                                    {/*<span*/}
