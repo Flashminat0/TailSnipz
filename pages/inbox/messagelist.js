@@ -34,14 +34,14 @@ const Messagelist = () => {
                     </div>
                     <div className={"flex flex-col-reverse mt-10"}>
                         {messages.map((msg) => (
-                            <div className={"grid grid-cols-12 border-b-2 border-gray-200 py-5 px-4 hover:bg-red-50"}>
-                                <div className={"col-span-1"}><img className={"inline-block h-14 w-14 rounded-full"}
+                            <div className={"grid grid-cols-12 border-b-2 border-gray-200 py-5 px-2 lg:px-4 hover:bg-red-50"}>
+                                <div className={"col-span-2 lg:col-span-1"}><img className={"inline-block h-14 w-14 rounded-full"}
                                                                    src={msg.src} alt={msg.alt}/></div>
-                                <div className={"col-span-10 flex flex-col"}>
+                                <div className={"col-span-7 lg:col-span-10 flex flex-col pr-2"}>
                                     <div className={"font-medium text-lg capitalize"}>{msg.name}</div>
                                     <div className={"text-gray-500"}>{msg.message}</div>
                                 </div>
-                                <div className={"col-span-1"}>{msg.createdAt}</div>
+                                <div className={"col-span-3 lg:col-span-1"}>{msg.createdAt}</div>
                             </div>
                         ))}
                     </div>

@@ -25,8 +25,8 @@ const Shopbybrand = () => {
     return (
         <div className={"h-screen w-screen grid place-content-center font-susty"}>
             <>
-                <div className={"text-2xl mx-60 px-1 my-6"}>Shop by brand</div>
-                <div className={"flex flex-wrap gap-3 mx-60"}>
+                <div className={"text-2xl mx-10 lg:mx-60 px-1 my-6"}>Shop by brand</div>
+                <div className={"flex flex-wrap gap-3 mx-10 lg:mx-60"}>
                 {brands.map((brand)=>(
                         <div className={"px-3 py-1.5 bg-white hover:bg-gray-50 border border-gray-100 shadow-inner-sm rounded-sm hover:cursor-pointer"}>{brand.name}</div>
                 ))}
