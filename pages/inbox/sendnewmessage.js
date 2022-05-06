@@ -23,8 +23,6 @@ const Sendnewmessage = () => {
     const [opened, setOpened] = useState(false);
     const ref = useClickOutside(() => setOpened(false));
 
-
-
     return (<div className={"h-screen w-screen grid place-content-center font-susty"}>
         <>
             <div className={"w-full bg-white shadow-sm"}>
@@ -65,6 +63,7 @@ const Sendnewmessage = () => {
                                     afterLeave={() => setQuery('')}
                                 >
                                     <Combobox.Options
+
                                         className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md shadow bg-white py-1 text-base ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
                                         {filteredPeople.length === 0 && query !== '' ? (<div
                                             className="relative cursor-default select-none py-2 px-4 text-gray-700">
@@ -75,9 +74,13 @@ const Sendnewmessage = () => {
                                                 className={({active}) => `relative cursor-default select-none py-2 pl-10 pr-4 
                                                 ${active ? 'bg-susty text-white' : 'text-gray-900'}`}
                                                 value={person}
+                                                onClick={()=>{
+                                                    setOpened(false)
+                                                }}
                                             >
                                                 {({selected, active}) => (<>
                                                             <span
+
                                                                 className={`block truncate ${selected ? 'font-medium' : 'font-normal'}`}
                                                             >
                                                                 {person.name}
