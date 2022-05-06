@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {InformationCircleIcon, LocationMarkerIcon, EyeIcon, CameraIcon, ArrowRightIcon} from "@heroicons/react/outline";
 
 const Messageoverview = () => {
+    const [msgInput, setMsgInput] = useState('');
+
     return (
         <div className={"h-screen w-screen grid place-content-center font-susty"}>
             <>
@@ -63,9 +65,13 @@ const Messageoverview = () => {
                         <div className={"inline-flex place-content-center mt-5 mb-3 text-susty font-medium"}>Translate this conversation</div>
                         <div className={"grid grid-cols-12 lg:grid-cols-10 gap-2 px-5 items-center border border-t-4 border-gray-100 relative"}>
                             <CameraIcon className={"col-start-1 col-end-2 lg:col-start-1 lg:col-end-2 relative w-12 h-8 mr-auto ml-4 mr-4 text-gray-400"}/>
-                            <input className={"col-start-3 col-end-13 lg:col-start-2 lg:col-end-11 px-5 py-3 my-5 bg-gray-100 rounded-lg focus:outline-none"} placeholder={"Write a message here"}/>
-                            <ArrowRightIcon className={"col-start-12 lg:col-start-10 w-5 h-5 pointer-events-none text-gray-300 font-semibold absolute"}/>
-                        </div>
+                            <input
+                                onChange={(e) => {
+                                    setMsgInput(e.target.value);
+                                }}
+                                className={"col-start-3 col-end-13 lg:col-start-2 lg:col-end-11 px-5 py-3 my-5 bg-gray-100 rounded-lg focus:outline-none"} placeholder={"Write a message here"}/>
+                            <ArrowRightIcon
+                                className={`col-start-12 lg:col-start-10 w-5 h-5 font-semibold absolute ${msgInput.length > 0 ? 'text-susty' : 'text-gray-300'}`}/>                        </div>
                     </div>
                 </div>
             </>
