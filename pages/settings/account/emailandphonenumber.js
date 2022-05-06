@@ -210,10 +210,7 @@ const EmailAndPhoneNumber = () => {
                                                     placeholder="New phone number"
                                                 />
                                                 <div className={`grid place-items-center mt-2`}
-                                                ><p className={`font-thin mx-1 text-sm text-gray-500`}>You’ll receive a
-                                                    verification
-                                                    code to this
-                                                    number</p></div>
+                                                ><p className={`font-thin mx-1 text-sm text-gray-500`}>You’ll receive a verification code to this number</p></div>
                                             </div>
                                         </div>
 
