@@ -1,7 +1,7 @@
 import React from 'react';
 import {ChevronRightIcon} from "@heroicons/react/solid";
 
-const brands = [
+const searches = [
     {id: 1, name: "Victoria's Secret", views: "17.5K views"},
     {id: 2, name: "Michael Kors", views: "10.7K views"},
     {id: 3, name: "Vans", views: "6.78K views"},
@@ -29,6 +29,22 @@ const Suggestedsearches = () => {
         <div className={"h-screen w-screen grid place-content-center font-susty"}>
             <>
                 <div className={"text-2xl mx-60 px-1 my-6"}>Suggested searches</div>
+                <div className={"flex flex-row gap-3 mx-10 lg:mx-60"}>
+                    <div className={"z-10 bg-gray-900 bg-opacity-75 bg-transparent rounded-lg rotate-180"}>
+                        <ChevronRightIcon className={"text-white w-5 h-5"}/>
+                    </div>
+                    {searches.map((search)=>(
+                        <div className={"px-3 py-1.5 bg-white hover:bg-gray-50 border border-gray-100 shadow-inner-sm rounded-sm hover:cursor-pointer"}>
+                            <div className={"flex flex-col gap-1"}>
+                                <div className={"font-medium"}>{search.name}</div>
+                                <div className={"text-sm text-gray-600 font-medium"}>{search.views}</div>
+                            </div>
+                        </div>
+                    ))}
+                    <div className={"z-10 bg-gray-900 bg-opacity-75 bg-transparent rounded-lg"}>
+                        <ChevronRightIcon className={"text-white w-5 h-5"}/>
+                    </div>
+                </div>
             </>
         </div>
     );
