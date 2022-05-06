@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {InformationCircleIcon, LocationMarkerIcon, EyeIcon, CameraIcon, ArrowRightIcon} from "@heroicons/react/outline";
 
 const Messageoverview = () => {
+
     const [msgInput, setMsgInput] = useState('');
 
     return (
