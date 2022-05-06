@@ -29,10 +29,9 @@ const Sendnewmessage = () => {
         <>
             <div className={"w-full bg-white shadow-sm"}>
                 <div className={"text-gray-400 ml-2 font-medium uppercase"}>New Message</div>
-                <div className={"grid grid-cols-12 mt-5 px-5 pt-5 pb-96"}>
-                    <div className={"col-start-1"}>To:</div>
-                    <div className={"col-start-9 col-end-12"}
-                    >
+                <div className={"grid grid-cols-3 mt-5 px-5 pt-5 pb-96"}>
+                    <div className={"col-span-1"}>To:</div>
+                    <div className={"col-start-2 col-span-2 lg:col-start-3 col-span-1 col-end-12"}>
                         <Combobox
                             onClick={() => setOpened(true)}
                             ref={ref}
@@ -101,17 +100,17 @@ const Sendnewmessage = () => {
                     </div>
                 </div>
                 <div
-                    className={"grid grid-cols-12 lg:grid-cols-10 gap-2 items-center border border-t-4 border-gray-100 pr-4 relative"}>
+                    className={"grid grid-cols-6 lg:grid-cols-7 gap-2 items-center border border-t-4 border-gray-100 pr-4 relative"}>
                     <CameraIcon
-                        className={"col-start-1 col-end-2 lg:col-start-1 lg:col-end-2 relative w-12 h-8 mr-auto ml-4 mr-4 text-gray-400"}/>
+                        className={"col-span-1 col-start-1 col-end-2 lg:col-start-1 lg:col-end-2 relative w-12 h-8 mr-auto ml-4 mr-4 text-gray-400"}/>
                     <input
                         onChange={(e) => {
                             setMsgInput(e.target.value);
                         }}
-                        className={"col-start-3 col-end-13 lg:col-start-2 lg:col-end-11 px-5 py-3 my-5 bg-gray-100 rounded-lg focus:outline-none"}
+                        className={"col-start-2 col-end-7 lg:col-start-2 lg:col-end-8 px-5 py-3 my-5 bg-gray-100 rounded-lg focus:outline-none"}
                         placeholder={"Write a message here"}/>
                     <ArrowRightIcon
-                        className={`col-start-12 lg:col-start-10 w-5 h-5 font-semibold absolute ${msgInput.length > 0 ? 'text-susty' : 'text-gray-300'}`}/>
+                        className={`col-start-6 lg:col-start-7 w-5 h-5 font-semibold absolute ${msgInput.length > 0 ? 'text-susty' : 'text-gray-300'}`}/>
                 </div>
             </div>
         </>
