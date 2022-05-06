@@ -25,6 +25,7 @@ const searches = [
 ];
 
 const Suggestedsearches = () => {
+
     return (
         <div className={"h-screen w-screen grid place-content-center font-susty"}>
             <>
