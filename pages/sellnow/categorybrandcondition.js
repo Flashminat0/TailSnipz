@@ -10,18 +10,9 @@ function classNames(...classes) {
 const people = [
     {name: 'New with tags', username: 'A brand-new, unused item with tags attached or in the original packaging.'},
     {name: 'New with tags', username: 'A brand-new, unused item without tags or original packaging.'},
-    {
-        name: 'Very good',
-        username: 'A lightly used item that may have slight imperfections, but still looks great. Include photos and descriptions of any flaws in your listing.'
-    },
-    {
-        name: 'Good',
-        username: 'A used item that may show imperfections and signs of wear. Include photos and descriptions of flaws in your listing.'
-    },
-    {
-        name: 'Satisfactory',
-        username: 'A frequently used item with imperfections and signs of wear. Include photos and descriptions of flaws in your listing.'
-    },
+    {name: 'Very good', username: 'A lightly used item that may have slight imperfections, but still looks great. Include photos and descriptions of any flaws in your listing.'},
+    {name: 'Good', username: 'A used item that may show imperfections and signs of wear. Include photos and descriptions of flaws in your listing.'},
+    {name: 'Satisfactory', username: 'A frequently used item with imperfections and signs of wear. Include photos and descriptions of flaws in your listing.'},
 ]
 
 
