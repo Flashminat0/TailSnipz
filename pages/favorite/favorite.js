@@ -4,17 +4,17 @@ const NotificationView = () => {
   return (
     <div className={"h-screen w-screen grid place-content-center font susty"}>
       <>
-        <div class="max-w-sm bg-white    shadow-md dark:bg-white dark:border-gray-700">
-          <div class="flex items-center space-x-4 mb-3 ml-2 mt-2">
-            <div class="flex-shrink-0">
+        <div className="max-w-sm bg-white    shadow-md dark:bg-white dark:border-gray-700">
+          <div className="flex items-center space-x-4 mb-3 ml-2 mt-2">
+            <div className="flex-shrink-0">
               <img
-                class="w-8 h-8 rounded-full"
+                className="w-8 h-8 rounded-full"
                 src="https://picsum.photos/200"
                 alt="Neil image"
               />
             </div>
-            <div class="flex-1 min-w-0">
-              <p class="text-sm font-medium text-gray-900 truncate text-gray-700">
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-medium text-gray-900 truncate text-gray-700">
                 Neil Sims
               </p>
             </div>
@@ -22,19 +22,19 @@ const NotificationView = () => {
 
           <a href="#">
             <img
-              class="object-contain h-100 w-96"
+              className="object-contain h-100 w-96"
               src="https://picsum.photos/200"
               alt=""
             />
           </a>
 
-          <ul class="mb-2 mt-2 ml-2 w-auto text-sm font-medium text-gray-900 bg-white   bg-white dark:border-gray-600 text-gray-700">
-            <table class="table-fixed">
+          <ul className="mb-2 mt-2 ml-2 w-auto text-sm font-medium text-gray-900 bg-white   bg-white dark:border-gray-600 text-gray-700">
+            <table className="table-fixed">
               <thead>
                 <tr>
                   <th>Shirt</th>
                   <th>
-                    <div class="ml-64">
+                    <div className="ml-64">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6 ml-3 mr-2 hover:text-red-400 focus:text-red-400 cursor-pointer"
@@ -52,7 +52,7 @@ const NotificationView = () => {
                     </div>
                   </th>
                   <th>
-                    <div class="mr-1">5</div>
+                    <div className="mr-1">5</div>
                   </th>
                 </tr>
               </thead>

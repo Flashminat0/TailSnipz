@@ -11,41 +11,41 @@ const PrivacyPolicy = () => {
             <p className="mt-2 text-3xl leading-8 font-semi-bold text-gray-900 sm:text-4xl">
               Vinted Privacy Policy
             </p>
-            <p class="leading-normal mt-2 "> Date last updated: 01-21-2022 </p>
-            <p class="leading-normal mt-5">
+            <p className="leading-normal mt-2 "> Date last updated: 01-21-2022 </p>
+            <p className="leading-normal mt-5">
               When it comes to your personal data, safety and transparency take
               top priority here at Vinted. To help you understand what
               information we collect about you, how we use it and what rights
               you have, we’ve prepared this detailed Privacy Policy.
             </p>
-            <p class="leading-relaxed mt-5 ml-4">
-              <ol class="list-decimal">
-                <li class="no-underline hover:underline text-susty font-medium">
+            <p className="leading-relaxed mt-5 ml-4">
+              <ol className="list-decimal">
+                <li className="no-underline hover:underline text-susty font-medium">
                   Now this is a story all about how, my life got flipped turned
                   upside down
                 </li>
-                <li class="no-underline hover:underline text-susty font-medium">
+                <li className="no-underline hover:underline text-susty font-medium">
                   Now this is a story all about how, my life got flipped turned
                   upside down
                 </li>
-                <li class="no-underline hover:underline text-susty font-medium">
+                <li className="no-underline hover:underline text-susty font-medium">
                   Now this is a story all about how, my life got flipped turned
                   upside down
                 </li>
-                <li class="no-underline hover:underline text-susty font-medium">
+                <li className="no-underline hover:underline text-susty font-medium">
                   Now this is a story all about how, my life got flipped turned
                   upside down
                 </li>
-                <li class="no-underline hover:underline text-susty font-medium">
+                <li className="no-underline hover:underline text-susty font-medium">
                   Now this is a story all about how, my life got flipped turned
                   upside down
                 </li>
               </ol>
             </p>
             <div>
-              <p class="leading-loose mt-5 text-4xl">1. General</p>
+              <p className="leading-loose mt-5 text-4xl">1. General</p>
             </div>
-            <p class="leading-normal mt-2 text-md">
+            <p className="leading-normal mt-2 text-md">
               This Privacy Policy applies to the online platform Vinted
               (“Website”) and to the associated app (“App”) (the Website and the
               App are jointly referred to as the “Platform”) intended for United
@@ -92,16 +92,16 @@ const PrivacyPolicy = () => {
               and Vinted, the conditions of which are described in the GTC.
             </p>
             <div>
-              <p class="leading-loose mt-5 text-4xl">
+              <p className="leading-loose mt-5 text-4xl">
                 2. Why and how do we collect and use your personal data?
               </p>
             </div>
             <div>
-              <p class="leading-loose mt-1 text-2xl">
+              <p className="leading-loose mt-1 text-2xl">
                 2.1 Why and how do we collect and use your personal data?
               </p>
             </div>
-            <p class="leading-normal mt-2 ">
+            <p className="leading-normal mt-2 ">
               {" "}
               This Privacy Policy applies to the online platform Vinted
               (“Website”) and to the associated app (“App”) (the Website and the
@@ -219,41 +219,3 @@ const PrivacyPolicy = () => {
 
 export default PrivacyPolicy;
 
-/*
-
-
-
-
-
-
-<article class="py-12 px-4">
-  <h1 class="text-4xl text-left mb-4 font-semibold font-heading font-semibold">Vinted Privacy Policy</h1>
-  <p class="text-center">
-    <span>October 22, by</span>
-    <a class="ml-1 text-indigo-600 hover:underline" href="#">Michael Scott</a>
-  </p>
-  
-  <div class="max-w-3xl mx-auto">
-    <p class="mb-4">We offer a dependable and quick supply of copy paper suited to all kinds of printers. Each of our various products is designed to provide the finest performance and meet international standards.</p>
-    <p class="mb-4">We’re dedicated to ensure the highest level of customer satisfaction based on long-term professional relationships. By creating the positive working environment we’re enabling our employees to significantly improve not only their productivity, but what’s more important – job satisfaction.</p>
-    <ul class="mb-4 list-inside list-disc">
-      <li>High durability</li>
-      <li>Value-based price</li>
-      <li>Perfect performance on copy machines</li>
-      <li>Long lasting whiteness</li>
-    </ul>
-    <p class="mb-10">We deliver our services with passion and dedication unmatched by other so called “big players”. We create a friendly environment for our workers and that’s what makes their dedication soar to the maximum. You are getting not only the best possible product, but also our love for paper (completely free of charge).</p>
-    <blockquote class="text-center mb-10">
-      <p class="text-lg font-semibold mb-2">"I would say I kind of have an unfair advantage, because I watch reality dating shows like a hawk, and I learn. I absorb information from the strategies of the winners and the losers. Actually, I probably learn more from the losers."</p>
-      <footer class="text-gray-400">Michael Scott</footer>
-    </blockquote>
-    <p>Because the real business is done on paper.</p>
-  </div>
-</article>
-
-
-
-
-
-
-*/
