@@ -191,7 +191,7 @@ const Categories = () => {
             </Menu.Button>
             <div ref={dropdownRef}>
               <SubCategories>
-                <DropDownItem data={catWomen} parent="Women"  />
+                <DropDownItem data={catWomen} parent="Women" />
                 <LoadChilds child={child} data={catWomen} parent="Women" />
               </SubCategories>
             </div>
