@@ -1,0 +1,15 @@
+import React from "react";
+
+
+const PrivacyPolicy = () => {
+  return (
+    <div className={"h-screen w-screen grid place-content-center font-susty"}>
+    <>
+content
+    </>
+    </div>
+  );
+};
+
+export default PrivacyPolicy;
+
