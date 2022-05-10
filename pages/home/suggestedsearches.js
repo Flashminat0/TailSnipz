@@ -21,7 +21,7 @@ const searches = [
     {id: 17, pos: 17, name: "Vintage", views: "65.2K views", active: false},
     {id: 18, pos: 18, name: "The North Face", views: "7.5K views", active: false},
     {id: 19, pos: 19, name: "Laura Ashley", views: "12.5K views", active: false},
-    {id: 20, pos: 20, name: "Louis Vuitton", views: "3.46K views", active: false},
+    {id: 20, pos: 20, name: "Louis Vuitton", views: "3.46K views", active: false}
 ];
 
 const Suggestedsearches = () => {
