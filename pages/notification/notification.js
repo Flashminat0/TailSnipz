@@ -33,29 +33,29 @@ const Notification = () => {
             <Menu.Item>
             <button
           type="button"
-          class="relative inline-flex items-center w-full px-4 py-2 text-sm font-medium border-b"
+          className="relative inline-flex items-center w-full px-4 py-2 text-sm font-medium border-b"
         >
-          <div class="grid  gap- flex items-left">
-            <div class="mb-2">
+          <div className="grid  gap- flex items-left">
+            <div className="mb-2">
               <img
                 src="https://mdbootstrap.com//img/Photos/Square/1.jpg"
-                class="h-18 w-32 rounded-full"
+                className="h-18 w-32 rounded-full"
                 alt=""
               />
             </div>
           </div>
 
-          <div class=" text-sm font-medium text-gray-700 bg-white">
+          <div className=" text-sm font-medium text-gray-700 bg-white">
             <a
               href="#"
               
-              class="block w-full px-1 py-2 "
+              className="block w-full px-1 py-2 "
             >
               Clothes you don't wear = extra cash. Sell them today. Upload now.
             </a>
             <a
               href="#"
-              class="block w-full px-1 py-2 text-left"
+              className="block w-full px-1 py-2 text-left"
             >
               16 hours ago
             </a>
@@ -66,29 +66,29 @@ const Notification = () => {
             <Menu.Item>
             <button
           type="button"
-          class="relative inline-flex items-center w-full px-4 py-2 text-sm font-medium border-b"
+          className="relative inline-flex items-center w-full px-4 py-2 text-sm font-medium border-b"
         >
-          <div class="grid  gap- flex items-left">
-            <div class="mb-2">
+          <div className="grid  gap- flex items-left">
+            <div className="mb-2">
               <img
                 src="https://mdbootstrap.com//img/Photos/Square/1.jpg"
-                class="h-18 w-32 rounded-full"
+                className="h-18 w-32 rounded-full"
                 alt=""
               />
             </div>
           </div>
 
-          <div class=" text-sm font-medium text-gray-700 bg-white">
+          <div className=" text-sm font-medium text-gray-700 bg-white">
             <a
               href="#"
               
-              class="block w-full px-1 py-2 "
+              className="block w-full px-1 py-2 "
             >
               Clothes you don't wear = extra cash. Sell them today. Upload now.
             </a>
             <a
               href="#"
-              class="block w-full px-1 py-2 text-left"
+              className="block w-full px-1 py-2 text-left"
             >
               16 hours ago
             </a>
@@ -99,29 +99,29 @@ const Notification = () => {
             <Menu.Item>
             <button
           type="button"
-          class="relative inline-flex items-center w-full px-4 py-2 text-sm font-medium border-b"
+          className="relative inline-flex items-center w-full px-4 py-2 text-sm font-medium border-b"
         >
-          <div class="grid  gap- flex items-left">
-            <div class="mb-2">
+          <div className="grid  gap- flex items-left">
+            <div className="mb-2">
               <img
                 src="https://mdbootstrap.com//img/Photos/Square/1.jpg"
-                class="h-18 w-32 rounded-full"
+                className="h-18 w-32 rounded-full"
                 alt=""
               />
             </div>
           </div>
 
-          <div class=" text-sm font-medium text-gray-700 bg-white">
+          <div className=" text-sm font-medium text-gray-700 bg-white">
             <a
               href="#"
               
-              class="block w-full px-1 py-2 "
+              className="block w-full px-1 py-2 "
             >
               Clothes you don't wear = extra cash. Sell them today. Upload now.
             </a>
             <a
               href="#"
-              class="block w-full px-1 py-2 text-left"
+              className="block w-full px-1 py-2 text-left"
             >
               16 hours ago
             </a>
@@ -134,7 +134,7 @@ const Notification = () => {
 
                   <button
                     type="submit"
-                    className="  bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                    className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
                   >
                     See All
                   </button>

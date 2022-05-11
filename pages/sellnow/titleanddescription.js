@@ -4,7 +4,7 @@ const Titleanddescription = () => {
     return (
         <div className={`h-screen w-screen grid place-content-center font-susty`}>
             <>
-                <div className={`bg-gray-50 w-54 p-4 shadow`}>
+                <div className={`bg-gray-50 w-54 p-4 shadow rounded-sm`}>
                     <div className={`grid grid-cols-5 pb-2`}>
                         <p className={`font-medium text-lg`}>Title</p>
                         <input
