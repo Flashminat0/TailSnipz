@@ -4,16 +4,17 @@ import {Dialog} from "@headlessui/react";
 import Flags from 'country-flag-icons/react/3x2'
 
 const Wheredoyoulive = () => {
-    const [openCountryModal, setOpenCountryModal] = useState(false);
+    const [openCountryModal, setOpenCountryModal] = useState(true);
 
     return (
         <div className={"h-screen w-screen grid place-content-center font-susty"}>
             <>
                 <AnimatePresence>
+                    {openCountryModal && (
                         <Dialog
                             static
                             as={motion.div}
-                            open={!openCountryModal}
+                            open={openCountryModal}
                             className="relative z-10"
                             onClose={() => setOpenCountryModal(false)}
                             animate={{
@@ -49,7 +50,7 @@ const Wheredoyoulive = () => {
                                                 Where do you live?
                                                 <span
                                                     onClick={() => setOpenCountryModal(false)}
-                                                    className={`text-lg mr-2 cursor-pointer text-susty`}>
+                                                    className={`mr-2 cursor-pointer text-susty`}>
                                                       Close
                                                 </span>
                                             </p>
@@ -57,11 +58,11 @@ const Wheredoyoulive = () => {
                                         </Dialog.Title>
                                         <div
                                             className={"mx-4 my-4 grid grid-cols-1 grid-rows-2 gap-y-3"}>
-                                            <div className={"flex flex-row gap-4"}>
+                                            <div className={"flex flex-row gap-4"} onClick={() => setOpenCountryModal(false)}>
                                                 <Flags.NZ title={"New Zealand"} className={"w-6 h-6"}/>
                                                 <div>New Zealand</div>
                                             </div>
-                                            <div className={"flex flex-row gap-4"}>
+                                            <div className={"flex flex-row gap-4"} onClick={() => setOpenCountryModal(false)}>
                                                 <Flags.AU title={"Australia"} className={"w-6 h-6"}/>
                                                 <div>Australia</div>
                                             </div>
@@ -70,6 +71,7 @@ const Wheredoyoulive = () => {
                                 </div>
                             </div>
                         </Dialog>
+                    )}
                     </AnimatePresence>
             </>
         </div>
