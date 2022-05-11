@@ -1,12 +1,14 @@
 import React, {useState} from 'react';
 import {Dialog} from "@headlessui/react";
 import {AnimatePresence, motion} from "framer-motion";
+import Link from "next/link";
 
 const Loginmodals = () => {
     const [openLoginModal, setOpenLoginModal] = useState(true);
     const [loginStatus, setLoginStatus] = useState(false);
     const [openLoginFormModal, setOpenLoginFormModal] = useState(false);
     const [forgottenPasswordStatus, setForgottenPasswordStatus] = useState(false);
+    const [openSignupFormModal, setOpenSignupFormModal] = useState(false);
 
     return (
         <div>
@@ -140,102 +142,222 @@ const Loginmodals = () => {
 
             <>
                 <AnimatePresence>
-                        <Dialog
-                            static
-                            as={motion.div}
-                            open={openLoginFormModal}
-                            className="relative z-10"
-                            onClose={() => setOpenLoginFormModal(false)}
-                            animate={{
-                                opacity: 1,
-                            }}
-                            exit={{
-                                opacity: 0,
-                                transition: {duration: 0.4}
-                            }}
-                        >
-                            <div className={"fixed inset-0 overflow-y-auto font-susty"}>
-                                <div
-                                    className="flex min-h-full items-center justify-center p-4 text-center bg-gray-700 bg-opacity-80">
-                                    <motion.div
-                                        key={`modal-for-email`}
-                                        initial={{scale: 0.8, opacity: 0}}
-                                        animate={{
-                                            scale: 1,
-                                            opacity: 1,
-                                            duration: 0.01,
-                                        }}
-                                        exit={{
-                                            scale: 0,
-                                            opacity: 0,
-                                            duration: 0.2,
-                                        }}
-                                        className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                                        <Dialog.Title
-                                            as="h3"
-                                            className={`mb-10`}
-                                        >
+                    <Dialog
+                        static
+                        as={motion.div}
+                        open={openLoginFormModal}
+                        className="relative z-10"
+                        onClose={() => setOpenLoginFormModal(false)}
+                        animate={{
+                            opacity: 1,
+                        }}
+                        exit={{
+                            opacity: 0,
+                            transition: {duration: 0.4}
+                        }}
+                    >
+                        <div className={"fixed inset-0 overflow-y-auto font-susty"}>
+                            <div
+                                className="flex min-h-full items-center justify-center p-4 text-center bg-gray-700 bg-opacity-80">
+                                <motion.div
+                                    key={`modal-for-email`}
+                                    initial={{scale: 0.8, opacity: 0}}
+                                    animate={{
+                                        scale: 1,
+                                        opacity: 1,
+                                        duration: 0.01,
+                                    }}
+                                    exit={{
+                                        scale: 0,
+                                        opacity: 0,
+                                        duration: 0.2,
+                                    }}
+                                    className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                                    <Dialog.Title
+                                        as="h3"
+                                        className={`mb-10`}
+                                    >
                                             <span
                                                 className="flex justify-end text-xl font-medium leading-5 mr-2 cursor-pointer text-susty"
                                                 onClick={() => setOpenLoginFormModal(false)}>
                                                       Close
                                             </span>
-                                            {forgottenPasswordStatus === true ? <>
-                                                <p className={"flex justify-center text-3xl font-medium mt-5 pt-2"}>
-                                                    Forgot your password
-                                                </p>
-                                            </> :<>
-                                                <p className={"flex justify-center text-3xl font-medium mt-5 pt-2"}>
-                                                    Log in
-                                                </p>
-                                            </>}
-                                        </Dialog.Title>
-                                        <div
-                                            className={"my-4 grid grid-cols-1 grid-rows-12 gap-y-4"}>
-                                            {forgottenPasswordStatus === true ? <>
+                                        {forgottenPasswordStatus === true ? <>
+                                            <p className={"flex justify-center text-3xl font-medium mt-5 pt-2"}>
+                                                Forgot your password
+                                            </p>
+                                        </> : <>
+                                            <p className={"flex justify-center text-3xl font-medium mt-5 pt-2"}>
+                                                Log in
+                                            </p>
+                                        </>}
+                                    </Dialog.Title>
+                                    <div
+                                        className={"my-4 grid grid-cols-1 grid-rows-12 gap-y-4"}>
+                                        {forgottenPasswordStatus === true ? <>
+                                            <input type={"email"}
+                                                   className={"px-8 py-1.5 min-w-full rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
+                                                   placeholder={"Enter your email address"}
+                                            />
+                                        </> : <>
+                                            <div className={"flex flex-col gap-4"}>
+                                                <input type={"text"}
+                                                       className={"px-8 py-1.5 min-w-full rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
+                                                       placeholder={"Email or username"}
+                                                />
+                                                <input type={"password"}
+                                                       className={"px-8 py-1.5 min-w-full rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
+                                                       placeholder={"Password"}
+                                                />
+                                            </div>
+                                        </>}
+                                        <div className="mt-6">
+                                            <motion.button
+                                                whileHover={{scale: 1.02}}
+                                                whileTap={{scale: 0.98}}
+                                                Send confirmation email
+                                                className={`flex justify-center min-w-full px-28 py-3.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                                Continue
+                                            </motion.button>
+                                        </div>
+                                        {forgottenPasswordStatus === true ? <>
+                                        </> : <>
+                                            <div className={"flex flex-col gap-2 mt-3"}>
+                                                <div onClick={() => {
+                                                    setForgottenPasswordStatus(true)
+                                                }}
+                                                     className={"text-lg font-medium mx-auto text-susty hover:underline"}>Forgotten
+                                                    your password?
+                                                </div>
+                                                <div
+                                                    className={"text-lg font-medium mx-auto text-susty hover:underline"}>Having
+                                                    trouble?
+                                                </div>
+                                            </div>
+                                        </>}
+                                    </div>
+                                </motion.div>
+                            </div>
+                        </div>
+                    </Dialog>
+                </AnimatePresence>
+            </>
+
+            <>
+                <AnimatePresence>
+                    <Dialog
+                        static
+                        as={motion.div}
+                        open={openSignupFormModal}
+                        className="relative z-10"
+                        onClose={() => setOpenSignupFormModal(false)}
+                        animate={{
+                            opacity: 1,
+                        }}
+                        exit={{
+                            opacity: 0,
+                            transition: {duration: 0.4}
+                        }}
+                    >
+                        <div className={"fixed inset-0 overflow-y-auto font-susty"}>
+                            <div
+                                className="flex min-h-full items-center justify-center p-4 text-center bg-gray-700 bg-opacity-80">
+                                <motion.div
+                                    key={`modal-for-email`}
+                                    initial={{scale: 0.8, opacity: 0}}
+                                    animate={{
+                                        scale: 1,
+                                        opacity: 1,
+                                        duration: 0.01,
+                                    }}
+                                    exit={{
+                                        scale: 0,
+                                        opacity: 0,
+                                        duration: 0.2,
+                                    }}
+                                    className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                                    <Dialog.Title
+                                        as="h3"
+                                        className={`mb-10`}
+                                    >
+                                            <span
+                                                className="flex justify-end text-xl font-medium leading-5 mr-2 cursor-pointer text-susty"
+                                                onClick={() => setOpenSignupFormModal(false)}>
+                                                      Close
+                                            </span>
+                                        <p className={"flex justify-center text-3xl font-medium mt-5 pt-2"}>
+                                            Register with email
+                                        </p>
+
+                                    </Dialog.Title>
+                                    <div
+                                        className={"my-4 grid grid-cols-1 grid-rows-12 gap-y-5"}>
+                                        <div className={"flex flex-col gap-6"}>
+                                            <div className={"flex flex-col gap-1"}>
+                                                <input type={"text"}
+                                                       className={"px-8 py-1.5 min-w-full rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
+                                                       placeholder={"Full name"}
+                                                />
+                                                <span className={"pl-1 text-xs text-gray-500"}>Your full name will not be publicly visible</span>
+                                            </div>
+                                            <div className={"flex flex-col gap-1"}>
+                                                <input type={"text"}
+                                                       className={"px-8 py-1.5 min-w-full rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
+                                                       placeholder={"Username"}
+                                                />
+                                                <span className={"pl-1 text-xs text-gray-500"}>Please use only letters and numbers. Pick something you like — usernames can’t be changed later.</span>
+                                            </div>
+                                            <div>
                                                 <input type={"email"}
                                                        className={"px-8 py-1.5 min-w-full rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
-                                                       placeholder={"Enter your email address"}
+                                                       placeholder={"Email"}
                                                 />
-                                            </> :<>
-                                                <div className={"flex flex-col gap-4"}>
-                                                    <input type={"text"}
-                                                           className={"px-8 py-1.5 min-w-full rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
-                                                           placeholder={"Email or username"}
-                                                    />
-                                                    <input type={"password"}
-                                                           className={"px-8 py-1.5 min-w-full rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
-                                                           placeholder={"Password"}
-                                                    />
-                                                </div>
-                                            </>}
-                                            <div className="mt-6">
-                                                <motion.button
-                                                    whileHover={{scale: 1.02}}
-                                                    whileTap={{scale: 0.98}}
-                                                    Send confirmation email
-                                                    className={`flex justify-center min-w-full px-28 py-3.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
-                                                    Continue
-                                                </motion.button>
                                             </div>
-                                            {forgottenPasswordStatus === true ? <>
-                                            </> : <>
-                                                <div className={"flex flex-col gap-2 mt-3"}>
-                                                    <div onClick={()=>{setForgottenPasswordStatus(true)}}
-                                                         className={"text-lg font-medium mx-auto text-susty hover:underline"}>Forgotten
-                                                        your password?
-                                                    </div>
-                                                    <div
-                                                        className={"text-lg font-medium mx-auto text-susty hover:underline"}>Having
-                                                        trouble?
-                                                    </div>
-                                                </div>
-                                            </>}
+                                            <div className={"flex flex-col gap-1"}>
+                                                <input type={"password"}
+                                                       className={"px-8 py-1.5 min-w-full rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
+                                                       placeholder={"Password"}
+                                                />
+                                                <span className={"pl-1 text-xs text-gray-500"}>Please use at least 7 characters. Include letters and at least 1 number.</span>
+                                            </div>
+                                            <div className={"flex flex-row gap-2"}>
+                                                <input
+                                                    id="checkbox"
+                                                    name="checkbox"
+                                                    type="checkbox"
+                                                    className="focus:ring-red-400 h-6 w-6 text-susty border-gray-300 rounded"
+                                                />
+                                                <span className={"pl-1 text-lg text-gray-500"}>Subscribe to your newsletter</span>
+                                            </div>
+
                                         </div>
-                                    </motion.div>
-                                </div>
+                                        <div className="mt-6">
+                                            <motion.button
+                                                whileHover={{scale: 1.02}}
+                                                whileTap={{scale: 0.98}}
+                                                Send confirmation email
+                                                className={`flex justify-center min-w-full px-28 py-3.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                                Continue
+                                            </motion.button>
+                                        </div>
+                                        <div className={"flex flex-col gap-2"}>
+                                            <div onClick={() => {
+                                                setForgottenPasswordStatus(true)
+                                            }}
+                                                 className={"text-sm font-medium text-gray-500"}>By registering, I confirm that I accept Vinted's <Link href={"/"}>
+                                                <a className={"text-susty hover:underline"}>Terms and Conditions,</a></Link> have read the <Link href={"/"}>
+                                                <a className={"text-susty hover:underline"}>Privacy Policy,</a></Link> and am at least 18 years old.
+                                            </div>
+                                            <div
+                                                className={"text-lg font-medium mx-auto text-susty hover:underline"}>Having
+                                                trouble?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </motion.div>
                             </div>
-                        </Dialog>
+                        </div>
+                    </Dialog>
                 </AnimatePresence>
             </>
         </div>
