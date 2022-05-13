@@ -7,9 +7,9 @@ const Deliveryoptions = () => {
     return (
         <div className={"h-screen w-screen grid place-content-center font-susty"}>
             <>
-                <div className={"w-full"}>
+                <div className={"w-full p-5 bg-gray-50"}>
                     <div>Delivery options</div>
-                    <div className={"mt-5 grid grid-cols-5 gap-2"}>
+                    <div className={"pt-5 grid grid-cols-5 gap-2"}>
                         <div className={"col-span-1"}>
                             <img src={"https://pbs.twimg.com/profile_images/1407822951232131074/sw0Z3yII_400x400.png"}
                                  width={"50px"} height={"50px"} alt={""}/>
@@ -34,7 +34,7 @@ const Deliveryoptions = () => {
                             </Switch>
                         </div>
                     </div>
-                    <div className={"my-10 text-sm text-gray-500"}>Certain shipping options are enabled by default for you as a seller and cannot be turned off.</div>
+                    <div className={"pt-10 pb-2 text-sm text-gray-500"}>Certain shipping options are enabled by default for you as a seller and cannot be turned off.</div>
                 </div>
             </>
         </div>
