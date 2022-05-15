@@ -68,7 +68,7 @@ const Myaddress = () => {
                                                         duration: 0.2,
                                                     }}
 
-                                                    className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                                                    className="w-full bg-gray-50 max-w-max transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                                                     <Dialog.Title
                                                         as="h3"
                                                         className={`mb-5`}
@@ -85,7 +85,7 @@ const Myaddress = () => {
                                                     </Dialog.Title>
 
                                                     <div
-                                                        className={"my-4 grid grid-cols-1 grid-rows-5 gap-y-4"}>
+                                                        className={"mt-4 mb-8 grid grid-cols-1 grid-rows-6 gap-y-4"}>
                                                         <div>
                                                             <div
                                                                 className="block px-4 text-md font-medium text-gray-700 my-1">Country
@@ -195,7 +195,7 @@ const Myaddress = () => {
                                                             </div>
                                                             <div>
                                                                 <input type={"text"}
-                                                                       className={"px-8 py-1.5 rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
+                                                                       className={"px-7 py-1.5 rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
                                                                        placeholder={"eg: John Snow"}
                                                                 />
                                                             </div>
@@ -207,7 +207,7 @@ const Myaddress = () => {
                                                             </div>
                                                             <div>
                                                                 <input type={"text"}
-                                                                       className={"px-8 py-1.5 rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
+                                                                       className={"px-7 py-1.5 rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
                                                                        placeholder={"eg: 136, Hill Street"}
                                                                 />
                                                             </div>
@@ -219,8 +219,8 @@ const Myaddress = () => {
                                                             </div>
                                                             <div>
                                                                 <input type={"text"}
-                                                                       className={"px-8 py-1.5 rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
-                                                                       placeholder={"eg: Auckland"}
+                                                                       className={"px-7 py-1.5 rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
+                                                                       placeholder={"eg: Apt2"}
                                                                 />
                                                             </div>
                                                         </div>
@@ -231,8 +231,20 @@ const Myaddress = () => {
                                                             </div>
                                                             <div>
                                                                 <input type={"number"} min={0} max={9999}
-                                                                       className={"px-8 py-1.5 rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
+                                                                       className={"px-7 py-1.5 rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
                                                                        placeholder={"eg: 0604"}
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div
+                                                                className="block px-4 text-md font-medium text-gray-700 my-1">
+                                                                Town/City
+                                                            </div>
+                                                            <div>
+                                                                <input type={"text"}
+                                                                       className={"px-7 py-1.5 rounded-md shadow-sm border border-gray-300 focus:border-susty focus:ring-susty focus:ring-offset-susty"}
+                                                                       placeholder={"eg: Wellington"}
                                                                 />
                                                             </div>
                                                         </div>
