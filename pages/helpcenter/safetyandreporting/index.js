@@ -6,8 +6,8 @@ const index = () => {
   return (
     <div className={"h-screen w-screen place-content-center font-susty"}>
         <div className="mx-5 p-10 bg-white text-left">
-            <h1 className = "text-3xl font-bold mt-0 mb-4" >Buying</h1>
-            <div className="text-xs text-gray-500">Recomended for you</div>
+            <h1 className = "text-3xl font-bold mt-0 mb-4" >Safety and reporting</h1>
+            <div className="text-xs text-gray-500 pb-2">Recomended for you</div>
 
             <Disclosure>
                     {({ open }) => (
@@ -380,10 +380,6 @@ const index = () => {
                         </>
                     )}
                 </Disclosure>
-
-
-
-
         
         </div>
     </div>
