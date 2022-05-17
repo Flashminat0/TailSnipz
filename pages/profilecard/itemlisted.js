@@ -7,7 +7,7 @@ const ItemListed = () => {
       <>
         <div className="flex items-center justify-center h-screen w-screen ">
           <div className="bg-gray-200 text-white font-bold  border shadow-lg p-6 ">
-            <div className="bg-red-200 w-96 text-white font-bold shadow-sm  shadow-lg pl-10 pt-10 pr-10 ">
+            <div className="bg-red-200 w-96 text-white font-bold shadow-sm  shadow-lg pl-8 pt-10 pr-10 ">
               <div className="pb-50 w-80 max-w-sm bg-white shadow-md dark:bg-white dark:border-gray-700 ">
                 <a href="#">
                   <img
@@ -18,7 +18,7 @@ const ItemListed = () => {
                 </a>
 
                 <div className="mt-4 pl-2 mb-2 flex justify-between ">
-                  <div>
+                  <div className="mb-2">
                     <p className="text-lg font-semibold text-gray-900 mb-0">
                       $88.00
                     </p>
