@@ -35,13 +35,11 @@ const items = [{
 
 const Popularitemlayout = ({children}) => {
     return (
-        <div className={"px-4 grid grid-cols-8 gap-1"}>
-            <div className={"col-start-1 col-end-7"}>
+        <div className={"px-4 grid grid-cols-6 gap-1"}>
                 {items.map((items)=>(
                     <Popularitemcard src={items.src} alt={items.alt} price={items.price} size={items.size} brand={items.brand}/>
                 ))}
-            </div>
-            <div className={"col-start-7 col-end-8 bg-gray-200"}>
+            <div className={"col-start-6 col-end-7 bg-gray-200 inline-flex items-center place-content-center"}>
                 <div className={"text-gray-500"}>See all popular items</div>
             </div>
         </div>
