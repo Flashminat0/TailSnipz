@@ -36,7 +36,7 @@ const Suggestedsearches = () => {
     return (
         <div className={"h-screen w-screen grid place-items-center font-susty "}>
             <>
-                <div className={"text-2xl mx-60 px-1 my-6"}>Suggested searches</div>
+                <div className={"text-2xl px-1 my-6"}>Suggested searches</div>
                 <div
                     className={"overflow-x-hidden overflow-y-hidden scroll-smooth max-w-lg lg:max-w-4xl flex flex-row gap-3  "}
                     ref={ref}>
