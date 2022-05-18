@@ -25,66 +25,17 @@ const searches = [
 ];
 
 const Suggestedsearches = () => {
-    const [cards, setCards] = useState(searches);
-
-    const handleLeftClick = (isLeft) => {
-        const prevState = [...cards];
-        // find next inactive card index - top
-        const nextCardIdx = prevState
-            .filter((ft) => ft.active === true)
-            .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))[0].id;
-        // reset
-        prevState.find((f) => f.active === false).active = true;
-        // update
-        prevState.find((f) => f.id === nextCardIdx).active = false;
-        // maximize pos
-        prevState.find((f) => f.id === nextCardIdx).pos =
-            Math.max.apply(
-                null,
-                prevState.map(function (o) {
-                    return o.pos;
-                })
-            ) + 1;
-
-        // update state
-        setCards(prevState);
-    };
-
-    const handleRightClick = () => {
-        const prevState = [...cards];
-        // find next inactive card index - bottom
-        const nextCardIdx = prevState
-            .filter((ft) => ft.active === true)
-            .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))
-            .pop(1).id;
-        // minimize pos
-        prevState.find((f) => f.active === false).pos =
-            Math.min.apply(
-                null,
-                prevState.map(function (o) {
-                    return o.pos;
-                })
-            ) - 1;
-        // reset
-        prevState.find((f) => f.active === false).active = true;
-        // update
-        prevState.find((f) => f.id === nextCardIdx).active = false;
-
-        // update state
-        setCards(prevState);
-    };
-
 
     return (
         <div className={"h-screen w-screen grid place-content-center font-susty"}>
             <>
                 <div className={"text-2xl mx-60 px-1 my-6"}>Suggested searches</div>
                 <div className={"sm:overflow-scroll lg:overflow-hidden flex flex-row gap-3 mx-5 lg:mx-60 cursor-pointer"}>
-                    <div onClick={() => handleLeftClick()}
+                    <div
                          className={"absolute z-50 bg-gray-900 bg-opacity-75 rounded-lg rotate-180 cursor-pointer"}>
                         <ChevronRightIcon className={"text-white w-5 h-5"}/>
                     </div>
-                    {searches.filter((f) => f.active === true).sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0)).map((search, index) => (
+                    {searches.map((search, index) => (
                         <div key={index}
                              className={"relative -z-50 px-3 py-1.5 bg-white hover:bg-gray-50 border border-gray-100 shadow-inner-sm rounded-sm"}>
                             <div className={"flex flex-col gap-1"}>
@@ -93,7 +44,7 @@ const Suggestedsearches = () => {
                             </div>
                         </div>
                     ))}
-                    <div onClick={() => handleRightClick()}
+                    <div
                          className={"absolute z-50 bg-gray-900 bg-opacity-75 rounded-lg cursor-pointer"}>
                         <ChevronRightIcon className={"text-white w-5 h-5"}/>
                     </div>
