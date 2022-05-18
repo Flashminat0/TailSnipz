@@ -6,7 +6,7 @@ const Popularitemcard = ({src, alt, price, size, brand}) => {
     let favCount = 2;
 
     return (
-        <div className={"grid place-content-center font-susty"}>
+
             <>
                 <div className={"box-content w-56 min-h-max"}>
                     <div><img className={"h-80 object-fit"}
@@ -55,7 +55,7 @@ const Popularitemcard = ({src, alt, price, size, brand}) => {
                     </div>
                 </div>
             </>
-        </div>
+
     );
 };
 
