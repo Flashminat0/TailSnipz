@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {ChevronRightIcon} from "@heroicons/react/solid";
+import React, {useRef} from 'react';
+import {ChevronLeftIcon, ChevronRightIcon} from "@heroicons/react/solid";
 
 const searches = [
     {id: 1, pos: 1, name: "Victoria's Secret", views: "17.5K views", active: true},
@@ -21,81 +21,49 @@ const searches = [
     {id: 17, pos: 17, name: "Vintage", views: "65.2K views", active: false},
     {id: 18, pos: 18, name: "The North Face", views: "7.5K views", active: false},
     {id: 19, pos: 19, name: "Laura Ashley", views: "12.5K views", active: false},
-    {id: 20, pos: 20, name: "Louis Vuitton", views: "3.46K views", active: false}
+    {id: 20, pos: 19, name: "Laura Ashley", views: "12.5K views", active: false},
+    {id: 21, pos: 19, name: "Laura Ashley", views: "12.5K views", active: false},
+    {id: 22, pos: 20, name: "Louis Vuitton", views: "3.46K views", active: false}
 ];
 
 const Suggestedsearches = () => {
-    const [cards, setCards] = useState(searches);
+    const ref = useRef(null);
 
-    const handleLeftClick = (isLeft) => {
-        const prevState = [...cards];
-        // find next inactive card index - top
-        const nextCardIdx = prevState
-            .filter((ft) => ft.active === true)
-            .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))[0].id;
-        // reset
-        prevState.find((f) => f.active === false).active = true;
-        // update
-        prevState.find((f) => f.id === nextCardIdx).active = false;
-        // maximize pos
-        prevState.find((f) => f.id === nextCardIdx).pos =
-            Math.max.apply(
-                null,
-                prevState.map(function (o) {
-                    return o.pos;
-                })
-            ) + 1;
-
-        // update state
-        setCards(prevState);
+    const scroll = (scrollOffset) => {
+        ref.current.scrollLeft += scrollOffset;
     };
-
-    const handleRightClick = () => {
-        const prevState = [...cards];
-        // find next inactive card index - bottom
-        const nextCardIdx = prevState
-            .filter((ft) => ft.active === true)
-            .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))
-            .pop(1).id;
-        // minimize pos
-        prevState.find((f) => f.active === false).pos =
-            Math.min.apply(
-                null,
-                prevState.map(function (o) {
-                    return o.pos;
-                })
-            ) - 1;
-        // reset
-        prevState.find((f) => f.active === false).active = true;
-        // update
-        prevState.find((f) => f.id === nextCardIdx).active = false;
-
-        // update state
-        setCards(prevState);
-    };
-
 
     return (
-        <div className={"h-screen w-screen grid place-content-center font-susty"}>
+        <div className={"h-screen w-screen grid place-items-center font-susty "}>
             <>
-                <div className={"text-2xl mx-60 px-1 my-6"}>Suggested searches</div>
-                <div className={"sm:overflow-scroll lg:overflow-hidden flex flex-row gap-3 mx-5 lg:mx-60 cursor-pointer"}>
-                    <div onClick={() => handleLeftClick()}
-                         className={"absolute z-50 bg-gray-900 bg-opacity-75 rounded-lg rotate-180 cursor-pointer"}>
-                        <ChevronRightIcon className={"text-white w-5 h-5"}/>
+                <div className={"text-2xl px-1 my-6"}>Suggested searches</div>
+                <div
+                    className={"overflow-x-hidden overflow-y-hidden scroll-smooth max-w-lg lg:max-w-4xl flex flex-row gap-3  "}
+                    ref={ref}>
+                    <div className={`absolute -left-4 sm:left-2 lg:left-1/4`}>
+                        <div onClick={() => {
+                            scroll(-100)
+                        }}
+                             className={"absolute h-10 w-10 grid place-items-center left-4 top-4 bg-black bg-opacity-70 rounded-full cursor-pointer"}>
+                            <ChevronLeftIcon className={"text-white w-10 h-10"}/>
+                        </div>
                     </div>
-                    {searches.filter((f) => f.active === true).sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0)).map((search, index) => (
+                    {searches.map((search, index) => (
                         <div key={index}
-                             className={"relative -z-50 px-3 py-1.5 bg-white hover:bg-gray-50 border border-gray-100 shadow-inner-sm rounded-sm"}>
-                            <div className={"flex flex-col gap-1"}>
+                             className={"px-3 py-1.5 bg-white hover:bg-gray-50 border border-gray-200 shadow-inner-sm rounded-sm cursor-pointer"}>
+                            <div className={"flex flex-col shrink min-w-max gap-1"}>
                                 <div className={"font-medium"}>{search.name}</div>
                                 <div className={"text-sm text-gray-600 font-medium"}>{search.views}</div>
                             </div>
                         </div>
                     ))}
-                    <div onClick={() => handleRightClick()}
-                         className={"absolute z-50 bg-gray-900 bg-opacity-75 rounded-lg cursor-pointer"}>
-                        <ChevronRightIcon className={"text-white w-5 h-5"}/>
+                    <div className={`absolute -right-64 sm:right-2 lg:right-1/4`}>
+                        <div onClick={() => {
+                            scroll(100)
+                        }}
+                             className={"absolute h-10 w-10 place-items-center right-4 top-4 bg-black bg-opacity-70 rounded-full cursor-pointer"}>
+                            <ChevronRightIcon className={"text-white w-10 h-10"}/>
+                        </div>
                     </div>
                 </div>
             </>
