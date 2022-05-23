@@ -14,12 +14,12 @@ const Profilebio = () => {
     return (
         <div className={"h-screen w-screen font-susty"}>
             <div className={"hidden md:block"}>
-                <div className={"grid grid-cols-6 lg:grid-cols-5 gap-1 lg:gap-3 mt-5"}>
-                    <div className={"col-span-2 lg:col-span-1"}>
-                        <img src={'https://www.vinted.com/assets/no-photo/user-empty-state.svg'} width={"200"}
-                             height={"200"} className={"rounded-full mx-3"}/>
+                <div className={"grid grid-cols-10 lg:grid-cols-11 gap-1 lg:gap-5 my-5 items-center"}>
+                    <div className={"col-span-3 lg:col-span-2"}>
+                        <img src={'https://www.vinted.com/assets/no-photo/user-empty-state.svg'} width={"196rem"}
+                             height={"196rem"} className={"rounded-full mx-3"}/>
                     </div>
-                    <div className={"col-span-4 lg:col-span-4"}>
+                    <div className={"col-span-7 lg:col-span-9"}>
                         <div className={"grid grid-rows-2 lg:flex lg:justify-between items-center pb-5"}>
                             <div className={"flex flex-col gap-1"}>
                                 <div className={"text-2xl font-medium"}>susty94</div>
@@ -35,8 +35,8 @@ const Profilebio = () => {
                                 </motion.button>
                             </div>
                         </div>
-                        <div className={"text-gray-500 text-xs grid grid-cols-5 lg:grid-cols-5 gap-3"}>
-                            <div className={"col-span-3 lg:col-span-2 col-start-1"}>
+                        <div className={"text-gray-500 text-xs grid grid-cols-6 lg:grid-cols-7 gap-3"}>
+                            <div className={"col-span-3 lg:col-span-2"}>
                                 <div className={"my-3"}>About:</div>
                                 <div className={"flex flex-col gap-1"}>
                                     <div className={"flex flex-row gap-1"}>
@@ -57,7 +57,7 @@ const Profilebio = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className={"col-span-1 col-start-4 lg:col-span-1 lg:col-start-3"}>
+                            <div className={"col-span-3 lg:col-span-5"}>
                                 <div className={"my-3"}>Verified info:</div>
                                 <div className={"flex flex-row gap-1"}>
                                     <CheckCircleIcon className={"w-5 h-5"}/>
