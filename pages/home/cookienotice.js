@@ -29,28 +29,30 @@ const Cookienotice = () => {
                                     href={"/"}><a
                                     className={"text-susty hover:underline"}> List of partners (vendors)</a></Link> </span>
                             </div>
-                            <div className={"flex flex-col gap-3 my-4 lg:col-start-7 lg:col-end-8"}>
-                                <div className={`grid`}>
-                                    <motion.button
-                                        whileHover={{scale: 1.02}}
-                                        whileTap={{scale: 0.98}}
-                                        className={`flex justify-center px-4 py-1.5 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
-                                        Accept All
-                                    </motion.button>
+                            <AnimatePresence>
+                                <div className={"flex flex-col gap-3 my-4 lg:col-start-7 lg:col-end-8"}>
+                                    <div className={`grid`}>
+                                        <motion.button
+                                            whileHover={{scale: 1.02}}
+                                            whileTap={{scale: 0.98}}
+                                            className={`flex justify-center px-4 py-1.5 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                            Accept All
+                                        </motion.button>
+                                    </div>
+                                    <div className={`grid`}>
+                                        <motion.button
+                                            whileHover={{scale: 1.02}}
+                                            whileTap={{scale: 0.98}}
+                                            className={`flex justify-center px-4 py-1.5 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                            Reject All
+                                        </motion.button>
+                                    </div>
+                                    <div className={`grid`}>
+                                        <button className={"text-susty lg:text-sm hover:text-red-300"}>Manage cookies
+                                        </button>
+                                    </div>
                                 </div>
-                                <div className={`grid`}>
-                                    <motion.button
-                                        whileHover={{scale: 1.02}}
-                                        whileTap={{scale: 0.98}}
-                                        className={`flex justify-center px-4 py-1.5 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
-                                        Reject All
-                                    </motion.button>
-                                </div>
-                                <div className={`grid`}>
-                                    <button className={"text-susty lg:text-sm hover:text-red-300"}>Manage cookies
-                                    </button>
-                                </div>
-                            </div>
+                            </AnimatePresence>
                         </div>
                     </motion.div>
                 </AnimatePresence>
