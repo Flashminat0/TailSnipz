@@ -16,9 +16,12 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
+const NZ = <Flags.NZ title={"New Zealand"} className={"w-6 h-6"}/>;
+const AU = <Flags.AU title={"Australia"} className={"w-6 h-6"}/>;
+
 const countries = [
-    {id: 1, name: "New Zealand", flag: <Flags.NZ title={"New Zealand"} className={"w-6 h-6"}/>},
-    {id: 2, name: "Australia", flag: <Flags.AU title={"Australia"} className={"w-6 h-6"}/>},
+    {id: 1, name: "New Zealand", flag: NZ},
+    {id: 2, name: "Australia", flag: AU},
     {id: 3, name: "Select Country", flag: "Flag"}
 ];
 
