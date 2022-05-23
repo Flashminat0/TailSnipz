@@ -1,5 +1,4 @@
 import React from 'react';
-import {SupportIcon} from "@heroicons/react/solid";
 import {motion} from "framer-motion";
 import {
     PencilIcon,
@@ -30,7 +29,7 @@ const Profilebio = () => {
                                 <motion.button
                                     whileHover={{scale: 1.02}}
                                     whileTap={{scale: 0.98}}
-                                    className={`inline-flex items-center px-4 py-1.5 mr-5 border border-red-300 shadow-sm text-sm font-medium rounded-md text-susty bg-red-100 hover:bg-susty hover:text-white hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                    className={`inline-flex items-center px-4 py-1.5 mr-16 border border-red-300 shadow-sm text-sm font-medium rounded-md text-susty bg-red-100 hover:bg-susty hover:text-white hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                                     <PencilIcon className={`h-5 w-5 mr-2`}/>
                                     Edit profile
                                 </motion.button>
