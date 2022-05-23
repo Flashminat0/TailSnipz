@@ -293,10 +293,9 @@ const Header = () => {
           </div>
           {/* mail */}
           <div class=" col-span-1 border ">
-            <div className="">
               <Menu as="div" className="relative inline-block text-left">
                 <div>
-                  <Menu.Button className="inline-flex justify-center w-full px-4 py-2 bg-white text-md font-medium text-gray-700">
+                  <Menu.Button className=" justify-center w-full pl-4 py-2 bg-white text-md font-medium text-gray-700">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6"
@@ -359,14 +358,12 @@ const Header = () => {
                   </Menu.Items>
                 </Transition>
               </Menu>
-            </div>
           </div>
           {/* notification */}
           <div class=" col-span-1 border ">
-            {" "}
-            <Menu as="div" className="relative inline-block text-left ">
+            <Menu as="div" className="relative inline-block  ">
               <div>
-                <Menu.Button className="inline-flex justify-center w-full   px-4 py-2 bg-white text-sm font-medium text-gray-700   focus:ring-indigo-500">
+                <Menu.Button className="inline-flex justify-center w-full py-2 bg-white text-sm font-medium text-gray-700   focus:ring-indigo-500">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6 ml-3 mr-2 hover:text-red-400 focus:text-red-400 cursor-pointer"
