@@ -1,7 +1,7 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import {ChevronLeftIcon, ChevronRightIcon} from "@heroicons/react/solid";
 
-const searches = [
+const searchesStaticData = [
     {id: 1, pos: 1, name: "Victoria's Secret", views: "17.5K views", active: true},
     {id: 2, pos: 2, name: "Michael Kors", views: "10.7K views", active: true},
     {id: 3, pos: 3, name: "Vans", views: "6.78K views", active: true},
@@ -27,6 +27,8 @@ const searches = [
 ];
 
 const Suggestedsearches = () => {
+    const [searches, setSearches] = useState(searchesStaticData);
+
     const ref = useRef(null);
 
     const scroll = (scrollOffset) => {
@@ -34,35 +36,37 @@ const Suggestedsearches = () => {
     };
 
     return (
-        <div className={"h-screen w-screen grid place-items-center font-susty "}>
+        <div className={"h-screen w-screen font-susty "}>
             <>
-                <div className={"text-2xl px-1 my-6"}>Suggested searches</div>
-                <div
-                    className={"overflow-x-hidden overflow-y-hidden scroll-smooth max-w-lg lg:max-w-4xl flex flex-row gap-3  "}
-                    ref={ref}>
-                    <div className={`absolute -left-4 sm:left-2 lg:left-1/4`}>
-                        <div onClick={() => {
-                            scroll(-100)
-                        }}
-                             className={"absolute h-10 w-10 grid place-items-center left-4 top-4 bg-black bg-opacity-70 rounded-full cursor-pointer"}>
-                            <ChevronLeftIcon className={"text-white w-10 h-10"}/>
-                        </div>
-                    </div>
-                    {searches.map((search, index) => (
-                        <div key={index}
-                             className={"px-3 py-1.5 bg-white hover:bg-gray-50 border border-gray-200 shadow-inner-sm rounded-sm cursor-pointer"}>
-                            <div className={"flex flex-col shrink min-w-max gap-1"}>
-                                <div className={"font-medium"}>{search.name}</div>
-                                <div className={"text-sm text-gray-600 font-medium"}>{search.views}</div>
+                <div className={"flex flex-col gap-1 px-5 lg:px-16"}>
+                    <div className={"text-2xl px-1 py-5"}>Suggested searches</div>
+                    <div
+                        className={"overflow-x-hidden overflow-y-hidden scroll-smooth max-w-[36rem] sm:max-w-[42rem] lg:max-w-[80rem] flex flex-row gap-3  "}
+                        ref={ref}>
+                        <div className={`absolute -left-[0.5rem] lg:left-[1rem]`}>
+                            <div onClick={() => {
+                                scroll(-100)
+                            }}
+                                 className={"absolute h-8 w-8 grid place-items-center left-[1.75rem] top-[0.5rem] bg-black bg-opacity-70 rounded-full cursor-pointer"}>
+                                <ChevronLeftIcon className={"text-white w-8 h-8"}/>
                             </div>
                         </div>
-                    ))}
-                    <div className={`absolute -right-64 sm:right-2 lg:right-1/4`}>
-                        <div onClick={() => {
-                            scroll(100)
-                        }}
-                             className={"absolute h-10 w-10 place-items-center right-4 top-4 bg-black bg-opacity-70 rounded-full cursor-pointer"}>
-                            <ChevronRightIcon className={"text-white w-10 h-10"}/>
+                        {searches.map((search) => (
+                            <div key={search.id}
+                                 className={"px-3 py-1.5 bg-white hover:bg-gray-50 border border-gray-200 shadow-inner-sm rounded-sm cursor-pointer"}>
+                                <div className={"flex flex-col shrink min-w-max gap-1"}>
+                                    <div className={"text-sm font-medium"}>{search.name}</div>
+                                    <div className={"text-xs text-gray-600 font-medium"}>{search.views}</div>
+                                </div>
+                            </div>
+                        ))}
+                        <div className={`absolute -right-[0.5rem] lg:right-[1rem]`}>
+                            <div onClick={() => {
+                                scroll(100)
+                            }}
+                                 className={"absolute h-8 w-8 place-items-center right-[1.75rem] top-[0.5rem] bg-black bg-opacity-70 rounded-full cursor-pointer"}>
+                                <ChevronRightIcon className={"text-white w-8 h-8"}/>
+                            </div>
                         </div>
                     </div>
                 </div>
