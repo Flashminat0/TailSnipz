@@ -67,7 +67,7 @@ const Messageoverview = () => {
                             </div>
                         ))}
                         {senderMessage.map((send) => (
-                            <div
+                            <div key={send.id}
                                 className={"bg-gray-100 px-5 py-3 text-sm rounded-lg shadow-sm ml-auto mr-4 leading-relaxed"}>{send.chat}</div>
                         ))}
                         <div
