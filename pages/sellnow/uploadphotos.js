@@ -7,12 +7,11 @@ import {ArrowUpIcon, SupportIcon} from "@heroicons/react/solid";
 const Uploadphotos = () => {
 
     const [photosArray, setPhotosArray] = useState([]);
-
     const [openTipsModal, setOpenTipsModal] = useState(false);
 
 
     return (
-        <div className={`h-screen w-screen grid place-content-center font-susty`}>
+        <div>
             <>
                 <div className={`bg-gray-50 w-54 px-5 pb-2 shadow rounded-sm`}>
                     <div className={`grid grid-cols-5 grid-rows-6 pb-2`}>
@@ -29,12 +28,20 @@ const Uploadphotos = () => {
                         <div
                             className={`col-span-5 border border-4 border-dashed w-full h-full grid place-items-center row-span-5 grid grid-cols-5 place-items-center`}>
                             <div className={`col-start-3`}>
+                                
                                 <motion.button
                                     whileHover={{scale: 1.02}}
                                     whileTap={{scale: 0.98}}
                                     className={`inline-flex items-center px-5 py-2 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50 my-32`}>
                                     <PlusIcon className={`h-4 w-4 `} aria-hidden={true}/>&nbsp;Add Photos
                                 </motion.button>
+                                <input id="file-upload"
+                                    name="file-upload"
+                                    type="file"
+                                    accept="image/*"
+                                    // onChange={uploadFile}
+                                    className="sr-only"/>
+                                
                             </div>
 
                         </div>
