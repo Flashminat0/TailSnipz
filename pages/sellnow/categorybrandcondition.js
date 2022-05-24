@@ -65,7 +65,7 @@ const Categorybrandcondition = ({categoryOne, categoryTwo, categoryThree, setCat
                                                     className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
                                                     {categoryFirst.map((catOne) => (
                                                         <div>
-                                                            <div className={``}>
+                                                            <div>
                                                                 <Listbox.Option
                                                                     key={catOne}
                                                                     className={({active}) =>
@@ -140,7 +140,7 @@ const Categorybrandcondition = ({categoryOne, categoryTwo, categoryThree, setCat
                                                     className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
                                                     {categorySecond.map((catTwo) => (
                                                         <div>
-                                                            <div className={``}>
+                                                            <div>
                                                                 <Listbox.Option
                                                                     key={catTwo}
                                                                     className={({active}) =>
@@ -213,7 +213,7 @@ const Categorybrandcondition = ({categoryOne, categoryTwo, categoryThree, setCat
                                                     className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
                                                     {categoryThird.map((catThree) => (
                                                         <div>
-                                                            <div className={``}>
+                                                            <div>
                                                                 <Listbox.Option
                                                                     key={catThree}
                                                                     className={({active}) =>
@@ -305,7 +305,7 @@ const Categorybrandcondition = ({categoryOne, categoryTwo, categoryThree, setCat
                                                     className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
                                                     {people.map((person) => (
                                                         <div>
-                                                            <div className={``}>
+                                                            <div>
                                                                 <Listbox.Option
                                                                     key={person.username}
                                                                     className={({active}) =>
