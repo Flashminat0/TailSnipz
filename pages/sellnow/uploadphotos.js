@@ -23,9 +23,14 @@ const Uploadphotos = () => {
 
     const [photosArray, setPhotosArray] = useState([]);
     const [openTipsModal, setOpenTipsModal] = useState(false);
+    const [preview, setPreview] = useState()
 
     const uploadFile = (e) => {
         const file = e.target.files[0];
+
+        const objectURL = URL.createObjectURL(file);
+        setPreview(objectURL);
+
         const storageRef = getStorage(firebaseApp);
         const fileRef = ref(storageRef, `images/${Date.now()}-${file.name}`);
 
@@ -109,6 +114,9 @@ const Uploadphotos = () => {
                                 </label>
                             </div>
                         </div>
+
+                        <img src={preview} />
+
                     </div>
                 </div>
             </>
