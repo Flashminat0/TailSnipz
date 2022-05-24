@@ -3,6 +3,7 @@ import {AnimatePresence, motion} from "framer-motion";
 import {PlusIcon} from '@heroicons/react/outline';
 import {Dialog} from "@headlessui/react";
 import {ArrowUpIcon, SupportIcon} from "@heroicons/react/solid";
+import {toast} from "react-toastify";
 
 import { initializeApp } from "firebase/app";
 import {getStorage, ref, uploadBytes, getDownloadURL} from "firebase/storage";
@@ -48,6 +49,7 @@ const Uploadphotos = () => {
                         url: url
                     }]
                 })
+                console.log("image uploaded")
             }).catch((error) => {
                 toast.error('Image upload Failed!', {
                     position: "top-right",

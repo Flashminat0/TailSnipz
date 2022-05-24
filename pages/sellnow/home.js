@@ -61,29 +61,30 @@ function home() {
   return (
     <div className={`w-screen grid place-content-center font-susty p-4`}>
         <>
-        <div className='max-w-4xl pb-4'>
-            <Uploadphotos />
-        </div>
-        <div className='max-w-4xl pb-4'>
-            <Titleanddescription title = {title} setTitle = {setTitle} description = {description} setDescription = {setDescription} />
-        </div>
-        <div className='max-w-4xl pb-4'>
-            <Categorybrandcondition categoryOne= {categoryOne} setCategoryOne= {setCategoryOne} categoryTwo = {categoryTwo} setCategoryTwo = {setCategoryTwo} categoryThree = {categoryThree} setCategoryThree= {setCategoryThree} selected = {selected} setSelected = {setSelected} brand = {brand} setBrand = {setBrand} />
-        </div>
-        <div className='max-w-4xl pb-4'>
-            <Priceandswapping price = {price} setPrice = {setPrice} setCurrency = {setCurrency} setSwapping = {setSwapping} currency = {currency} swapping = {swapping} />
-        </div>
-       
-       
-        <div className='grid place-content-center'>
-            <motion.button
-                onClick={() => onSubmitClick()}
-                whileHover={{scale: 1.02}}
-                whileTap={{scale: 0.98}}
-                className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
-                Submit
-            </motion.button>
-        </div>
+            <span className='font-semibold text-3xl py-4'>Sell an item</span>
+            <div className='max-w-4xl pb-4'>
+                <Uploadphotos />
+            </div>
+            <div className='max-w-4xl pb-4'>
+                <Titleanddescription title = {title} setTitle = {setTitle} description = {description} setDescription = {setDescription} />
+            </div>
+            <div className='max-w-4xl pb-4'>
+                <Categorybrandcondition categoryOne= {categoryOne} setCategoryOne= {setCategoryOne} categoryTwo = {categoryTwo} setCategoryTwo = {setCategoryTwo} categoryThree = {categoryThree} setCategoryThree= {setCategoryThree} selected = {selected} setSelected = {setSelected} brand = {brand} setBrand = {setBrand} />
+            </div>
+            <div className='max-w-4xl pb-4'>
+                <Priceandswapping price = {price} setPrice = {setPrice} setCurrency = {setCurrency} setSwapping = {setSwapping} currency = {currency} swapping = {swapping} />
+            </div>
+        
+        
+            <div className='grid place-content-center'>
+                <motion.button
+                    onClick={() => onSubmitClick()}
+                    whileHover={{scale: 1.02}}
+                    whileTap={{scale: 0.98}}
+                    className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                    Submit
+                </motion.button>
+            </div>
         </>
     </div>
 
