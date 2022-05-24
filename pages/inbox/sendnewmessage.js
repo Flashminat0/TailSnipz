@@ -1,5 +1,5 @@
-import React, {Fragment, useState} from 'react';
-import {Combobox, Transition} from '@headlessui/react'
+import React, {useState} from 'react';
+import {Combobox} from '@headlessui/react'
 import {ArrowRightIcon, CameraIcon, CheckIcon, ChevronUpIcon} from "@heroicons/react/outline";
 import {useClickOutside} from '@mantine/hooks';
 import {AnimatePresence, motion} from "framer-motion";
