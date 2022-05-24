@@ -34,8 +34,7 @@ const productdetails = () => {
             {/* End Product Image set */}
             {/* Navigation and report  */}
             <div className="">
-              <p className="font-susty py-5 pl-2 font-sm">
-                {" "}
+              <p className="py-5 pl-2 font-xs">
                 Home / Women / Clothes / Jumpers & sweaters / Hoodies &
                 sweatshirts / Bebe Hoodies & sweatshirts
               </p>
@@ -85,7 +84,7 @@ const productdetails = () => {
           {/* right side details */}
           <div class="border ">
             {/* Side profile details */}
-            <div class="p-4 w-80 bg-white shadow-md sm:p-6 lg:p-8 bg-white dark:border-gray-700">
+            <div class="p-4  bg-white shadow-md sm:p-6 lg:p-8 bg-white dark:border-gray-700">
               <div class="space-y-3 " action="#">
                 <h5 class="text-3xl font-medium text-gray-900 dark:text-gray-700">
                   $88.00
@@ -170,7 +169,7 @@ const productdetails = () => {
 
             {/*Profile card */}
 
-            <div class="mt-8 grid grid-cols-1 divide-y divide-gray-900 flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row w-80">
+            <div class="mt-8 grid grid-cols-1 divide-y divide-gray-900 flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row ">
               <div>
                 <a
                   href="#"
