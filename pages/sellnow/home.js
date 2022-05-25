@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import Categorybrandcondition from './categorybrandcondition'
-import Priceandswapping from './priceandswapping'
-import Titleanddescription from './titleanddescription'
-import Uploadphotos from './uploadphotos'
+import Categorybrandcondition from '../../components/sellnow/categorybrandcondition'
+import Priceandswapping from '../../components/sellnow/priceandswapping'
+import Titleanddescription from '../../components/sellnow/titleanddescription'
+import Uploadphotos from '../../components/sellnow/uploadphotos'
 import {motion} from "framer-motion";
 import {ArrowUpIcon} from '@heroicons/react/solid'
 
@@ -69,7 +69,7 @@ function home() {
                 <Titleanddescription title = {title} setTitle = {setTitle} description = {description} setDescription = {setDescription} />
             </div>
             <div className='max-w-4xl pb-4'>
-                <Categorybrandcondition categoryOne= {categoryOne} setCategoryOne= {setCategoryOne} categoryTwo = {categoryTwo} setCategoryTwo = {setCategoryTwo} categoryThree = {categoryThree} setCategoryThree= {setCategoryThree} selected = {selected} setSelected = {setSelected} brand = {brand} setBrand = {setBrand} />
+                <Categorybrandcondition categoryOne= {categoryOne} setCategoryOne= {setCategoryOne} categoryTwo = {categoryTwo} setCategoryTwo = {setCategoryTwo} categoryThree = {categoryThree} setCategoryThree= {setCategoryThree} selected = {selected} setSelected = {setSelected} brand = {brand} setBrand = {setBrand}/>
             </div>
             <div className='max-w-4xl pb-4'>
                 <Priceandswapping price = {price} setPrice = {setPrice} setCurrency = {setCurrency} setSwapping = {setSwapping} currency = {currency} swapping = {swapping} />
