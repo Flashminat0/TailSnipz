@@ -119,7 +119,11 @@ const Header = () => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="origin-top absolute w-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
+        <Menu.Items
+          className=" origin-top absolute w-auto h-[120] 
+                      rounded shadow-lg bg-white ring-1 ring-black 
+                      ring-opacity-5 divide-y divide-red-400 focus:outline-none"
+        >
           <div className="py-1 flex">{props.children}</div>
         </Menu.Items>
       </Transition>
@@ -146,7 +150,7 @@ const Header = () => {
             }}
             className={classNames(
               active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-              "grid grid-cols-8 block px-4 py-2 text-xs"
+              "grid grid-cols-8 block px-4 py-6 text-sm"
             )}
           >
             <div className="col-span-7">{item.name}</div>
@@ -189,23 +193,23 @@ const Header = () => {
   const [selected, setSelected] = useState(people[3]);
 
   return (
-    <div className={"px-40"}>
+    <div className={"px-60"}>
       <>
-        <div class="grid grid-flow-col gap-1 ">
+        <div class="grid grid-flow-col mt-2">
           {/* Logo */}
-          <div class=" col-span-1 border  items-center">
+          <div class=" col-span-1 border items-center">
             <div className=" pl-8">
               <Image src="/Susty.png" width={85} height={44} />
             </div>
           </div>
           {/* Search */}
-          <div class=" col-span-12 border ">
-            <div className=" pr-8 relative rounded-md shadow-sm border-4 border-susty  w-full">
+          <div class=" col-span-8 border">
+            <div className=" pr-8 relative rounded shadow-sm   w-full">
               <input
                 type="text"
-                className=" focus:ring-indigo-500 bg-gray-100 
-                                focus:border-indigo-500 block w-full pl-36 
-                                pr-40 ml-4  sm:text-sm border-gray-300 rounded-md"
+                className=" bg-gray-100 
+                            block w-full pl-36 
+                            pr-40 ml-4  sm:text-sm border-gray-100 rounded"
                 placeholder="Search for items"
               />
               <div className="absolute inset-y-0 left-0 pl-1 flex items-center">
@@ -213,7 +217,7 @@ const Header = () => {
                   {({ open }) => (
                     <>
                       <div className="ml-3 relative">
-                        <Listbox.Button className="relative w-full bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        <Listbox.Button className="relative w-full bg-gray-100   border-r-2 border-gray-300  shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                           <span className="flex items-center">
                             <span className="ml-3 block truncate">
                               {selected.name}
@@ -234,7 +238,12 @@ const Header = () => {
                           leaveFrom="opacity-100"
                           leaveTo="opacity-0"
                         >
-                          <Listbox.Options className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
+                          <Listbox.Options
+                            className="  absolute z-10 mt-1 w-full bg-white shadow-lg max-h-56 
+                                                        rounded-md py-1 text-base ring-1 ring-black 
+                                                        ring-opacity-5 overflow-auto 
+                                                        focus:outline-none sm:text-sm"
+                          >
                             {people.map((person) => (
                               <Listbox.Option
                                 key={person.id}
@@ -292,78 +301,32 @@ const Header = () => {
             </div>
           </div>
           {/* mail */}
-          <div class=" col-span-1 border ">
-              <Menu as="div" className="relative inline-block text-left">
-                <div>
-                  <Menu.Button className=" justify-center w-full pl-4 py-2 bg-white text-md font-medium text-gray-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
-                  </Menu.Button>
-                </div>
-                <Transition
-                  as={Fragment}
-                  enter="transition ease-out duration-100"
-                  enterFrom="transform opacity-0 scale-95"
-                  enterTo="transform opacity-100 scale-100"
-                  leave="transition ease-in duration-75"
-                  leaveFrom="transform opacity-100 scale-100"
-                  leaveTo="transform opacity-0 scale-95"
-                >
-                  <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                    <div className="">
-                      <Menu.Item>
-                        <button
-                          className={
-                            "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                          }
-                        >
-                          English
-                        </button>
-                      </Menu.Item>
-                    </div>
-                    <div className="">
-                      <Menu.Item>
-                        <button
-                          className={
-                            "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                          }
-                        >
-                          Duplicate
-                        </button>
-                      </Menu.Item>
-                    </div>
-                    <div className="">
-                      <Menu.Item>
-                        <button
-                          className={
-                            "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                          }
-                        >
-                          Duplicate
-                        </button>
-                      </Menu.Item>
-                    </div>
-                  </Menu.Items>
-                </Transition>
-              </Menu>
+          <div class="col-span-1 border inline-flex justify-center w-10">
+            <button
+              type="button"
+              class="inline-flex w-full justify-center mt-4  font-sm rounded text-sm px-1  mb-4 "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+            </button>
           </div>
           {/* notification */}
-          <div class=" col-span-1 border ">
-            <Menu as="div" className="relative inline-block  ">
+          <div class="col-span-1 border flex items-center inline-flex w-full justify-center w-10">
+            <Menu as="div" className="inline-flex w-full justify-center ">
               <div>
-                <Menu.Button className="inline-flex justify-center w-full py-2 bg-white text-sm font-medium text-gray-700   focus:ring-indigo-500">
+                <Menu.Button className="">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6 ml-3 mr-2 hover:text-red-400 focus:text-red-400 cursor-pointer"
@@ -390,7 +353,7 @@ const Header = () => {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
               >
-                <Menu.Items className="origin-top absolute  mt-1 w-96 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <Menu.Items className="origin-top absolute z-10 mt-8 w-96 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <div className="py-1">
                     <Menu.Item>
                       <button
@@ -494,83 +457,36 @@ const Header = () => {
               </Transition>
             </Menu>
           </div>
-
           {/*Favotite*/}
-          <div class=" col-span-1 ... border ">
-            <div className="">
-              <Menu as="div" className="relative inline-block text-left">
-                <div>
-                  <Menu.Button className="inline-flex justify-center w-full px-4 py-2 bg-white text-md font-medium text-gray-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                      />
-                    </svg>
-                  </Menu.Button>
-                </div>
-                <Transition
-                  as={Fragment}
-                  enter="transition ease-out duration-100"
-                  enterFrom="transform opacity-0 scale-95"
-                  enterTo="transform opacity-100 scale-100"
-                  leave="transition ease-in duration-75"
-                  leaveFrom="transform opacity-100 scale-100"
-                  leaveTo="transform opacity-0 scale-95"
-                >
-                  <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                    <div className="">
-                      <Menu.Item>
-                        <button
-                          className={
-                            "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                          }
-                        >
-                          English
-                        </button>
-                      </Menu.Item>
-                    </div>
-                    <div className="">
-                      <Menu.Item>
-                        <button
-                          className={
-                            "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                          }
-                        >
-                          Duplicate
-                        </button>
-                      </Menu.Item>
-                    </div>
-                    <div className="">
-                      <Menu.Item>
-                        <button
-                          className={
-                            "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                          }
-                        >
-                          Duplicate
-                        </button>
-                      </Menu.Item>
-                    </div>
-                  </Menu.Items>
-                </Transition>
-              </Menu>
-            </div>
+          <div class="col-span-1 border inline-flex justify-center w-10">
+            <button
+              type="button"
+              class="inline-flex w-full justify-center mt-4  font-sm rounded text-sm px-1  mb-4 "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                />
+              </svg>
+            </button>
           </div>
           {/* Profile */}
-          <div class=" col-span-1 border">
-            {" "}
-            <Menu as="div" className="relative inline-block text-left">
+          <div class="col-span-1 border items-center pt-2 w-12">
+            <Menu
+              as="div"
+              className="inline-flex w-full justify-center relative inline-block text-left"
+            >
               <div>
-                <Menu.Button className="inline-flex justify-center w-full px-1 py-1 bg-white text-sm font-medium text-gray-400 focus:ring-indigo-500">
+                <Menu.Button className="text-sm  text-gray-400">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-10 w-10 mr-2 hover:text-red-400 focus:text-red-400 cursor-pointer"
@@ -594,7 +510,7 @@ const Header = () => {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
               >
-                <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <Menu.Items className="absolute right-0 mt-12 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <div className="">
                     <Menu.Item>
                       <button
@@ -602,7 +518,7 @@ const Header = () => {
                           "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
                         }
                       >
-                        English
+                        Account
                       </button>
                     </Menu.Item>
                   </div>
@@ -633,22 +549,20 @@ const Header = () => {
             </Menu>
           </div>
           {/* Sell now */}
-          <div class=" col-span-1 ... border">
-            {" "}
+          <div class="col-span-1 border inline-flex  justify-center w-16">
             <button
               type="button"
-              class="text-white bg-susty  mt-1  font-md rounded-lg text-sm px-2 py-1 mr-2 mb-2"
+              class="text-white bg-susty  mt-2  font-sm rounded text-sm px-1  mb-4 "
             >
               Sell now
             </button>
           </div>
           {/* Question mark */}
-          <div class=" col-span-1 border">
-            {" "}
+          <div class="col-span-1 border items-center inline-flex w-full justify-center w-10">
             <div className="">
-              <Menu as="div" className="relative inline-block text-left">
+              <Menu as="div" className="relative">
                 <div>
-                  <Menu.Button className="inline-flex justify-center w-full px-4 py-2 bg-white text-md font-medium text-gray-700">
+                  <Menu.Button className="  bg-white text-md font-medium text-gray-700">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6"
@@ -714,12 +628,11 @@ const Header = () => {
             </div>
           </div>
           {/* Language */}
-          <div class=" col-span-1 border ">
-            {" "}
+          <div class="col-span-1 border items-center inline-flex w-full justify-center w-12">
             <div className="">
-              <Menu as="div" className="relative inline-block text-left">
+              <Menu as="div" className="relative">
                 <div>
-                  <Menu.Button className="inline-flex justify-center w-full px-4 py-2 bg-white text-md font-medium text-gray-700">
+                  <Menu.Button className="inline-flex justify-center bg-white text-md font-medium text-gray-700">
                     EN
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -744,7 +657,7 @@ const Header = () => {
                   leaveFrom="transform opacity-100 scale-100"
                   leaveTo="transform opacity-0 scale-95"
                 >
-                  <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <div className="">
                       <Menu.Item>
                         <button
@@ -784,7 +697,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-
+        {/* Dropdown */}
         <div className="max-w-full mx-auto px-2 sm:px-6 lg:px-8 ">
           <row
             className="bg-white w-full ml-2 pl-6 "
@@ -858,6 +771,7 @@ const Header = () => {
             </div>
           </row>
         </div>
+        {/* Dropdown */}
       </>
     </div>
   );

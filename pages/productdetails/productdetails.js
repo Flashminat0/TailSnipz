@@ -2,7 +2,7 @@ import React from "react";
 
 const productdetails = () => {
   return (
-    <div className={"px-40"}>
+    <div className={"px-60"}>
       <>
         <div class="grid grid-cols-5 gap-4">
           {/* left side details */}
