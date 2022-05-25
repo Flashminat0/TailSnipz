@@ -3,16 +3,74 @@ import {AnimatePresence, motion} from "framer-motion";
 import {PlusIcon} from '@heroicons/react/outline';
 import {Dialog} from "@headlessui/react";
 import {ArrowUpIcon, SupportIcon} from "@heroicons/react/solid";
+import {toast} from "react-toastify";
+
+import { initializeApp } from "firebase/app";
+import {getStorage, ref, uploadBytes, getDownloadURL} from "firebase/storage";
+
+const firebaseApp = initializeApp({
+    apiKey: "AIzaSyAvff4f3luKvQrV8k6KtblTAKX9XtEWSww",
+    authDomain: "susty-49f6c.firebaseapp.com",
+    projectId: "susty-49f6c",
+    storageBucket: "susty-49f6c.appspot.com",
+    messagingSenderId: "882000885893",
+    appId: "1:882000885893:web:4223020107f86e0e7dd1ec",
+    measurementId: "G-DY8CNFWR9S"
+});
+
 
 const Uploadphotos = () => {
 
     const [photosArray, setPhotosArray] = useState([]);
-
     const [openTipsModal, setOpenTipsModal] = useState(false);
+    const [preview, setPreview] = useState()
 
+    const uploadFile = (e) => {
+        const file = e.target.files[0];
+
+        const objectURL = URL.createObjectURL(file);
+        setPreview(objectURL);
+
+        const storageRef = getStorage(firebaseApp);
+        const fileRef = ref(storageRef, `images/${Date.now()}-${file.name}`);
+
+        uploadBytes(fileRef, file).then((snapshot) => {
+            getDownloadURL(snapshot.ref).then((url) => {
+                toast.success('Image upload Success!', {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: true,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined
+                });
+
+                return url;
+            }).then((url) => {
+                setImageList((prev) => {
+                    return [...prev, {
+                        name: file.name,
+                        url: url
+                    }]
+                })
+                console.log("image uploaded")
+            }).catch((error) => {
+                toast.error('Image upload Failed!', {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: true,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined
+                });
+            })
+        })
+    }
 
     return (
-        <div className={`h-screen w-screen grid place-content-center font-susty`}>
+        <div>
             <>
                 <div className={`bg-gray-50 w-54 px-5 pb-2 shadow rounded-sm`}>
                     <div className={`grid grid-cols-5 grid-rows-6 pb-2`}>
@@ -29,15 +87,36 @@ const Uploadphotos = () => {
                         <div
                             className={`col-span-5 border border-4 border-dashed w-full h-full grid place-items-center row-span-5 grid grid-cols-5 place-items-center`}>
                             <div className={`col-start-3`}>
-                                <motion.button
+                                
+                                {/* <motion.button
                                     whileHover={{scale: 1.02}}
                                     whileTap={{scale: 0.98}}
                                     className={`inline-flex items-center px-5 py-2 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50 my-32`}>
                                     <PlusIcon className={`h-4 w-4 `} aria-hidden={true}/>&nbsp;Add Photos
-                                </motion.button>
+                                </motion.button> */}
+                                <label
+                                    htmlFor="file-upload"
+                                    className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none "
+                                >
+                                    <span 
+                                        className='inline-flex items-center px-5 py-2 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50 my-32 transition-all ease-in-out' 
+                                    >
+                                        <PlusIcon className={`h-4 w-4 `} aria-hidden={true}/>&nbsp;Add Photos
+                                    </span>
+                                
+                                    <input id="file-upload"
+                                        name="file-upload"
+                                        type="file"
+                                        accept="image/*"
+                                        onChange={uploadFile}
+                                        className="sr-only"
+                                        />
+                                </label>
                             </div>
-
                         </div>
+
+                        <img src={preview} />
+
                     </div>
                 </div>
             </>
