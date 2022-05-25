@@ -24,7 +24,7 @@ const Tablelayout = ({children}) => {
                                         <nav className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px"
                                              aria-label="Pagination">
                                             <a
-                                                href="#"
+                                                href="components/layouts/tablelayout#"
                                                 className="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
                                             >
                                                 <span className="sr-only">Previous</span>
@@ -32,20 +32,20 @@ const Tablelayout = ({children}) => {
                                             </a>
                                             {/* Current: "z-10 bg-red-50 border-red-500 text-red-600", Default: "bg-white border-gray-300 text-gray-500 hover:bg-gray-50" */}
                                             <a
-                                                href="#"
+                                                href="components/layouts/tablelayout#"
                                                 aria-current="page"
                                                 className="z-10 bg-red-50 border-red-400 text-red-500 relative inline-flex items-center px-4 py-2 border text-sm font-medium"
                                             >
                                                 1
                                             </a>
                                             <a
-                                                href="#"
+                                                href="components/layouts/tablelayout#"
                                                 className="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium"
                                             >
                                                 2
                                             </a>
                                             <a
-                                                href="#"
+                                                href="components/layouts/tablelayout#"
                                                 className="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 hidden md:inline-flex relative items-center px-4 py-2 border text-sm font-medium"
                                             >
                                                 3
@@ -55,25 +55,25 @@ const Tablelayout = ({children}) => {
                                         ...
                                         </span>
                                             <a
-                                                href="#"
+                                                href="components/layouts/tablelayout#"
                                                 className="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 hidden md:inline-flex relative items-center px-4 py-2 border text-sm font-medium"
                                             >
                                                 8
                                             </a>
                                             <a
-                                                href="#"
+                                                href="components/layouts/tablelayout#"
                                                 className="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium"
                                             >
                                                 9
                                             </a>
                                             <a
-                                                href="#"
+                                                href="components/layouts/tablelayout#"
                                                 className="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium"
                                             >
                                                 10
                                             </a>
                                             <a
-                                                href="#"
+                                                href="components/layouts/tablelayout#"
                                                 className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
                                             >
                                                 <span className="sr-only">Next</span>
