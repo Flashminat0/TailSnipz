@@ -301,7 +301,7 @@ const Header = () => {
             </div>
           </div>
           {/* mail */}
-          <div class="col-span-1 border inline-flex justify-center w-10">
+          <div class="col-span-1 border inline-flex justify-center ">
             <button
               type="button"
               class="inline-flex w-full justify-center mt-4  font-sm rounded text-sm px-1  mb-4 "
@@ -323,7 +323,7 @@ const Header = () => {
             </button>
           </div>
           {/* notification */}
-          <div class="col-span-1 border flex items-center inline-flex w-full justify-center w-10">
+          <div class="col-span-1 border flex items-center inline-flex w-full justify-center ">
             <Menu as="div" className="inline-flex w-full justify-center ">
               <div>
                 <Menu.Button className="">
@@ -458,7 +458,7 @@ const Header = () => {
             </Menu>
           </div>
           {/*Favotite*/}
-          <div class="col-span-1 border inline-flex justify-center w-10">
+          <div class="col-span-1 border inline-flex justify-center ">
             <button
               type="button"
               class="inline-flex w-full justify-center mt-4  font-sm rounded text-sm px-1  mb-4 "
@@ -480,7 +480,7 @@ const Header = () => {
             </button>
           </div>
           {/* Profile */}
-          <div class="col-span-1 border items-center pt-2 w-12">
+          <div class="col-span-1 border items-center pt-2 ">
             <Menu
               as="div"
               className="inline-flex w-full justify-center relative inline-block text-left"
@@ -549,7 +549,7 @@ const Header = () => {
             </Menu>
           </div>
           {/* Sell now */}
-          <div class="col-span-1 border inline-flex  justify-center w-16">
+          <div class="col-span-1 border inline-flex  justify-center ">
             <button
               type="button"
               class="text-white bg-susty  mt-2  font-sm rounded text-sm px-1  mb-4 "
@@ -558,7 +558,7 @@ const Header = () => {
             </button>
           </div>
           {/* Question mark */}
-          <div class="col-span-1 border items-center inline-flex w-full justify-center w-10">
+          <div class="col-span-1 border items-center inline-flex w-full justify-center ">
             <div className="">
               <Menu as="div" className="relative">
                 <div>
@@ -628,7 +628,7 @@ const Header = () => {
             </div>
           </div>
           {/* Language */}
-          <div class="col-span-1 border items-center inline-flex w-full justify-center w-12">
+          <div class="col-span-1 border items-center inline-flex w-full justify-center">
             <div className="">
               <Menu as="div" className="relative">
                 <div>

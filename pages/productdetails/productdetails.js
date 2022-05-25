@@ -1,6 +1,19 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+
+
+
 
 const productdetails = () => {
+
+  const [product, setProduct] = useState({
+    id: "",
+    brand: "",
+    condition: "",
+    colour: "",
+    location: "",
+    views: ""
+  });
+
   return (
     <div className={"px-60"}>
       <>
@@ -120,76 +133,100 @@ const productdetails = () => {
                 <h5 class="text-3xl font-medium text-gray-900 dark:text-gray-700">
                   $88.00
                 </h5>
-                <p class="text-sm font-medium text-gray-900 dark:text-gray-700">
-                  Swaps considered
-                </p>
-                <hr class="border-b-1 border-gray-400 my-1 mx-3" />
-                <div>
-                  <div class="grid grid-cols-2 gap-4">
-                    <div class="...">Brand</div>
-                    <div class="">NIKE</div>
+                <div className="grid grid-cols-5">
+                  <div className="pt-10">
+                    <div className="bg-green-300 rounded-full h-8 w-8 pl-1.5 pt-1.5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5 text-green-600"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="col-span-4">
+                    <p className="text-sm">
+                      Our Buyer Protection is added for a fee to every purchase
+                      made using the “Buy now” button. Buyer Protection includes
+                      our Refund Policy.
+                    </p>
+                  </div>
+                </div>
+                <hr class="border-b-1 border-gray-400 my-1 mx-full" />
+                <p className="text-sm">Buyer Protection fee $0.70 + 5% of the item’s price</p>
+                <hr className="border-b-1 border-gray-400 my-1 mx-full" />
+                <div className="text-xs">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="...">Brand</div>
+                    <div className="">NIKE</div>
                   </div>
 
-                  <div class="grid grid-cols-2 gap-4">
-                    <div class="...">SIZE</div>
-                    <div class="">XS</div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="...">SIZE</div>
+                    <div className="">XS</div>
                   </div>
 
-                  <div class="grid grid-cols-2 gap-4">
-                    <div class="...">CONDITION</div>
-                    <div class="...">SATISFACTORY</div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="...">CONDITION</div>
+                    <div className="...">SATISFACTORY</div>
                   </div>
 
-                  <div class="grid grid-cols-2 gap-4">
-                    <div class="...">COLOUR</div>
-                    <div class="...">BROWN,GRAY</div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="...">COLOUR</div>
+                    <div className="...">BROWN,GRAY</div>
                   </div>
 
-                  <div class="grid grid-cols-2 gap-4">
-                    <div class="...">LOCATION</div>
-                    <div class="...">NEW YORK, NY, UNITED STATES</div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="...">LOCATION</div>
+                    <div className="...">NEW YORK, NY, UNITED STATES</div>
                   </div>
 
-                  <div class="grid grid-cols-2 gap-4">
-                    <div class="...">VIEWS</div>
-                    <div class="...">1</div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="...">VIEWS</div>
+                    <div className="...">1</div>
                   </div>
 
-                  <div class="grid grid-cols-2 gap-4">
-                    <div class="...">FAVORITE ITEMS</div>
-                    <div class="...">2</div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="...">FAVORITE ITEMS</div>
+                    <div className="...">2</div>
                   </div>
 
-                  <div class="grid grid-cols-2 gap-4">
-                    <div class="...">UPLOADED</div>
-                    <div class="">5 MINUTES AGO</div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="...">UPLOADED</div>
+                    <div className="">5 MINUTES AGO</div>
                   </div>
                 </div>
 
-                <hr class="border-b-1 border-gray-400 my-1 mx-full" />
+                <hr className="border-b-1 border-gray-400 my-1 mx-full" />
 
-                <h3 class="text-xl font-medium text-gray-900 dark:text-gray-700">
+                <h3 className="text-xl font-medium text-gray-900 dark:text-gray-700">
                   Brown Shirt
                 </h3>
-                <p class="text-xl font-medium text-gray-900 text-gray-500">
+                <p className="text-xl font-medium text-gray-900 text-gray-500">
                   Only work 934 times. Cat not inlcuded.
                 </p>
-                <div class="flex flex-col space-y-2">
+                <div className="flex flex-col space-y-2">
                   <button
                     type="submit"
-                    class="w-full bg-transparent  text-susty font-semibold hover:text-white py-2 px-4 border border-susty hover:border-transparent rounded"
+                    className="w-full bg-transparent  text-susty font-semibold hover:text-white py-2 px-4 border border-susty hover:border-transparent rounded"
                   >
                     Buy Now
                   </button>
                   <button
                     type="submit"
-                    class="w-full text-white bg-susty  focus:ring-4 focus:outline-none  font-medium rounded-sm text-sm px-5 py-2.5 text-center "
+                    className="w-full text-white bg-susty  focus:ring-4 focus:outline-none  font-medium rounded-sm text-sm px-5 py-2.5 text-center "
                   >
                     Buy now
                   </button>
                   <button
                     type="submit"
-                    class="w-full bg-transparent  text-susty font-semibold hover:text-white py-2 px-4 border border-susty hover:border-transparent rounded"
+                    className="w-full bg-transparent  text-susty font-semibold hover:text-white py-2 px-4 border border-susty hover:border-transparent rounded"
                   >
                     Remove from favorites
                   </button>
@@ -200,22 +237,22 @@ const productdetails = () => {
 
             {/*Profile card */}
 
-            <div class="mt-8 grid grid-cols-1 divide-y divide-gray-900 flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row ">
+            <div className="mt-8 grid grid-cols-1 divide-y divide-gray-900 flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row ">
               <div>
                 <a
                   href="#"
-                  class="flex flex-col items-center bg-white   shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 bg-white"
+                  className="flex flex-col items-center bg-white   shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 bg-white"
                 >
                   <img
-                    class="mb-3 ml-3 mt-1 w-14 h-14 rounded-full shadow-lg"
+                    className="mb-3 ml-3 mt-1 w-14 h-14 rounded-full shadow-lg"
                     src="https://picsum.photos/200"
                     alt="Bonnie image"
                   />
-                  <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 mt-1 text-xl font-bold tracking-tight text-gray-900 ">
+                  <div className="flex flex-col justify-between p-4 leading-normal">
+                    <h5 className="mb-2 mt-1 text-xl font-bold tracking-tight text-gray-900 ">
                       User Name
                     </h5>
-                    <p class="mb-3 font-normal text-gray-700 text-gray-400">
+                    <p className="mb-3 font-normal text-gray-700 text-gray-400">
                       No views yet.
                     </p>
                   </div>
@@ -224,12 +261,12 @@ const productdetails = () => {
               <div>
                 <a
                   href="#"
-                  class="flex flex-col items-center bg-white   shadow-md md:flex-row  hover:bg-gray-100 dark:border-gray-700 bg-white"
+                  className="flex flex-col items-center bg-white   shadow-md md:flex-row  hover:bg-gray-100 dark:border-gray-700 bg-white"
                 >
-                  <div class="flex flex-col justify-between p-4 leading-normal">
+                  <div className="flex flex-col justify-between p-4 leading-normal">
                     <button
                       type="button"
-                      class="relative inline-flex items-center w-full px-1 py-1 text-sm   border-gray-200 rounded-t-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white"
+                      className="relative inline-flex items-center w-full px-1 py-1 text-sm   border-gray-200 rounded-t-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
