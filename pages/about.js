@@ -5,11 +5,8 @@ const About = () => {
     const router = useRouter();
 
     return (
-        <div
-            onClick={() => {
-                router.push('/');
-            }}>
-            <h1>About</h1>
+        <div>
+
         </div>
     );
 };
