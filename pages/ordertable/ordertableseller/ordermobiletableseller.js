@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {ChevronRightIcon} from "@heroicons/react/solid";
+import Ordermodal from "./ordermodal";
 
 const Ordermobiletableseller = ({data, setData, setSelectedRows}) => {
     const [allChecked, setAllChecked] = useState(true);
@@ -9,6 +10,10 @@ const Ordermobiletableseller = ({data, setData, setSelectedRows}) => {
     useEffect(() => {
         setAllChecked(data.every(item => item.isChecked));
     }, [data])
+
+    const closeModalHandler = (modalState) => {
+      setIsOpen(modalState)
+    }
 
     return (
         <>
@@ -59,12 +64,12 @@ const Ordermobiletableseller = ({data, setData, setSelectedRows}) => {
                     {data.map((order) => (
                         <tr
                             className={`${data.indexOf(order) % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}
-                            key={order.id}>
+                            key={order.orderId}>
                             <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-500">
                                 <input
                                     onChange={() => {
                                         setData(data.map((item) => {
-                                            if (item.id === order.id) {
+                                            if (item.orderId === order.orderId) {
                                                 item.isChecked = !item.isChecked;
                                             }
                                             return item;
@@ -101,7 +106,13 @@ const Ordermobiletableseller = ({data, setData, setSelectedRows}) => {
                             <td className="px-2 mr-4 py-4 whitespace-nowrap text-right text-sm font-medium">
                                     <span
                                         className="relative z-0 inline-flex bg-gray-100 hover:bg-gray-200 shadow-sm rounded-md">
-                                        <ChevronRightIcon className={"w-5 h-5"}/>
+                                        <ChevronRightIcon className={"w-5 h-5"} onClick={() => {
+                                            setModalData(()=>{
+                                                return order
+                                            })
+                                            setIsOpen(true);
+                                        }}/>
+                                        <Ordermodal isOpen={isOpen} setIsOpen={closeModalHandler} order={modalData}/>
                                     </span>
                             </td>
 

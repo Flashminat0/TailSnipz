@@ -1,21 +1,20 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {AnimatePresence, motion} from "framer-motion";
 import {Dialog} from "@headlessui/react";
 import {ArrowUpIcon, SupportIcon} from "@heroicons/react/solid";
 
-const Modallayout = ({children, modalTopic}) => {
-    const [openMailModal, setOpenMailModal] = useState(false);
+const Modallayout = ({children, modalTopic ,  modalOpenState , setModalOpenState}) => {
 
     return (
         <>
             <AnimatePresence>
-                {openMailModal && (
+                {modalOpenState && (
                     <Dialog
                         static
                         as={motion.div}
-                        open={openMailModal}
+                        open={modalOpenState}
                         className="relative z-10"
-                        onClose={() => setOpenMailModal(false)}
+                        onClose={() => setModalOpenState(false)}
                         animate={{
                             opacity: 1,
                         }}
@@ -48,7 +47,7 @@ const Modallayout = ({children, modalTopic}) => {
                                         <p className="text-lg font-medium leading-5 text-gray-500 flex justify-between">
                                             {modalTopic}
                                             <span
-                                                onClick={() => setOpenMailModal(false)}
+                                                onClick={() => setModalOpenState(false)}
                                                 className={`mr-2 cursor-pointer text-susty`}>
                                                       Close
                                                 </span>
