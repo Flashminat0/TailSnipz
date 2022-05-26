@@ -1,10 +1,9 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {AnimatePresence, motion} from "framer-motion";
 import {PlusIcon} from '@heroicons/react/outline';
 import {Dialog} from "@headlessui/react";
 import {ArrowUpIcon, SupportIcon} from "@heroicons/react/solid";
 import {toast} from "react-toastify";
-
 import { initializeApp } from "firebase/app";
 import {getStorage, ref, uploadBytes, getDownloadURL} from "firebase/storage";
 
@@ -18,61 +17,95 @@ const firebaseApp = initializeApp({
     measurementId: "G-DY8CNFWR9S"
 });
 
+function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+}
 
 const Uploadphotos = () => {
 
     const [photosArray, setPhotosArray] = useState([]);
     const [openTipsModal, setOpenTipsModal] = useState(false);
-    const [preview, setPreview] = useState()
+    const [imageList, setImageList] = useState([])
+    const [inputList, setInputList] = useState([])
+
 
     const uploadFile = (e) => {
-        const file = e.target.files[0];
 
-        const objectURL = URL.createObjectURL(file);
-        setPreview(objectURL);
+        if(imageList.length + e.target.files.length < 20){
+            setInputList([...e.target.files])
+            console.log("called")
+            console.log(imageList.length)
 
-        const storageRef = getStorage(firebaseApp);
-        const fileRef = ref(storageRef, `images/${Date.now()}-${file.name}`);
+            console.log(e.target.files.length)
 
-        uploadBytes(fileRef, file).then((snapshot) => {
-            getDownloadURL(snapshot.ref).then((url) => {
-                toast.success('Image upload Success!', {
-                    position: "top-right",
-                    autoClose: 3000,
-                    hideProgressBar: true,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined
-                });
+        }
+        else if(imageList.length < 20){
+            const remainingCount = 20 - imageList.length;
+            setInputList([])
 
-                return url;
-            }).then((url) => {
-                setImageList((prev) => {
-                    return [...prev, {
-                        name: file.name,
-                        url: url
-                    }]
-                })
-                console.log("image uploaded")
-            }).catch((error) => {
-                toast.error('Image upload Failed!', {
-                    position: "top-right",
-                    autoClose: 3000,
-                    hideProgressBar: true,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined
-                });
-            })
-        })
+            for(let i=0; i<remainingCount; i++){
+                setInputList((prev) => {return[...prev,e.target.files[i]]})
+            }
+        }
+        else{
+           console.log("Maximum length exceeded")
+        }
+
+        
+        // const storageRef = getStorage(firebaseApp);
+        // const fileRef = ref(storageRef, `images/${Date.now()}-${file.name}`);
+
+        // uploadBytes(fileRef, file).then((snapshot) => {
+        //     getDownloadURL(snapshot.ref).then((url) => {
+        //         toast.success('Image upload Success!', {
+        //             position: "top-right",
+        //             autoClose: 3000,
+        //             hideProgressBar: true,
+        //             closeOnClick: true,
+        //             pauseOnHover: true,
+        //             draggable: true,
+        //             progress: undefined
+        //         });
+
+        //         return url;
+        //     }).then((url) => {
+        //         setImageList((prev) => {
+        //             return [...prev, {
+        //                 name: file.name,
+        //                 url: url
+        //             }]
+        //         })
+        //         console.log("image uploaded")
+        //     }).catch((error) => {
+        //         toast.error('Image upload Failed!', {
+        //             position: "top-right",
+        //             autoClose: 3000,
+        //             hideProgressBar: true,
+        //             closeOnClick: true,
+        //             pauseOnHover: true,
+        //             draggable: true,
+        //             progress: undefined
+        //         });
+        //     })
+        // })
     }
+
+    useEffect(() => {
+        inputList.map((item) => {
+            setImageList((prev) => {
+                return[...prev,{
+                    name: item.name,
+                    url:URL.createObjectURL(item) 
+                }]
+            })
+       })
+    }, [inputList])
+
 
     return (
         <div>
             <>
-                <div className={`bg-gray-50 w-54 px-5 pb-2 shadow rounded-sm`}>
+                <div className={`bg-gray-50 w-54 px-5 pb-2 shadow rounded-sm `}>
                     <div className={`grid grid-cols-5 grid-rows-6 pb-2`}>
                         <div className={`flex col-span-5`}>
                             <p className={`self-center font-medium text-lg`}>Add up to 20 photos.&nbsp;
@@ -85,38 +118,87 @@ const Uploadphotos = () => {
                         </div>
 
                         <div
-                            className={`col-span-5 border border-4 border-dashed w-full h-full grid place-items-center row-span-5 grid grid-cols-5 place-items-center`}>
-                            <div className={`col-start-3`}>
-                                
-                                {/* <motion.button
-                                    whileHover={{scale: 1.02}}
-                                    whileTap={{scale: 0.98}}
-                                    className={`inline-flex items-center px-5 py-2 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50 my-32`}>
-                                    <PlusIcon className={`h-4 w-4 `} aria-hidden={true}/>&nbsp;Add Photos
-                                </motion.button> */}
-                                <label
-                                    htmlFor="file-upload"
-                                    className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none "
-                                >
-                                    <span 
-                                        className='inline-flex items-center px-5 py-2 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50 my-32 transition-all ease-in-out' 
-                                    >
-                                        <PlusIcon className={`h-4 w-4 `} aria-hidden={true}/>&nbsp;Add Photos
-                                    </span>
-                                
-                                    <input id="file-upload"
-                                        name="file-upload"
-                                        type="file"
-                                        accept="image/*"
-                                        onChange={uploadFile}
-                                        className="sr-only"
-                                        />
-                                </label>
-                            </div>
+                            className={classNames (imageList.length < 20 ? `col-span-5 border border-4 border-dashed w-full h-full grid  row-span-5 grid grid-cols-5` : 'col-span-5 border border-4 border-dashed border-red-600 w-full h-full grid  row-span-5 grid grid-cols-5')}>
+                            {
+                                !imageList.length > 0 ? (
+                                    <div className={`col-start-3`}>
+                                        
+                                        {/* <motion.button
+                                            whileHover={{scale: 1.02}}
+                                            whileTap={{scale: 0.98}}
+                                            className={`inline-flex items-center px-5 py-2 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50 my-32`}>
+                                            <PlusIcon className={`h-4 w-4 `} aria-hidden={true}/>&nbsp;Add Photos
+                                        </motion.button> */}
+                                        <label
+                                            htmlFor="file-upload"
+                                            className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none "
+                                        >
+                                            <span 
+                                                className='inline-flex items-center px-5 py-2 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50 my-32 transition-all ease-in-out' 
+                                            >
+                                                <PlusIcon className={`h-4 w-4 `} aria-hidden={true}/>&nbsp;Add Photos
+                                            </span>
+                                        
+                                            <input id="file-upload"
+                                                name="file-upload"
+                                                type="file"
+                                                accept="image/*"
+                                                onChange={uploadFile}
+                                                multiple
+                                                className="sr-only"
+                                                />
+                                        </label>
+                                    </div>
+                                ) :
+                                (
+                                    <>
+                                        <ul class="flex col-span-5 overflow-x-auto ...">
+                                            
+                                            { 
+                                                imageList.map((image, idx) => {
+                                                return(
+                                                    <div key={idx} className = 'flex-shrink-0'>
+                                                        <li className='p-2 cursor-pointer'>
+                                                            <img src={image.url} alt='Product' 
+                                                                className='rounded-sm h-48 w-48'
+                                                            />
+                                                        </li>
+                                                    </div>
+                                                )
+                                            })}
+
+                                            {
+                                                imageList.length < 20 ? (
+                                                <li>
+                                                    <label
+                                                        htmlFor="file-upload"
+                                                        className="rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none "
+                                                        >
+                                                            <span 
+                                                                className='m-2 h-48 w-48 inline-flex items-center px-8 py-2 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50 transition-all ease-in-out' 
+                                                            >
+                                                            <PlusIcon className={`h-4 w-6 `} aria-hidden={true}/>&nbsp;Add Photos
+                                                            </span>
+                                                    
+                                                        <input id="file-upload"
+                                                            name="file-upload"
+                                                            type="file"
+                                                            accept="image/*"
+                                                            onChange={uploadFile}
+                                                            multiple
+                                                            hidden
+                                                            />
+                                                    </label>
+                                                </li>
+                                                ): (
+                                                    null
+                                                )
+                                            }
+                                        </ul>
+                                    </>
+                                )
+                            }
                         </div>
-
-                        <img src={preview} />
-
                     </div>
                 </div>
             </>
@@ -162,8 +244,6 @@ const Uploadphotos = () => {
                                                 <span>
                                                     {/*Tips Modal*/}
                                                 </span>
-
-
                                                 <span
                                                     onClick={() => setOpenTipsModal(false)}
                                                     className={`mr-2 cursor-pointer text-susty`}>
