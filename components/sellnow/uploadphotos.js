@@ -21,13 +21,13 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-const Uploadphotos = () => {
+const Uploadphotos = ({imageList, setImageList}) => {
 
     const [photosArray, setPhotosArray] = useState([]);
     const [openTipsModal, setOpenTipsModal] = useState(false);
-    const [imageList, setImageList] = useState([])
+    // const [imageList, setImageList] = useState([])
     const [inputList, setInputList] = useState([])
-
+    const [removeItem, setRemoveItem] = useState([])
 
     const uploadFile = (e) => {
 
@@ -101,6 +101,15 @@ const Uploadphotos = () => {
        })
     }, [inputList])
 
+   useEffect(() => {
+    imageList.map((item, index) => {
+        if(item.url == removeItem.url){
+            console.log("found URL : " + index + " : "+ removeItem.url);
+            imageList.splice(index,1)
+            setImageList((prev) => {return [...prev]})
+        }
+    })
+   }, [removeItem])
 
     return (
         <div>
@@ -158,10 +167,21 @@ const Uploadphotos = () => {
                                                 imageList.map((image, idx) => {
                                                 return(
                                                     <div key={idx} className = 'flex-shrink-0'>
-                                                        <li className='p-2 cursor-pointer'>
-                                                            <img src={image.url} alt='Product' 
-                                                                className='rounded-sm h-48 w-48'
-                                                            />
+                                                        <li className='p-2'>
+                                                            <div className='relative'>
+                                                                <img src={image.url} alt='Product' 
+                                                                    className='rounded-sm h-48 w-48'
+                                                                />
+                                                                <div className='h-full w-full absolute top-0 right-0 hover:drop-shadow-2xl hover:bg-gradient-to-bl from-red-100'>
+                                                                    <div className='cursor-pointer absolute top-0 right-0 bg-gradient-to-bl from-red-200 hover:drop-shadow-2xl '
+                                                                        onClick={() => setRemoveItem(image)}
+                                                                    >
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" class=" w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="#f51128" stroke-width="2">
+                                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </li>
                                                     </div>
                                                 )
