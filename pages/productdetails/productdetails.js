@@ -11,7 +11,12 @@ const productdetails = () => {
     condition: "",
     colour: "",
     location: "",
-    views: ""
+    paymentOption:"",
+    views: "",
+    uploaded: "",
+    images: [],
+    description: "product description",
+    long_description: "long description",
   });
 
   return (
@@ -24,6 +29,7 @@ const productdetails = () => {
 
             <section class="overflow-hidden text-gray-700">
               <div class="container px-5 py-2 mx-auto">
+              {product.images.map((image, index) => (
                 <div class="flex flex-wrap -m-1 md:-m-2">
                   <div class="flex flex-wrap w-1/2">
                     <div class="w-1/2  ">
@@ -72,6 +78,7 @@ const productdetails = () => {
                     </div>
                   </div>
                 </div>
+              ))}
               </div>
             </section>
 
@@ -128,9 +135,9 @@ const productdetails = () => {
           {/* right side details */}
           <div class="border ">
             {/* Side profile details */}
-            <div class="p-4  bg-white shadow-md sm:p-6 lg:p-8 bg-white dark:border-gray-700">
-              <div class="space-y-3 " action="#">
-                <h5 class="text-3xl font-medium text-gray-900 dark:text-gray-700">
+            <div class="p-4  bg-white shadow-md bg-white">
+              <div class="space-y-2 " action="#">
+                <h5 class="text-3xl font-medium text-gray-900">
                   $88.00
                 </h5>
                 <div className="grid grid-cols-5">
@@ -162,61 +169,61 @@ const productdetails = () => {
                 <p className="text-sm">Buyer Protection fee $0.70 + 5% of the item’s price</p>
                 <hr className="border-b-1 border-gray-400 my-1 mx-full" />
                 <div className="text-xs">
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-2">
                     <div className="...">Brand</div>
-                    <div className="">NIKE</div>
+                    <div className="">{product.brand}</div>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-2">
                     <div className="...">SIZE</div>
-                    <div className="">XS</div>
+                    <div className="">{product.size}</div>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-2">
                     <div className="...">CONDITION</div>
-                    <div className="...">SATISFACTORY</div>
+                    <div className="...">{product.condition}</div>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-2">
                     <div className="...">COLOUR</div>
-                    <div className="...">BROWN,GRAY</div>
+                    <div className="...">{product.colour}</div>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="...">PAYMENT OPTIONS</div>
+                    <div className="...">{product.paymentOption}</div>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-2">
                     <div className="...">LOCATION</div>
-                    <div className="...">NEW YORK, NY, UNITED STATES</div>
+                    <div className="...">{product.location}</div>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-2">
                     <div className="...">VIEWS</div>
-                    <div className="...">1</div>
+                    <div className="...">{product.views}</div>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="...">FAVORITE ITEMS</div>
-                    <div className="...">2</div>
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-2">
                     <div className="...">UPLOADED</div>
-                    <div className="">5 MINUTES AGO</div>
+                    <div className="">{product.uploaded}</div>
                   </div>
                 </div>
 
                 <hr className="border-b-1 border-gray-400 my-1 mx-full" />
 
-                <h3 className="text-xl font-medium text-gray-900 dark:text-gray-700">
-                  Brown Shirt
+                <h3 className="text-base font-medium text-gray-900 dark:text-gray-700">
+                  {product.description}
                 </h3>
-                <p className="text-xl font-medium text-gray-900 text-gray-500">
-                  Only work 934 times. Cat not inlcuded.
+                <p className="text-sm font-medium text-gray-900 text-gray-500">
+                {product.long_description}
                 </p>
                 <div className="flex flex-col space-y-2">
                   <button
                     type="submit"
                     className="w-full bg-transparent  text-susty font-semibold hover:text-white py-2 px-4 border border-susty hover:border-transparent rounded"
                   >
-                    Buy Now
+                    Message seller
                   </button>
                   <button
                     type="submit"
