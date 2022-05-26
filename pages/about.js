@@ -1,15 +1,13 @@
 import React from 'react';
 import {useRouter} from "next/router";
+import Ordermobiletablepage from "../components/ordertable/ordertableseller/ordermobiletablepage";
 
 const About = () => {
     const router = useRouter();
 
     return (
-        <div
-            onClick={() => {
-                router.push('/');
-            }}>
-            <h1>About</h1>
+        <div>
+            <Ordermobiletablepage/>
         </div>
     );
 };
