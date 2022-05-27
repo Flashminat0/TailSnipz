@@ -195,21 +195,19 @@ const Header = () => {
   return (
     <div className={"px-60"}>
       <>
-        <div class="grid grid-flow-col mt-2">
-          {/* Logo */}
-          <div class=" col-span-1 border items-center">
-            <div className=" pl-8">
-              <Image src="/Susty.png" width={85} height={44} />
-            </div>
-          </div>
-          {/* Search */}
-          <div class=" col-span-8 border">
-            <div className=" pr-8 relative rounded shadow-sm   w-full">
+        <ul class="flex place-content-center gap-2">
+          {/*logo */}
+          <li class="mr-2">
+            <Image src="/Susty.png" width={85} height={44} />
+          </li>
+          {/* search*/}
+          <li class="mr-2">
+            <div className=" pr-8 relative rounded shadow-sm mt-2  w-[50rem]">
               <input
                 type="text"
                 className=" bg-gray-100 
-                            block w-full pl-36 
-                            pr-40 ml-4  sm:text-sm border-gray-100 rounded"
+                  block w-full pl-36 
+                  pr-40 ml-4  sm:text-sm border-gray-100 rounded"
                 placeholder="Search for items"
               />
               <div className="absolute inset-y-0 left-0 pl-1 flex items-center">
@@ -240,9 +238,9 @@ const Header = () => {
                         >
                           <Listbox.Options
                             className="  absolute z-10 mt-1 w-full bg-white shadow-lg max-h-56 
-                                                        rounded-md py-1 text-base ring-1 ring-black 
-                                                        ring-opacity-5 overflow-auto 
-                                                        focus:outline-none sm:text-sm"
+                                              rounded-md py-1 text-base ring-1 ring-black 
+                                              ring-opacity-5 overflow-auto 
+                                              focus:outline-none sm:text-sm"
                           >
                             {people.map((person) => (
                               <Listbox.Option
@@ -299,12 +297,12 @@ const Header = () => {
                 </Listbox>
               </div>
             </div>
-          </div>
-          {/* mail */}
-          <div class="col-span-1 border inline-flex justify-center ">
+          </li>
+          {/* message*/}
+          <li class="mr-2">
             <button
               type="button"
-              class="inline-flex w-full justify-center mt-4  font-sm rounded text-sm px-1  mb-4 "
+              class="inline-flex w-full justify-center mt-2  font-sm rounded text-sm px-1  mb-2 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -321,10 +319,10 @@ const Header = () => {
                 />
               </svg>
             </button>
-          </div>
-          {/* notification */}
-          <div class="col-span-1 border flex items-center inline-flex w-full justify-center ">
-            <Menu as="div" className="inline-flex w-full justify-center ">
+          </li>
+          {/* notification*/}
+          <li class="mr-2">
+            <Menu as="div" className="inline-flex w-full justify-center mt-2 ">
               <div>
                 <Menu.Button className="">
                   <svg
@@ -456,12 +454,12 @@ const Header = () => {
                 </Menu.Items>
               </Transition>
             </Menu>
-          </div>
-          {/*Favotite*/}
-          <div class="col-span-1 border inline-flex justify-center ">
+          </li>
+          {/* favorite*/}
+          <li class="mr-2">
             <button
               type="button"
-              class="inline-flex w-full justify-center mt-4  font-sm rounded text-sm px-1  mb-4 "
+              class="inline-flex w-full justify-center mt-2  font-sm rounded text-sm px-1  mb-2 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -478,12 +476,12 @@ const Header = () => {
                 />
               </svg>
             </button>
-          </div>
-          {/* Profile */}
-          <div class="col-span-1 border items-center pt-2 ">
+          </li>
+          {/* profile */}
+          <li class="mr-2">
             <Menu
               as="div"
-              className="inline-flex w-full justify-center relative inline-block text-left"
+              className="inline-flex w-full justify-center relative inline-block text-left mt-1"
             >
               <div>
                 <Menu.Button className="text-sm  text-gray-400">
@@ -547,160 +545,157 @@ const Header = () => {
                 </Menu.Items>
               </Transition>
             </Menu>
-          </div>
-          {/* Sell now */}
-          <div class="col-span-1 border inline-flex  justify-center ">
+          </li>
+          {/* sell now */}
+          <li class="mr-2">
             <button
               type="button"
-              class="text-white bg-susty  mt-2  font-sm rounded text-sm px-1  mb-4 "
+              class="text-white bg-susty  mt-2  font-sm rounded text-sm px-1 py-1  mb-2 "
             >
               Sell now
             </button>
-          </div>
-          {/* Question mark */}
-          <div class="col-span-1 border items-center inline-flex w-full justify-center ">
-            <div className="">
-              <Menu as="div" className="relative">
-                <div>
-                  <Menu.Button className="  bg-white text-md font-medium text-gray-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </Menu.Button>
-                </div>
-                <Transition
-                  as={Fragment}
-                  enter="transition ease-out duration-100"
-                  enterFrom="transform opacity-0 scale-95"
-                  enterTo="transform opacity-100 scale-100"
-                  leave="transition ease-in duration-75"
-                  leaveFrom="transform opacity-100 scale-100"
-                  leaveTo="transform opacity-0 scale-95"
-                >
-                  <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                    <div className="">
-                      <Menu.Item>
-                        <button
-                          className={
-                            "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                          }
-                        >
-                          English
-                        </button>
-                      </Menu.Item>
-                    </div>
-                    <div className="">
-                      <Menu.Item>
-                        <button
-                          className={
-                            "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                          }
-                        >
-                          Duplicate
-                        </button>
-                      </Menu.Item>
-                    </div>
-                    <div className="">
-                      <Menu.Item>
-                        <button
-                          className={
-                            "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                          }
-                        >
-                          Duplicate
-                        </button>
-                      </Menu.Item>
-                    </div>
-                  </Menu.Items>
-                </Transition>
-              </Menu>
-            </div>
-          </div>
-          {/* Language */}
-          <div class="col-span-1 border items-center inline-flex w-full justify-center">
-            <div className="">
-              <Menu as="div" className="relative">
-                <div>
-                  <Menu.Button className="inline-flex justify-center bg-white text-md font-medium text-gray-700">
-                    EN
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </Menu.Button>
-                </div>
-                <Transition
-                  as={Fragment}
-                  enter="transition ease-out duration-100"
-                  enterFrom="transform opacity-0 scale-95"
-                  enterTo="transform opacity-100 scale-100"
-                  leave="transition ease-in duration-75"
-                  leaveFrom="transform opacity-100 scale-100"
-                  leaveTo="transform opacity-0 scale-95"
-                >
-                  <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                    <div className="">
-                      <Menu.Item>
-                        <button
-                          className={
-                            "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                          }
-                        >
-                          English
-                        </button>
-                      </Menu.Item>
-                    </div>
-                    <div className="">
-                      <Menu.Item>
-                        <button
-                          className={
-                            "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                          }
-                        >
-                          Duplicate
-                        </button>
-                      </Menu.Item>
-                    </div>
-                    <div className="">
-                      <Menu.Item>
-                        <button
-                          className={
-                            "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                          }
-                        >
-                          Duplicate
-                        </button>
-                      </Menu.Item>
-                    </div>
-                  </Menu.Items>
-                </Transition>
-              </Menu>
-            </div>
-          </div>
-        </div>
+          </li>
+          {/* questions */}
+          <li class="mr-2">
+            <Menu as="div" className="relative">
+              <div>
+                <Menu.Button className="  bg-white text-md font-medium text-gray-700 mt-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </Menu.Button>
+              </div>
+              <Transition
+                as={Fragment}
+                enter="transition ease-out duration-100"
+                enterFrom="transform opacity-0 scale-95"
+                enterTo="transform opacity-100 scale-100"
+                leave="transition ease-in duration-75"
+                leaveFrom="transform opacity-100 scale-100"
+                leaveTo="transform opacity-0 scale-95"
+              >
+                <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  <div className="">
+                    <Menu.Item>
+                      <button
+                        className={
+                          "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
+                        }
+                      >
+                        English
+                      </button>
+                    </Menu.Item>
+                  </div>
+                  <div className="">
+                    <Menu.Item>
+                      <button
+                        className={
+                          "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
+                        }
+                      >
+                        Duplicate
+                      </button>
+                    </Menu.Item>
+                  </div>
+                  <div className="">
+                    <Menu.Item>
+                      <button
+                        className={
+                          "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
+                        }
+                      >
+                        Duplicate
+                      </button>
+                    </Menu.Item>
+                  </div>
+                </Menu.Items>
+              </Transition>
+            </Menu>
+          </li>
+          {/* language */}
+          <li class="mr-2">
+            <Menu as="div" className="relative">
+              <div>
+                <Menu.Button className="inline-flex justify-center bg-white text-md font-medium text-gray-700 mt-2">
+                  EN
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 mt-1"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </Menu.Button>
+              </div>
+              <Transition
+                as={Fragment}
+                enter="transition ease-out duration-100"
+                enterFrom="transform opacity-0 scale-95"
+                enterTo="transform opacity-100 scale-100"
+                leave="transition ease-in duration-75"
+                leaveFrom="transform opacity-100 scale-100"
+                leaveTo="transform opacity-0 scale-95"
+              >
+                <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  <div className="">
+                    <Menu.Item>
+                      <button
+                        className={
+                          "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
+                        }
+                      >
+                        English
+                      </button>
+                    </Menu.Item>
+                  </div>
+                  <div className="">
+                    <Menu.Item>
+                      <button
+                        className={
+                          "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
+                        }
+                      >
+                        Duplicate
+                      </button>
+                    </Menu.Item>
+                  </div>
+                  <div className="">
+                    <Menu.Item>
+                      <button
+                        className={
+                          "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
+                        }
+                      >
+                        Duplicate
+                      </button>
+                    </Menu.Item>
+                  </div>
+                </Menu.Items>
+              </Transition>
+            </Menu>
+          </li>
+        </ul>
+
         {/* Dropdown */}
         <div className="max-w-full mx-auto px-2 sm:px-6 lg:px-8 ">
           <row
-            className="bg-white w-full ml-2 pl-6 "
+            className="bg-white w-full ml-2 pl-6 border-4"
             style={{ position: "fixed", border: 0 }}
           >
             <div offset={2}>

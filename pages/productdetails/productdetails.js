@@ -1,17 +1,13 @@
-import React, {useEffect, useState} from "react";
-
-
-
+import React, { useEffect, useState } from "react";
 
 const productdetails = () => {
-
   const [product, setProduct] = useState({
     id: "",
     brand: "",
     condition: "",
     colour: "",
     location: "",
-    paymentOption:"",
+    paymentOption: "",
     views: "",
     uploaded: "",
     images: [],
@@ -29,7 +25,8 @@ const productdetails = () => {
 
             <section class="overflow-hidden text-gray-700">
               <div class="container px-5 py-2 mx-auto">
-              {product.images.map((image, index) => (
+                {/** {product.images.map((image, index) => (*/}
+
                 <div class="flex flex-wrap -m-1 md:-m-2">
                   <div class="flex flex-wrap w-1/2">
                     <div class="w-1/2  ">
@@ -78,7 +75,8 @@ const productdetails = () => {
                     </div>
                   </div>
                 </div>
-              ))}
+
+                {/**))} */}
               </div>
             </section>
 
@@ -137,9 +135,7 @@ const productdetails = () => {
             {/* Side profile details */}
             <div class="p-4  bg-white shadow-md bg-white">
               <div class="space-y-2 " action="#">
-                <h5 class="text-3xl font-medium text-gray-900">
-                  $88.00
-                </h5>
+                <h5 class="text-3xl font-medium text-gray-900">$88.00</h5>
                 <div className="grid grid-cols-5">
                   <div className="pt-10">
                     <div className="bg-green-300 rounded-full h-8 w-8 pl-1.5 pt-1.5">
@@ -166,7 +162,9 @@ const productdetails = () => {
                   </div>
                 </div>
                 <hr class="border-b-1 border-gray-400 my-1 mx-full" />
-                <p className="text-sm">Buyer Protection fee $0.70 + 5% of the item’s price</p>
+                <p className="text-sm">
+                  Buyer Protection fee $0.70 + 5% of the item’s price
+                </p>
                 <hr className="border-b-1 border-gray-400 my-1 mx-full" />
                 <div className="text-xs">
                   <div className="grid grid-cols-2 gap-2">
@@ -216,7 +214,7 @@ const productdetails = () => {
                   {product.description}
                 </h3>
                 <p className="text-sm font-medium text-gray-900 text-gray-500">
-                {product.long_description}
+                  {product.long_description}
                 </p>
                 <div className="flex flex-col space-y-2">
                   <button
