@@ -162,7 +162,6 @@ const Uploadphotos = ({imageList, setImageList}) => {
                                 (
                                     <>
                                         <ul class="flex col-span-5 overflow-x-auto ...">
-                                            
                                             { 
                                                 imageList.map((image, idx) => {
                                                 return(
@@ -172,14 +171,12 @@ const Uploadphotos = ({imageList, setImageList}) => {
                                                                 <img src={image.url} alt='Product' 
                                                                     className='rounded-sm h-48 w-48'
                                                                 />
-                                                                <div className='h-full w-full absolute top-0 right-0 hover:drop-shadow-2xl hover:bg-gradient-to-bl from-red-100'>
-                                                                    <div className='cursor-pointer absolute top-0 right-0 bg-gradient-to-bl from-red-200 hover:drop-shadow-2xl '
-                                                                        onClick={() => setRemoveItem(image)}
-                                                                    >
-                                                                        <svg xmlns="http://www.w3.org/2000/svg" class=" w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="#f51128" stroke-width="2">
-                                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                                                        </svg>
-                                                                    </div>
+                                                                <div className='cursor-pointer absolute top-0 right-0 drop-shadow-2xl hover:scale-110 hover:bg-none bg-white m-1 px-2 py-1 rounded-md' 
+                                                                    onClick={() => setRemoveItem(image)}
+                                                                >
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="black" stroke-width="1.5">
+                                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                                                    </svg>
                                                                 </div>
                                                             </div>
                                                         </li>
