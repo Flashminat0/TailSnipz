@@ -3,8 +3,14 @@ import {AnimatePresence, motion} from "framer-motion";
 import {Dialog} from "@headlessui/react";
 import Flags from 'country-flag-icons/react/3x2'
 
+const NZ = <Flags.NZ title={"New Zealand"} className={"w-6 h-6"}/>;
+const AU = <Flags.AU title={"Australia"} className={"w-6 h-6"}/>;
+
+const countryStaticList = [{id: 1, flag: NZ, countryName: "New Zealand"},{id: 2, flag: AU, countryName: "Australia"} ];
+
 const Wheredoyoulive = () => {
     const [openCountryModal, setOpenCountryModal] = useState(true);
+    const [countryList, setCountryList] = useState(countryStaticList);
 
     return (
         <div className={"h-screen w-screen grid place-content-center font-susty"}>
@@ -46,33 +52,33 @@ const Wheredoyoulive = () => {
                                             as="h3"
                                             className={`mb-5`}
                                         >
-                                            <p className="text-xl font-medium leading-5 flex justify-between">
+                                            <p className="text-xl sm:text-2xl font-medium leading-5 flex justify-between">
                                                 Where do you live?
                                                 <span
                                                     onClick={() => setOpenCountryModal(false)}
-                                                    className={`mr-2 cursor-pointer text-susty`}>
+                                                    className={`text-lg mr-2 cursor-pointer text-susty`}>
                                                       Close
                                                 </span>
                                             </p>
-
                                         </Dialog.Title>
                                         <div
                                             className={"mx-4 my-4 grid grid-cols-1 grid-rows-2 gap-y-3"}>
-                                            <div className={"flex flex-row gap-4"} onClick={() => setOpenCountryModal(false)}>
-                                                <Flags.NZ title={"New Zealand"} className={"w-6 h-6"}/>
-                                                <div>New Zealand</div>
-                                            </div>
-                                            <div className={"flex flex-row gap-4"} onClick={() => setOpenCountryModal(false)}>
-                                                <Flags.AU title={"Australia"} className={"w-6 h-6"}/>
-                                                <div>Australia</div>
-                                            </div>
+                                            {countryList.map((country)=>(
+                                                <div key={country.id}>
+                                                    <div className={"flex flex-row gap-4"}
+                                                         onClick={() => setOpenCountryModal(false)}>
+                                                        {country.flag}
+                                                        <div>{country.countryName}</div>
+                                                    </div>
+                                                </div>
+                                            ))}
                                         </div>
                                     </motion.div>
                                 </div>
                             </div>
                         </Dialog>
                     )}
-                    </AnimatePresence>
+                </AnimatePresence>
             </>
         </div>
     );

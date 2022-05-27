@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-const brands = [
+const brandsStaticData = [
     { id: 1, name: "Vans"},
     { id: 2, name: "Ray-Ban"},
     { id: 3, name: "Levi's"},
@@ -22,13 +22,15 @@ const brands = [
 ];
 
 const Shopbybrand = () => {
+    const [brands, setBrands] = useState(brandsStaticData);
+
     return (
         <div className={"h-screen w-screen grid place-content-center font-susty"}>
             <>
-                <div className={"text-2xl mx-10 lg:mx-60 px-1 my-6"}>Shop by brand</div>
-                <div className={"flex flex-wrap gap-3 mx-10 lg:mx-60"}>
+                <div className={"text-2xl px-3 lg:px-16 py-6"}>Shop by brand</div>
+                <div className={"flex flex-wrap gap-2 px-3 lg:px-16"}>
                     {brands.map((brand)=>(
-                        <div className={"px-3 py-1.5 bg-white hover:bg-gray-50 border border-gray-100 shadow-inner-sm rounded-sm hover:cursor-pointer"}>{brand.name}</div>
+                        <div key={brand.id} className={"px-3 py-1.5 text-sm bg-white hover:bg-gray-50 border border-gray-200 shadow-inner-sm rounded-sm hover:cursor-pointer"}>{brand.name}</div>
                     ))}
                 </div>
             </>
