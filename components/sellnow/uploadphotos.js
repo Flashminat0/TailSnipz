@@ -33,11 +33,7 @@ const Uploadphotos = ({imageList, setImageList}) => {
 
         if(imageList.length + e.target.files.length < 20){
             setInputList([...e.target.files])
-            console.log("called")
-            console.log(imageList.length)
-
-            console.log(e.target.files.length)
-
+ 
         }
         else if(imageList.length < 20){
             const remainingCount = 20 - imageList.length;
