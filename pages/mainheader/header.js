@@ -195,14 +195,14 @@ const Header = () => {
   return (
     <div className={"px-60"}>
       <>
-        <ul class="flex place-content-center gap-2">
+        <ul class="flex place-content-center gap-1">
           {/*logo */}
           <li class="mr-2">
             <Image src="/Susty.png" width={85} height={44} />
           </li>
           {/* search*/}
           <li class="mr-2">
-            <div className=" pr-8 relative rounded shadow-sm mt-2  w-[50rem]">
+            <div className=" pr-2 relative rounded shadow-sm mt-2  w-[50rem]">
               <input
                 type="text"
                 className=" bg-gray-100 
@@ -302,7 +302,7 @@ const Header = () => {
           <li class="mr-2">
             <button
               type="button"
-              class="inline-flex w-full justify-center mt-2  font-sm rounded text-sm px-1  mb-2 "
+              class="inline-flex w-full justify-center mt-2 ml-4 font-sm rounded text-sm px-1  mb-2 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -557,9 +557,10 @@ const Header = () => {
           </li>
           {/* questions */}
           <li class="mr-2">
-            <Menu as="div" className="relative">
-              <div>
-                <Menu.Button className="  bg-white text-md font-medium text-gray-700 mt-2">
+          <button
+              type="button"
+              class="inline-flex w-full justify-center mt-2  font-sm rounded text-sm px-1  mb-2 "
+            >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6"
@@ -574,54 +575,7 @@ const Header = () => {
                       d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
-                </Menu.Button>
-              </div>
-              <Transition
-                as={Fragment}
-                enter="transition ease-out duration-100"
-                enterFrom="transform opacity-0 scale-95"
-                enterTo="transform opacity-100 scale-100"
-                leave="transition ease-in duration-75"
-                leaveFrom="transform opacity-100 scale-100"
-                leaveTo="transform opacity-0 scale-95"
-              >
-                <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                  <div className="">
-                    <Menu.Item>
-                      <button
-                        className={
-                          "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                        }
-                      >
-                        English
-                      </button>
-                    </Menu.Item>
-                  </div>
-                  <div className="">
-                    <Menu.Item>
-                      <button
-                        className={
-                          "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                        }
-                      >
-                        Duplicate
-                      </button>
-                    </Menu.Item>
-                  </div>
-                  <div className="">
-                    <Menu.Item>
-                      <button
-                        className={
-                          "bg-gray-100  text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm"
-                        }
-                      >
-                        Duplicate
-                      </button>
-                    </Menu.Item>
-                  </div>
-                </Menu.Items>
-              </Transition>
-            </Menu>
+            </button>
           </li>
           {/* language */}
           <li class="mr-2">
@@ -693,9 +647,9 @@ const Header = () => {
         </ul>
 
         {/* Dropdown */}
-        <div className="max-w-full mx-auto px-2 sm:px-6 lg:px-8 ">
+        <div className="max-w-full mx-auto px-2 px-6 px-8 ">
           <row
-            className="bg-white w-full ml-2 pl-6 border-4"
+            className="bg-white w-full ml-6 pl-6 border-4"
             style={{ position: "fixed", border: 0 }}
           >
             <div offset={2}>
