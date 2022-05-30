@@ -1,87 +1,123 @@
 import React, { useState, useRef } from "react";
 import { Menu, Transition } from "@headlessui/react";
 
-
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-
-
-
 const catWomen = [
-  { id: 1, name: "See All", childs: [] },
+  {
+    id: 1,
+    name: "See All",
+    childs: [],
+  },
+
   {
     id: 2,
     name: "Clothes",
-    
     childs: ["item2", "item8"],
   },
+
   {
     id: 3,
     name: "Shoes",
-   
     childs: ["item3", "item7"],
   },
-  { id: 4, name: "Bags", childs: ["item4", "item6"] },
-  {
-    id: 5,
-    name: "Accessories",
-    
-    childs: ["item5", "item2"],
-  },
-  { id: 6, name: "Beauty", childs: ["item6", "item4"] },
-];
 
-const catMen = [
-  { id: 1, name: "See All", childs: [] },
   {
-    id: 2,
-    name: "Clothes",
-    
-    childs: ["item2", "item8"],
+    id: 4,
+    name: "Bags",
+    childs: ["item4", "item6"],
   },
-  { id: 3, name: "Shoes", childs: ["item3", "item7"] },
-  { id: 4, name: "Bags", childs: ["item4", "item6"] },
-  {
-    id: 5,
-    name: "Accessories",
-    
-    childs: ["item5", "item2"],
-  },
-  { id: 6, name: "Grooming", childs: ["item6", "item4"] },
-];
 
-const catKids = [
-  { id: 1, name: "See All", childs: [] },
-  {
-    id: 2,
-    name: "Clothes",
-    
-    childs: ["item2", "item8"],
-  },
-  {
-    id: 3,
-    name: "Shoes",
-    
-    childs: ["item3", "item7"],
-  },
-  { id: 4, name: "Bags", childs: ["item4", "item6"] },
   {
     id: 5,
     name: "Accessories",
-    
     childs: ["item5", "item2"],
   },
+
   {
     id: 6,
-    name: "Grooming",
-    
+    name: "Beauty",
     childs: ["item6", "item4"],
   },
 ];
 
+const catMen = [
+  {
+    id: 1,
+    name: "See All",
+    childs: [],
+  },
+
+  {
+    id: 2,
+    name: "Clothes",
+    childs: ["item2", "item8"],
+  },
+
+  {
+    id: 3,
+    name: "Shoes",
+    childs: ["item3", "item7"],
+  },
+
+  {
+    id: 4,
+    name: "Bags",
+    childs: ["item4", "item6"],
+  },
+
+  {
+    id: 5,
+    name: "Accessories",
+    childs: ["item5", "item2"],
+  },
+
+  {
+    id: 6,
+    name: "Grooming",
+    childs: ["item6", "item4"],
+  },
+];
+
+const catKids = [
+  {
+    id: 1,
+    name: "See All",
+    childs: [],
+  },
+
+  {
+    id: 2,
+    name: "Clothes",
+    childs: ["item2", "item8"],
+  },
+
+  {
+    id: 3,
+    name: "Shoes",
+    childs: ["item3", "item7"],
+  },
+
+  {
+    id: 4,
+    name: "Bags",
+    childs: ["item4", "item6"],
+  },
+
+  {
+    id: 5,
+    name: "Accessories",
+    childs: ["item5", "item2"],
+  },
+
+  {
+    id: 6,
+    name: "Grooming",
+    childs: ["item6", "item4"],
+  },
+];
 
 const Categories = () => {
   //const navigate = useNavigate();
@@ -110,16 +146,16 @@ const Categories = () => {
           <div
             onMouseOver={() => setChild(item.id)}
             onClick={() => {
-              item.id === 1
+              item.id === 1;
 
-{/** 
+              {
+                /** 
                 ? navigate(`/allproducts?mainProductCategory=${props.parent}`)
                 : navigate(
                     `/allproducts?mainProductCategory=${props.parent}&category=${item.name}`
                   );
-*/}
-
-
+*/
+              }
             }}
             className={classNames(
               active ? "bg-gray-100 text-gray-900" : "text-gray-700",
@@ -147,11 +183,6 @@ const Categories = () => {
       <Menu.Item key={item.toString()}>
         {({ active }) => (
           <div
-           
-
-
-
-
             className={classNames(
               active ? "bg-gray-100 text-gray-900" : "text-gray-700",
               "block px-4 py-2 text-sm"
@@ -160,7 +191,6 @@ const Categories = () => {
             {item}
           </div>
         )}
-
 
         {/**  onClick={() => navigate(`/allproducts?mainProductCategory=${props.parent}&category=${childs.name}&subCategory=${item}`)} */}
       </Menu.Item>

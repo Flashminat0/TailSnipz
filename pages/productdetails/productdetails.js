@@ -1,5 +1,48 @@
-import React, { useState, useRef, useEffect } from "react";
-import data from "./data.json";
+import React, { useState, useRef, useEffect, state } from "react";
+
+
+const data = {
+  "resources": [
+    {
+      "title": "Find me on Twitter",
+      "imageUrl": "https://placeimg.com/300/300/any"
+    },
+    {
+      "title": "Welcome to Ark Labs",
+      "link": "https://ark-labs.co.uk",
+      "imageUrl": "https://placeimg.com/300/300/animals"
+    },
+    {
+      "title": "Some sort of third title",
+      "imageUrl": "https://placeimg.com/300/300/architecture"
+    },
+    {
+      "title": "A personal site perhaps?",
+      "link": "https://robkendal.co.uk",
+      "imageUrl": "https://placeimg.com/300/300/nature"
+    },
+    {
+      "title": "Super item number five",
+      "imageUrl": "https://placeimg.com/300/300/people"
+    },
+    {
+      "title": "Super item number six",
+      "imageUrl": "https://placeimg.com/300/300/tech"
+    },
+    {
+      "title": "Super item number seven",
+      "imageUrl": "https://placeimg.com/300/300/animals"
+    },
+    {
+      "title": "Super item number eight",
+      "imageUrl": "https://placeimg.com/300/300/people"
+    },
+    {
+      "title": "Super item number the last",
+      "imageUrl": "https://placeimg.com/300/300/tech"
+    }
+  ]
+}
 
 const productdetails = () => {
   const [product, setProduct] = useState({
@@ -71,14 +114,12 @@ const productdetails = () => {
 
             <section class="overflow-hidden text-gray-700">
               <div class="container px-5 py-2 mx-auto">
-                {/** {product.images.map((image, index) => (*/}
-
                 <div className="carousel mx-auto">
                   <div className="relative overflow-hidden">
                     <div className="flex justify-between absolute top left w-full h-full">
                       <button
                         onClick={movePrev}
-                        className="hover:bg-blue-900/75 text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
+                        className="hover:bg-red-400/75 text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
                         disabled={isDisabled("prev")}
                       >
                         <svg
@@ -99,7 +140,7 @@ const productdetails = () => {
                       </button>
                       <button
                         onClick={moveNext}
-                        className="hover:bg-blue-900/75 text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
+                        className="hover:bg-red-400/75 text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
                         disabled={isDisabled("next")}
                       >
                         <svg
@@ -130,8 +171,7 @@ const productdetails = () => {
                             className="carousel-item text-center relative w-96 h-96 snap-start"
                           >
                             <a
-                              href={resource.link}
-                              className="h-full w-96 aspect-square block bg-origin-padding bg-left-top bg-cover bg-no-repeat z-0"
+                              className="h-[30rem] w-[30rem] aspect-square block bg-origin-padding bg-left-top bg-cover bg-no-repeat z-0"
                               style={{
                                 backgroundImage: `url(${
                                   resource.imageUrl || ""
@@ -139,22 +179,15 @@ const productdetails = () => {
                               }}
                             >
                               <img
-                                src={resource.imageUrl || ""}
                                 className="w-full aspect-square hidden"
                               />
                             </a>
-                            <a
-                              href={resource.link}
-                              className="h-full w-full aspect-square block absolute top-0 left-0 transition-opacity duration-300 opacity-0 hover:opacity-100 bg-blue-800/75 z-10"
-                            ></a>
                           </div>
                         );
                       })}
                     </div>
                   </div>
                 </div>
-
-                {/**))} */}
               </div>
             </section>
 
@@ -297,7 +330,7 @@ const productdetails = () => {
                 <div className="flex flex-col space-y-2">
                   <button
                     type="submit"
-                    className="w-full bg-transparent  text-susty font-semibold hover:text-white py-2 px-4 border border-susty hover:border-transparent rounded"
+                    className="w-full bg-transparent  text-susty font-semibold py-2 px-4 border border-susty  rounded"
                   >
                     Message seller
                   </button>
@@ -309,7 +342,7 @@ const productdetails = () => {
                   </button>
                   <button
                     type="submit"
-                    className="w-full bg-transparent  text-susty font-semibold hover:text-white py-2 px-4 border border-susty hover:border-transparent rounded"
+                    className="w-full bg-transparent  text-susty font-semibold  py-2 px-4 border border-susty rounded"
                   >
                     Remove from favorites
                   </button>
