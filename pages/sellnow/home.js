@@ -40,9 +40,11 @@ function home() {
     const [categoryOne, setCategoryOne] = useState(categoryFirst[0]);
     const [categoryTwo, setCategoryTwo] = useState(categorySecond[1]);
     const [categoryThree, setCategoryThree] = useState(categoryThird[10]);
+    const [imageList, setImageList] = useState([])
 
 
     const onSubmitClick = () => {
+        console.log(imageList)
 
         console.log(selected)
         console.log(brand)
@@ -56,6 +58,7 @@ function home() {
 
         console.log(title)
         console.log(description)
+
     }
 
   return (
@@ -63,7 +66,7 @@ function home() {
         <>
             <span className='font-semibold text-3xl py-4'>Sell an item</span>
             <div className='max-w-4xl pb-4'>
-                <Uploadphotos />
+                <Uploadphotos imageList = {imageList} setImageList = {setImageList}/>
             </div>
             <div className='max-w-4xl pb-4'>
                 <Titleanddescription title = {title} setTitle = {setTitle} description = {description} setDescription = {setDescription} />
