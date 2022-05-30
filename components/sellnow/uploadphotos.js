@@ -21,23 +21,19 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-const Uploadphotos = () => {
+const Uploadphotos = ({imageList, setImageList}) => {
 
     const [photosArray, setPhotosArray] = useState([]);
     const [openTipsModal, setOpenTipsModal] = useState(false);
-    const [imageList, setImageList] = useState([])
+    // const [imageList, setImageList] = useState([])
     const [inputList, setInputList] = useState([])
-
+    const [removeItem, setRemoveItem] = useState([])
 
     const uploadFile = (e) => {
 
         if(imageList.length + e.target.files.length < 20){
             setInputList([...e.target.files])
-            console.log("called")
-            console.log(imageList.length)
-
-            console.log(e.target.files.length)
-
+ 
         }
         else if(imageList.length < 20){
             const remainingCount = 20 - imageList.length;
@@ -101,6 +97,15 @@ const Uploadphotos = () => {
        })
     }, [inputList])
 
+   useEffect(() => {
+    imageList.map((item, index) => {
+        if(item.url == removeItem.url){
+            console.log("found URL : " + index + " : "+ removeItem.url);
+            imageList.splice(index,1)
+            setImageList((prev) => {return [...prev]})
+        }
+    })
+   }, [removeItem])
 
     return (
         <div>
@@ -153,15 +158,23 @@ const Uploadphotos = () => {
                                 (
                                     <>
                                         <ul class="flex col-span-5 overflow-x-auto ...">
-                                            
                                             { 
                                                 imageList.map((image, idx) => {
                                                 return(
                                                     <div key={idx} className = 'flex-shrink-0'>
-                                                        <li className='p-2 cursor-pointer'>
-                                                            <img src={image.url} alt='Product' 
-                                                                className='rounded-sm h-48 w-48'
-                                                            />
+                                                        <li className='p-2'>
+                                                            <div className='relative'>
+                                                                <img src={image.url} alt='Product' 
+                                                                    className='rounded-sm h-48 w-48'
+                                                                />
+                                                                <div className='cursor-pointer absolute top-0 right-0 drop-shadow-2xl hover:scale-110 hover:bg-none bg-white m-1 px-2 py-1 rounded-md' 
+                                                                    onClick={() => setRemoveItem(image)}
+                                                                >
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="black" stroke-width="1.5">
+                                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
                                                         </li>
                                                     </div>
                                                 )
