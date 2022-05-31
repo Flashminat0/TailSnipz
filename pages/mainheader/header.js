@@ -5,10 +5,26 @@ import Image from "next/image";
 import { CheckIcon, SelectorIcon } from "@heroicons/react/solid";
 
 const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
+  {
+    name: "Dashboard",
+    href: "#",
+    current: true,
+  },
+  {
+    name: "Team",
+    href: "#",
+    current: false,
+  },
+  {
+    name: "Projects",
+    href: "#",
+    current: false,
+  },
+  {
+    name: "Calendar",
+    href: "#",
+    current: false,
+  },
 ];
 
 function classNames(...classes) {
@@ -16,73 +32,100 @@ function classNames(...classes) {
 }
 
 const catWomen = [
-  { id: 1, name: "See All", childs: [] },
+  {
+    id: 1,
+    name: "See All",
+    childs: [],
+  },
   {
     id: 2,
     name: "Clothes",
-
     childs: ["item2", "item8"],
   },
   {
     id: 3,
     name: "Shoes",
-
     childs: ["item3", "item7"],
   },
-  { id: 4, name: "Bags", childs: ["item4", "item6"] },
+  {
+    id: 4,
+    name: "Bags",
+    childs: ["item4", "item6"],
+  },
   {
     id: 5,
     name: "Accessories",
-
     childs: ["item5", "item2"],
   },
-  { id: 6, name: "Beauty", childs: ["item6", "item4"] },
+  {
+    id: 6,
+    name: "Beauty",
+    childs: ["item6", "item4"],
+  },
 ];
 
 const catMen = [
-  { id: 1, name: "See All", childs: [] },
+  {
+    id: 1,
+    name: "See All",
+    childs: [],
+  },
   {
     id: 2,
     name: "Clothes",
-
-    childs: ["item2", "item8"],
-  },
-  { id: 3, name: "Shoes", childs: ["item3", "item7"] },
-  { id: 4, name: "Bags", childs: ["item4", "item6"] },
-  {
-    id: 5,
-    name: "Accessories",
-
-    childs: ["item5", "item2"],
-  },
-  { id: 6, name: "Grooming", childs: ["item6", "item4"] },
-];
-
-const catKids = [
-  { id: 1, name: "See All", childs: [] },
-  {
-    id: 2,
-    name: "Clothes",
-
     childs: ["item2", "item8"],
   },
   {
     id: 3,
     name: "Shoes",
-
     childs: ["item3", "item7"],
   },
-  { id: 4, name: "Bags", childs: ["item4", "item6"] },
+  {
+    id: 4,
+    name: "Bags",
+    childs: ["item4", "item6"],
+  },
   {
     id: 5,
     name: "Accessories",
-
     childs: ["item5", "item2"],
   },
   {
     id: 6,
     name: "Grooming",
+    childs: ["item6", "item4"],
+  },
+];
 
+const catKids = [
+  {
+    id: 1,
+    name: "See All",
+    childs: [],
+  },
+  {
+    id: 2,
+    name: "Clothes",
+    childs: ["item2", "item8"],
+  },
+  {
+    id: 3,
+    name: "Shoes",
+    childs: ["item3", "item7"],
+  },
+  {
+    id: 4,
+    name: "Bags",
+    childs: ["item4", "item6"],
+  },
+  {
+    id: 5,
+    name: "Accessories",
+    childs: ["item5", "item2"],
+  },
+  {
+    id: 6,
+    name: "Grooming",
     childs: ["item6", "item4"],
   },
 ];
@@ -557,24 +600,24 @@ const Header = () => {
           </li>
           {/* questions */}
           <li class="mr-2">
-          <button
+            <button
               type="button"
               class="inline-flex w-full justify-center mt-2  font-sm rounded text-sm px-1  mb-2 "
             >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
             </button>
           </li>
           {/* language */}
