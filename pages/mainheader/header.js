@@ -20,10 +20,10 @@ const navigation = [
     href: "#",
     current: false,
   },
-  {
-    name: "Calendar",
-    href: "#",
-    current: false,
+  { 
+    name: "Calendar", 
+    href: "#", 
+    current: false 
   },
 ];
 
