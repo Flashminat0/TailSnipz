@@ -1,13 +1,13 @@
 import React from 'react';
 import {useRouter} from "next/router";
-import Ordermobiletablepage from "../components/ordertable/ordertableseller/ordermobiletablepage";
+import Closetspotlightitems from "../components/closet-spotlight/closetspotlightitems";
 
 const About = () => {
     const router = useRouter();
 
     return (
         <div>
-            <Ordermobiletablepage/>
+            <Closetspotlightitems/>
         </div>
     );
 };
