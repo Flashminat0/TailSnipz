@@ -12,18 +12,18 @@ const LoginSignupButton = () => {
         key: 'susty',
         defaultValue: {},
     })
-    const [loggedIn, setLoggedIn] = useState(true)
+    const [loggedIn, setLoggedIn] = useState(false)
 
     //Firebase auth object
     // const auth = getAuth(firebaseApp)
 
-    // useEffect(() => {
-    //     if (Object.keys(sustyAuth).length > 0) {
-    //         setLoggedIn(true)
-    //     } else {
-    //         setLoggedIn(false)
-    //     }
-    // }, [sustyAuth])
+    useEffect(() => {
+        if (Object.keys(sustyAuth).length > 0) {
+            setLoggedIn(true)
+        } else {
+            setLoggedIn(false)
+        }
+    }, [sustyAuth])
 
     const logoutHandler = () => {
         toast.info('Logging out...')
