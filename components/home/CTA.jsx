@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {useRouter} from "next/router";
-import BasicPageWrapper from "../layouts/BasicPageWrapper";
 import {AnimatePresence, motion} from "framer-motion";
 
 const slidesStaticData = [{
@@ -23,8 +22,8 @@ const CTA = () => {
     const router = useRouter();
 
     return (
-        <BasicPageWrapper>
-            <div className={'hidden lg:block px-10 pt-2'}>
+        <>
+            <div className={'hidden lg:block pt-2'}>
                 <div className={'grid grid-cols-4 gap-2'}>
                     <div className={'col-span-3'}>
                         <AnimatePresence>
@@ -136,7 +135,7 @@ const CTA = () => {
                     </div>
                 </div>
             </div>
-        </BasicPageWrapper>
+        </>
     );
 };
 

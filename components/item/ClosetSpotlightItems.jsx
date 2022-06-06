@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import Closetspotlightlayout from "../layouts/closetspotlightlayout";
-import Closetspotlightitemcard from "./closetspotlightitemcard";
+import ClosetSpotlightWrapper from "../layouts/ClosetSpotlightWrapper";
+import ClosetSpotlightItemCard from "./ClosetSpotlightItemCard";
 
 const itemsStaticData = [{
     id: 1,
@@ -39,19 +39,19 @@ const itemsStaticData = [{
     brand: "Shein"
 }];
 
-const Closetspotlightitems = () => {
+const ClosetSpotlightItems = () => {
     const [items, setItems] = useState(itemsStaticData);
 
     return (
-        <Closetspotlightlayout>
+        <ClosetSpotlightWrapper>
             {items.map((item) => (
                 <div key={item.id}>
-                    <Closetspotlightitemcard src={item.src} alt={item.alt} price={item.price} size={item.size}
+                    <ClosetSpotlightItemCard src={item.src} alt={item.alt} price={item.price} size={item.size}
                                              brand={item.brand}/>
                 </div>
             ))}
-        </Closetspotlightlayout>
+        </ClosetSpotlightWrapper>
     );
 };
 
-export default Closetspotlightitems;
+export default ClosetSpotlightItems;

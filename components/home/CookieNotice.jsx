@@ -2,7 +2,7 @@ import React from 'react';
 import Link from "next/link";
 import {AnimatePresence, motion} from "framer-motion";
 
-const Cookienotice = () => {
+const CookieNotice = () => {
     return (
         <div className={"w-screen h-screen font-susty -z-50 bg-opacity-50 bg-zinc-900"}>
             <>
@@ -61,4 +61,4 @@ const Cookienotice = () => {
     );
 };
 
-export default Cookienotice;
+export default CookieNotice;

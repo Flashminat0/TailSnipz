@@ -12,7 +12,7 @@ const personData = [{
     noOfVotes: 50
 }];
 
-const Closetspotlightlayout = ({children}) => {
+const ClosetSpotlightWrapper = ({children}) => {
     const [person, setPerson] = useState(personData);
 
     const ref = useRef(null);
@@ -22,7 +22,7 @@ const Closetspotlightlayout = ({children}) => {
     };
 
     return (
-        <div className={'px-[4rem] py-[2rem]'}>
+        <div className={'py-[2rem]'}>
             <div className={'flex flex-col gap-3'}>
                 <div className={'flex flex-row justify-between items-center py-5'}>
                     <p className={'text-2xl font-medium capitalize'}>Closet Spotlight</p>
@@ -77,4 +77,4 @@ const Closetspotlightlayout = ({children}) => {
     );
 };
 
-export default Closetspotlightlayout;
+export default ClosetSpotlightWrapper;

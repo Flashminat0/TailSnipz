@@ -1,7 +1,7 @@
 import React, {Fragment, useState, useEffect} from 'react'
 import {Popover, Transition} from '@headlessui/react'
 import {useRouter} from 'next/router'
-import SearchBar from './searchbar'
+import SearchBar from './SearchBar'
 import {
     HiChartBar,
     HiCursorClick,
@@ -13,7 +13,6 @@ import {
     HiX,
 } from 'react-icons/hi'
 import LoginSignupButton from '../buttons/loginsignupbutton'
-
 
 
 const searchBarOptions = [
@@ -123,7 +122,7 @@ const catalogMobileArray = [
     },
 ]
 
-const Desktopview = () => {
+const DesktopView = () => {
 
     const router = useRouter()
 
@@ -135,10 +134,9 @@ const Desktopview = () => {
     )
 
   return (
-    <div >
-       
+    <>
         <Popover className="relative ">
-            <div className="flex justify-between items-center px-4 py-6 sm:px-6 ">
+            <div className="flex justify-between items-center">
                 <div className="flex justify-start">
                     <a href="#">
                         <span className="sr-only">Workflow</span>
@@ -323,9 +321,8 @@ const Desktopview = () => {
                 </Popover.Panel>
             </Transition>
         </Popover>
-
-    </div>
+    </>
   )
 }
 
-export default Desktopview
+export default DesktopView
