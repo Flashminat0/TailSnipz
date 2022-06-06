@@ -1,4 +1,4 @@
-import { Disclosure } from '@headlessui/react'
+import {Disclosure} from '@headlessui/react'
 import React from 'react'
 
 // const sidebarItems = [

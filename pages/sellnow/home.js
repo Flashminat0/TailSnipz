@@ -4,7 +4,6 @@ import Priceandswapping from '../../components/sellnow/priceandswapping'
 import Titleanddescription from '../../components/sellnow/titleanddescription'
 import Uploadphotos from '../../components/sellnow/uploadphotos'
 import {motion} from "framer-motion";
-import {ArrowUpIcon} from '@heroicons/react/solid'
 
 
 const people = [

@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import Popularitemcard from "./popularitemcard";
-import Popularitemlayout from "../layouts/popularitemlayout";
+import PopularItemCard from "./PopularItemCard";
+import PopularItemWrapper from "../layouts/PopularItemWrapper";
 
 const itemsStaticData = [{
     id: 1,
-    username:"NickyMontana",
+    username: "NickyMontana",
     src: "https://cdn.shopify.com/s/files/1/0059/5879/5337/products/handknitted-butterfly-jacket-by-hanne-falkenberg-design-andet-hanne-falkenberg-kit-6-m-992013_620x.jpg?v=1631370781",
     alt: "frock picture",
     price: "5.00",
@@ -12,7 +12,7 @@ const itemsStaticData = [{
     brand: "Shein"
 }, {
     id: 2,
-    username:"Pedro123",
+    username: "Pedro123",
     src: "https://images.pexels.com/photos/19090/pexels-photo.jpg?cs=srgb&dl=pexels-web-donut-19090.jpg&fm=jpg",
     alt: "frock picture",
     price: "5.00",
@@ -20,7 +20,7 @@ const itemsStaticData = [{
     brand: "Torrid"
 }, {
     id: 3,
-    username:"LeonZucchini",
+    username: "LeonZucchini",
     src: "https://i.pinimg.com/474x/c2/7e/1c/c27e1ccc0b9e3fdf999495e569f19ea5.jpg",
     alt: "frock picture",
     price: "5.00",
@@ -28,7 +28,7 @@ const itemsStaticData = [{
     brand: "Shein"
 }, {
     id: 4,
-    username:"IrynaSuprun",
+    username: "IrynaSuprun",
     src: "https://i.pinimg.com/474x/c2/7e/1c/c27e1ccc0b9e3fdf999495e569f19ea5.jpg",
     alt: "frock picture",
     price: "5.00",
@@ -36,7 +36,7 @@ const itemsStaticData = [{
     brand: "Shein"
 }, {
     id: 5,
-    username:"Lauren32",
+    username: "Lauren32",
     src: "https://i.pinimg.com/474x/c2/7e/1c/c27e1ccc0b9e3fdf999495e569f19ea5.jpg",
     alt: "frock picture",
     price: "5.00",
@@ -45,19 +45,19 @@ const itemsStaticData = [{
 }];
 
 
-const Popularitems = () => {
+const PopularItems = () => {
     const [items, setItems] = useState(itemsStaticData);
 
     return (
-        <Popularitemlayout>
+        <PopularItemWrapper>
             {items.map((item) => (
                 <div key={item.id}>
-                    <Popularitemcard src={item.src} alt={item.alt} price={item.price} size={item.size}
+                    <PopularItemCard src={item.src} alt={item.alt} price={item.price} size={item.size}
                                      brand={item.brand}/>
                 </div>
             ))}
-        </Popularitemlayout>
+        </PopularItemWrapper>
     );
 };
 
-export default Popularitems;
+export default PopularItems;

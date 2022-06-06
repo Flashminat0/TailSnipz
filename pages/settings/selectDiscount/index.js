@@ -1,6 +1,6 @@
 import React, {Fragment, useState} from 'react'
 import {Menu, Switch, Transition} from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/solid'
+import {ChevronDownIcon} from '@heroicons/react/solid'
 
 
 const percentageArray = [

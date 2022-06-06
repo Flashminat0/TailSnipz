@@ -8,7 +8,7 @@ const AU = <Flags.AU title={"Australia"} className={"w-6 h-6"}/>;
 
 const countryStaticList = [{id: 1, flag: NZ, countryName: "New Zealand"},{id: 2, flag: AU, countryName: "Australia"} ];
 
-const Wheredoyoulive = () => {
+const WhereDoYouLive = () => {
     const [openCountryModal, setOpenCountryModal] = useState(true);
     const [countryList, setCountryList] = useState(countryStaticList);
 
@@ -84,4 +84,4 @@ const Wheredoyoulive = () => {
     );
 };
 
-export default Wheredoyoulive;
+export default WhereDoYouLive;

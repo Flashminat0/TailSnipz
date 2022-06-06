@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {InformationCircleIcon} from "@heroicons/react/outline";
 
-const Popularitemcard = ({src, alt, price, size, brand}) => {
+const PopularItemCard = ({src, alt, price, size, brand}) => {
     const [isFavourite, setIsFavourite] = useState(false);
     let favCount = 2;
 
@@ -107,4 +107,4 @@ const Popularitemcard = ({src, alt, price, size, brand}) => {
     );
 };
 
-export default Popularitemcard;
+export default PopularItemCard;

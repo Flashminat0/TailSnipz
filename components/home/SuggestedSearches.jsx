@@ -26,7 +26,7 @@ const searchesStaticData = [
     {id: 22, pos: 20, name: "Louis Vuitton", views: "3.46K views", active: false}
 ];
 
-const Suggestedsearches = () => {
+const SuggestedSearches = () => {
     const [searches, setSearches] = useState(searchesStaticData);
 
     const ref = useRef(null);
@@ -36,43 +36,41 @@ const Suggestedsearches = () => {
     };
 
     return (
-        <div className={"h-screen w-screen font-susty "}>
-            <>
-                <div className={"flex flex-col gap-1 px-5 lg:px-16"}>
-                    <div className={"text-2xl px-1 py-5"}>Suggested searches</div>
-                    <div
-                        className={"overflow-x-hidden overflow-y-hidden scroll-smooth max-w-[36rem] sm:max-w-[42rem] lg:max-w-[80rem] flex flex-row gap-3  "}
-                        ref={ref}>
-                        <div className={`absolute -left-[0.5rem] lg:left-[1rem]`}>
-                            <div onClick={() => {
-                                scroll(-100)
-                            }}
-                                 className={"absolute h-8 w-8 grid place-items-center left-[1.75rem] top-[0.5rem] bg-black bg-opacity-70 rounded-full cursor-pointer"}>
-                                <ChevronLeftIcon className={"text-white w-8 h-8"}/>
+        <>
+            <div className={"flex flex-col gap-1"}>
+                <div className={"text-2xl px-1 pt-12 pb-5"}>Suggested searches</div>
+                <div
+                    className={"overflow-x-hidden overflow-y-hidden scroll-smooth max-w-[36rem] sm:max-w-[42rem] lg:max-w-[80rem] flex flex-row gap-3  "}
+                    ref={ref}>
+                    <div className={`absolute -left-[0.5rem] lg:left-[1rem]`}>
+                        <div onClick={() => {
+                            scroll(-100)
+                        }}
+                             className={"absolute h-8 w-8 grid place-items-center left-[1.75rem] top-[0.5rem] bg-black bg-opacity-70 rounded-full cursor-pointer"}>
+                            <ChevronLeftIcon className={"text-white w-8 h-8"}/>
+                        </div>
+                    </div>
+                    {searches.map((search) => (
+                        <div key={search.id}
+                             className={"px-3 py-1.5 bg-white hover:bg-gray-50 border border-gray-200 shadow-inner-sm rounded-sm cursor-pointer"}>
+                            <div className={"flex flex-col shrink min-w-max gap-1"}>
+                                <div className={"text-sm font-medium"}>{search.name}</div>
+                                <div className={"text-xs text-gray-600 font-medium"}>{search.views}</div>
                             </div>
                         </div>
-                        {searches.map((search) => (
-                            <div key={search.id}
-                                 className={"px-3 py-1.5 bg-white hover:bg-gray-50 border border-gray-200 shadow-inner-sm rounded-sm cursor-pointer"}>
-                                <div className={"flex flex-col shrink min-w-max gap-1"}>
-                                    <div className={"text-sm font-medium"}>{search.name}</div>
-                                    <div className={"text-xs text-gray-600 font-medium"}>{search.views}</div>
-                                </div>
-                            </div>
-                        ))}
-                        <div className={`absolute -right-[0.5rem] lg:right-[1rem]`}>
-                            <div onClick={() => {
-                                scroll(100)
-                            }}
-                                 className={"absolute h-8 w-8 place-items-center right-[1.75rem] top-[0.5rem] bg-black bg-opacity-70 rounded-full cursor-pointer"}>
-                                <ChevronRightIcon className={"text-white w-8 h-8"}/>
-                            </div>
+                    ))}
+                    <div className={`absolute -right-[0.5rem] lg:right-[1rem]`}>
+                        <div onClick={() => {
+                            scroll(100)
+                        }}
+                             className={"absolute h-8 w-8 place-items-center right-[1.75rem] top-[0.5rem] bg-black bg-opacity-70 rounded-full cursor-pointer"}>
+                            <ChevronRightIcon className={"text-white w-8 h-8"}/>
                         </div>
                     </div>
                 </div>
-            </>
-        </div>
+            </div>
+        </>
     );
 };
 
-export default Suggestedsearches;
+export default SuggestedSearches;
