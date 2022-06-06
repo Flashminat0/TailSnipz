@@ -22,6 +22,7 @@ const Home = () => {
             <ClosetSpotlightItems/>
             <CommonItems/>
             <FooterSection/>
+
         </BasicPageWrapper>
     );
 };
