@@ -3,14 +3,17 @@ import {useRouter} from "next/router";
 import {AnimatePresence, motion} from "framer-motion";
 
 const slidesStaticData = [{
+    id: 1,
     title: 'Women',
     src: 'https://firebasestorage.googleapis.com/v0/b/susty-next.appspot.com/o/Slide1.png?alt=media&token=54dc1d99-b1f2-4059-a261-a8f2b6be3365',
     alt: "Women with Cloths Image"
 }, {
+    id: 2,
     title: 'Men',
     src: 'https://firebasestorage.googleapis.com/v0/b/susty-next.appspot.com/o/Slide2.png?alt=media&token=c23cb27e-4493-4084-90b4-740fb58cb2f5',
     alt: "Mens with Cloths Image"
 }, {
+    id: 3,
     title: 'Kids',
     src: 'https://firebasestorage.googleapis.com/v0/b/susty-next.appspot.com/o/Slide3.png?alt=media&token=11651c89-7afd-4107-934e-74f8e62ea817',
     alt: "Kids with Cloths Image"
@@ -30,6 +33,7 @@ const CTA = () => {
                             <div className="flex flex-col gap-3 w-full">
                                 {slides.map((slide) => (
                                     <motion.div
+                                        key={slide.id}
                                         whileHover={{
                                             scale: 1.01,
                                         }}
@@ -114,6 +118,7 @@ const CTA = () => {
                             <div className="flex flex-row gap-3 h-[12rem] w-full">
                                 {slides.map((slide) => (
                                     <motion.div
+                                        key={slide.id}
                                         whileHover={{
                                             scale: 1.01,
                                         }}

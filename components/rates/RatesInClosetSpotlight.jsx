@@ -1,9 +1,9 @@
 import React from 'react';
 import {StarIcon} from "@heroicons/react/solid";
 
-const Ratesinclosetspotlight = ({person, personD}) => {
+const RatesInClosetSpotlight = ({person, personD, id}) => {
     return (
-        <div className={'flex flex-row items-center'}>
+        <div className={'flex flex-row items-center'} key={id}>
             {Array(Math.ceil(parseFloat(personD.rating))).fill(0).map(() => {
                 return <StarIcon className={'w-5 h-5 text-amber-400'}/>
             })}
@@ -17,4 +17,4 @@ const Ratesinclosetspotlight = ({person, personD}) => {
     );
 };
 
-export default Ratesinclosetspotlight;
+export default RatesInClosetSpotlight;

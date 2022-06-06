@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
 import {ChevronLeftIcon, ChevronRightIcon, PlusIcon, StarIcon} from "@heroicons/react/solid";
 import Link from "next/link";
-import Ratesinclosetspotlight from "../rates/ratesinclosetspotlight";
+import RatesInClosetSpotlight from "../rates/RatesInClosetSpotlight";
 
 const personData = [{
     id: 1,
@@ -37,7 +37,7 @@ const ClosetSpotlightWrapper = ({children}) => {
                                      className={'w-[3rem] h-[3rem] rounded-full'}/>
                                 <div className={'flex flex-col'}>
                                     <div className={'font-medium'}>{personD.username}</div>
-                                    <Ratesinclosetspotlight personD={personD} person={person}/>
+                                    <RatesInClosetSpotlight id={personD.id} personD={personD} person={person}/>
                                 </div>
                             </div>
                         ))}
