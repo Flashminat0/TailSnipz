@@ -111,11 +111,11 @@ const productdetails = () => {
 
             {/*Profile card */}
 
-            <div className="mt-8 grid grid-cols-1 divide-y divide-gray-900 flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row ">
+            <div className=" mt-8 grid grid-cols-1 divide-y divide-gray-900 flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row ">
               <div>
                 <a
                   href="#"
-                  className="flex flex-col items-center bg-white   shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 bg-white"
+                  className="flex flex-col items-center bg-white   shadow-md md:flex-row md:max-w-xl  dark:border-gray-700 bg-white"
                 >
                   <img
                     className="mb-3 ml-3 mt-1 w-14 h-14 rounded-full shadow-lg"
@@ -135,7 +135,7 @@ const productdetails = () => {
               <div>
                 <a
                   href="#"
-                  className="flex flex-col items-center bg-white   shadow-md md:flex-row  hover:bg-gray-100 dark:border-gray-700 bg-white"
+                  className="flex flex-col items-center bg-white   shadow-md md:flex-row dark:border-gray-700 bg-white"
                 >
                   <div className="flex flex-col justify-between p-4 leading-normal">
                     <button
@@ -186,6 +186,26 @@ const productdetails = () => {
                     </button>
                   </div>
                 </a>
+              </div>
+
+              <div class="grid grid-cols-2 gap-1 divide-x">
+                <div>
+                  <button
+                    type="submit"
+                    className="w-full text-gray-700   font-medium text-sm px-5 py-2.5 text-center "
+                  >
+                    Message
+                  </button>
+                </div>
+
+                <div>
+                  <button
+                    type="submit"
+                    className="w-full text-gray-700    font-medium text-sm px-5 py-2.5 text-center "
+                  >
+                    Follow
+                  </button>
+                </div>
               </div>
             </div>
             {/* Profile card */}
