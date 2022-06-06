@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import {CheckIcon} from '@heroicons/react/solid';
-import {ArrowUpIcon, SupportIcon, ArrowRightIcon} from "@heroicons/react/solid";
+import {ArrowRightIcon, ArrowUpIcon, CheckIcon, SupportIcon} from '@heroicons/react/solid';
 import {AnimatePresence, motion} from "framer-motion"
 import {Dialog} from '@headlessui/react'
 

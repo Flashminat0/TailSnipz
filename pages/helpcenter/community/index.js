@@ -1,5 +1,5 @@
-import { Disclosure } from '@headlessui/react'
-import { ChevronRightIcon } from '@heroicons/react/solid'
+import {Disclosure} from '@headlessui/react'
+import {ChevronRightIcon} from '@heroicons/react/solid'
 import React from 'react'
 
 const index = () => {

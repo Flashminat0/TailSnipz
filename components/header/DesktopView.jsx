@@ -1,17 +1,8 @@
-import React, {Fragment, useState, useEffect} from 'react'
+import React, {Fragment, useState} from 'react'
 import {Popover, Transition} from '@headlessui/react'
 import {useRouter} from 'next/router'
 import SearchBar from './SearchBar'
-import {
-    HiChartBar,
-    HiCursorClick,
-    HiDocumentReport,
-    HiMenu,
-    HiRefresh,
-    HiShieldCheck,
-    HiViewGrid,
-    HiX,
-} from 'react-icons/hi'
+import {HiMenu, HiX,} from 'react-icons/hi'
 import LoginSignupButton from '../buttons/loginsignupbutton'
 
 

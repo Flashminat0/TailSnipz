@@ -1,5 +1,5 @@
 import React, {useRef, useState} from 'react';
-import {ChevronLeftIcon, ChevronRightIcon, PlusIcon, StarIcon} from "@heroicons/react/solid";
+import {ChevronLeftIcon, ChevronRightIcon, PlusIcon} from "@heroicons/react/solid";
 import Link from "next/link";
 import RatesInClosetSpotlight from "../rates/RatesInClosetSpotlight";
 

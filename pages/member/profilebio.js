@@ -1,12 +1,12 @@
 import React from 'react';
 import {motion} from "framer-motion";
 import {
-    PencilIcon,
-    LocationMarkerIcon,
-    ClockIcon,
-    RssIcon,
     CheckCircleIcon,
-    ChevronRightIcon
+    ChevronRightIcon,
+    ClockIcon,
+    LocationMarkerIcon,
+    PencilIcon,
+    RssIcon
 } from "@heroicons/react/outline";
 import Link from "next/link";
 
