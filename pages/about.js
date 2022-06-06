@@ -1,13 +1,13 @@
 import React from 'react';
 import {useRouter} from "next/router";
-import Closetspotlightitems from "../components/closet-spotlight/closetspotlightitems";
+import CTA from "../components/home/CTA";
 
 const About = () => {
     const router = useRouter();
 
     return (
         <div>
-            <Closetspotlightitems/>
+            <CTA/>
         </div>
     );
 };
