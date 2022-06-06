@@ -1,48 +1,47 @@
 import React, { useState, useRef, useEffect, state } from "react";
 
-
 const data = {
-  "resources": [
+  resources: [
     {
-      "title": "Find me on Twitter",
-      "imageUrl": "https://placeimg.com/300/300/any"
+      title: "Find me on Twitter",
+      imageUrl: "https://placeimg.com/300/300/any",
     },
     {
-      "title": "Welcome to Ark Labs",
-      "link": "https://ark-labs.co.uk",
-      "imageUrl": "https://placeimg.com/300/300/animals"
+      title: "Welcome to Ark Labs",
+      link: "https://ark-labs.co.uk",
+      imageUrl: "https://placeimg.com/300/300/animals",
     },
     {
-      "title": "Some sort of third title",
-      "imageUrl": "https://placeimg.com/300/300/architecture"
+      title: "Some sort of third title",
+      imageUrl: "https://placeimg.com/300/300/architecture",
     },
     {
-      "title": "A personal site perhaps?",
-      "link": "https://robkendal.co.uk",
-      "imageUrl": "https://placeimg.com/300/300/nature"
+      title: "A personal site perhaps?",
+      link: "https://robkendal.co.uk",
+      imageUrl: "https://placeimg.com/300/300/nature",
     },
     {
-      "title": "Super item number five",
-      "imageUrl": "https://placeimg.com/300/300/people"
+      title: "Super item number five",
+      imageUrl: "https://placeimg.com/300/300/people",
     },
     {
-      "title": "Super item number six",
-      "imageUrl": "https://placeimg.com/300/300/tech"
+      title: "Super item number six",
+      imageUrl: "https://placeimg.com/300/300/tech",
     },
     {
-      "title": "Super item number seven",
-      "imageUrl": "https://placeimg.com/300/300/animals"
+      title: "Super item number seven",
+      imageUrl: "https://placeimg.com/300/300/animals",
     },
     {
-      "title": "Super item number eight",
-      "imageUrl": "https://placeimg.com/300/300/people"
+      title: "Super item number eight",
+      imageUrl: "https://placeimg.com/300/300/people",
     },
     {
-      "title": "Super item number the last",
-      "imageUrl": "https://placeimg.com/300/300/tech"
-    }
-  ]
-}
+      title: "Super item number the last",
+      imageUrl: "https://placeimg.com/300/300/tech",
+    },
+  ],
+};
 
 const productdetails = () => {
   const [product, setProduct] = useState({
@@ -178,9 +177,7 @@ const productdetails = () => {
                                 })`,
                               }}
                             >
-                              <img
-                                className="w-full aspect-square hidden"
-                              />
+                              <img className="w-full aspect-square hidden" />
                             </a>
                           </div>
                         );
@@ -194,10 +191,87 @@ const productdetails = () => {
             {/* End Product Image set */}
             {/* Navigation and report  */}
             <div className="">
-              <p className="py-5 pl-2 font-xs">
-                Home / Women / Clothes / Jumpers & sweaters / Hoodies &
-                sweatshirts / Bebe Hoodies & sweatshirts
-              </p>
+              <nav
+                class="flex bg-gray-100 grid grid-cols-6"
+                aria-label="Breadcrumb"
+              >
+                <ol
+                  role="list"
+                  class="flex items-center space-x-1 col-start-1 col-end-3"
+                >
+                  <li>
+                    <div class="flex items-center">
+                      <a
+                        href="#"
+                        class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"
+                      >
+                        Home
+                      </a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="flex items-center">
+                      <svg
+                        class="flex-shrink-0 h-5 w-5 text-gray-300"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                      >
+                        <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                      </svg>
+                      <a
+                        href="#"
+                        class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"
+                      >
+                        Women
+                      </a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="flex items-center">
+                      <svg
+                        class="flex-shrink-0 h-5 text-gray-300"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                      >
+                        <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+                      </svg>
+                      <a
+                        href="#"
+                        class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"
+                        aria-current="page"
+                      >
+                        Beauty
+                      </a>
+                    </div>
+                  </li>
+                </ol>
+                <ol class="col-end-7 col-span-1 place-self-end mx-2 my-1">
+                  <li className="">
+                    <div class="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"
+                        />
+                      </svg>
+                    </div>
+                  </li>
+                </ol>
+              </nav>
             </div>
             {/* End Navigation and report  */}
             {/* Members Product  */}
@@ -319,7 +393,7 @@ const productdetails = () => {
                   </div>
                 </div>
 
-                <hr className="border-b-1 border-gray-400 my-1 mx-full" />
+                <hr className="border-b-1 border-gray-300 my-1 mx-full" />
 
                 <h3 className="text-base font-medium text-gray-900 dark:text-gray-700">
                   {product.description}
@@ -353,11 +427,11 @@ const productdetails = () => {
 
             {/*Profile card */}
 
-            <div className="mt-8 grid grid-cols-1 divide-y divide-gray-900 flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row ">
+            <div className=" mt-8 grid grid-cols-1 divide-y divide-gray-900 flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row ">
               <div>
                 <a
                   href="#"
-                  className="flex flex-col items-center bg-white   shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 bg-white"
+                  className="flex flex-col items-center bg-white   shadow-md md:flex-row md:max-w-xl  dark:border-gray-700 bg-white"
                 >
                   <img
                     className="mb-3 ml-3 mt-1 w-14 h-14 rounded-full shadow-lg"
@@ -377,7 +451,7 @@ const productdetails = () => {
               <div>
                 <a
                   href="#"
-                  className="flex flex-col items-center bg-white   shadow-md md:flex-row  hover:bg-gray-100 dark:border-gray-700 bg-white"
+                  className="flex flex-col items-center bg-white   shadow-md md:flex-row dark:border-gray-700 bg-white"
                 >
                   <div className="flex flex-col justify-between p-4 leading-normal">
                     <button
@@ -428,6 +502,26 @@ const productdetails = () => {
                     </button>
                   </div>
                 </a>
+              </div>
+
+              <div class="grid grid-cols-2 gap-1 divide-x">
+                <div>
+                  <button
+                    type="submit"
+                    className="w-full text-gray-700  focus:ring-4 focus:outline-none  font-medium rounded-sm text-sm px-5 py-2.5 text-center "
+                  >
+                    Message
+                  </button>
+                </div>
+
+                <div>
+                  <button
+                    type="submit"
+                    className="w-full text-gray-700   focus:ring-4 focus:outline-none  font-medium rounded-sm text-sm px-5 py-2.5 text-center "
+                  >
+                    Follow
+                  </button>
+                </div>
               </div>
             </div>
             {/* Profile card */}
