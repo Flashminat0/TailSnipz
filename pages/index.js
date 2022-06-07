@@ -19,9 +19,9 @@ const Index = () => {
             </Link>
             </div>
 
-            <div>
+            {/* <div>
                 <PopularItems />
-            </div>
+            </div> */}
         </div>
     );
 };

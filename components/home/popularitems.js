@@ -5,7 +5,6 @@ import React, {useState, useEffect} from 'react'
 
 import PopularItemLayout from '../layouts/itemrows/popularitemlayout'
 import PopularItemCard from './popularitemcard'
-import TermsAndConditions from './TermsAndConditions'
 
 
 const PopularItems = () => {
@@ -101,7 +100,7 @@ const PopularItems = () => {
                 </>
             </PopularItemLayout>
 
-            <TermsAndConditions />
+            
         </div>
 
     )
