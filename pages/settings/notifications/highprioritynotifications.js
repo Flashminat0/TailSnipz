@@ -1,4 +1,4 @@
-import { Switch } from '@headlessui/react';
+import {Switch} from '@headlessui/react';
 import React, {useState} from 'react'
 
 const highprioritynotifications = () => {

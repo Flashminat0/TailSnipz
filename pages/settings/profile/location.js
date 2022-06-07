@@ -1,7 +1,5 @@
-import React from "react";
-import Link from "next/link";
-import { useState } from "react";
-import { Switch } from "@headlessui/react";
+import React, {useState} from "react";
+import {Switch} from "@headlessui/react";
 
 const Location = () => {
   const [enabled, setEnabled] = useState(false);

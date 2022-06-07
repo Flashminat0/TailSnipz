@@ -1,9 +1,6 @@
 import React, {useState} from 'react'
-import Link from 'next/link';
 import {AnimatePresence, motion} from "framer-motion"
 import {Dialog} from '@headlessui/react'
-import {ArrowUpIcon, SupportIcon, ArrowRightIcon} from "@heroicons/react/solid";
-
 
 
 const inviteCard = () => {

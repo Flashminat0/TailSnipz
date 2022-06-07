@@ -1,11 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {AnimatePresence, motion} from "framer-motion";
 import {PlusIcon} from '@heroicons/react/outline';
 import {Dialog} from "@headlessui/react";
 import {ArrowUpIcon, SupportIcon} from "@heroicons/react/solid";
-import {toast} from "react-toastify";
-import { initializeApp } from "firebase/app";
-import {getStorage, ref, uploadBytes, getDownloadURL} from "firebase/storage";
+import {initializeApp} from "firebase/app";
 
 const firebaseApp = initializeApp({
     apiKey: "AIzaSyAvff4f3luKvQrV8k6KtblTAKX9XtEWSww",

@@ -1,7 +1,6 @@
-import Link from 'next/link'
 import React from 'react'
-import { Disclosure } from '@headlessui/react'
-import { ChevronDoubleRightIcon, ChevronRightIcon, ChevronUpIcon } from '@heroicons/react/solid'
+import {Disclosure} from '@headlessui/react'
+import {ChevronRightIcon} from '@heroicons/react/solid'
 
 
 const index = () => {
@@ -14,6 +13,8 @@ const index = () => {
     ]
   return (
     <div className={"h-screen w-screen place-content-center font-susty"}>
+
+
         <div className="mx-5 p-10 bg-white text-left">
             <h1 className = "text-3xl font-bold mt-0 mb-4" >Selling</h1>
             <div className="text-xs text-gray-500">Pick a topic</div>
@@ -236,6 +237,8 @@ const index = () => {
                     )}
                 </Disclosure>
         </div>
+
+
 
     </div>
   )
