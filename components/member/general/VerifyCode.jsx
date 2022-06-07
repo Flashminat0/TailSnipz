@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Link from "next/link";
 import {AnimatePresence, motion} from "framer-motion";
 
-const Verifycode = () => {
+const VerifyCode = () => {
     const [inputVerifyCode, setInputVerifyCode] = useState("");
 
     return (
@@ -44,4 +44,4 @@ const Verifycode = () => {
     );
 };
 
-export default Verifycode;
+export default VerifyCode;
