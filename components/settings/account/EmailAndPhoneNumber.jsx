@@ -15,7 +15,7 @@ const EmailAndPhoneNumber = () => {
     const [openPhoneModal, setOpenPhoneModal] = useState(false);
 
     return (
-        <div className={`h-screen w-screen grid place-content-center font-susty`}>
+        <div className={``}>
             <>
                 <div className={`bg-gray-50`}>
                     <div className={`grid grid-cols-4 p-5 pr-0`}>
@@ -55,7 +55,7 @@ const EmailAndPhoneNumber = () => {
                         </div>
                     </div>
                 </div>
-                <div className={`mx-2 font-thin`}>
+                <div className={`mx-2 font-thin pt-3`}>
                     <p>Your phone number will only be used to help you log in. It won’t be made public or used for
                         marketing purposes.</p>
                 </div>

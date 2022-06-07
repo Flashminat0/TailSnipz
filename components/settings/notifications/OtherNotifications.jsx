@@ -1,7 +1,7 @@
 import {Switch} from '@headlessui/react';
 import React, {useState} from 'react'
 
-const othernotifications = () => {
+const OtherNotifications = () => {
 
     const [enabledFavItems, setEnabledFavItems] = useState(false);
     const [enabledNewFollowers, setEnabledNewFollowers] = useState(false);
@@ -10,7 +10,7 @@ const othernotifications = () => {
     const [enabledForumMessages, setEnabledForumMessages] = useState(false);
 
   return (
-    <div className={"h-screen w-screen grid place-content-center font-susty"}>
+    <div className={""}>
         <>
             <div className={"w-full bg-gray-50"}>
                 <div className='p-3'>
@@ -25,13 +25,13 @@ const othernotifications = () => {
                             checked={enabledFavItems}
                             onChange={setEnabledFavItems}
                             className={`${enabledFavItems ? 'bg-susty' : 'bg-gray-300'}
-                            relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                            relative inline-flex h-[30px] w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                         >
                             <span className="sr-only">Use setting</span>
                             <span
                                 aria-hidden="true"
-                                className={`${enabledFavItems ? 'translate-x-9' : 'translate-x-0'}
-                            pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                className={`${enabledFavItems ? 'translate-x-[1.855rem]' : 'translate-x-0'}
+                            pointer-events-none inline-block h-[26px] w-[26px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                             />
                         </Switch>
                     </div>
@@ -48,13 +48,13 @@ const othernotifications = () => {
                             checked={enabledNewFollowers}
                             onChange={setEnabledNewFollowers}
                             className={`${enabledNewFollowers ? 'bg-susty' : 'bg-gray-300'}
-                            relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                            relative inline-flex h-[30px] w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                         >
                             <span className="sr-only">Use setting</span>
                             <span
                                 aria-hidden="true"
-                                className={`${enabledNewFollowers ? 'translate-x-9' : 'translate-x-0'}
-                            pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                className={`${enabledNewFollowers ? 'translate-x-[1.855rem]' : 'translate-x-0'}
+                            pointer-events-none inline-block h-[26px] w-[26px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                             />
                         </Switch>
                     </div>
@@ -71,13 +71,13 @@ const othernotifications = () => {
                             checked={enabledNewItems}
                             onChange={setEnabledNewItems}
                             className={`${enabledNewItems ? 'bg-susty' : 'bg-gray-300'}
-                            relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                            relative inline-flex h-[30px] w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                         >
                             <span className="sr-only">Use setting</span>
                             <span
                                 aria-hidden="true"
-                                className={`${enabledNewItems ? 'translate-x-9' : 'translate-x-0'}
-                            pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                className={`${enabledNewItems ? 'translate-x-[1.855rem]' : 'translate-x-0'}
+                            pointer-events-none inline-block h-[26px] w-[26px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                             />
                         </Switch>
                     </div>
@@ -94,13 +94,13 @@ const othernotifications = () => {
                             checked={enabledMentions}
                             onChange={setEnabledMentions}
                             className={`${enabledMentions ? 'bg-susty' : 'bg-gray-300'}
-                            relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                            relative inline-flex h-[30px] w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                         >
                             <span className="sr-only">Use setting</span>
                             <span
                                 aria-hidden="true"
-                                className={`${enabledMentions ? 'translate-x-9' : 'translate-x-0'}
-                            pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                className={`${enabledMentions ? 'translate-x-[1.855rem]' : 'translate-x-0'}
+                            pointer-events-none inline-block h-[26px] w-[26px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                             />
                         </Switch>
                     </div>
@@ -117,13 +117,13 @@ const othernotifications = () => {
                             checked={enabledForumMessages}
                             onChange={setEnabledForumMessages}
                             className={`${enabledForumMessages ? 'bg-susty' : 'bg-gray-300'}
-                            relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                            relative inline-flex h-[30px] w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                         >
                             <span className="sr-only">Use setting</span>
                             <span
                                 aria-hidden="true"
-                                className={`${enabledForumMessages ? 'translate-x-9' : 'translate-x-0'}
-                            pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                className={`${enabledForumMessages ? 'translate-x-[1.855rem]' : 'translate-x-0'}
+                            pointer-events-none inline-block h-[26px] w-[26px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                             />
                         </Switch>
                     </div>
@@ -136,4 +136,4 @@ const othernotifications = () => {
   )
 }
 
-export default othernotifications
+export default OtherNotifications

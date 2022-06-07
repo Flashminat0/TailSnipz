@@ -34,11 +34,11 @@ const Myaddress = () => {
     const [inputTown, setInputTown] = useState("");
 
     return (
-        <div className={"h-screen w-screen grid place-content-center font-susty"}>
+        <div className={""}>
             <>
-                <div className="w-full">
-                    <div className={"text-gray-500 text-sm"}>My Address</div>
-                    <div className="w-full p-4 bg-white rounded-xl shadow-sm">
+                <div className="w-full ">
+                    <div className={"text-gray-500 text-sm pb-3"}>My Address</div>
+                    <div className="w-full p-4 bg-gray-50 rounded-xl shadow-sm">
                         <div className={"flex items-center justify-between px-6 py-5 hover:bg-gray-100"}>
                             <p className={"mr-36"}>Add Address</p>
                             <ChevronRightIcon className={"w-5 h-5"} onClick={() => setOpenAddressModal(true)}/>

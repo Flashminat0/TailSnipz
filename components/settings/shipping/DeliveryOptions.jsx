@@ -5,7 +5,7 @@ const Deliveryoptions = () => {
     const [enabled, setEnabled] = useState(false);
 
     return (
-        <div className={"h-screen w-screen grid place-content-center font-susty"}>
+        <div className={""}>
             <>
                 <div className={"w-full p-4 bg-gray-50"}>
                     <div className={"text-gray-500 flex flex-col text-sm"}>Delivery options</div>

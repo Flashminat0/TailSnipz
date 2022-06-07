@@ -6,9 +6,9 @@ import Language from "./language";
 const Profile = () => {
   return (
     <>
-    <Name />
-    <Location />
-    <Language />
+      <Name />
+      <Location />
+      <Language />
     </>
   );
 };

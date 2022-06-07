@@ -12,7 +12,7 @@ function classNames(...classes) {
 }
 
 
-const index = () => {
+const SelectDiscount = () => {
 
     const [enabled, setEnabled] = useState(false)
     const [clickedDropOne, setClickedDropOne] = useState("10")
@@ -20,10 +20,9 @@ const index = () => {
     const [clickedDropThree, setClickedDropThree] = useState("50")
 
   return (
-    <div className={"h-screen w-screen grid place-content-center font-susty"}>
+    <div className={""}>
         <>
             <div >
-
                 <div className={"w-full bg-gray-50"}>
                     <div className={"mt-5 grid grid-cols-5 gap-2 p-5"}>
                         <div className={"col-span-4"}>
@@ -231,4 +230,4 @@ const index = () => {
   )
 }
 
-export default index
+export default SelectDiscount

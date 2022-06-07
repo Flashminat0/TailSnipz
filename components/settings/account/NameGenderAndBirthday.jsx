@@ -27,9 +27,9 @@ const NameGenderAndBirthday = () => {
 
 
     return (
-        <div className={`h-screen w-screen grid place-content-center font-susty`}>
+        <div className={``}>
             <>
-                <div className={`grid grid-cols-1 gap-3`}>
+                <div className={`grid grid-cols-1 gap-3 bg-gray-50 p-4`}>
                     <p>Name</p>
                     <input
                         name="fullname"

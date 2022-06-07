@@ -1,13 +1,13 @@
 import {Switch} from '@headlessui/react'
 import React, {useState} from 'react'
 
-const emailnotifications = () => {
+const EmailNotifications = () => {
 
     const [enabledNewsletter, setEnabledNewsletter] = useState(false)
     const [enabledAnnouncements, setEnabledAnnouncements] = useState(false)
 
   return (
-    <div className={"h-screen w-screen grid place-content-center font-susty"}>
+    <div className={""}>
         <>
             <div className={"w-full bg-gray-50"}>
                 <div className='p-3'>
@@ -23,13 +23,13 @@ const emailnotifications = () => {
                             checked={enabledNewsletter}
                             onChange={setEnabledNewsletter}
                             className={`${enabledNewsletter ? 'bg-susty' : 'bg-gray-300'}
-                            relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                            relative inline-flex h-[30px] w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                         >
                             <span className="sr-only">Use setting</span>
                             <span
                                 aria-hidden="true"
-                                className={`${enabledNewsletter ? 'translate-x-9' : 'translate-x-0'}
-                            pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                className={`${enabledNewsletter ? 'translate-x-[1.855rem]' : 'translate-x-0'}
+                            pointer-events-none inline-block h-[26px] w-[26px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                             />
                         </Switch>
                     </div>
@@ -47,13 +47,13 @@ const emailnotifications = () => {
                             checked={enabledAnnouncements}
                             onChange={setEnabledAnnouncements}
                             className={`${enabledAnnouncements ? 'bg-susty' : 'bg-gray-300'}
-                            relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                            relative inline-flex h-[30px] w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                         >
                             <span className="sr-only">Use setting</span>
                             <span
                                 aria-hidden="true"
-                                className={`${enabledAnnouncements ? 'translate-x-9' : 'translate-x-0'}
-                            pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                className={`${enabledAnnouncements ? 'translate-x-[1.855rem]' : 'translate-x-0'}
+                            pointer-events-none inline-block h-[26px] w-[26px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                             />
                         </Switch>
                     </div>
@@ -67,4 +67,4 @@ const emailnotifications = () => {
   )
 }
 
-export default emailnotifications
+export default EmailNotifications

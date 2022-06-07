@@ -5,7 +5,7 @@ const Location = () => {
   const [enabled, setEnabled] = useState(false);
 
   return (
-    <div className={"h-screen w-screen grid place-content-center font susty"}>
+    <div className={""}>
       <>
         <div className="hidden sm:block" aria-hidden="true">
           <div className="py-5">
