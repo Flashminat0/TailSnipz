@@ -7,7 +7,6 @@ import {motion} from "framer-motion";
 const AboutYourPrivacy = () => {
     const [open, setOpen] = useState(true);
 
-    const cancelButtonRef = useRef(null);
 
     const [showPopUp, setShopPopUp] = useState(true);
 
@@ -31,14 +30,14 @@ const AboutYourPrivacy = () => {
                                         {/*header*/}
                                         <div
                                             className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                            <h6 className="text-xl font-semibold">
+                                            <p className="text-xl font-semibold">
                                                 About Your Privacy
-                                            </h6>
+                                            </p>
                                             <XIcon className="w-4 h-4" onClick={() => setShopPopUp(false)}/>
                                         </div>
                                         {/*body*/}
                                         <div className="relative p-6 flex-auto">
-                                            <p className="text-sm mt-1">
+                                            <p className="text-sm mt-1 leading-relaxed text-gray-600">
                                                 We process your data to deliver content or
                                                 advertisements and measure the delivery of such content
                                                 or advertisements to extract insights about our website.
@@ -55,8 +54,8 @@ const AboutYourPrivacy = () => {
                                             >
                                                 More information
                                             </a>
-                                            <p className="mt-5 text-sm">Consent ID: 88309039</p>
-                                            <p className="text-sm">
+                                            <p className="mt-5 text-sm text-gray-600">Consent ID: 88309039</p>
+                                            <p className="text-sm text-gray-600">
                                                 Consent Date: Fri May 13 2022 17:23:41 GMT+0530 (India
                                                 Standard Time)
                                             </p>
@@ -67,8 +66,9 @@ const AboutYourPrivacy = () => {
                                                         {({open}) => (
                                                             <>
                                                                 <Disclosure.Button
+                                                                    as={"div"}
                                                                     className="flex w-full justify-between   px-4 py-2 text-left text-sm font-medium text-susty  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                                                                    <div
+                                                                    <span
                                                                         className={`${
                                                                             open ? "rotate-180 transform" : ""
                                                                         } h-5 w-5 text-susty`}
@@ -82,12 +82,12 @@ const AboutYourPrivacy = () => {
                                                                                 <PlusSmIcon/>
                                                                             </>
                                                                         )}
-                                                                    </div>
+                                                                    </span>
 
                                                                     <span className="pr-72 mr-6">
                                                                          What is your refund policy?
                                                                     </span>
-                                                                    <div>
+                                                                    <span>
                                                                         <Switch
                                                                             checked={enabled1}
                                                                             onChange={setEnabled1}
@@ -101,10 +101,10 @@ const AboutYourPrivacy = () => {
             pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                                                                             />
                                                                         </Switch>
-                                                                    </div>
+                                                                    </span>
                                                                 </Disclosure.Button>
                                                                 <Disclosure.Panel
-                                                                    className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                                                                    className="px-4 pt-4 pb-2 text-xs text-gray-500">
                                                                     If you're unhappy with your purchase for any
                                                                     reason, email us within 90 days and we'll
                                                                     refund you in full, no questions asked.
@@ -119,8 +119,9 @@ const AboutYourPrivacy = () => {
                                                         {({open}) => (
                                                             <>
                                                                 <Disclosure.Button
+                                                                    as={"div"}
                                                                     className="flex w-full justify-between   px-4 py-2 text-left text-sm font-medium text-susty  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                                                                    <div className={`${
+                                                                    <span className={`${
                                                                         open ? "rotate-180 transform" : ""
                                                                     } h-5 w-5 text-susty`}>
                                                                         {open ? (
@@ -132,14 +133,14 @@ const AboutYourPrivacy = () => {
                                                                                 <PlusSmIcon/>
                                                                             </>
                                                                         )}
-                                                                    </div>
+                                                                    </span>
 
 
                                                                     <span className="pr-72 mr-6">
                                                                         What is your refund policy?
                                                                     </span>
 
-                                                                    <div>
+                                                                    <span>
                                                                         <Switch
                                                                             checked={enabled2}
                                                                             onChange={setEnabled2}
@@ -153,10 +154,10 @@ const AboutYourPrivacy = () => {
             pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                                                                             />
                                                                         </Switch>
-                                                                    </div>
+                                                                    </span>
                                                                 </Disclosure.Button>
                                                                 <Disclosure.Panel
-                                                                    className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                                                                    className="px-4 pt-4 pb-2 text-xs text-gray-500">
                                                                     If you're unhappy with your purchase for any
                                                                     reason, email us within 90 days and we'll
                                                                     refund you in full, no questions asked.
@@ -171,8 +172,9 @@ const AboutYourPrivacy = () => {
                                                         {({open}) => (
                                                             <>
                                                                 <Disclosure.Button
+                                                                    as={"div"}
                                                                     className="flex w-full justify-between   px-4 py-2 text-left text-sm font-medium text-susty  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                                                                    <div
+                                                                    <span
                                                                         className={`${
                                                                             open ? "rotate-180 transform" : ""
                                                                         } h-5 w-5 text-susty`}
@@ -186,12 +188,12 @@ const AboutYourPrivacy = () => {
                                                                                 <PlusSmIcon/>
                                                                             </>
                                                                         )}
-                                                                    </div>
+                                                                    </span>
 
                                                                     <span className="pr-72 mr-6">
                                                                         What is your refund policy?
                                                                     </span>
-                                                                    <div>
+                                                                    <span>
                                                                         <Switch
                                                                             checked={enabled3}
                                                                             onChange={setEnabled3}
@@ -205,10 +207,10 @@ const AboutYourPrivacy = () => {
             pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                                                                             />
                                                                         </Switch>
-                                                                    </div>
+                                                                    </span>
                                                                 </Disclosure.Button>
                                                                 <Disclosure.Panel
-                                                                    className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                                                                    className="px-4 pt-4 pb-2 text-xs text-gray-500">
                                                                     If you're unhappy with your purchase for any
                                                                     reason, email us within 90 days and we'll
                                                                     refund you in full, no questions asked.
@@ -223,8 +225,9 @@ const AboutYourPrivacy = () => {
                                                         {({open}) => (
                                                             <>
                                                                 <Disclosure.Button
+                                                                    as={"div"}
                                                                     className="flex w-full justify-between   px-4 py-2 text-left text-sm font-medium text-susty  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                                                                    <div
+                                                                    <span
                                                                         className={`${
                                                                             open ? "rotate-180 transform" : ""
                                                                         } h-5 w-5 text-susty`}
@@ -238,12 +241,12 @@ const AboutYourPrivacy = () => {
                                                                                 <PlusSmIcon/>
                                                                             </>
                                                                         )}
-                                                                    </div>
+                                                                    </span>
 
                                                                     <span className="pr-72 mr-6">
                                                                         What is your refund policy?
                                                                     </span>
-                                                                    <div>
+                                                                    <span>
                                                                         <Switch
                                                                             checked={enabled4}
                                                                             onChange={setEnabled4}
@@ -257,10 +260,10 @@ const AboutYourPrivacy = () => {
             pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                                                                             />
                                                                         </Switch>
-                                                                    </div>
+                                                                    </span>
                                                                 </Disclosure.Button>
                                                                 <Disclosure.Panel
-                                                                    className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                                                                    className="px-4 pt-4 pb-2 text-xs text-gray-500">
                                                                     If you're unhappy with your purchase for any
                                                                     reason, email us within 90 days and we'll
                                                                     refund you in full, no questions asked.
@@ -284,7 +287,6 @@ const AboutYourPrivacy = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
                         </>
                     ) : null}
                 </div>
