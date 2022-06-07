@@ -7,7 +7,7 @@ const AboutYourPrivacy = () => {
 
   const cancelButtonRef = useRef(null);
 
-  const [showPopUp, setshowPopUp] = useState(false);
+  const [showPopUp, setshowPopUp] = useState(true);
 
   const [enabled, setEnabled] = useState(false);
 
@@ -15,14 +15,6 @@ const AboutYourPrivacy = () => {
     <div className={"h-screen w-screen grid place-content-center font-susty"}>
       <>
         <div>
-          <button
-            type="button"
-            className="text-base ml-4 my-2 px-3 py-2 text-susty"
-            onClick={() => setshowPopUp(true)}
-          >
-            About Your Privacy
-          </button>
-
           {showPopUp ? (
             <>
               <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
