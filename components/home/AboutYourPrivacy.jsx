@@ -7,7 +7,7 @@ const AboutYourPrivacy = () => {
 
   const cancelButtonRef = useRef(null);
 
-  const [showPopUp, setshowPopUp] = useState(true);
+  const [showPopUp, setShopPopUp] = useState(true);
 
   const [enabled, setEnabled] = useState(false);
 
@@ -28,7 +28,7 @@ const AboutYourPrivacy = () => {
                       </h8>
                       <button
                         className="p-1 ml-auto bg-transparent border-0 text-gray-700  float-right text-lg leading-none font-semibold outline-none focus:outline-none"
-                        onClick={() => setshowPopUp(false)}
+                        onClick={() => setShopPopUp(false)}
                       >
                         <span className="text-gray-700 text-md">x</span>
                       </button>
@@ -316,7 +316,7 @@ const AboutYourPrivacy = () => {
                       <button
                         className="bg-red-400 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                         type="button"
-                        onClick={() => setshowPopUp(false)}
+                        onClick={() => setShopPopUp(false)}
                       >
                         Confirm my choices
                       </button>
