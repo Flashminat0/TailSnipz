@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from "next/link";
+import PopularItems from '../components/home/popularitems';
 
 const Index = () => {
     return (
-        <div className={`bg-susty`}>
+        <div className={``}>
             <ul>
                 <h1 className="text-3xl font-bold underline font-susty">
                     Hello world!
@@ -16,6 +17,10 @@ const Index = () => {
             <Link href="settings/profile/profile">
                 <a>Profile</a>
             </Link>
+            </div>
+
+            <div>
+                <PopularItems />
             </div>
         </div>
     );
