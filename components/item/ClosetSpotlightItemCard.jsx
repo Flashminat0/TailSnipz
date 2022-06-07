@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {InformationCircleIcon} from "@heroicons/react/outline";
 
-const Closetspotlightitemcard = ({src, alt, price, size, brand}) => {
+const ClosetSpotlightItemCard = ({src, alt, price, size, brand}) => {
     const [isFavourite, setIsFavourite] = useState(false);
     let favCount = 2;
 
@@ -105,4 +105,4 @@ const Closetspotlightitemcard = ({src, alt, price, size, brand}) => {
     );
 };
 
-export default Closetspotlightitemcard;
+export default ClosetSpotlightItemCard;

@@ -1,8 +1,7 @@
-import React, { useState, useRef } from "react";
-import { Fragment } from "react";
-import { Menu, Transition, Listbox } from "@headlessui/react";
+import React, {Fragment, useRef, useState} from "react";
+import {Listbox, Menu, Transition} from "@headlessui/react";
 import Image from "next/image";
-import { CheckIcon, SelectorIcon } from "@heroicons/react/solid";
+import {CheckIcon, SelectorIcon} from "@heroicons/react/solid";
 
 const navigation = [
   {

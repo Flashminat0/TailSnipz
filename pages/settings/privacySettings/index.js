@@ -1,8 +1,6 @@
-import { Switch, Dialog } from '@headlessui/react'
-import Link from 'next/link';
+import {Dialog, Switch} from '@headlessui/react'
 import React, {useState} from 'react'
 import {AnimatePresence, motion} from "framer-motion"
-import {ArrowUpIcon, SupportIcon, ArrowRightIcon} from "@heroicons/react/solid";
 
 const index = () => {
 

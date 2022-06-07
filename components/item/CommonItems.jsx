@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import Newsfeedlayout from "../layouts/newsfeedlayout";
-import Newsfeeditemcard from "./newsfeeditemcard";
+import CommonItemSetWrapper from "./CommonItemSetWrapper";
+import CommonItemCard from "./CommonItemCard";
 
 const itemsStaticData = [{
     id: 1,
@@ -104,19 +104,19 @@ const itemsStaticData = [{
     brand: "Shein"
 }];
 
-const Newsfeeditems = () => {
+const CommonItems = () => {
     const [items, setItems] = useState(itemsStaticData);
 
     return (
-        <Newsfeedlayout>
+        <CommonItemSetWrapper>
             {items.map((item)=>(
                 <div key={item.id}>
-                    <Newsfeeditemcard username={item.username} profileImg={item.profileImg} profileAlt={item.profileAlt} src={item.src} alt={item.alt} price={item.price} size={item.size}
-                                      brand={item.brand}/>
+                    <CommonItemCard username={item.username} profileImg={item.profileImg} profileAlt={item.profileAlt} src={item.src} alt={item.alt} price={item.price} size={item.size}
+                                    brand={item.brand}/>
                 </div>
             ))}
-        </Newsfeedlayout>
+        </CommonItemSetWrapper>
     );
 };
 
-export default Newsfeeditems;
+export default CommonItems;

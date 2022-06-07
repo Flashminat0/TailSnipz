@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
-import {ChevronLeftIcon, ChevronRightIcon, PlusIcon, StarIcon} from "@heroicons/react/solid";
+import {ChevronLeftIcon, ChevronRightIcon, PlusIcon} from "@heroicons/react/solid";
 import Link from "next/link";
-import Ratesinclosetspotlight from "../rates/ratesinclosetspotlight";
+import RatesInClosetSpotlight from "../rates/RatesInClosetSpotlight";
 
 const personData = [{
     id: 1,
@@ -12,7 +12,7 @@ const personData = [{
     noOfVotes: 50
 }];
 
-const Closetspotlightlayout = ({children}) => {
+const ClosetSpotlightWrapper = ({children}) => {
     const [person, setPerson] = useState(personData);
 
     const ref = useRef(null);
@@ -22,7 +22,7 @@ const Closetspotlightlayout = ({children}) => {
     };
 
     return (
-        <div className={'px-[4rem] py-[2rem]'}>
+        <div className={'py-[2rem]'}>
             <div className={'flex flex-col gap-3'}>
                 <div className={'flex flex-row justify-between items-center py-5'}>
                     <p className={'text-2xl font-medium capitalize'}>Closet Spotlight</p>
@@ -37,7 +37,7 @@ const Closetspotlightlayout = ({children}) => {
                                      className={'w-[3rem] h-[3rem] rounded-full'}/>
                                 <div className={'flex flex-col'}>
                                     <div className={'font-medium'}>{personD.username}</div>
-                                    <Ratesinclosetspotlight personD={personD} person={person}/>
+                                    <RatesInClosetSpotlight id={personD.id} personD={personD} person={person}/>
                                 </div>
                             </div>
                         ))}
@@ -77,4 +77,4 @@ const Closetspotlightlayout = ({children}) => {
     );
 };
 
-export default Closetspotlightlayout;
+export default ClosetSpotlightWrapper;

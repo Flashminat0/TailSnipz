@@ -1,7 +1,6 @@
-import Link from 'next/link'
 import React from 'react'
-import { Disclosure } from '@headlessui/react'
-import { ChevronDoubleRightIcon, ChevronRightIcon, ChevronUpIcon } from '@heroicons/react/solid'
+import {Disclosure} from '@headlessui/react'
+import {ChevronRightIcon} from '@heroicons/react/solid'
 
 
 const index = () => {

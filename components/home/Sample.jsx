@@ -1,5 +1,5 @@
 /*Edit as you need. I gave the basic example here. If you not find your solution, let me a reply*/
-import React, { useState } from "react";
+import React, {useState} from "react";
 
 const YourComponent = () => {
   const [checked, setChecked] = useState(false);

@@ -1,7 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {AnimatePresence, motion} from "framer-motion";
 import {Dialog} from "@headlessui/react";
-import {ArrowUpIcon, SupportIcon} from "@heroicons/react/solid";
 
 const Modallayout = ({children, modalTopic ,  modalOpenState , setModalOpenState}) => {
 

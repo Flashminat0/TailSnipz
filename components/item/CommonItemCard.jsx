@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {InformationCircleIcon} from "@heroicons/react/outline";
 
-const Newsfeeditemcard = ({username, profileImg, profileAlt, src, alt, price, size, brand}) => {
+const CommonItemCard = ({username, profileImg, profileAlt, src, alt, price, size, brand}) => {
     const [isFavourite, setIsFavourite] = useState(false);
     let favCount = 2;
 
@@ -63,4 +63,4 @@ const Newsfeeditemcard = ({username, profileImg, profileAlt, src, alt, price, si
     );
 };
 
-export default Newsfeeditemcard;
+export default CommonItemCard;

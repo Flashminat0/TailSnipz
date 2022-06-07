@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {InformationCircleIcon, LocationMarkerIcon, EyeIcon, CameraIcon, ArrowRightIcon} from "@heroicons/react/outline";
+import {ArrowRightIcon, CameraIcon, EyeIcon, InformationCircleIcon, LocationMarkerIcon} from "@heroicons/react/outline";
 
 const receiverMessageStaticData = [{
     id: 1,

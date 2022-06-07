@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 // import AuthModal from '../auth/AuthModal'
 import {useLocalStorage} from '@mantine/hooks'
 import {toast} from 'react-toastify'
-import {getAuth, signOut} from 'firebase/auth'
+import {signOut} from 'firebase/auth'
 // import {firebaseApp} from '../../services/firebase'
 
 const LoginSignupButton = () => {

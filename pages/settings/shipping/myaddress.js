@@ -3,10 +3,9 @@ import {Dialog, Listbox, Transition} from "@headlessui/react";
 import {
     BookmarkAltIcon,
     CheckIcon,
-    ChevronUpIcon,
     ChevronRightIcon,
-    SelectorIcon,
-    InformationCircleIcon
+    InformationCircleIcon,
+    SelectorIcon
 } from "@heroicons/react/solid";
 import Flags from 'country-flag-icons/react/3x2'
 import {AnimatePresence, motion} from "framer-motion";

@@ -1,6 +1,5 @@
-import { Fragment } from "react";
-import { Menu, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/solid";
+import {Fragment} from "react";
+import {Menu, Transition} from "@headlessui/react";
 
 const Notification = () => {
   return (
