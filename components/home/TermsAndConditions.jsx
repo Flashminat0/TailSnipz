@@ -4,13 +4,13 @@ const TermsAndConditions = () => {
   return (
     <div className='px-36'>
         <>
-            <h1 className="font-semibold text-3xl justify-center">Vinted Terms &amp; Conditions of Use</h1>
+            <h1 className="font-semibold text-3xl justify-center">Susty Terms &amp; Conditions of Use</h1>
 
             <p className="font-semibold text-lg text-gray-500 pt-8">TERMS AND CONDITIONS </p>
             <p className="font-semibold text-lg pt-2 text-slate-500">Last Updated:  5 April, 2022</p>
 
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                The platform VINTED is managed and hosted by VINTED INC. (hereinafter referred to as "VINTED," “we,” “us,” “our”), a company registered in Delaware, with a business location at C/o AG Accounting, 735 Geary St. #303, San Francisco, CA 94109. These Terms and Conditions (“Terms”) are a legally binding agreement between you and VINTED regarding your access and use of the Site. BY ACCESSING OR USING THE SITE, YOU CONFIRM THAT YOU ACCEPT THESE TERMS AND THAT YOU AGREE TO COMPLY WITH THEM AND BE LEGALLY BOUND BY THEM.
+                The platform Susty is managed and hosted by Susty INC. (hereinafter referred to as "Susty," “we,” “us,” “our”), a company registered in Delaware, with a business location at C/o AG Accounting, 735 Geary St. #303, San Francisco, CA 94109. These Terms and Conditions (“Terms”) are a legally binding agreement between you and Susty regarding your access and use of the Site. BY ACCESSING OR USING THE SITE, YOU CONFIRM THAT YOU ACCEPT THESE TERMS AND THAT YOU AGREE TO COMPLY WITH THEM AND BE LEGALLY BOUND BY THEM.
             </p>
 
 
@@ -18,7 +18,7 @@ const TermsAndConditions = () => {
             <p className="font-semibold text-lg text-gray-500 pt-8 md:pl-12 pl-4">1. INTRODUCTION </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 <b>1.1 Welcome to the Site. </b>
-                Please read these Terms carefully. These Terms set forth the terms and conditions by which you may access and use the Site. (In particular, please read Section 17 (Liability Limitations; Warranty Disclaimers) carefully as it affects your rights and will have a substantial impact on how claims between you and VINTED are resolved.) If you do not agree to these Terms, you are not authorized to access or use the Site. If you agree to these Terms, you will be able to access and use our Site as a Visitor or as a User, and you will have the opportunity to be a Buyer and a Seller of Items on the Site. VINTED does not buy, sell, exchange, or donate Items shown on the Site. VINTED is an online hosting service and offers Intermediary Services. VINTED functions as an intermediary between private buyers and sellers, and VINTED is not a party to any Transactions between Users. (Capitalized terms are defined in Section 2 of these Terms.) 
+                Please read these Terms carefully. These Terms set forth the terms and conditions by which you may access and use the Site. (In particular, please read Section 17 (Liability Limitations; Warranty Disclaimers) carefully as it affects your rights and will have a substantial impact on how claims between you and Susty are resolved.) If you do not agree to these Terms, you are not authorized to access or use the Site. If you agree to these Terms, you will be able to access and use our Site as a Visitor or as a User, and you will have the opportunity to be a Buyer and a Seller of Items on the Site. Susty does not buy, sell, exchange, or donate Items shown on the Site. Susty is an online hosting service and offers Intermediary Services. Susty functions as an intermediary between private buyers and sellers, and Susty is not a party to any Transactions between Users. (Capitalized terms are defined in Section 2 of these Terms.) 
             </p>
 
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
@@ -26,7 +26,7 @@ const TermsAndConditions = () => {
                     The Site is not intended for the following persons:
             </p>
             <p className='text-gray-500 pt-2 text-lg leading-normal'>
-                (i) Non-US Residents. You are only authorized to use the Site if you are a resident of the continental United States, Alaska, Hawaii or Puerto Rico. Do not use the Site if you do not live in one of these areas. If you live in a different area, VINTED may have a separate Site for your area. 
+                (i) Non-US Residents. You are only authorized to use the Site if you are a resident of the continental United States, Alaska, Hawaii or Puerto Rico. Do not use the Site if you do not live in one of these areas. If you live in a different area, Susty may have a separate Site for your area. 
             </p>
             <p className='text-gray-500 pt-2 text-lg leading-normal'>
                 (ii) Minors. The Site is not intended for access or use by persons who are under 18 years old. You must be 18 years old or older to register and use the Site. 
@@ -40,7 +40,7 @@ const TermsAndConditions = () => {
 
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 <b>1.3 Account. </b>
-                To buy, sell, exchange, or donate Items on the Site and use certain other Services of the Site, you must first register on the Site and create a User account. By registering on the Site, you agree to provide true, accurate, current, and complete information when requested by us. You must always maintain and promptly update your Account information to keep such information current and complete at all times. Through the registration process, a Seller provides (explicitly or via a Facebook or Google profile) an email address, a username (a pseudonym for use on the Site), and a password to enable the Site to identify the User each time they access the Site. VINTED may request a User to verify their Account for security purposes from time to time. For example, this can occur by verifying the User's Facebook or Google account, the User's telephone number, email, the User's credit card or debit card, pin-code based, or any other confirmations that Vinted may implement in its sole discretion. 
+                To buy, sell, exchange, or donate Items on the Site and use certain other Services of the Site, you must first register on the Site and create a User account. By registering on the Site, you agree to provide true, accurate, current, and complete information when requested by us. You must always maintain and promptly update your Account information to keep such information current and complete at all times. Through the registration process, a Seller provides (explicitly or via a Facebook or Google profile) an email address, a username (a pseudonym for use on the Site), and a password to enable the Site to identify the User each time they access the Site. Susty may request a User to verify their Account for security purposes from time to time. For example, this can occur by verifying the User's Facebook or Google account, the User's telephone number, email, the User's credit card or debit card, pin-code based, or any other confirmations that Susty may implement in its sole discretion. 
             </p>
 
             <p className='text-gray-500 pt-3 text-lg leading-normal font-semibold'>1.4 Additional Terms. </p>
@@ -53,7 +53,7 @@ const TermsAndConditions = () => {
 
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 <b>1.5 Revisions To These Terms. </b>
-                In our sole discretion, we may amend these Terms from time to time. We will update the “Last Updated” date at the top of these Terms, which reflect the effective date of the updated Terms. We may also inform you about material changes to these Terms through the Help Center or by sending you a message and/or email. The updated Terms shall become effective and replace the prior Terms at the time of posting. If you do not agree with or accept the updated Terms, (i) you should not continue to access and use the Site after the effective date of the updated Terms and (ii) you should terminate your relationship with VINTED (as further described in Section 16.1). You will be deemed to have accepted the updated Terms if you continue to access and use the Site after the updated Terms become effective. 
+                In our sole discretion, we may amend these Terms from time to time. We will update the “Last Updated” date at the top of these Terms, which reflect the effective date of the updated Terms. We may also inform you about material changes to these Terms through the Help Center or by sending you a message and/or email. The updated Terms shall become effective and replace the prior Terms at the time of posting. If you do not agree with or accept the updated Terms, (i) you should not continue to access and use the Site after the effective date of the updated Terms and (ii) you should terminate your relationship with Susty (as further described in Section 16.1). You will be deemed to have accepted the updated Terms if you continue to access and use the Site after the updated Terms become effective. 
             </p>
 
 
@@ -63,10 +63,10 @@ const TermsAndConditions = () => {
                 When the following capitalized terms are used in these Terms, they have the definitions outlined in this section. Please refer to this Definitions section whenever you see a capitalized term.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                Additional Service(s) – Additional services provided by VINTED and offered on the Site (e.g., Bumps and Closet Spotlight), which require an additional fee and may be subject to additional terms and conditions; please see the Price List for more information about these services.
+                Additional Service(s) – Additional services provided by Susty and offered on the Site (e.g., Bumps and Closet Spotlight), which require an additional fee and may be subject to additional terms and conditions; please see the Price List for more information about these services.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                ADYEN N.V. – VINTED’s payment service provider ADYEN N.V., a Dutch public limited liability company (naamloze vennotschap) d/b/a ADYEN N.V. (San Francisco Branch). In the U.S., ADYEN N.V. acts as a federally-licensed branch of a foreign bank.
+                ADYEN N.V. – Susty’s payment service provider ADYEN N.V., a Dutch public limited liability company (naamloze vennotschap) d/b/a ADYEN N.V. (San Francisco Branch). In the U.S., ADYEN N.V. acts as a federally-licensed branch of a foreign bank.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 Bundle – A compilation of two or more Items that a Buyer can purchase from a Seller in one Transaction; “Bundles” are accessible by clicking on the “Shop Bundles!” link. 
@@ -75,13 +75,13 @@ const TermsAndConditions = () => {
                 Buyer – Any User who buys or wishes to buy one or more Item(s) on the Site.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                <a href='#' className='text-susty underline'>Buyer Protection</a> – The Buyer protection service provided for a fee (payable by the Buyer) to Buyers by VINTED when a purchase is made using the “Buy now” button on the Site; please see the description of Buyer Protection on our website for more details regarding the features of this service. 
+                <a href='#' className='text-susty underline'>Buyer Protection</a> – The Buyer protection service provided for a fee (payable by the Buyer) to Buyers by Susty when a purchase is made using the “Buy now” button on the Site; please see the description of Buyer Protection on our website for more details regarding the features of this service. 
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 Catalog – The electronic catalog of Items that Sellers have made available to sell, exchange, or donate via the Site; the catalog has different sections for different categories of Items.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                Catalog Rules – The rules for the Catalog, including what Items Users may list on the Site; VINTED may update the Catalog Rules from time to time. The current <a href='#' className='text-susty underline'>Catalog Rules</a> are available on the Site.
+                Catalog Rules – The rules for the Catalog, including what Items Users may list on the Site; Susty may update the Catalog Rules from time to time. The current <a href='#' className='text-susty underline'>Catalog Rules</a> are available on the Site.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 Checkout – The checkout process available to Buyers to purchase Items on the Site; the process (i) is initiated when a Buyer clicks on the “Buy now” button, (ii) requires the Buyer to choose a payment method and specify a delivery address, and (iii) is concluded when the Buyer clicks the “Pay now” button on the checkout page. 
@@ -90,7 +90,7 @@ const TermsAndConditions = () => {
                 Forum – The area of the Site where Users may publicly communicate with each other subject to complying with the Forum Rules.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                Forum Rules – The rules for the Forum, including what Users may upload/post on the Site; VINTED may update the Forum Rules from time to time and the current <a href='#' className='text-susty underline'>Forum Rules </a>are available on the Site.
+                Forum Rules – The rules for the Forum, including what Users may upload/post on the Site; Susty may update the Forum Rules from time to time and the current <a href='#' className='text-susty underline'>Forum Rules </a>are available on the Site.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 Integrated Payment Service – The online payment service allowing users to pay for Items and Services on the Site, where ADYEN N.V provides the payment service. 
@@ -105,19 +105,19 @@ const TermsAndConditions = () => {
                 Item page – The page opened by a User, which contains details about the Item offered by the Seller. 
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                Intermediary Services – The Transaction facilitation services offered by VINTED on or through the Site, including enabling Users (and, where applicable, Visitors) to list Items in the Catalog, to participate in Transactions, and to communicate in private and/or in public, particularly by using the Forum.
+                Intermediary Services – The Transaction facilitation services offered by Susty on or through the Site, including enabling Users (and, where applicable, Visitors) to list Items in the Catalog, to participate in Transactions, and to communicate in private and/or in public, particularly by using the Forum.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                News – Content shared by VINTED on the Site, including news about special offers, contests, games, promotions, and announcements about new Services available on the Site.
+                News – Content shared by Susty on the Site, including news about special offers, contests, games, promotions, and announcements about new Services available on the Site.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                Price List – The document (i) showing the prices for Additional Services (or, for services that don’t have a fixed price, the manner in which fees are calculated) and for Buyer Protection and (ii) identifying any additional terms applicable to such services; as described in these Terms, the Price List may be updated by VINTED from time to time and the current Price List is available on the Site.
+                Price List – The document (i) showing the prices for Additional Services (or, for services that don’t have a fixed price, the manner in which fees are calculated) and for Buyer Protection and (ii) identifying any additional terms applicable to such services; as described in these Terms, the Price List may be updated by Susty from time to time and the current Price List is available on the Site.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 Private Messages – Communication by an exchange of private messages between Users via the Site’s messaging system where the messages are not publicly displayed on the Site.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                Privacy Policy – The document that describes how VINTED collects, uses, stores, and transfers personal data and other important information of a Visitor or a User; the current Privacy Policy is available on the Site.
+                Privacy Policy – The document that describes how Susty collects, uses, stores, and transfers personal data and other important information of a Visitor or a User; the current Privacy Policy is available on the Site.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 Professional Seller(s) – Any person who buys, sells, exchanges, or donates goods/items for commercial purposes.
@@ -129,7 +129,7 @@ const TermsAndConditions = () => {
                 Services – All the services offered by or through the Site, including the Intermediary Services, Buyer Protection, and the Additional Services.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                Site – VINTED’s website and apps and any other means of accessing VINTED’s platform. The “Site” includes the Services and all content, tools, features, and functionality offered on or through the platform, including the Services. 
+                Site – Susty’s website and apps and any other means of accessing Susty’s platform. The “Site” includes the Services and all content, tools, features, and functionality offered on or through the platform, including the Services. 
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 Terms – is defined in the first paragraph of these Terms and Conditions. “Terms” include the additional terms and conditions that are referenced in Section 1.4 of these Terms and Conditions.
@@ -147,7 +147,7 @@ const TermsAndConditions = () => {
                 Visitor –Any individual who uses the Site but who has not created an Account.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                VINTED Social Networks Accounts – VINTED’s accounts on Facebook, Google+, Twitter, Instagram, Pinterest, YouTube, and other social networks.
+                Susty Social Networks Accounts – Susty’s accounts on Facebook, Google+, Twitter, Instagram, Pinterest, YouTube, and other social networks.
             </p>
 
 
@@ -191,12 +191,12 @@ const TermsAndConditions = () => {
             <p className="font-semibold text-lg text-gray-500 pt-8 md:pl-12 pl-4">4. BUYING ITEMS ON THE SITE </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 <b>4.1 Buying an Item.</b>
-                A Buyer can use the “Buy now” button to buy an Item. For safety reasons, we always recommend that Buyers buy in-app or on-web by using the "Buy now" button, in which case the Buyer is covered by Buyer Protection (see Section 5 below for additional details). If a Buyer concludes the Transaction outside of the Site directly with the Seller and without using our “Buy now” button, Buyer Protection will not apply and VINTED will not be able to assist the Buyer in the event any problems occur with the Transaction.
+                A Buyer can use the “Buy now” button to buy an Item. For safety reasons, we always recommend that Buyers buy in-app or on-web by using the "Buy now" button, in which case the Buyer is covered by Buyer Protection (see Section 5 below for additional details). If a Buyer concludes the Transaction outside of the Site directly with the Seller and without using our “Buy now” button, Buyer Protection will not apply and Susty will not be able to assist the Buyer in the event any problems occur with the Transaction.
             </p>
 
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 <b>4.2 Pay now. </b>
-                By using the “Pay now” button and confirming the Buyer’s details during the Checkout process, the Buyer acknowledges that their acceptance of the Seller’s offer has been made in consideration of the Item as described in the Item’s description. Both the Buyer and the Seller acknowledge that using the “Pay now” button and confirming the Buyer’s details creates a legally binding contract between the Buyer and the Seller, and the Buyer has a commitment to pay for the Item and the Seller has a commitment to transfer ownership of the Item. To avoid doubt, VINTED is not a party to this contract.
+                By using the “Pay now” button and confirming the Buyer’s details during the Checkout process, the Buyer acknowledges that their acceptance of the Seller’s offer has been made in consideration of the Item as described in the Item’s description. Both the Buyer and the Seller acknowledge that using the “Pay now” button and confirming the Buyer’s details creates a legally binding contract between the Buyer and the Seller, and the Buyer has a commitment to pay for the Item and the Seller has a commitment to transfer ownership of the Item. To avoid doubt, Susty is not a party to this contract.
             </p>
 
 
@@ -219,29 +219,29 @@ const TermsAndConditions = () => {
 
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 <b>5.3 Process for Receiving a Refund Under Buyer Protection. </b>
-                Buyer Protection includes the right for a Buyer to seek a refund in the event (i) an Item is lost during shipping or (ii) the delivered Item is damaged or (iii) is significantly not as described in the listing for the Item. In such circumstances, the Buyer must report the issue to VINTED within two (2) days after the date the Item is marked as ‘delivered’ in VINTED’s system (VINTED notifies the Buyer when this occurs) (such 2-day period, the “Dispute Filing Period”). If there is a mistake in the reported ‘delivered’ date and the item has not been actually delivered to the Buyer, the Buyer must still report the issue within the Dispute Filing Period; otherwise, the Transaction will be marked as completed. To report an issue to VINTED, the Buyer must click the “I have an Issue” button in their Private Message with the Seller within the Dispute Filing Period. Otherwise, the Transaction will be completed and money will be transferred to the Seller. 
+                Buyer Protection includes the right for a Buyer to seek a refund in the event (i) an Item is lost during shipping or (ii) the delivered Item is damaged or (iii) is significantly not as described in the listing for the Item. In such circumstances, the Buyer must report the issue to Susty within two (2) days after the date the Item is marked as ‘delivered’ in Susty’s system (Susty notifies the Buyer when this occurs) (such 2-day period, the “Dispute Filing Period”). If there is a mistake in the reported ‘delivered’ date and the item has not been actually delivered to the Buyer, the Buyer must still report the issue within the Dispute Filing Period; otherwise, the Transaction will be marked as completed. To report an issue to Susty, the Buyer must click the “I have an Issue” button in their Private Message with the Seller within the Dispute Filing Period. Otherwise, the Transaction will be completed and money will be transferred to the Seller. 
             </p>
 
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 <b>5.3.1. Items Lost During Shipping.  </b>
-                If the Buyer did not receive an Item, the Buyer must inform VINTED by clicking on the “I have an issue” button within the Dispute Filing Period. This will suspend the Transaction and the Total Price will be retained until VINTED investigates where the Item is and receives confirmation from the shipping provider that the Item is confirmed lost. Once the Item has been confirmed as lost, VINTED will request, and ADYEN N.V. will issue a refund to the Buyer for the Total Price.
+                If the Buyer did not receive an Item, the Buyer must inform Susty by clicking on the “I have an issue” button within the Dispute Filing Period. This will suspend the Transaction and the Total Price will be retained until Susty investigates where the Item is and receives confirmation from the shipping provider that the Item is confirmed lost. Once the Item has been confirmed as lost, Susty will request, and ADYEN N.V. will issue a refund to the Buyer for the Total Price.
             </p>
 
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 <b>5.3.2. Damaged Items or Significantly Not As Described Items. </b>
-                If the Buyer receives an Item that has been damaged during shipment or is significantly not as described in the Item’s listing, the Buyer must inform VINTED by clicking on the “I have an issue” button within the Dispute Filing Period. This will suspend the Transaction and the Total Price will not be released to the Seller until the following process is complete: 
+                If the Buyer receives an Item that has been damaged during shipment or is significantly not as described in the Item’s listing, the Buyer must inform Susty by clicking on the “I have an issue” button within the Dispute Filing Period. This will suspend the Transaction and the Total Price will not be released to the Seller until the following process is complete: 
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                (i) The Buyer and Seller can resolve the issue between themselves in their Private Messages and VINTED will not interfere. 
+                (i) The Buyer and Seller can resolve the issue between themselves in their Private Messages and Susty will not interfere. 
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                (ii) If the Buyer and the Seller are unable to resolve the issue directly, the Buyer or the Seller can escalate the issue to VINTED by contacting VINTED’s Customer Support from their Private Message. After VINTED has reviewed the issue, if VINTED agrees that the Item indeed does not substantially comply with the description provided by the Seller in the Item listing or that the item was damaged during transit, VINTED will cancel the Transaction and instruct ADYEN N.V. to issue a refund to the Buyer after the Buyer confirms that the Item has been shipped back to the Seller. VINTED does not provide return shipping services. Shipping costs for returning an Item are the responsibility of the Buyer, unless the Buyer and the Seller agree otherwise. If the Buyer does not send the Item back within the period stipulated by VINTED, the Buyer may not be eligible to receive a refund under Buyer Protection. If VINTED determines that there are strong indications that the received Item is a counterfeit, then VINTED may decide, in its sole discretion, that the Buyer does not need to send back the Item in order to get a refund and the Buyer and the Seller will respect such decision.
+                (ii) If the Buyer and the Seller are unable to resolve the issue directly, the Buyer or the Seller can escalate the issue to Susty by contacting Susty’s Customer Support from their Private Message. After Susty has reviewed the issue, if Susty agrees that the Item indeed does not substantially comply with the description provided by the Seller in the Item listing or that the item was damaged during transit, Susty will cancel the Transaction and instruct ADYEN N.V. to issue a refund to the Buyer after the Buyer confirms that the Item has been shipped back to the Seller. Susty does not provide return shipping services. Shipping costs for returning an Item are the responsibility of the Buyer, unless the Buyer and the Seller agree otherwise. If the Buyer does not send the Item back within the period stipulated by Susty, the Buyer may not be eligible to receive a refund under Buyer Protection. If Susty determines that there are strong indications that the received Item is a counterfeit, then Susty may decide, in its sole discretion, that the Buyer does not need to send back the Item in order to get a refund and the Buyer and the Seller will respect such decision.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                (iii) If the Buyer and the Seller resolve the issue privately after having already contacted VINTED’s Customer Support, the Users must inform VINTED (by contacting VINTED’s Customer Support) that the issue has been resolved.
+                (iii) If the Buyer and the Seller resolve the issue privately after having already contacted Susty’s Customer Support, the Users must inform Susty (by contacting Susty’s Customer Support) that the issue has been resolved.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                (iv) With respect to an Item that a Buyer has reported is significantly not as described in the Item’s listing, if VINTED determines that the Item complies with the description provided by the Seller in the Item listing, then the Buyer shall not be eligible for a refund through VINTED and VINTED will direct ADYEN N.V. to complete the Transaction in accordance with Section 6.4. After the Transaction is completed and the money in escrow is released to the Seller, the Buyer can try to negotiate directly with the Seller for the return of the Item (e.g., agreement on reimbursement, return shipping fees, etc.); however, the Seller may refuse to cooperate with the Buyer on the grounds that the Transaction has been fulfilled from the Seller side.
+                (iv) With respect to an Item that a Buyer has reported is significantly not as described in the Item’s listing, if Susty determines that the Item complies with the description provided by the Seller in the Item listing, then the Buyer shall not be eligible for a refund through Susty and Susty will direct ADYEN N.V. to complete the Transaction in accordance with Section 6.4. After the Transaction is completed and the money in escrow is released to the Seller, the Buyer can try to negotiate directly with the Seller for the return of the Item (e.g., agreement on reimbursement, return shipping fees, etc.); however, the Seller may refuse to cooperate with the Buyer on the grounds that the Transaction has been fulfilled from the Seller side.
             </p>
 
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
@@ -263,8 +263,8 @@ const TermsAndConditions = () => {
                 Buyer Protection is not insurance services or legal protection guarantee services.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
-                <b>5.5 Acknowledgment that VINTED Makes Final Decisions.  </b>
-                Users agree to comply with the process for receiving a refund under Buyer Protection and to permit VINTED to make the final decision on any Buyer Protection-related issue.
+                <b>5.5 Acknowledgment that Susty Makes Final Decisions.  </b>
+                Users agree to comply with the process for receiving a refund under Buyer Protection and to permit Susty to make the final decision on any Buyer Protection-related issue.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 <b>5.6 Refunds for Bundles. </b>
@@ -294,7 +294,7 @@ const TermsAndConditions = () => {
             <p className="font-semibold text-lg text-gray-500 pt-8 md:pl-12 pl-4">7. INTEGRATED SHIPPING SERVICE </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 <b>7.1 Integrated Shipping Service Overview. </b>
-                Except as stated below, the Integrated Shipping Service is applied to every Transaction concluded using the “Buy now” button. The Buyer will pay for the Integrated Shipping Service at Checkout and the Integrated Shipping Service fee will be held in Seller’s e-wallet in escrow. As further described below, the Integrated Shipping Service includes Integrated Shipping Labels and the Custom Shipping option. Items regulated as hazardous materials are not eligible for the Integrated Shipping Service and must be shipped using the Custom Shipping option. Please refer to Vinted’s Catalog Rules for additional information regarding hazardous materials.
+                Except as stated below, the Integrated Shipping Service is applied to every Transaction concluded using the “Buy now” button. The Buyer will pay for the Integrated Shipping Service at Checkout and the Integrated Shipping Service fee will be held in Seller’s e-wallet in escrow. As further described below, the Integrated Shipping Service includes Integrated Shipping Labels and the Custom Shipping option. Items regulated as hazardous materials are not eligible for the Integrated Shipping Service and must be shipped using the Custom Shipping option. Please refer to Susty’s Catalog Rules for additional information regarding hazardous materials.
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 <b>7.2 Shipping Options. </b>
@@ -305,7 +305,7 @@ const TermsAndConditions = () => {
             <p className="font-semibold text-lg text-gray-500 pt-8 md:pl-12 pl-4">8. PAYING FOR ITEMS  </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 <b>8.1 Price List. </b>
-                VINTED is authorized to collect fees for the Services in accordance with the prices indicated in the Price List. In its sole discretion, VINTED may update the Price List from time to time (and updates may include price changes) as per Section 1.5 of these Terms. Price List changes will not apply to ongoing Transactions (i.e., Transactions for which a Buyer has already made a payment). The updated Price List shall become effective and replace the prior Price List at the time of posting or such other time as may be indicated by VINTED. If you do not agree with or accept the updated Price List, you can choose to not access and use the Site, to terminate your relationship with VINTED, and to close your User account (as further described in Section 16.1). You will be deemed to have accepted the updated Price List if you continue to access and use the Site after the updated Price List becomes effective; however, Price List changes will not apply to ongoing Transactions (i.e., Transactions for which a Buyer has already made a payment).
+                Susty is authorized to collect fees for the Services in accordance with the prices indicated in the Price List. In its sole discretion, Susty may update the Price List from time to time (and updates may include price changes) as per Section 1.5 of these Terms. Price List changes will not apply to ongoing Transactions (i.e., Transactions for which a Buyer has already made a payment). The updated Price List shall become effective and replace the prior Price List at the time of posting or such other time as may be indicated by Susty. If you do not agree with or accept the updated Price List, you can choose to not access and use the Site, to terminate your relationship with Susty, and to close your User account (as further described in Section 16.1). You will be deemed to have accepted the updated Price List if you continue to access and use the Site after the updated Price List becomes effective; however, Price List changes will not apply to ongoing Transactions (i.e., Transactions for which a Buyer has already made a payment).
             </p>
             <p className='text-gray-500 pt-3 text-lg leading-normal'>
                 <b>8.2 Currency; Taxes.  </b>
