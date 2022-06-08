@@ -40,7 +40,6 @@ const SettingsHome = () => {
     const [arrayElements, setArrayElements] = useState(navigation)
 
     return (
-        
           <SettingsSideBarWrapper 
               arrayElements = {arrayElements}
               sidebarOpen = {sidebarOpen} 
@@ -50,11 +49,8 @@ const SettingsHome = () => {
               setSidebarElement = {setSidebarElement}
               setSelectedItem = {setSelectedItem}
           >
-            {/* displaying the component */}
             {sidebarElement}
-
           </SettingsSideBarWrapper>
-         
       )
 }
 
