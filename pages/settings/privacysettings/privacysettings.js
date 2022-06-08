@@ -1,7 +1,7 @@
 import React from 'react'
 import PrivacySettings from '../../../components/settings/privacysettings/PrivacySettings'
 
-const Home = () => {
+const PrivacySettingsHome = () => {
   return (
     <div>
         <PrivacySettings />
@@ -9,4 +9,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default PrivacySettingsHome

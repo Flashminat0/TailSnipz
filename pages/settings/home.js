@@ -11,12 +11,12 @@ import {
     XIcon,
   } from '@heroicons/react/outline'
 
-import AccountHome from '../../pages/settings/account/home'
-import NotificationHome from './notifications/home'
-import PrivacySettingsHome from './privacysettings/home'
-import ProfileHome from './profile/home'
-import SelectDiscoutHome from './selectdiscount/home'
-import ShippingHome from './shipping/home'
+import AccountHome from './account/account'
+import NotificationHome from './notifications/notifications'
+import PrivacySettingsHome from './privacysettings/privacysettings'
+import ProfileHome from './profile/profile'
+import SelectDiscoutHome from './selectdiscount/selectdiscount'
+import ShippingHome from './shipping/shipping'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -26,9 +26,7 @@ const navigation = [
     { name: 'Profile', href: '',component: <ProfileHome/>, icon: HomeIcon, current: false },
     { name: 'Account', href: '/settings/account/home',component: <AccountHome/>,icon: HomeIcon, current: false },
     { name: 'Shipping', href: '#', component: <ShippingHome /> , icon: UserGroupIcon, current: false },
-    // { name: 'Payment', href: '#', icon: SearchCircleIcon, current: false },
     { name: 'Select discount', href: '#', component: < SelectDiscoutHome/> ,icon: SpeakerphoneIcon, current: false },
-    // { name: 'Donation', href: '#', icon: MapIcon, current: false },
     { name: 'Notifications', href: '#',component: <NotificationHome />, icon: MapIcon, current: false },
     { name: 'Privacy Settings', href: '#',component: <PrivacySettingsHome />, icon: MapIcon, current: false },
 ]

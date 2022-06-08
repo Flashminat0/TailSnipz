@@ -2,7 +2,7 @@ import React from 'react'
 import EmailAndPhoneNumber from '../../../components/settings/account/EmailAndPhoneNumber'
 import NameGenderAndBirthday from '../../../components/settings/account/NameGenderAndBirthday'
 
-const Home = () => {
+const Account = () => {
   return (
     <div className='p-4'>
         <EmailAndPhoneNumber />
@@ -15,4 +15,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Account

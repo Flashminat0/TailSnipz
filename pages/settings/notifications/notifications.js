@@ -4,7 +4,7 @@ import EnableEmailNotifications from '../../../components/settings/notifications
 import HighPriorityNotifications from '../../../components/settings/notifications/HighPriorityNotifications'
 import OtherNotifications from '../../../components/settings/notifications/OtherNotifications'
 
-const Home = () => {
+const NotificationsHome = () => {
   return (
     <div className='grid gap-y-4 p-4'>
         <EnableEmailNotifications />
@@ -15,4 +15,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default NotificationsHome
