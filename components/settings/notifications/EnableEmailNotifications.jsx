@@ -9,7 +9,7 @@ const EnableEmailNotifications = () => {
     <div className={""}>
         <>
             <div className={"w-full bg-gray-50"}>
-                <div className={"mt-5 grid grid-cols-5 gap-2 p-5"}>
+                <div className={"grid grid-cols-5 gap-2 p-5"}>
                     <div className={"col-span-4"}>
                         <p className={"font-semibold"}>Enable email notifications</p>
                     </div>
