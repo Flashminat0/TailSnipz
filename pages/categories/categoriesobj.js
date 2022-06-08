@@ -952,138 +952,138 @@ const categoryObj = [
                 ]
             },
             {
-                id: "",
+                id: "5fa3d406-b348-4447-b3ed-4ff6633d65da",
                 name: "Strollers",
                 icon: "StrollersIcon",
                 sections: [
                     {
-                        id: "",
+                        id: "a1872e18-742c-48e5-8146-f988ba0b343b",
                         name: "All",
                         href: "Kids/Strollers/All".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "b1b94a4b-6929-4257-b584-0a8dd57bf769",
                         name: "Sport strollers",
                         href: "Kids/Strollers/Sport strollers".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "1d19b8b7-bc1f-42cd-904b-d7b288e398bf",
                         name: "Strollers for twins",
                         href: "Kids/Strollers/Strollers for twins".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "5f237320-39a2-491e-8588-3992acb58e45",
                         name: "Umbrella strollers",
                         href: "Kids/Strollers/Umbrella strollers".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "61fb8f06-5109-475e-8ab4-154d1321e961",
                         name: "Universal strollers",
                         href: "Kids/Strollers/Universal strollers".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "00ccc1e3-77f1-43c7-a552-b841f52199d6",
                         name: "Accessories for strollers",
                         href: "Kids/Strollers/Accessories for strollers".split(' ').join('-').trim().toLowerCase()
                     }
                 ]
             },
             {
-                id: "",
+                id: "49e606f2-736a-44e1-addf-7d72dc76ff36",
                 name: "Ride-on toys",
                 icon: "Ride-on toysIcon",
                 sections: [
                     {
-                        id: "",
+                        id: "2503b3a4-5a8c-42cb-8f0c-6a379d0eb3b3",
                         name: "All",
                         href: "Kids/Ride-on toys/All".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "d0e516ca-3ee5-413d-9185-4ca78c33bb93",
                         name: "Push & pull toys",
                         href: "Kids/Ride-on toys/Push & pull toys".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "d39fe12e-6cbd-4af6-9c20-3533e6ebc69c",
                         name: "Scooters",
                         href: "Kids/Ride-on toys/Scooters".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "b73b3515-8903-443a-a144-5648e95bd295",
                         name: "Bicycles",
                         href: "Kids/Ride-on toys/Bicycles".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "2be6913d-067b-462b-866a-c547b782b256",
                         name: "Sleds, skis & snowboards",
                         href: "Kids/Ride-on toys/Sleds, skis & snowboards".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "2be6913d-067b-462b-866a-c547b782b256",
                         name: "Baby walkers",
                         href: "Kids/Ride-on toys/Baby walkers".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "3209d76c-0c13-438e-a6ab-0a05f3d05c0b",
                         name: "Kids' bike seats & trailers",
                         href: "Kids/Ride-on toys/Kids' bike seats & trailers".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "1101b385-a0e6-4a6b-b580-8317abdd0710",
                         name: "Tricycles",
                         href: "Kids/Ride-on toys/Tricycles".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "61a20ace-77c4-4a20-8ba0-d0fc1b6d74e8",
                         name: "Outdoor vehicles",
                         href: "Kids/Ride-on toys/Outdoor vehicles".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "2e842f39-989a-4ca0-ac2e-e5fcfc81d845",
                         name: "Roller skates & ice skates",
                         href: "Kids/Ride-on toys/Roller skates & ice skates".split(' ').join('-').trim().toLowerCase()
                     }
                 ]
             },
             {
-                id: "",
+                id: "8a479fda-1a4d-49a6-bd09-63f8b7048a02",
                 name: "Chairs",
                 icon: "ChairsIcon",
                 sections: [
                     {
-                        id: "",
+                        id: "9935e695-2a37-43a3-b8ed-b71824b1014a",
                         name: "All",
                         href: "Kids/Chairs/All".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "9935e695-2a37-43a3-b8ed-b71824b1014a",
                         name: "Feeding chairs",
                         href: "Kids/Chairs/Feeding chairs".split(' ').join('-').trim().toLowerCase()
                     },
                 ]
             },
             {
-                id: "",
+                id: "60e22138-bb3a-446c-9d2b-d16694214e86",
                 name: "Kids' furniture",
                 icon: "Kids' furnitureIcon",
                 sections: [
                     {
-                        id: "",
+                        id: "d8233b2c-b0bb-442a-9d52-9947556296b4",
                         name: "All",
                         href: "Kids/Kids' furniture/All".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "136c4307-f47b-4075-843a-d9b77806a136",
                         name: "Playpens",
                         href: "Kids/Kids' furniture/Playpens".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "31bca3bc-4743-4521-8fc1-76e4128e4773",
                         name: "Other kids' furniture",
                         href: "Kids/Kids' furniture/Other kids' furniture".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "",
+                        id: "70457f5b-05d3-4c03-8084-62f1fab4fda7",
                         name: "Playmats",
                         href: "Kids/Kids' furniture/Playmats".split(' ').join('-').trim().toLowerCase()
                     },
