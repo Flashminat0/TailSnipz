@@ -3,7 +3,7 @@ import PrivacySettings from '../../../components/settings/privacysettings/Privac
 
 const PrivacySettingsHome = () => {
   return (
-    <div>
+    <div className='p-4'>
         <PrivacySettings />
     </div>
   )

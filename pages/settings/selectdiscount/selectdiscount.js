@@ -3,7 +3,7 @@ import SelectDiscount from '../../../components/settings/selectdiscount/SelectDi
 
 const SelectDiscoutHome = () => {
   return (
-    <div>
+    <div className='p-4'>
         <SelectDiscount />
     </div>
   )

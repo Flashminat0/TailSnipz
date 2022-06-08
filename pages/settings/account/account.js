@@ -4,13 +4,9 @@ import NameGenderAndBirthday from '../../../components/settings/account/NameGend
 
 const Account = () => {
   return (
-    <div className='p-4'>
+    <div className='grid gap-y-6 p-4'>
         <EmailAndPhoneNumber />
-        
-        <div className='pt-10'>
-            <NameGenderAndBirthday />
-        </div>
-        
+        <NameGenderAndBirthday />
     </div>
   )
 }
