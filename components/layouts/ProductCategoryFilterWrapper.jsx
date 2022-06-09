@@ -1,22 +1,31 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import {Dialog, Disclosure, Menu, Switch, Transition} from '@headlessui/react'
 import {XIcon} from '@heroicons/react/outline'
-import {ChevronDownIcon, FilterIcon, MinusSmIcon, PlusSmIcon, ViewGridIcon} from '@heroicons/react/solid'
+import {
+    BookmarkAltIcon,
+    ChevronDownIcon,
+    FilterIcon,
+    MinusSmIcon,
+    PlusSmIcon,
+    ViewGridIcon,
+    HomeIcon
+} from '@heroicons/react/solid'
+import {AnimatePresence, motion} from "framer-motion";
 
 const sortOptionsStaticData = [
-    {id:1, name: 'Most Popular', href: '#'},
-    {id:2, name: 'Best Rating', href: '#'},
-    {id:3, name: 'Newest', href: '#'},
-    {id:4, name: 'Price: Low to High', href: '#'},
-    {id:5, name: 'Price: High to Low', href: '#'},
+    {id: 1, name: 'Most Popular', href: '#'},
+    {id: 2, name: 'Best Rating', href: '#'},
+    {id: 3, name: 'Newest', href: '#'},
+    {id: 4, name: 'Price: Low to High', href: '#'},
+    {id: 5, name: 'Price: High to Low', href: '#'},
 ]
 
 const subCategoriesStaticData = [
-    {id:1, name: 'Totes', href: '#'},
-    {id:2, name: 'Backpacks', href: '#'},
-    {id:3, name: 'Travel Bags', href: '#'},
-    {id:4, name: 'Hip Bags', href: '#'},
-    {id:5, name: 'Laptop Sleeves', href: '#'},
+    {id: 1, name: 'Totes', href: '#'},
+    {id: 2, name: 'Backpacks', href: '#'},
+    {id: 3, name: 'Travel Bags', href: '#'},
+    {id: 4, name: 'Hip Bags', href: '#'},
+    {id: 5, name: 'Laptop Sleeves', href: '#'},
 ]
 
 const filtersStaticData = [
@@ -151,17 +160,17 @@ const filtersStaticData = [
 ]
 
 const sortByFilterStaticData = [
-    {id: 1, name:'Relevance'},
-    {id: 2, name:'Price: high to low'},
-    {id: 3, name:'Price: low to high'},
-    {id: 4, name:'Newest first'},
+    {id: 1, name: 'Relevance'},
+    {id: 2, name: 'Price: high to low'},
+    {id: 3, name: 'Price: low to high'},
+    {id: 4, name: 'Newest first'},
 ]
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-const WomenCategoryFilterWrapper = ({children}) => {
+const ProductCategoryFilterWrapper = ({children, topic, noOfItems, pagePath}) => {
     const [sortOptions, setSortOptions] = useState(sortOptionsStaticData);
     const [subCategories, setSubCategories] = useState(subCategoriesStaticData);
     const [filters, setFilters] = useState(filtersStaticData);
@@ -238,12 +247,13 @@ const WomenCategoryFilterWrapper = ({children}) => {
                                                             <span
                                                                 className="font-medium text-gray-900">{section.name}</span>
                                                             <span className="ml-6 flex items-center">
-                                {open ? (
-                                    <MinusSmIcon className="h-5 w-5" aria-hidden="true"/>
-                                ) : (
-                                    <PlusSmIcon className="h-5 w-5" aria-hidden="true"/>
-                                )}
-                              </span>
+                                                                {open ? (
+                                                                    <MinusSmIcon className="h-5 w-5"
+                                                                                 aria-hidden="true"/>
+                                                                ) : (
+                                                                    <PlusSmIcon className="h-5 w-5" aria-hidden="true"/>
+                                                                )}
+                                                            </span>
                                                         </Disclosure.Button>
                                                     </h3>
                                                     <Disclosure.Panel className="pt-6">
@@ -280,12 +290,12 @@ const WomenCategoryFilterWrapper = ({children}) => {
                                                         className="px-2 py-3 bg-white w-full flex items-center justify-between text-gray-400 hover:text-gray-500">
                                                         <span className="font-medium text-gray-900">Price</span>
                                                         <span className="ml-6 flex items-center">
-                                {open ? (
-                                    <MinusSmIcon className="h-5 w-5" aria-hidden="true"/>
-                                ) : (
-                                    <PlusSmIcon className="h-5 w-5" aria-hidden="true"/>
-                                )}
-                              </span>
+                                                            {open ? (
+                                                                <MinusSmIcon className="h-5 w-5" aria-hidden="true"/>
+                                                            ) : (
+                                                                <PlusSmIcon className="h-5 w-5" aria-hidden="true"/>
+                                                            )}
+                                                        </span>
                                                     </Disclosure.Button>
                                                 </h3>
                                                 <Disclosure.Panel className="pt-6">
@@ -300,7 +310,9 @@ const WomenCategoryFilterWrapper = ({children}) => {
                                                                     From
                                                                 </label>
                                                                 <input
-                                                                    onChange={(e)=>{setInputPriceFrom(e.target.value)}}
+                                                                    onChange={(e) => {
+                                                                        setInputPriceFrom(e.target.value)
+                                                                    }}
                                                                     value={inputPriceFrom}
                                                                     id={'filter-mobile-price-from'}
                                                                     type="text"
@@ -316,7 +328,9 @@ const WomenCategoryFilterWrapper = ({children}) => {
                                                                     To
                                                                 </label>
                                                                 <input
-                                                                    onChange={(e)=>{setInputPriceTo(e.target.value)}}
+                                                                    onChange={(e) => {
+                                                                        setInputPriceTo(e.target.value)
+                                                                    }}
                                                                     value={inputPriceTo}
                                                                     id={'filter-mobile-price-to'}
                                                                     type="text"
@@ -338,12 +352,12 @@ const WomenCategoryFilterWrapper = ({children}) => {
                                                         className="px-2 py-3 bg-white w-full flex items-center justify-between text-gray-400 hover:text-gray-500">
                                                         <span className="font-medium text-gray-900">Swap</span>
                                                         <span className="ml-6 flex items-center">
-                                {open ? (
-                                    <MinusSmIcon className="h-5 w-5" aria-hidden="true"/>
-                                ) : (
-                                    <PlusSmIcon className="h-5 w-5" aria-hidden="true"/>
-                                )}
-                              </span>
+                                                        {open ? (
+                                                            <MinusSmIcon className="h-5 w-5" aria-hidden="true"/>
+                                                        ) : (
+                                                            <PlusSmIcon className="h-5 w-5" aria-hidden="true"/>
+                                                        )}
+                                                        </span>
                                                     </Disclosure.Button>
                                                 </h3>
                                                 <Disclosure.Panel className="pt-6">
@@ -357,20 +371,20 @@ const WomenCategoryFilterWrapper = ({children}) => {
                                                                 Find items for swap
                                                             </label>
                                                             <span>
-                                                                        <Switch
-                                                                            checked={enabled}
-                                                                            onChange={setEnabled}
-                                                                            className={`${enabled ? 'bg-susty' : 'bg-gray-300'}
-          relative inline-flex h-[24px] w-[48px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
-                                                                        >
-                                                                            <span className="sr-only">Use setting</span>
-                                                                            <span
-                                                                                aria-hidden="true"
-                                                                                className={`${enabled ? 'translate-x-[1.53rem]' : 'translate-x-0'}
-            pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
-                                                                            />
-                                                                        </Switch>
-                                                                    </span>
+                                                                <Switch
+                                                                    checked={enabled}
+                                                                    onChange={setEnabled}
+                                                                    className={`${enabled ? 'bg-susty' : 'bg-gray-300'}
+                                                                                        relative inline-flex h-[24px] w-[48px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                                                                >
+                                                                    <span className="sr-only">Use setting</span>
+                                                                    <span
+                                                                        aria-hidden="true"
+                                                                        className={`${enabled ? 'translate-x-[1.53rem]' : 'translate-x-0'}
+                                                                                            pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                                                    />
+                                                                </Switch>
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </Disclosure.Panel>
@@ -385,19 +399,20 @@ const WomenCategoryFilterWrapper = ({children}) => {
                                                         className="px-2 py-3 bg-white w-full flex items-center justify-between text-gray-400 hover:text-gray-500">
                                                         <span className="font-medium text-gray-900">Sort By</span>
                                                         <span className="ml-6 flex items-center">
-                                {open ? (
-                                    <MinusSmIcon className="h-5 w-5" aria-hidden="true"/>
-                                ) : (
-                                    <PlusSmIcon className="h-5 w-5" aria-hidden="true"/>
-                                )}
-                              </span>
+                                                            {open ? (
+                                                                <MinusSmIcon className="h-5 w-5" aria-hidden="true"/>
+                                                            ) : (
+                                                                <PlusSmIcon className="h-5 w-5" aria-hidden="true"/>
+                                                            )}
+                                                        </span>
                                                     </Disclosure.Button>
                                                 </h3>
                                                 <Disclosure.Panel className="pt-6">
                                                     <div className="space-y-6">
                                                         <div className="flex flex-col">
-                                                            {sortByFilter.map((sortBy,sortByIdx)=>(
-                                                                <div className={'flex flex-row gap-3 items-center my-2'}>
+                                                            {sortByFilter.map((sortBy, sortByIdx) => (
+                                                                <div key={sortBy.id}
+                                                                    className={'flex flex-row gap-3 items-center my-2'}>
                                                                     <input
                                                                         id={`filter-mobile-${sortByFilter.id}-${sortByIdx}`}
                                                                         name={`${sortByFilter.id}[]`}
@@ -424,11 +439,67 @@ const WomenCategoryFilterWrapper = ({children}) => {
                     </Dialog>
                 </Transition.Root>
 
-                <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <main className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                    <AnimatePresence>
+                        <div
+                            className={'grid grid-cols-6 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 justify-between items-center'}>
+                            <div
+                                className={'col-span-4 sm:col-span-3 md:col-span-4 lg:col-span-6 text-gray-600'}>
+                                <nav className="flex" aria-label="Breadcrumb">
+                                    <ol role="list" className="flex items-center space-x-0.5 sm:space-x-4">
+                                        <li>
+                                            <div>
+                                                <a href="#" className="text-gray-400 hover:text-gray-500">
+                                                    <HomeIcon className="flex-shrink-0 h-5 w-5" aria-hidden="true"/>
+                                                    <span className="sr-only">Home</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        {pagePath.map((page) => (
+                                            <li key={page.id}>
+                                                <div className="flex items-center">
+                                                    <svg
+                                                        className="flex-shrink-0 h-5 w-5 text-gray-300"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        fill="currentColor"
+                                                        viewBox="0 0 20 20"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"/>
+                                                    </svg>
+                                                    <a
+                                                        href={page.href}
+                                                        className="sm:ml-2 sm:ml-4 text-xs sm:text-sm  font-medium text-gray-500 hover:text-gray-700 capitalize"
+                                                        aria-current={page.current ? 'page' : undefined}
+                                                    >
+                                                        {page.name}
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        ))}
+                                    </ol>
+                                </nav>
+                            </div>
+                            <div
+                                className={"flex ml-auto col-span-2 sm:col-span-2 md:col-span-2 lg:col-span-2 mt-2 lg:mt-4 px-1 max-w-[10rem]"}>
+                                <motion.button
+                                    whileHover={{scale: 1.02}}
+                                    whileTap={{scale: 0.98}}
+                                    className={`inline-flex justify-center items-center px-2 sm:px-4 py-1.5 min-w-full border border-gray-300 shadow-sm text-xs sm:text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                    <BookmarkAltIcon className="w-3 h-3 sm:w-5 sm:h-5 mr-2 items-center"/>
+                                    Save Search
+                                </motion.button>
+                            </div>
+                        </div>
+                    </AnimatePresence>
                     <div
-                        className="relative z-10 flex items-baseline justify-between pt-20 pb-6 border-b border-gray-200">
-                        <h1 className="text-4xl font-semibold tracking-tight text-gray-900">New Arrivals</h1>
-
+                        className="relative z-10 flex items-baseline justify-between pt-6 pb-6 border-b border-gray-200">
+                        <div className={'flex flex-row gap-2 sm:gap-4 items-center'}>
+                            <h1 className="text-2xl sm:text-4xl font-semibold tracking-tight text-gray-900">{topic}</h1>
+                            <div className={'text-sm sm:text-base text-gray-500'}>
+                                {noOfItems}+ results
+                            </div>
+                        </div>
                         <div className="flex items-center">
                             <Menu as="div" className="relative inline-block text-left">
                                 <div>
@@ -486,14 +557,14 @@ const WomenCategoryFilterWrapper = ({children}) => {
                         </div>
                     </div>
 
-                    <section aria-labelledby="products-heading" className="pt-6 pb-20">
+                    <section aria-labelledby="products-heading" className="pt-6 pb-10">
                         <h2 id="products-heading" className="sr-only">
                             Products
                         </h2>
 
                         <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-8 gap-y-10">
                             {/* Filters */}
-                            <form className="hidden lg:block">
+                            <form className="hidden lg:block min-w-max sticky top-0 h-[60vh] overflow-y-auto pr-5 mt-10">
                                 <h3 className="sr-only">Categories</h3>
                                 <ul role="list"
                                     className="text-sm font-medium text-gray-900 space-y-4 pb-6 border-b border-gray-200">
@@ -514,12 +585,12 @@ const WomenCategoryFilterWrapper = ({children}) => {
                                                         <span
                                                             className="font-medium text-gray-900">{section.name}</span>
                                                         <span className="ml-6 flex items-center">
-                              {open ? (
-                                  <MinusSmIcon className="h-5 w-5" aria-hidden="true"/>
-                              ) : (
-                                  <PlusSmIcon className="h-5 w-5" aria-hidden="true"/>
-                              )}
-                            </span>
+                                                            {open ? (
+                                                                <MinusSmIcon className="h-5 w-5" aria-hidden="true"/>
+                                                            ) : (
+                                                                <PlusSmIcon className="h-5 w-5" aria-hidden="true"/>
+                                                            )}
+                                                        </span>
                                                     </Disclosure.Button>
                                                 </h3>
                                                 <Disclosure.Panel className="pt-6">
@@ -562,17 +633,17 @@ const WomenCategoryFilterWrapper = ({children}) => {
                                                         <span
                                                             className="font-medium text-gray-900">Price</span>
                                                     <span className="ml-6 flex items-center">
-                              {open ? (
-                                  <MinusSmIcon className="h-5 w-5" aria-hidden="true"/>
-                              ) : (
-                                  <PlusSmIcon className="h-5 w-5" aria-hidden="true"/>
-                              )}
-                            </span>
+                                                        {open ? (
+                                                            <MinusSmIcon className="h-5 w-5" aria-hidden="true"/>
+                                                        ) : (
+                                                            <PlusSmIcon className="h-5 w-5" aria-hidden="true"/>
+                                                        )}
+                                                    </span>
                                                 </Disclosure.Button>
                                             </h3>
                                             <Disclosure.Panel className="pt-6">
                                                 <div className="space-y-6">
-                                                    <div className="flex flex-row justify-between gap-4 items-center">
+                                                    <div className="flex flex-row items-center gap-4 mx-auto">
                                                         <div className={'flex flex-col gap-2 items-center'}>
                                                             <label
                                                                 htmlFor={'filter-price-from'}
@@ -581,11 +652,13 @@ const WomenCategoryFilterWrapper = ({children}) => {
                                                                 From
                                                             </label>
                                                             <input
-                                                                onChange={(e)=>{setInputPriceFrom(e.target.value)}}
+                                                                onChange={(e) => {
+                                                                    setInputPriceFrom(e.target.value)
+                                                                }}
                                                                 value={inputPriceFrom}
                                                                 id={'filter-price-from'}
                                                                 type="text"
-                                                                className="py-2 max-w-[8rem] text-xs border-b border-gray-300 outline-none rounded ring-0 ring-offset-0 focus:border-susty focus:ring-susty"
+                                                                className="py-2 max-w-[6rem] text-xs border-b border-gray-300 outline-none rounded ring-0 ring-offset-0 focus:border-susty focus:ring-susty"
                                                                 placeholder={"USD"}
                                                             />
                                                         </div>
@@ -597,11 +670,13 @@ const WomenCategoryFilterWrapper = ({children}) => {
                                                                 To
                                                             </label>
                                                             <input
-                                                                onChange={(e)=>{setInputPriceTo(e.target.value)}}
+                                                                onChange={(e) => {
+                                                                    setInputPriceTo(e.target.value)
+                                                                }}
                                                                 value={inputPriceTo}
                                                                 id={'filter-price-to'}
                                                                 type="text"
-                                                                className="py-2 max-w-[8rem] text-xs border-b border-gray-300 outline-none rounded ring-0 ring-offset-0 focus:border-susty focus:ring-susty"
+                                                                className="py-2 max-w-[6rem] text-xs border-b border-gray-300 outline-none rounded ring-0 ring-offset-0 focus:border-susty focus:ring-susty"
                                                                 placeholder={"USD"}
                                                             />
                                                         </div>
@@ -620,12 +695,12 @@ const WomenCategoryFilterWrapper = ({children}) => {
                                                         <span
                                                             className="font-medium text-gray-900">Swap</span>
                                                     <span className="ml-6 flex items-center">
-                              {open ? (
-                                  <MinusSmIcon className="h-5 w-5" aria-hidden="true"/>
-                              ) : (
-                                  <PlusSmIcon className="h-5 w-5" aria-hidden="true"/>
-                              )}
-                            </span>
+                                                        {open ? (
+                                                            <MinusSmIcon className="h-5 w-5" aria-hidden="true"/>
+                                                        ) : (
+                                                            <PlusSmIcon className="h-5 w-5" aria-hidden="true"/>
+                                                        )}
+                                                    </span>
                                                 </Disclosure.Button>
                                             </h3>
                                             <Disclosure.Panel className="pt-6">
@@ -639,20 +714,20 @@ const WomenCategoryFilterWrapper = ({children}) => {
                                                             Find items for swap
                                                         </label>
                                                         <span>
-                                                                        <Switch
-                                                                            checked={enabled}
-                                                                            onChange={setEnabled}
-                                                                            className={`${enabled ? 'bg-susty' : 'bg-gray-300'}
-          relative inline-flex h-[24px] w-[48px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
-                                                                        >
-                                                                            <span className="sr-only">Use setting</span>
-                                                                            <span
-                                                                                aria-hidden="true"
-                                                                                className={`${enabled ? 'translate-x-[1.53rem]' : 'translate-x-0'}
-            pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
-                                                                            />
-                                                                        </Switch>
-                                                                    </span>
+                                                            <Switch
+                                                                checked={enabled}
+                                                                onChange={setEnabled}
+                                                                className={`${enabled ? 'bg-susty' : 'bg-gray-300'}
+                                                                                        relative inline-flex h-[24px] w-[48px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                                                            >
+                                                                <span className="sr-only">Use setting</span>
+                                                                <span
+                                                                    aria-hidden="true"
+                                                                    className={`${enabled ? 'translate-x-[1.53rem]' : 'translate-x-0'}
+                                                                                             pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                                                />
+                                                            </Switch>
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </Disclosure.Panel>
@@ -668,19 +743,20 @@ const WomenCategoryFilterWrapper = ({children}) => {
                                                         <span
                                                             className="font-medium text-gray-900">Sort By</span>
                                                     <span className="ml-6 flex items-center">
-                              {open ? (
-                                  <MinusSmIcon className="h-5 w-5" aria-hidden="true"/>
-                              ) : (
-                                  <PlusSmIcon className="h-5 w-5" aria-hidden="true"/>
-                              )}
-                            </span>
+                                                        {open ? (
+                                                            <MinusSmIcon className="h-5 w-5" aria-hidden="true"/>
+                                                        ) : (
+                                                            <PlusSmIcon className="h-5 w-5" aria-hidden="true"/>
+                                                        )}
+                                                     </span>
                                                 </Disclosure.Button>
                                             </h3>
                                             <Disclosure.Panel className="pt-6">
                                                 <div className="space-y-6">
                                                     <div className="flex flex-col">
-                                                        {sortByFilter.map((sortBy,sortByIdx)=>(
-                                                            <div className={'flex flex-row gap-3 items-center my-2'}>
+                                                        {sortByFilter.map((sortBy, sortByIdx) => (
+                                                            <div key={sortBy.id}
+                                                                 className={'flex flex-row gap-3 items-center my-2'}>
                                                                 <input
                                                                     id={`filter-${sortByFilter.id}-${sortByIdx}`}
                                                                     name={`${sortByFilter.id}[]`}
@@ -704,12 +780,10 @@ const WomenCategoryFilterWrapper = ({children}) => {
                             </form>
 
                             {/* Product grid */}
-                            <div className="lg:col-span-3">
-                                {/* Replace with your content */}
-                                <div className="border-4 border-dashed border-gray-200 rounded-lg h-96 lg:h-full">
+                            <div className="lg:col-span-3 lg:col-start-2">
+                                <div className="min-h-max lg:h-full overflow-y-auto">
                                     {children}
                                 </div>
-                                {/* /End replace */}
                             </div>
                         </div>
                     </section>
@@ -719,4 +793,4 @@ const WomenCategoryFilterWrapper = ({children}) => {
     );
 };
 
-export default WomenCategoryFilterWrapper;
+export default ProductCategoryFilterWrapper;

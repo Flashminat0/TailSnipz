@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import CommonItemSetWrapper from "./CommonItemSetWrapper";
+import CommonItemSetWrapper from "../layouts/CommonItemSetWrapper";
 import CommonItemCard from "./CommonItemCard";
 
 const itemsStaticData = [{
