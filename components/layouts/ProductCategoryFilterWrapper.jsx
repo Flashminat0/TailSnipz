@@ -183,8 +183,8 @@ const ProductCategoryFilterWrapper = ({children, topic, noOfItems, pagePath}) =>
     const [inputPriceTo, setInputPriceTo] = useState('');
 
     return (
-        <div className="bg-white">
-            <div>
+        <div className="bg-white border-t border-gray-200 mt-5">
+            <div className={'mt-2'}>
                 {/* Mobile filter dialog */}
                 <Transition.Root show={mobileFiltersOpen} as={Fragment}>
                     <Dialog as="div" className="fixed inset-0 flex z-40 lg:hidden" onClose={setMobileFiltersOpen}>
@@ -493,7 +493,7 @@ const ProductCategoryFilterWrapper = ({children, topic, noOfItems, pagePath}) =>
                         </div>
                     </AnimatePresence>
                     <div
-                        className="relative z-10 flex items-baseline justify-between pt-6 pb-6 border-b border-gray-200">
+                        className="relative z-8 flex items-baseline justify-between pt-6 pb-6 border-b border-gray-200">
                         <div className={'flex flex-row gap-2 sm:gap-4 items-center'}>
                             <h1 className="text-2xl sm:text-4xl font-semibold tracking-tight text-gray-900">{topic}</h1>
                             <div className={'text-sm sm:text-base text-gray-500'}>
