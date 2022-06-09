@@ -17,7 +17,7 @@ import PrivacySettingsHome from './privacysettings/privacysettings'
 import ProfileHome from './profile/profile'
 import SelectDiscoutHome from './selectdiscount/selectdiscount'
 import ShippingHome from './shipping/shipping'
-import SettingsSideBarWrapper from '../../components/layouts/SettingsSIdeBarWrapper'
+import SettingsSideBarWrapper from '../../components/layouts/SettingsSideBarWrapper'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
