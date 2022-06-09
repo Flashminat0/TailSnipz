@@ -14,7 +14,7 @@ const PopularItemWrapper = ({children}) => {
         <div>
             <div className={"text-2xl py-5"}>Popular Items</div>
             <div
-                className={"overflow-x-hidden overflow-y-hidden scroll-smooth max-w-[36rem] sm:max-w-[42rem] lg:max-w-[80rem] flex flex-row gap-3  "}
+                className={"overflow-x-auto overflow-y-hidden scroll-smooth  flex flex-row gap-3 scrollbar-hide"}
                 ref={ref}>
                 <div className={`lg:hidden absolute -left-[0.5rem] lg:left-[1rem]`}>
                     <div onClick={() => {
