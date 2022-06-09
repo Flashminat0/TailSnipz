@@ -1,12 +1,12 @@
 import React from 'react'
 import SelectDiscount from '../../../components/settings/selectdiscount/SelectDiscount'
 
-const Home = () => {
+const SelectDiscoutHome = () => {
   return (
-    <div>
+    <div className='p-4'>
         <SelectDiscount />
     </div>
   )
 }
 
-export default Home
+export default SelectDiscoutHome

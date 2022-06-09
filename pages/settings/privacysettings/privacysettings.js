@@ -1,12 +1,12 @@
 import React from 'react'
 import PrivacySettings from '../../../components/settings/privacysettings/PrivacySettings'
 
-const Home = () => {
+const PrivacySettingsHome = () => {
   return (
-    <div>
+    <div className='p-4'>
         <PrivacySettings />
     </div>
   )
 }
 
-export default Home
+export default PrivacySettingsHome

@@ -22,9 +22,9 @@ const SelectDiscount = () => {
   return (
     <div className={""}>
         <>
-            <div >
+            <div>
                 <div className={"w-full bg-gray-50"}>
-                    <div className={"mt-5 grid grid-cols-5 gap-2 p-5"}>
+                    <div className={"grid grid-cols-5 gap-2 p-5"}>
                         <div className={"col-span-4"}>
                             <p className={"font-semibold"}>Select Discount</p>
                         </div>
@@ -33,13 +33,13 @@ const SelectDiscount = () => {
                                 checked={enabled}
                                 onChange={setEnabled}
                                 className={`${enabled ? 'bg-susty' : 'bg-gray-300'}
-                                relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                                relative inline-flex h-[30px] w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                             >
                                 <span className="sr-only">Use setting</span>
                                 <span
                                     aria-hidden="true"
-                                    className={`${enabled ? 'translate-x-9' : 'translate-x-0'}
-                                pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                    className={`${enabled ? 'translate-x-[1.855rem]' : 'translate-x-0'}
+                                pointer-events-none inline-block h-[26px] w-[26px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                                 />
                             </Switch>
                         </div>
@@ -80,8 +80,8 @@ const SelectDiscount = () => {
                                                 leaveTo="transform opacity-0 scale-95"
                                             >
                                                 <Menu.Items className="z-10 origin-top-right absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                                    {percentageArray.map((elements) => (
-                                                        <div className="py-1">
+                                                    {percentageArray.map((elements, idx) => (
+                                                        <div className="py-1" key={elements}>
                                                             <Menu.Item>
                                                                 {({ active }) => (
                                                                     <a
@@ -136,8 +136,8 @@ const SelectDiscount = () => {
                                                 leaveTo="transform opacity-0 scale-95"
                                             >
                                                 <Menu.Items className="z-10 origin-top-right absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                                    {percentageArray.map((elements) => (
-                                                        <div className="py-1">
+                                                    {percentageArray.map((elements, idx) => (
+                                                        <div className="py-1" key={elements}>
                                                             <Menu.Item>
                                                                 {({ active }) => (
                                                                     <a
@@ -191,8 +191,8 @@ const SelectDiscount = () => {
                                                 leaveTo="transform opacity-0 scale-95"
                                             >
                                                 <Menu.Items className="z-10 origin-top-right absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                                    {percentageArray.map((elements) => (
-                                                        <div className="py-1">
+                                                    {percentageArray.map((elements, idx) => (
+                                                        <div className="py-1" key={elements}>
                                                             <Menu.Item>
                                                                 {({ active }) => (
                                                                     <a
