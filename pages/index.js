@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from "next/link";
-import PopularItems from '../components/home/popularitems';
 
 const Index = () => {
     return (
@@ -19,9 +18,6 @@ const Index = () => {
             </Link>
             </div>
 
-            {/* <div>
-                <PopularItems />
-            </div> */}
         </div>
     );
 };
