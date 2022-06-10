@@ -121,7 +121,7 @@ const EmailAndPhoneNumber = () => {
                                                 onClick={() => setOpenMailModal(false)}
                                                 whileHover={{scale: 1.02}}
                                                 whileTap={{scale: 0.98}}
-                                                Send confirmation email
+                                                
                                                 className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                                                 <ArrowUpIcon className="w-4 h-4 mr-2"/>
                                                 Send confirmation email
@@ -218,7 +218,7 @@ const EmailAndPhoneNumber = () => {
                                                 onClick={() => setOpenPhoneModal(false)}
                                                 whileHover={{scale: 1.02}}
                                                 whileTap={{scale: 0.98}}
-                                                Send confirmation email
+                                                
                                                 className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                                                 Continue
                                                 <ArrowRightIcon className="w-4 h-4 ml-4 mt-0.5"/>
