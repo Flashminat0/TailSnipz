@@ -11,6 +11,7 @@ const PopularItemWrapper = ({children}) => {
 
     return (
 
+        
         <div>
             <div className={"text-2xl py-5"}>Popular Items</div>
             <div
