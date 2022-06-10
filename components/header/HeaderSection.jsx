@@ -7,7 +7,7 @@ import { IoNotificationsOutline } from "react-icons/io5";
 import { AiOutlineMail, AiOutlineHeart, AiOutlineQuestionCircle } from "react-icons/ai";
 import LoginSignupButton from '../buttons/loginsignupbutton'
 import { ChevronDownIcon } from '@heroicons/react/outline'
-import Notification from '../../components/notification/Notification'
+import Notification from '../notification/Notification'
 import Link from 'next/link'
 
 const searchBarStaticOptions = [
@@ -97,7 +97,7 @@ const languageDropdown = [
     {id: "42eb2a91-6c77-4f24-a233-e1ca1ec27f07" ,short: "US", long: "Español, US(Spanish)"}
 ]
 
-const DesktopView = () => {
+const HeaderSection = () => {
     const [searchBarOptions, setSearchBarOptions] = useState(searchBarStaticOptions);
     const [guestMobileArray, setGuestMobileArray] = useState(guestMobileArrayStaticData);
     const [catalogMobileArray, setCatalogMobileArray] = useState(catalogMobileArrayStaticData);
@@ -145,7 +145,9 @@ const DesktopView = () => {
                                     <>
                                         <div className=' mr-1'>
                                             <Link href= "/final/inbox" >
-                                                <AiOutlineMail color="#a3a3a3" className='w-6 h-6 cursor-pointer'/>
+                                                <a>
+                                                    <AiOutlineMail color="#a3a3a3" className='w-6 h-6 cursor-pointer'/>
+                                                </a>
                                             </Link>
                                             
                                         </div>
@@ -154,7 +156,9 @@ const DesktopView = () => {
                                         </div>
                                         <div className='mx-1'>
                                             <Link href='/favorite/' >
-                                                <AiOutlineHeart color="#a3a3a3" className='w-6 h-6 cursor-pointer'/>
+                                                <a>
+                                                    <AiOutlineHeart color="#a3a3a3" className='w-6 h-6 cursor-pointer'/>
+                                                </a>
                                             </Link>
                                         </div>
 
@@ -389,4 +393,4 @@ const DesktopView = () => {
     )
 }
 
-export default DesktopView
+export default HeaderSection
