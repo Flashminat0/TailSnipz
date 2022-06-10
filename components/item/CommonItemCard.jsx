@@ -7,13 +7,13 @@ const CommonItemCard = ({username, profileImg, profileAlt, src, alt, price, size
 
     return (
         <>
-            <div className={"box-content w-[10.5rem] sm:w-[18rem] md:w-[13.5rem] lg:w-[14.5rem] min-h-max"}>
+            <div className={"box-content w-[9.5rem] sm:w-[18rem] md:w-[13.5rem] lg:w-[14.5rem] min-h-max"}>
                 <div className={"flex flex-col gap-2"}>
                     <div className={"flex flex-row gap-2 pl-4 items-center"}>
                         <img src={profileImg} alt={profileAlt} className={"w-[1.75rem] h-[1.75rem] rounded-full object-cover"}/>
                         <p className={"text-xs text-gray-500 font-medium"}>{username}</p>
                     </div>
-                    <img className={"h-[16.5rem] sm:h-[18rem] md:h-[22rem] lg:h-[22rem] w-[10.5rem] sm:w-[18rem] md:w-[13.5rem] lg:w-[14.5rem] object-cover"}
+                    <img className={"h-[16.5rem] sm:h-[18rem] md:h-[22rem] lg:h-[22rem] w-[9.5rem] sm:w-[18rem] md:w-[13.5rem] lg:w-[14.5rem] object-cover"}
                          src={src} alt={alt}
                          width={"full"} height={"full"}/>
                 </div>
@@ -36,9 +36,9 @@ const CommonItemCard = ({username, profileImg, profileAlt, src, alt, price, size
                                     setIsFavourite(false)
                                 }}
                                      fill="currentColor">
-                                    <path fillRule="evenodd"
+                                    <path fillRule="event"
                                           d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-                                          clipRule="evenodd"/>
+                                          clipRule="event"/>
                                 </svg>
                             </> : <>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
