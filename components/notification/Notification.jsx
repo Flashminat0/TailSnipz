@@ -6,26 +6,10 @@ const Notification = () => {
   return (
     <div className={""}>
       <>
-        <Menu as="div" className="relative inline-block text-left">
+        <Menu as="div" className="inline-block text-left">
           <div>
             <Menu.Button className="inline-flex justify-center w-full text-sm font-medium text-gray-700   focus:ring-indigo-500">
-              {/* <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 ml-3 mr-2 hover:text-red-400 focus:text-red-400 cursor-pointer"
-                fill="none "
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                />
-              </svg> */}
-
                 <IoNotificationsOutline color="#a3a3a3" className='w-6 h-6 hover:text-red-400 focus:text-red-400 cursor-pointer'/>
-
             </Menu.Button>
           </div>
 
@@ -38,7 +22,8 @@ const Notification = () => {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <Menu.Items className="origin-top-right absolute right-0 mt-1 w-96 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-20">
+            
+            <Menu.Items className="origin-top-right absolute right-0 mt-1 max-w-sm rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-20">
               <div className="py-1">
                 <Menu.Item>
                   <button
@@ -118,11 +103,11 @@ const Notification = () => {
                     </div>
                   </button>
                 </Menu.Item>
-                <form method="POST" action="#">
+                <form method="POST" action="#" className="pt-3 pb-1 flex justify-center">
                   <Menu.Item>
                     <button
                       type="submit"
-                      className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                      className="bg-transparent hover:bg-susty text-red-500 font-semibold hover:text-white py-2 px-4 border border-susty hover:border-transparent rounded"
                     >
                       See All
                     </button>
