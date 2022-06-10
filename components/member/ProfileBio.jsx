@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {motion} from "framer-motion";
 import {
     CheckCircleIcon,
-    ChevronRightIcon,
     ClockIcon,
     LocationMarkerIcon,
     PencilIcon,
@@ -197,7 +196,15 @@ const ProfileBio = () => {
                                             </div>
                                         </div>
                                         <div className={"col-span-1 ml-auto"}>
-                                            <ChevronRightIcon className={"w-5 h-5 text-gray-400"}/>
+                                            <div>
+                                                <motion.button
+                                                    whileHover={{scale: 1.02}}
+                                                    whileTap={{scale: 0.98}}
+                                                    className={`inline-flex items-center px-4 py-1.5 mr-2 border border-red-300 shadow-sm text-sm font-medium rounded-md text-susty bg-red-100 hover:bg-susty hover:text-white hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                                    <PencilIcon className={`h-5 w-5 mr-2`}/>
+                                                    Edit profile
+                                                </motion.button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className={"flex flex-col gap-0.5 text-gray-500 py-4"}>
