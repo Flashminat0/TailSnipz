@@ -1,10 +1,10 @@
-import DesktopView from '../components/header/DesktopView'
+import HeaderSection from '../components/header/HeaderSection'
 import '../styles/globals.css'
 
 export default function MyApp({Component, pageProps}) {
     return (
         <>
-            <DesktopView/>
+            <HeaderSection/>
             <Component {...pageProps} />
         </>
     )
