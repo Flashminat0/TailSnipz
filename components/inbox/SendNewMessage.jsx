@@ -27,7 +27,7 @@ const Sendnewmessage = () => {
 
     const [msgInput, setMsgInput] = useState('');
 
-    return (<div className={"h-screen w-screen grid place-content-center font-susty"}>
+    return (<div className={""}>
         <>
             <div className={"w-full"}>
                 <div className={"text-gray-400 text-sm ml-2 font-medium uppercase"}>New Message</div>
@@ -64,7 +64,7 @@ const Sendnewmessage = () => {
                                             initial={{opacity: 0, scale: 0}}
                                             animate={{opacity: 1, scale: 1}}
                                             exit={{opacity: 0, scale: 0}}
-                                            afterLeave={() => setQuery('')}
+                                            // afterleave={() => setQuery('')}
                                         >
                                             <Combobox.Options
 
