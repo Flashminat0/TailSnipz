@@ -31,7 +31,7 @@ const ProfileCloset = ({isSameUser, percentage}) => {
                 </>}
             </div>
             <div className={'px-2 md:px-0 pt-8 pb-6'}>
-                <SellerItems/>
+                <SellerItems isSameUser={isSameUser}/>
             </div>
         </>
     );

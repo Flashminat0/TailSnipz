@@ -3,7 +3,7 @@ import {StarIcon} from "@heroicons/react/solid";
 
 const RatesInProfile = ({customer}) => {
     return (
-        <div>
+        <div className={'flex flex-row'}>
             {Array(parseInt(customer.rate)).fill(0).map((x, index) => {
                 return <StarIcon key={index} className={'w-5 h-5 text-amber-400'}/>
             })}

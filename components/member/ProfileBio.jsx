@@ -67,7 +67,7 @@ function classNames(...classes) {
 
 const ProfileBio = () => {
     const [tabs, setTabs] = useState(tabsStaticData);
-    const [isSameUser, setIsSameUser] = useState(true);
+    const [isSameUser, setIsSameUser] = useState(false);
     const [isFollow, setIsFollow] = useState(false);
     const [anyReviews, setAnyReviews] = useState(true);
 
@@ -398,17 +398,18 @@ const ProfileBio = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <ProfileCloset/>
+                                    <ProfileCloset isSameUser={isSameUser} percentage={discountFromBundles}/>
                                 </ul>
                             </Tab.Panel>
                             <Tab.Panel
                                 className={classNames(
-                                    'rounded-xl bg-white p-3',
+                                    'rounded-xl bg-white p-1',
                                     'ring-white ring-opacity-60 ring-offset-2 focus:outline-none'
                                 )}
                             >
                                 <ul>
-                                    <ProfileReviews/>
+                                    <ProfileReviews isSameUser={isSameUser} anyReviews={anyReviews}
+                                                    seller={sellerData}/>
                                 </ul>
                             </Tab.Panel>
                         </Tab.Panels>
