@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import SellerItemCard from "./SellerItemCard";
+import {categoryObj} from "./categoriesobj";
 
 const itemsStaticData = [{
     id: 1,
