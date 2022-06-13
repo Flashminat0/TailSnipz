@@ -45,7 +45,7 @@ const sortBy = [
     {id: 1, name: 'Relevance'},
     {id: 2, name: 'Price: high to low'},
     {id: 3, name: 'Price: low to high'},
-    {id: 4, name: 'Newest first'},
+    {id: 4, name: 'Newest first'}
 ]
 
 const categories = categoryObj;
