@@ -1,4 +1,4 @@
-const categoryObj = [
+export const categoryObj = [
     {
         id: "463e989a-c4f2-4616-85c5-0cb610c5fff0",
         name: "Women",
@@ -1465,4 +1465,3 @@ const categoryObj = [
         ]
     }
 ]
-console.log("Women/Clothes/Jumpers and Sweaters".split(' ').join('-').trim().toLowerCase());
