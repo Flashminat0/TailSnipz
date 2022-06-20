@@ -1465,4 +1465,3 @@ export const categoryObj = [
         ]
     }
 ]
-console.log("Women/Clothes/Jumpers and Sweaters".split(' ').join('-').trim().toLowerCase());

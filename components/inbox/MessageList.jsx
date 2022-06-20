@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import {PlusIcon} from "@heroicons/react/solid";
+import router from 'next/router'
+import Link from 'next/link'
 
 const messagesStaticData = [
     {
@@ -31,28 +33,42 @@ const Messagelist = () => {
     const [messages, setMessages] = useState(messagesStaticData);
 
     return (
-        <div className={"h-screen w-screen grid place-content-center font-susty"}>
+        <div className={""}>
             <>
                 <div className={"w-full bg-white p-5 shadow-sm"}>
                     <div className="mt-4 px-1">
-                        <button
-                            className={`inline-flex items-center px-4 py-1.5 border border-transparent shadow-sm text-xs font-medium rounded-md text-susty bg-red-100 hover:bg-susty hover:text-white hover:border-susty`}>
-                            <PlusIcon className="w-5 h-5 mr-2 items-center"/>
-                            New Message
-                        </button>
+                        <Link href = '/inbox/new'>
+                            <button
+                                className={`inline-flex items-center px-4 py-1.5 border border-transparent shadow-sm text-xs font-medium rounded-md text-susty bg-red-100 hover:bg-susty hover:text-white hover:border-susty`}
+                                >
+                                <PlusIcon className="w-5 h-5 mr-2 items-center"/>
+                                New Message
+                            </button>
+                        </Link>
                     </div>
                     <div className={"flex flex-col-reverse mt-10"}>
                         {messages.map((msg) => (
                             <div key={msg.id}
-                                 className={"grid grid-cols-12 border-b-2 border-gray-200 py-5 px-2 lg:px-4 hover:bg-red-50"}>
-                                <div className={"col-span-2 lg:col-span-1"}><img
-                                    className={"inline-block h-14 w-14 rounded-full"}
+                                 className={"inline-flex border-b-2 border-gray-200 py-5 px-2 lg:px-4 hover:bg-red-50 cursor-pointer"}
+                                 onClick = {async() => {
+                                     await router.push({
+                                         pathname: '/inbox/overview',
+                                         query: {
+                                            id: msg.id,
+                                         },
+                                     })
+                                 }}
+                                 >
+                                <div className={"shrink-0"}><img
+                                    className={" inline-block h-14 w-14 rounded-full"}
                                     src={msg.src} alt={msg.alt}/></div>
-                                <div className={"col-span-7 lg:col-span-10 flex flex-col pr-2"}>
+                                <div className={"pl-3 flex flex-col pr-2 w-full "}>
                                     <div className={"font-medium text-base capitalize"}>{msg.name}</div>
                                     <div className={"text-sm text-gray-500"}>{msg.message}</div>
                                 </div>
-                                <div className={"col-span-3 lg:col-span-1 text-sm text-gray-500"}>{msg.createdAt}</div>
+                                <div className = ' w-full'>
+                                    <div className={"float-right md:text-sm text-xs font-normal text-gray-500 "}>{msg.createdAt}</div>
+                                </div>
                             </div>
                         ))}
                     </div>

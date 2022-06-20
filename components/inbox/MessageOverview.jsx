@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {ArrowRightIcon, CameraIcon, EyeIcon, InformationCircleIcon, LocationMarkerIcon} from "@heroicons/react/outline";
+import { useRouter } from "next/router";
 
 const receiverMessageStaticData = [{
     id: 1,
@@ -14,33 +15,36 @@ const receiverMessageStaticData = [{
 
 const senderMessageStaticData = [{id: 1, chat: "Hi, I will Check them."}];
 
-const Messageoverview = () => {
+const Messageoverview = ({inboxId}) => {
     const [receiverMessage, setReceiverMessage] = useState(receiverMessageStaticData);
     const [senderMessage, setSenderMessage] = useState(senderMessageStaticData);
     const [msgInput, setMsgInput] = useState('');
 
+    const router = useRouter();
+    console.log(router.query.id);
+
     return (
-        <div className={"w-screen grid place-content-center font-susty"}>
+        <div className={""}>
             <>
-                <div className={"bg-white max-h-[60vh] px-2 sm:px-6 lg:px-16 shadow-sm"}>
+                <div className={"bg-white  px-2 lg:px-2 shadow-sm"}>
                     <div className={"flex flex-col"}>
                         {receiverMessage.map((receive) => (
                             <div key={receive.id} className={"flex flex-col gap-1"}>
                                 <div
-                                    className={"grid grid-cols-4 lg:grid-cols-6 items-center border-b-2 border-gray-100 py-5 px-3 mb-8 shadow-sm"}>
+                                    className={"grid float-left items-center border-b-2 border-gray-100 py-5 px-3 mb-8 shadow-sm"}>
                                     <div
-                                        className={"col-start-2 col-end-4 lg:col-start-4 lg:col-end-5 mx-auto lg:mx-0 text-susty text-base"}>
+                                        className={"mx-auto lg:mx-0 text-susty text-base"}>
                                         {receive.username}
                                     </div>
                                     <InformationCircleIcon className={"col-start-4 lg:col-start-6 ml-auto w-5 h5"}/>
-                                </div>
-                                <div className={"grid grid-cols-4 sm:grid-cols-12 lg:grid-cols-10 gap-1 px-2 sm:px-5"}>
-                                    <div className={"col-start-1 col-end-2 sm:col-end-3 lg:col-end-2 sm:ml-auto sm:mr-4"}>
-                                        <img className={"inline-block h-12 w-12 rounded-full"}
+                                </div> 
+                                <div className={"flex float-left px-2 sm:px-5"}>
+                                    <div className={"sm:mr-4 shrink-0"}>
+                                        <img className={"inline-block h-9 w-9 md:h-12 md:w-12 rounded-full"}
                                              src={receive.imageUrl}
                                              alt={receive.alt}/>
                                     </div>
-                                    <div className={"col-start-2 sm:col-start-3 col-end-12 lg:col-start-2 lg:col-end-7"}>
+                                    <div className={"max-w-md"}>
                                         <div className={"p-4 rounded-lg shadow-sm border border-gray-100"}>
                                             <div className={"flex flex-col gap-2"}>
                                                 <div className={"font-semibold"}>Hi! I'm {receive.username}</div>
@@ -68,7 +72,7 @@ const Messageoverview = () => {
                         ))}
                         {senderMessage.map((send) => (
                             <div key={send.id}
-                                className={"bg-gray-100 px-5 py-3 text-sm rounded-lg shadow-sm ml-auto mr-4 leading-relaxed"}>{send.chat}</div>
+                                className={"bg-gray-100 px-5 py-3 text-sm rounded-lg shadow-sm ml-auto mr-4 leading-relaxed max-w-md"}>{send.chat}</div>
                         ))}
                         <div
                             className={"inline-flex place-content-center mt-5 mb-3 text-sm text-susty font-medium"}>Translate

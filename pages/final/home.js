@@ -1,6 +1,5 @@
 import React from 'react';
 import BasicPageWrapper from "../../components/layouts/BasicPageWrapper";
-import DesktopView from "../../components/header/DesktopView";
 import CTA from "../../components/home/CTA";
 import PopularItems from "../../components/item/PopularItems";
 import ShopByBrand from "../../components/home/ShopByBrand";
@@ -13,7 +12,6 @@ import FooterSection from "../../components/footer/FooterSection";
 const Home = () => {
     return (
         <BasicPageWrapper>
-            <DesktopView/>
             <CTA/>
             <PopularItems/>
             <ShopByBrand/>

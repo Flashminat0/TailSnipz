@@ -27,12 +27,12 @@ const Sendnewmessage = () => {
 
     const [msgInput, setMsgInput] = useState('');
 
-    return (<div className={"h-screen w-screen grid place-content-center font-susty"}>
+    return (<div className={""}>
         <>
             <div className={"w-full"}>
                 <div className={"text-gray-400 text-sm ml-2 font-medium uppercase"}>New Message</div>
                 <div className={"bg-white shadow-md"}>
-                    <div className={"grid grid-cols-3 mt-5 px-5 pt-5 pb-96"}>
+                    <div className={"grid grid-cols-3 mt-5 px-5 pt-5 pb-[20rem]"}>
                         <div className={"col-span-1 text-sm"}>To:</div>
                         <div className={"col-start-2 col-span-2 lg:col-start-3 col-span-1 col-end-12"}>
                             <AnimatePresence>
@@ -64,7 +64,7 @@ const Sendnewmessage = () => {
                                             initial={{opacity: 0, scale: 0}}
                                             animate={{opacity: 1, scale: 1}}
                                             exit={{opacity: 0, scale: 0}}
-                                            afterLeave={() => setQuery('')}
+                                            // afterleave={() => setQuery('')}
                                         >
                                             <Combobox.Options
 
