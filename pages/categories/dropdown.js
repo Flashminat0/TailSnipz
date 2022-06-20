@@ -2,29 +2,22 @@
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import {
-  CalendarIcon,
-  HomeIcon,
-  MapIcon,
   MenuIcon,
-  SearchCircleIcon,
-  SpeakerphoneIcon,
-  UserGroupIcon,
   XIcon,
 } from "@heroicons/react/outline";
 import Items from "./items";
-import CatObj from "../../components/item/categoriesobj";
 
 
-
+import { categoryObj } from "../../components/item/categoriesobj";
 
 
 const navigation = [
-  { name: "Dashboard", href: "#", icon: HomeIcon, current: true },
-  { name: "Calendar", href: "#", icon: CalendarIcon, current: false },
-  { name: "Teams", href: "#", icon: UserGroupIcon, current: false },
-  { name: "Directory", href: "#", icon: SearchCircleIcon, current: false },
-  { name: "Announcements", href: "#", icon: SpeakerphoneIcon, current: false },
-  { name: "Office Map", href: "#", icon: MapIcon, current: false },
+  { name: "Dashboard", href: "#", current: true },
+  { name: "Calendar", href: "#", current: false },
+  { name: "Teams", href: "#", current: false },
+  { name: "Directory", href: "#", current: false },
+  { name: "Announcements", href: "#", current: false },
+  { name: "Office Map", href: "#", current: false },
 ];
 
 function classNames(...classes) {
@@ -115,7 +108,10 @@ const Dropdown = () => {
                   </div>
                   <nav aria-label="Sidebar" className="mt-5">
                     <div className="px-2 space-y-1">
-                      {navigation.map((item) => (
+
+
+
+                    {navigation.map((item) => (
                         <a
                           key={item.name}
                           href={item.href}
@@ -126,6 +122,7 @@ const Dropdown = () => {
                             "group flex items-center px-2 py-2 text-base font-medium rounded-md"
                           )}
                         >
+{/* 
                           <item.icon
                             className={classNames(
                               item.current
@@ -135,9 +132,13 @@ const Dropdown = () => {
                             )}
                             aria-hidden="true"
                           />
-                          {item.name}
+*/}
+                          {item.name}a
                         </a>
                       ))}
+
+
+
                     </div>
                   </nav>
                 </div>
@@ -194,12 +195,9 @@ const Dropdown = () => {
 
 
 
-
-
-                    {navigation.map((item) => (
+<>
+{navigation.map((item) => (
                       <a
-                        key={item.name}
-                        href={item.href}
                         className={classNames(
                           item.current
                             ? "bg-gray-200 text-gray-900"
@@ -207,6 +205,7 @@ const Dropdown = () => {
                           "group flex items-center px-2 py-2 text-sm font-medium rounded-md"
                         )}
                       >
+{/* 
                         <item.icon
                           className={classNames(
                             item.current
@@ -216,11 +215,11 @@ const Dropdown = () => {
                           )}
                           aria-hidden="true"
                         />
+*/}
                         {item.name}
                       </a>
-                    ))}
-
-
+                  ))}
+</>
 
 
 

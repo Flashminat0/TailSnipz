@@ -19,26 +19,21 @@ const CatDropDown = () => {
         {({ open }) => (
           <>
             <div className="flex justify-start">
-              <div className="relative z-10 bg-white shadow">
+              <div className="relative z-10 bg-white">
                 <div className="max-full mx-auto flex px-4 py-6 sm:px-6 lg:px-8">
                   <Popover.Button
                     className={classNames(
-                      open ? "text-gray-900" : "text-gray-500",
-                      "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+                      open ? "text-gray-900" : "text-gray-900",
+                      "group bg-white rounded-md inline-flex items-center text-sm font-susty focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
                     )}
                   >
+                    <div className="flex justify-start gap-4">
                     {categoryObj.map((singleMainCategory) => (
-                      <div key={singleMainCategory.id}>
+                      <div mainkey={singleMainCategory.id}>
                         <span>{singleMainCategory.name}</span>
-                        <ChevronDownIcon
-                          className={classNames(
-                            open ? "text-gray-600" : "text-gray-400",
-                            "ml-2 h-5 w-5 group-hover:text-gray-500"
-                          )}
-                          aria-hidden="true"
-                        />
                       </div>
                     ))}
+                    </div>
                   </Popover.Button>
                 </div>
               </div>
