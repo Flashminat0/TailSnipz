@@ -11,6 +11,7 @@ import {
     HomeIcon
 } from '@heroicons/react/solid'
 import {AnimatePresence, motion} from "framer-motion";
+import axios from 'axios';
 
 const sortOptionsStaticData = [
     {id: 1, name: 'Most Popular', href: '#'},
@@ -170,17 +171,37 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-const ProductCategoryFilterWrapper = ({children, topic, noOfItems, pagePath}) => {
+const ProductCategoryFilterWrapper = ({children, topic, noOfItems, pagePath, productResult, setProductResult}) => {
     const [sortOptions, setSortOptions] = useState(sortOptionsStaticData);
     const [subCategories, setSubCategories] = useState(subCategoriesStaticData);
     const [filters, setFilters] = useState(filtersStaticData);
     const [sortByFilter, setSortByFilter] = useState(sortByFilterStaticData);
 
-    const [enabled, setEnabled] = useState(false);
+    const [enabled, setEnabled] = useState(false);  //swapping value
 
     const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
-    const [inputPriceFrom, setInputPriceFrom] = useState('');
-    const [inputPriceTo, setInputPriceTo] = useState('');
+    const [subCat1, setSubCat1] = useState()
+    const [subCat2, setSubCat2] = useState()
+    const [mainCat, setMainCat] = useState('Men')
+    const [inputPriceFrom, setInputPriceFrom] = useState();
+    const [inputPriceTo, setInputPriceTo] = useState();
+    const [color, setColor] = useState();
+    const [brand, setBrand] = useState();
+    const [size, setSize] = useState();
+    const [condition, setCondition] = useState();
+    const [sortBy, setSortBy] = useState();
+
+    useEffect(() => {
+        console.log(color, brand, size, condition, sortBy, enabled, inputPriceFrom, inputPriceTo)
+
+        const data = {mainCat, subCatOne: subCat1, subCatTwo: subCat2, condition, color, brand, size, sortBy, swapping: enabled, priceFrom: inputPriceFrom, priceTo: inputPriceTo }
+
+        async function filterData() {
+            await axios.get('http://localhost:8000/api/product/filter-products', {params: data}).then((result) => setProductResult(result.data.result))
+        }
+        filterData();
+
+    }, [color, brand, size, condition, sortBy, enabled, inputPriceFrom, inputPriceTo])
 
     return (
         <div className="bg-white border-t border-gray-200 mt-5">
@@ -267,6 +288,39 @@ const ProductCategoryFilterWrapper = ({children, topic, noOfItems, pagePath}) =>
                                                                         type="checkbox"
                                                                         defaultChecked={option.checked}
                                                                         className="h-4 w-4 border-gray-300 rounded text-susty focus:ring-red-500"
+                                                                        onChange={(e) => {
+                                                                            option.checked = !option.checked
+                                                                            if(section.id == 'color'){
+                                                                                if(option.checked == false){
+                                                                                    setColor()
+                                                                                }else{
+                                                                                    setColor(e.target.value)
+                                                                                }
+                                                                            }
+                                                                            else if(section.id == 'brand') {
+                                                                                if(option.checked == false){
+                                                                                    setBrand()
+                                                                                }else{
+                                                                                    setBrand(e.target.value)
+                                                                                } 
+                                                                            }
+                                                                            else if(section.id == 'size') {
+                                                                                if(option.checked == false){
+                                                                                    setSize()
+                                                                                }else{
+                                                                                    setSize(e.target.value)
+                                                                                } 
+                                                                            }
+                                                                            else if(section.id == 'condition') {
+                                                                                if(option.checked == false){
+                                                                                    setCondition()
+                                                                                }else{
+                                                                                    setCondition(e.target.value)
+                                                                                } 
+                                                                            }
+
+                                                                            console.log(e.target.value)
+                                                                        }}
                                                                     />
                                                                     <label
                                                                         htmlFor={`filter-mobile-${section.id}-${optionIdx}`}
@@ -417,7 +471,9 @@ const ProductCategoryFilterWrapper = ({children, topic, noOfItems, pagePath}) =>
                                                                         id={`filter-mobile-${sortByFilter.id}-${sortByIdx}`}
                                                                         name={`${sortByFilter.id}[]`}
                                                                         type="radio"
+                                                                        value={sortBy.name}
                                                                         className="focus:ring-red-500 h-4 w-4 text-susty border-gray-300"
+                                                                        onChange={(e) => setSortBy(e.target.value)}
                                                                     />
                                                                     <label
                                                                         htmlFor={`filter-mobile-${sortByFilter.id}-${sortByIdx}`}
@@ -606,13 +662,48 @@ const ProductCategoryFilterWrapper = ({children, topic, noOfItems, pagePath}) =>
                                                                         type="checkbox"
                                                                         defaultChecked={option.checked}
                                                                         className="h-4 w-4 border-gray-300 rounded text-susty focus:ring-red-500"
+                                                                        onChange={(e) => {
+                                                                            option.checked = !option.checked
+                                                                            if(section.id == 'color'){
+                                                                                if(option.checked == false){
+                                                                                    setColor()
+                                                                                }else{
+                                                                                    setColor(e.target.value)
+                                                                                }
+                                                                            }
+                                                                            else if(section.id == 'brand') {
+                                                                                if(option.checked == false){
+                                                                                    setBrand()
+                                                                                }else{
+                                                                                    setBrand(e.target.value)
+                                                                                } 
+                                                                            }
+                                                                            else if(section.id == 'size') {
+                                                                                if(option.checked == false){
+                                                                                    setSize()
+                                                                                }else{
+                                                                                    setSize(e.target.value)
+                                                                                } 
+                                                                            }
+                                                                            else if(section.id == 'condition') {
+                                                                                if(option.checked == false){
+                                                                                    setCondition()
+                                                                                }else{
+                                                                                    setCondition(e.target.value)
+                                                                                } 
+                                                                            }
+
+                                                                        }}
+                                                                        
                                                                     />
+
                                                                     <label
                                                                         htmlFor={`filter-${section.id}-${optionIdx}`}
                                                                         className="ml-3 text-sm text-gray-600"
                                                                     >
                                                                         {option.label}
                                                                     </label>
+                                                                    
                                                                 </div>
                                                                 <span
                                                                     className={classNames(option.colorTag + ' w-4 h-4 rounded-full')}/>
@@ -761,7 +852,9 @@ const ProductCategoryFilterWrapper = ({children, topic, noOfItems, pagePath}) =>
                                                                     id={`filter-${sortByFilter.id}-${sortByIdx}`}
                                                                     name={`${sortByFilter.id}[]`}
                                                                     type="radio"
+                                                                    value={sortBy.name}
                                                                     className="focus:ring-red-500 h-4 w-4 text-susty border-gray-300"
+                                                                    onChange={(e) => setSortBy(e.target.value)}
                                                                 />
                                                                 <label
                                                                     htmlFor={`filter-${sortByFilter.id}-${sortByIdx}`}

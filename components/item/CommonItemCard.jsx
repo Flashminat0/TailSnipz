@@ -1,21 +1,50 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {InformationCircleIcon} from "@heroicons/react/outline";
+import axios from 'axios';
 
-const CommonItemCard = ({username, profileImg, profileAlt, src, alt, price, size, brand}) => {
+const CommonItemCard = ({userId, profileImg, profileAlt, src, alt, price, size, brand, item}) => {
+
     const [isFavourite, setIsFavourite] = useState(false);
+    const [userDetails, setUserDetails] = useState([])
+
     let favCount = 2;
+
+    useEffect(() => {
+        async function getUserDetails() {
+            await axios.get('http://localhost:8000/api/user/fetch-profile-details', {params: {id: userId}}).then((result) => setUserDetails(result.data.user))
+        }
+        getUserDetails();
+    }, [])
 
     return (
         <>
             <div className={"box-content w-[9.5rem] sm:w-[18rem] md:w-[13.5rem] lg:w-[14.5rem] min-h-max"}>
                 <div className={"flex flex-col gap-2"}>
                     <div className={"flex flex-row gap-2 pl-4 items-center"}>
-                        <img src={profileImg} alt={profileAlt} className={"w-[1.75rem] h-[1.75rem] rounded-full object-cover"}/>
-                        <p className={"text-xs text-gray-500 font-medium"}>{username}</p>
+                        {
+                                userDetails.image &&
+                            <>
+                                <img src={userDetails.image.url} alt={"Profile"} className={"w-[1.75rem] h-[1.75rem] rounded-full object-cover"}/>
+                                <p className={"text-xs text-gray-500 font-medium"}>{userDetails.name}</p>
+                            </>
+                        }
                     </div>
-                    <img className={"h-[16.5rem] sm:h-[18rem] md:h-[22rem] lg:h-[22rem] w-[9.5rem] sm:w-[18rem] md:w-[13.5rem] lg:w-[14.5rem] object-cover"}
-                         src={src} alt={alt}
-                         width={"full"} height={"full"}/>
+
+                    {
+                        src.length > 0 ? (
+                            <>
+                                <img className={"h-[16.5rem] sm:h-[18rem] md:h-[22rem] lg:h-[22rem] w-[9.5rem] sm:w-[18rem] md:w-[13.5rem] lg:w-[14.5rem] object-cover"}
+                                src={src[0].url} alt={alt}
+                                width={"full"} height={"full"}/>
+                            </>
+                        ): 
+                        <>
+                            <img className={"h-[16.5rem] sm:h-[18rem] md:h-[22rem] lg:h-[22rem] w-[9.5rem] sm:w-[18rem] md:w-[13.5rem] lg:w-[14.5rem] object-cover"}
+                            src={src} alt={alt}
+                            width={"full"} height={"full"}/>
+                        </>
+                    }
+                    
                 </div>
                 <div className={"p-3 grid grid-cols-3"}>
                     <div className={"col-start-1 col-end-3"}>

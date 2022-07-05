@@ -114,14 +114,12 @@ const ProductItemsFilterSection = () => {
     const [sectionCount, setSectionCount] = useState(0);
     const [sectionName, setSectionName] = useState("");
     const [pagePathSet, setPagePathSet] = useState([]);
-
-    const [items, setItems] = useState(itemsStaticData);
-
+    const [items, setItems] = useState(itemsStaticData);   
+    const [productResult, setProductResult] = useState([])
 
     useEffect(() => {
         setSectionCount(Object.keys(router.query).length)
     }, [router.query])
-
 
     useEffect(() => {
         if (sectionCount === 0) {
@@ -158,21 +156,26 @@ const ProductItemsFilterSection = () => {
     return (
         <>
             <ProductCategoryFilterWrapper topic={sectionName} noOfItems={items.length}
-                                          pagePath={pagePathSet}>
+                pagePath={pagePathSet}
+                productResult = {productResult} setProductResult = {setProductResult}
+                >
                 <div className={'px-3 sm:px-5 lg:px-2'}>
                     <FilterItemSetWrapper>
-                        {items.map((item) => (
+                        {productResult.map((item) => (
                             <div key={item.id}>
-                                <CommonItemCard username={item.username} profileImg={item.profileImg}
-                                                profileAlt={item.profileAlt} src={item.src} alt={item.alt}
-                                                price={item.price} size={item.size}
-                                                brand={item.brand}/>
+                                <CommonItemCard userId={item.owner} 
+                                    profileAlt={"user"} src={item.images} alt={item.alt}
+                                    price={item.price} size={item.size}
+                                    brand={item.brand}
+                                    item = {item}
+                                />
                             </div>
                         ))}
                     </FilterItemSetWrapper>
                     <ClosetSpotlightItems/>
                 </div>
             </ProductCategoryFilterWrapper>
+
             {/*TODO NAVIGATION DYNAMIC */}
             <div
                 className="bg-white px-4 pt-3 pb-10 flex items-center justify-between border-t border-gray-200 sm:px-6">
