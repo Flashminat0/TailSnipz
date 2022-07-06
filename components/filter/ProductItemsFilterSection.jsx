@@ -162,7 +162,7 @@ const ProductItemsFilterSection = () => {
                 <div className={'px-3 sm:px-5 lg:px-2'}>
                     <FilterItemSetWrapper>
                         {productResult.map((item) => (
-                            <div key={item.id}>
+                            <div key={item._id}>
                                 <CommonItemCard userId={item.owner} 
                                     profileAlt={"user"} src={item.images} alt={item.alt}
                                     price={item.price} size={item.size}

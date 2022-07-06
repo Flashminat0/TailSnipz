@@ -182,7 +182,7 @@ const ProductCategoryFilterWrapper = ({children, topic, noOfItems, pagePath, pro
     const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
     const [subCat1, setSubCat1] = useState()
     const [subCat2, setSubCat2] = useState()
-    const [mainCat, setMainCat] = useState('Men')
+    const [mainCat, setMainCat] = useState('Women')
     const [inputPriceFrom, setInputPriceFrom] = useState();
     const [inputPriceTo, setInputPriceTo] = useState();
     const [color, setColor] = useState();
@@ -192,7 +192,7 @@ const ProductCategoryFilterWrapper = ({children, topic, noOfItems, pagePath, pro
     const [sortBy, setSortBy] = useState();
 
     useEffect(() => {
-        console.log(color, brand, size, condition, sortBy, enabled, inputPriceFrom, inputPriceTo)
+        // console.log(color, brand, size, condition, sortBy, enabled, inputPriceFrom, inputPriceTo)
 
         const data = {mainCat, subCatOne: subCat1, subCatTwo: subCat2, condition, color, brand, size, sortBy, swapping: enabled, priceFrom: inputPriceFrom, priceTo: inputPriceTo }
 
