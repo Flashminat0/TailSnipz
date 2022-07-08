@@ -270,7 +270,12 @@ const HeaderSection = () => {
 
             <div className="hidden md:block mx-3 cursor-pointer">
               <Link href="/final/helpcenter">
-                <AiOutlineQuestionCircle color="#a3a3a3" className="h-6 w-6" />
+                <a>
+                  <AiOutlineQuestionCircle
+                    color="#a3a3a3"
+                    className="h-6 w-6"
+                  />
+                </a>
               </Link>
             </div>
 
