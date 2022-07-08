@@ -74,6 +74,45 @@ const Dropdown = () => {
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* 
               <div className="relative flex-1 flex flex-col max-w-xs w-full bg-white focus:outline-none">
                 <Transition.Child
                   as={Fragment}
@@ -108,9 +147,6 @@ const Dropdown = () => {
                   </div>
                   <nav aria-label="Sidebar" className="mt-5">
                     <div className="px-2 space-y-1">
-
-
-
                     {navigation.map((item) => (
                         <a
                           key={item.name}
@@ -132,13 +168,10 @@ const Dropdown = () => {
                             )}
                             aria-hidden="true"
                           />
-*/}
-                          {item.name}a
+
+                          {item.name}
                         </a>
                       ))}
-
-
-
                     </div>
                   </nav>
                 </div>
@@ -164,6 +197,31 @@ const Dropdown = () => {
                   </a>
                 </div>
               </div>
+*/}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </Transition.Child>
             <div className="flex-shrink-0 w-14" aria-hidden="true">
               {/* Force sidebar to shrink to fit close icon */}

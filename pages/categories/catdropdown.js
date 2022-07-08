@@ -65,10 +65,6 @@ export default CatDropDown;
 
 {
   /*
-
-
-
-
   return (
     <>
       {categoryObj.map((singleMainCategory) => {
@@ -140,10 +136,5 @@ export default CatDropDown;
       </Popover> 
       </>
       );
-
-
-
-
-
 */
 }
