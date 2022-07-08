@@ -171,9 +171,8 @@ const SettingsSideBarWrapper = ({arrayElements,sidebarOpen,sidebarElement,select
                 <div className="flex-1 relative z-0 flex ">
                   <main className="flex-1 relative z-0 focus:outline-none xl:order-last">
                     {/* Start main area*/}
-                    
+                            
                     <div className="absolute inset-0 px-4 sm:px-6 lg:px-8 overflow-y-auto">
-
                             {children}
                     </div>
                       {/* End main area */}
