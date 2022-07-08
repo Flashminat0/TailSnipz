@@ -120,7 +120,7 @@ const catKids = [
 ];
 
 const Categories = () => {
-  //const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   function SubCategories(props) {
     return (
@@ -207,7 +207,7 @@ const Categories = () => {
           <Menu as="div">
             <div
               className={`border-b-2 border-b-white hover:border-b-red-400 p-2`}
-              onClick={() => navigate(`/allproducts`)}
+              // onClick={() => navigate(`/allproducts`)}
             >
               <p>Shop</p>
             </div>
