@@ -10,10 +10,10 @@ const Language = () => {
           </div>
         </div> */}
 
-        <div className="md:grid md:grid-cols-3 md:gap-6 bg-gray-50 p-4">
+        <div className="md:grid md:grid-cols-3 md:gap-6 bg-white p-4">
             <div className="md:col-span-1 flex items-center">
               <div className="px-4 sm:px-0">
-                <h3 className="text-lg font-medium leading-6 text-gray-900">
+                <h3 className="text-base font-medium leading-6 text-gray-800">
                     Language
                 </h3>
               </div>

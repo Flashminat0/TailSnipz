@@ -14,11 +14,11 @@ const Location = () => {
           </div>
         </div> */}
 
-        <div className="mt-10 sm:mt-0 bg-gray-50 p-4">
+        <div className="mt-10 sm:mt-0 bg-white p-4">
           <div className="md:grid md:grid-cols-3 md:gap-6">
             <div className="md:col-span-1 flex items-center">
               <div className="px-4 sm:px-0">
-                <h3 className="text-lg font-medium leading-6 text-gray-900">
+                <h3 className="text-base font-medium leading-6 text-gray-800">
                   Country
                 </h3>
               </div>
@@ -52,7 +52,7 @@ const Location = () => {
           <div className="md:grid md:grid-cols-3 md:gap-6">
             <div className="md:col-span-1 flex items-center">
               <div className="px-4 sm:px-0">
-                <h3 className="text-lg font-medium leading-6 text-gray-900">
+                <h3 className="text-base font-medium leading-6 text-gray-800">
                   Town/City
                 </h3>
               </div>
@@ -83,7 +83,7 @@ const Location = () => {
           <div className="grid grid-cols-3 gap-6 ">
             <div className="col-span-2 flex items-center">
               <div className="">
-                <h3 className="text-lg font-medium leading-6 text-gray-900">
+                <h3 className="text-base font-medium leading-6 text-gray-800">
                   Show city in profile
                 </h3>
               </div>
