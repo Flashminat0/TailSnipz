@@ -7,7 +7,7 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-const SettingsSideBarWrapper = ({arrayElements,sidebarOpen,sidebarElement,selectedItem, setSidebarOpen,setSidebarElement,setSelectedItem  ,children}) => {
+const SettingsSideBarWrapper = ({arrayElements,sidebarOpen,sidebarElement,selectedItem, setSidebarOpen,setSidebarElement,setSelectedItem}) => {
     return (
         <>
             <div className={'lg:mx-44 min-h-max'}>
@@ -103,7 +103,7 @@ const SettingsSideBarWrapper = ({arrayElements,sidebarOpen,sidebarElement,select
                         </Transition.Root>
 
                         {/* Static sidebar for desktop */}
-                        <div className="hidden lg:flex lg:flex-shrink-0 min-h-screen">
+                        <div className="hidden lg:block lg:flex-shrink-0 min-h-screen">
                             <div className="flex flex-col w-64">
                                 {/* Sidebar component, swap this element with another sidebar if you like */}
                                 <div className="flex-1 flex flex-col min-h-full">
@@ -173,7 +173,7 @@ const SettingsSideBarWrapper = ({arrayElements,sidebarOpen,sidebarElement,select
 
                                     <div className="absolute inset-0 px-4 sm:px-6 lg:px-8 overflow-y-auto scrollbar-hide">
 
-                                        {children}
+                                        {sidebarElement}
                                     </div>
                                     {/* End main area */}
                                 </main>

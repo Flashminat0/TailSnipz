@@ -20,7 +20,7 @@ const SelectDiscount = () => {
     const [clickedDropThree, setClickedDropThree] = useState("50")
 
     return (
-        <div className={""}>
+        <div className={"block"}>
             <>
                 <div>
                     <div className={"w-full bg-white"}>

@@ -40,7 +40,7 @@ const SettingsHome = () => {
     const [arrayElements, setArrayElements] = useState(navigation)
 
     return (
-        <div className={'bg-gray-100 mb-10'}>
+        <div className={'bg-gray-100'}>
             <SettingsSideBarWrapper
                 arrayElements = {arrayElements}
                 sidebarOpen = {sidebarOpen}
