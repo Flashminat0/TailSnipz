@@ -5,15 +5,14 @@ import Language from "../../../../components/settings/profile/Language";
 import SettingsHome from "../home";
 
 const ProfileHome = () => {
-  return (
-      <SettingsHome>
-          <div className='grid gap-y-4 p-4'>
-              <Name />
-              <Location />
-              <Language />
-          </div>
-      </SettingsHome>
-  )
+    return (
+
+        <div className='grid gap-y-4 p-4'>
+            <Name/>
+            <Location/>
+            <Language/>
+        </div>
+    )
 }
 
 export default ProfileHome
