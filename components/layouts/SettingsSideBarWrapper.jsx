@@ -149,7 +149,7 @@ const SettingsSideBarWrapper = ({arrayElements,sidebarOpen,sidebarElement,select
                             </div>
                         </div>
                         <div className="flex flex-col min-w-0 flex-1">
-                            <div className="lg:hidden">
+                            <div className="block lg:hidden">
                                 <div className="flex items-center justify-between bg-gray-50 border-b border-gray-200 px-4 py-1.5">
 
                                     <div className='text-gray-800 font-normal text-xl capitalize'>
