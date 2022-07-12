@@ -9,7 +9,7 @@ function classNames(...classes) {
 }
 
 const CatDropDown = () => {
-  const [mainCatId, setMainCatId] = useState([]);
+  const [mainCatArray, setMainCatArray] = useState([]);
 
   return (
     <>
@@ -28,9 +28,9 @@ const CatDropDown = () => {
                     <div className="flex justify-start gap-4">
                       {categoryObj.map((singleMainCategory) => (
                         <button
-                          mainkey={singleMainCategory.id}
+                          key={singleMainCategory.id}
                           onClick={() => {
-                            setMainCatId(singleMainCategory.subCategory);
+                            setMainCatArray(singleMainCategory.subCategory);
                           }}
                         >
                           <span>{singleMainCategory.name}</span>
@@ -53,7 +53,7 @@ const CatDropDown = () => {
             >
               <Popover.Panel className="absolute z-10 inset-x-0 transform shadow-lg">
                 <div className="">
-                  <Dropdown subCategory={mainCatId} />
+                  <Dropdown subCategory={mainCatArray} />
                 </div>
               </Popover.Panel>
             </Transition>

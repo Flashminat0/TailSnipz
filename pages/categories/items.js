@@ -1,11 +1,6 @@
-import { DotsVerticalIcon } from "@heroicons/react/solid";
+import React from "react";
 
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
-const Items = ({items}) => {
+const Items = ({ sections }) => {
   return (
     <>
       <div>
@@ -13,12 +8,9 @@ const Items = ({items}) => {
           role="list"
           className="mt-3 grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-2"
         >
-          {items.map((section) => (
-
-
-
+          {sections.map((section) => (
             <li
-              key={section.name}
+              key={section.id}
               className="col-span-1 flex shadow-sm rounded-md"
             >
               <div className="flex-1 flex items-center justify-between border bg-white rounded-r-md truncate">
@@ -29,14 +21,10 @@ const Items = ({items}) => {
                   >
                     {section.name}
                   </a>
-                  <p className="text-gray-500">{section.members} Members</p>
+                  
                 </div>
               </div>
             </li>
-            
-
-
-
           ))}
         </ul>
       </div>

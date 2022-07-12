@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Items from "./items";
@@ -8,11 +8,14 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Dropdown = ({subCategory}) => {
-
+const Dropdown = ({ subCategory }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [subCatArray, setSubCatArray] = useState([]);
 
-  const [subCatId, setSubCatId] = useState([]);
+  useEffect(() => {
+    setSubCatArray(subCategory[0].sections);
+  }, []);
+
 
   function SubCategories(props) {
     return (
@@ -24,7 +27,7 @@ const Dropdown = ({subCategory}) => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-      <Menu.Items className="origin-top absolute w-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
+        <Menu.Items className="origin-top absolute w-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
           <div className="py-1 flex">{props.children}</div>
         </Menu.Items>
       </Transition>
@@ -32,7 +35,6 @@ const Dropdown = ({subCategory}) => {
   }
 
   return (
-
     <>
       <div className="h-full flex">
         <Transition.Root show={sidebarOpen} as={Fragment}>
@@ -77,23 +79,21 @@ const Dropdown = ({subCategory}) => {
                   <div className="px-2 space-y-1">
                     <>
                       {subCategory.map((subcat) => (
-
-
-
-
-
-
-                   
-                        <span  mainkey={subCategory.id} onClick={()=> {setSubCatId(subCategory.items)}}>
-                        <a
-                          className={classNames(
-                            subcat.current
-                              ? "bg-gray-200 text-gray-900"
-                              : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
-                            "group flex items-center px-2 py-2 text-sm font-medium rounded-md"
-                          )}
+                        <span
+                          key={subcat.id}
+                          onClick={() => {
+                            setSubCatArray(subcat.sections);
+                          }}
                         >
-                        {/* 
+                          <a
+                            className={classNames(
+                              subcat.current
+                                ? "bg-gray-200 text-gray-900"
+                                : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
+                              "group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                            )}
+                          >
+                            {/* 
                         <item.icon
                           className={classNames(
                             item.current
@@ -104,18 +104,9 @@ const Dropdown = ({subCategory}) => {
                           aria-hidden="true"
                         />
                         */}
-                          {subcat.name}
-                        </a>
+                            {subcat.name}
+                          </a>
                         </span>
-                       
-
-
-
-
-
-
-
-
                       ))}
                     </>
                   </div>
@@ -147,7 +138,7 @@ const Dropdown = ({subCategory}) => {
             </div>
           </div>
           <div className="flex-1 overflow-hidden border-4 relative z-0">
-            <Items items={subCatId}/>
+            <Items sections={subCatArray} />
           </div>
         </div>
       </div>
