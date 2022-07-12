@@ -10,11 +10,11 @@ const HighPriorityNotifications = () => {
   return (
       <div className={""}>
         <>
-            <div className={"w-full bg-gray-50"}>
+            <div className={"w-full bg-white"}>
                 <div className='p-3'>
-                    <p>High-priority notifications</p>
+                    <p className='text-sm text-gray-500'>High-priority notifications</p>
                 </div>
-                <div className={"grid grid-cols-5 gap-5 p-5"}>
+                <div className={"grid grid-cols-5 gap-5 p-5 border-b border-gray-200"}>
                     <div className={"col-span-4"}>
                         <p className={"font-semibold"}>New messages</p>
                     </div>
@@ -23,21 +23,20 @@ const HighPriorityNotifications = () => {
                             checked={enabledNewMessages}
                             onChange={setEnabledNewMessages}
                             className={`${enabledNewMessages ? 'bg-susty' : 'bg-gray-300'}
-                            relative inline-flex h-[30px] w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                            relative inline-flex h-[24px] w-[48px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                         >
                             <span className="sr-only">Use setting</span>
                             <span
                                 aria-hidden="true"
-                                className={`${enabledNewMessages ? 'translate-x-[1.855rem]' : 'translate-x-0'}
-                            pointer-events-none inline-block h-[26px] w-[26px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                className={`${enabledNewMessages ? 'translate-x-[1.53rem]' : 'translate-x-0'}
+                            pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                             />
                         </Switch>
                     </div>
                 </div>
-                <hr className={`my-1`}/>
             </div>
-            <div className={"w-full bg-gray-50"}>
-                <div className={"grid grid-cols-5 gap-5 p-5"}>
+            <div className={"w-full bg-white"}>
+                <div className={"grid grid-cols-5 gap-5 p-5 border-b border-gray-200"}>
                     <div className={"col-span-4"}>
                         <p className={"font-semibold"}>New feedback</p>
                     </div>
@@ -46,20 +45,19 @@ const HighPriorityNotifications = () => {
                             checked={enabledNewFeedback}
                             onChange={setEnabledNewFeedback}
                             className={`${enabledNewFeedback ? 'bg-susty' : 'bg-gray-300'}
-                            relative inline-flex h-[30px] w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                            relative inline-flex h-[24px] w-[48px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                         >
                             <span className="sr-only">Use setting</span>
                             <span
                                 aria-hidden="true"
-                                className={`${enabledNewFeedback ? 'translate-x-[1.855rem]' : 'translate-x-0'}
-                            pointer-events-none inline-block h-[26px] w-[26px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                className={`${enabledNewFeedback ? 'translate-x-[1.53rem]' : 'translate-x-0'}
+                            pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                             />
                         </Switch>
                     </div>
                 </div>
-                <hr className={`my-1`}/>
             </div>
-            <div className={"w-full bg-gray-50"}>
+            <div className={"w-full bg-white"}>
                 <div className={"grid grid-cols-5 gap-5 p-5"}>
                     <div className={"col-span-4"}>
                         <p className={"font-semibold"}>Discounted items</p>
@@ -69,18 +67,17 @@ const HighPriorityNotifications = () => {
                             checked={enabledDiscountItems}
                             onChange={setEnabledDiscountItems}
                             className={`${enabledDiscountItems ? 'bg-susty' : 'bg-gray-300'}
-                            relative inline-flex h-[30px] w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                            relative inline-flex h-[24px] w-[48px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                         >
                             <span className="sr-only">Use setting</span>
                             <span
                                 aria-hidden="true"
-                                className={`${enabledDiscountItems ? 'translate-x-[1.855rem]' : 'translate-x-0'}
-                            pointer-events-none inline-block h-[26px] w-[26px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                className={`${enabledDiscountItems ? 'translate-x-[1.53rem]' : 'translate-x-0'}
+                            pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                             />
                         </Switch>
                     </div>
                 </div>
-                <hr className={`my-1`}/>
             </div>
     
         </>
