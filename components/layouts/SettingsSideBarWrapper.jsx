@@ -61,7 +61,7 @@ const SettingsSideBarWrapper = ({arrayElements,sidebarOpen,sidebarElement,select
                           <p className='font-semibold text-xl'>Settings</p>
                         </div>
                         <nav aria-label="Sidebar" className="mt-5">
-                          <div className="px-2 space-y-1 text-lg">
+                          <div className="px-2 space-y-1">
                             {arrayElements.map((item, idx) => (
                               <a
                                 key={item.name}
@@ -70,14 +70,14 @@ const SettingsSideBarWrapper = ({arrayElements,sidebarOpen,sidebarElement,select
                                   setSidebarElement(item.component)
                                   setSelectedItem(idx)
                                   setSidebarOpen(false)
-                              }
+                                }
                               } 
                                 
                                 className={classNames(
                                   selectedItem === idx
-                                    ? 'text-gray-900 font-semibold cursor-pointer'
-                                    : 'text-gray-500 hover:bg-gray-200 ',
-                                  'group flex items-center px-5 py-2 rounded-md cursor-pointer'
+                                    ? 'text-gray-800 font-semibold cursor-pointer'
+                                    : 'text-xs text-gray-500 hover:bg-gray-100 ',
+                                  'group flex items-center px-5 py-2 cursor-pointer'
                                 )}
                                 
                               >

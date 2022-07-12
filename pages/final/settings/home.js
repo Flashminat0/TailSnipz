@@ -24,8 +24,8 @@ function classNames(...classes) {
 }
 
 const navigation = [
-    { name: 'Profile', href: '',component: <ProfileHome/>, icon: HomeIcon, current: false },
-    { name: 'Account', href: '/settings/account/home',component: <AccountHome/>,icon: HomeIcon, current: false },
+    { name: 'Profile Details', href: '',component: <ProfileHome/>, icon: HomeIcon, current: false },
+    { name: 'Account Settings', href: '/settings/account/home',component: <AccountHome/>,icon: HomeIcon, current: false },
     { name: 'Shipping', href: '#', component: <ShippingHome /> , icon: UserGroupIcon, current: false },
     { name: 'Select discount', href: '#', component: < SelectDiscountHome/> ,icon: SpeakerphoneIcon, current: false },
     { name: 'Notifications', href: '#',component: <NotificationHome />, icon: MapIcon, current: false },
