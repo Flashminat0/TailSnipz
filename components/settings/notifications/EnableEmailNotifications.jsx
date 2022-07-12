@@ -11,7 +11,7 @@ const EnableEmailNotifications = () => {
             <div className={"w-full bg-white"}>
                 <div className={"grid grid-cols-5 gap-2 p-5"}>
                     <div className={"col-span-4"}>
-                        <p className={"font-semibold"}>Enable email notifications</p>
+                        <p className={"font-medium text-gray-800"}>Enable email notifications</p>
                     </div>
                     <div className={"col-span-1 ml-auto"}>
                         <Switch

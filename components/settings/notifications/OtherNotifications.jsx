@@ -17,7 +17,7 @@ const OtherNotifications = () => {
                 </div>
                 <div className={"grid grid-cols-5 gap-5 p-5 border-b border-gray-200"}>
                     <div className={"col-span-4"}>
-                        <p className={"font-semibold"}>Favorited Items</p>
+                        <p className={"font-medium text-gray-800"}>Favorited Items</p>
                     </div>
                     <div className={"col-span-1 ml-auto"}>
                         <Switch
@@ -39,7 +39,7 @@ const OtherNotifications = () => {
             <div className={"w-full bg-white"}>
                 <div className={"grid grid-cols-5 gap-5 p-5 border-b border-gray-200"}>
                     <div className={"col-span-4"}>
-                        <p className={"font-semibold"}>New followers</p>
+                        <p className={"font-medium text-gray-800"}>New followers</p>
                     </div>
                     <div className={"col-span-1 ml-auto"}>
                         <Switch
@@ -61,7 +61,7 @@ const OtherNotifications = () => {
             <div className={"w-full bg-white"}>
                 <div className={"grid grid-cols-5 gap-5 p-5 border-b border-gray-200"}>
                     <div className={"col-span-4"}>
-                        <p className={"font-semibold"}>New items</p>
+                        <p className={"font-medium text-gray-800"}>New items</p>
                     </div>
                     <div className={"col-span-1 ml-auto"}>
                         <Switch
@@ -83,7 +83,7 @@ const OtherNotifications = () => {
             <div className={"w-full bg-white"}>
                 <div className={"grid grid-cols-5 gap-5 p-5 border-b border-gray-200"}>
                     <div className={"col-span-4"}>
-                        <p className={"font-semibold"}>Mentions</p>
+                        <p className={"font-medium text-gray-800"}>Mentions</p>
                     </div>
                     <div className={"col-span-1 ml-auto"}>
                         <Switch
@@ -105,7 +105,7 @@ const OtherNotifications = () => {
             <div className={"w-full bg-white"}>
                 <div className={"grid grid-cols-5 gap-5 p-5"}>
                     <div className={"col-span-4"}>
-                        <p className={"font-semibold"}>Susty Team forum messages</p>
+                        <p className={"font-medium text-gray-800"}>Susty Team forum messages</p>
                     </div>
                     <div className={"col-span-1 ml-auto"}>
                         <Switch

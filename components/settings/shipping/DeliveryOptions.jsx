@@ -15,7 +15,7 @@ const Deliveryoptions = () => {
                                  width={"60px"} height={"60px"} alt={"NZPost picture"}/>
                         </div>
                         <div>
-                            <p className={"text-sm sm:text-base font-semibold"}>The New Zealand Postal Service (NZPost)</p>
+                            <p className={"text-sm sm:text-base font-medium text-gray-800"}>The New Zealand Postal Service (NZPost)</p>
                             <p className={"text-sm text-gray-600"}>This option includes tracking & insurance for your package</p>
                         </div>
                         <div className={"ml-auto"}>

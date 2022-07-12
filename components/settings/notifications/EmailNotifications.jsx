@@ -13,7 +13,7 @@ const EmailNotifications = () => {
                     <p className='p-3 text-sm text-gray-500'>News</p>
                     <div className={"grid grid-cols-5 gap-5 p-5 border-b border-gray-200"}>
                         <div className={"col-span-4"}>
-                            <p className={"font-semibold"}>Feature announcements</p>
+                            <p className={"font-medium text-gray-800"}>Feature announcements</p>
                             <p className={"font-thin text-gray-500"}>Get information on useful new features</p>
                         </div>
                         <div className={"col-span-1 ml-auto"}>
@@ -36,7 +36,7 @@ const EmailNotifications = () => {
                 <div className={"w-full bg-white"}>
                     <div className={"grid grid-cols-5 gap-5 p-5"}>
                         <div className={"col-span-4"}>
-                            <p className={"font-semibold"}>Susty newsletter</p>
+                            <p className={"font-medium text-gray-800"}>Susty newsletter</p>
                             <p className={"font-thin text-gray-500"}>Find out about the latest news and offers</p>
                         </div>
                         <div className={"col-span-1 ml-auto"}>

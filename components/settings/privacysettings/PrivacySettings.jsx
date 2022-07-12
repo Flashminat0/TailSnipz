@@ -163,7 +163,7 @@ const PrivacySettings = () => {
                                                 &nbsp;
                                                 <span
                                                     onClick={() => setEnableDownloadData(false)}
-                                                    className={`mr-2 cursor-pointer`}>
+                                                    className={`mr-2 text-susty cursor-pointer`}>
                                                         Close
                                                 </span>
                                             </p>

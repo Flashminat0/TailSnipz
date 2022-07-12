@@ -16,7 +16,7 @@ const HighPriorityNotifications = () => {
                 </div>
                 <div className={"grid grid-cols-5 gap-5 p-5 border-b border-gray-200"}>
                     <div className={"col-span-4"}>
-                        <p className={"font-semibold"}>New messages</p>
+                        <p className={"font-medium text-gray-800"}>New messages</p>
                     </div>
                     <div className={"col-span-1 ml-auto"}>
                         <Switch
@@ -38,7 +38,7 @@ const HighPriorityNotifications = () => {
             <div className={"w-full bg-white"}>
                 <div className={"grid grid-cols-5 gap-5 p-5 border-b border-gray-200"}>
                     <div className={"col-span-4"}>
-                        <p className={"font-semibold"}>New feedback</p>
+                        <p className={"font-medium text-gray-800"}>New feedback</p>
                     </div>
                     <div className={"col-span-1 ml-auto"}>
                         <Switch
@@ -60,7 +60,7 @@ const HighPriorityNotifications = () => {
             <div className={"w-full bg-white"}>
                 <div className={"grid grid-cols-5 gap-5 p-5"}>
                     <div className={"col-span-4"}>
-                        <p className={"font-semibold"}>Discounted items</p>
+                        <p className={"font-medium text-gray-800"}>Discounted items</p>
                     </div>
                     <div className={"col-span-1 ml-auto"}>
                         <Switch

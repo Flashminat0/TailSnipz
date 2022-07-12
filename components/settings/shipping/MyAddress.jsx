@@ -62,7 +62,7 @@ const Myaddress = () => {
                                     >
                                         <div className="fixed inset-0 overflow-y-auto font-susty">
                                             <div
-                                                className="flex min-h-full max-w-96 items-center justify-center p-4 text-center bg-gray-700 bg-opacity-80">
+                                                className="flex min-h-full max-w-96 items-center justify-center px-4 py-3 text-center bg-gray-700 bg-opacity-80">
                                                 <motion.div
                                                     key={`modal-for-email`}
                                                     initial={{scale: 0.8, opacity: 0}}
@@ -86,21 +86,21 @@ const Myaddress = () => {
                                                             Add Address
                                                             <span
                                                                 onClick={() => setOpenAddressModal(false)}
-                                                                className={`mr-2 cursor-pointer`}>
+                                                                className={`mr-2 text-susty cursor-pointer`}>
                                                       Close
                                                 </span>
                                                         </p>
 
                                                     </Dialog.Title>
-                                                    <div className={"w-72 sm:w-96 border border-gray-200 p-4"}>
+                                                    <div className={"w-72 sm:w-96 border border-gray-200 p-3"}>
                                                         <div className={"flex flex-row gap-2 "}>
                                                             <InformationCircleIcon className={"text-susty w-10 h-10"}/>
-                                                            <p className={"text-sm sm:text-base"}>Your ZIP Code is used to calculate applicable sales tax. <Link href={"#"}><a className={"text-susty hover:underline"}>Learn more.</a></Link></p>
+                                                            <p className={"text-sm"}>Your ZIP Code is used to calculate applicable sales tax. <Link href={"#"}><a className={"text-susty hover:underline"}>Learn more.</a></Link></p>
                                                         </div>
                                                     </div>
 
                                                     <div
-                                                        className={"mt-4 mb-8 grid grid-cols-1 grid-rows-6 gap-y-4"}>
+                                                        className={"mt-2 mb-4 grid grid-cols-1 grid-rows-6 gap-y-2"}>
                                                         <div>
                                                             <div
                                                                 className="block px-4 text-sm font-medium text-gray-700 my-1">Country
@@ -265,13 +265,13 @@ const Myaddress = () => {
                                                         </div>
                                                     </div>
 
-                                                    <div className="mt-4 px-1 max-w-full">
+                                                    <div className="mt-2 px-1 max-w-full">
                                                         <motion.button
                                                             onClick={() => setOpenAddressModal(false)}
                                                             whileHover={{scale: 1.02}}
                                                             whileTap={{scale: 0.98}}
                                                             Send confirmation email
-                                                            className={`inline-flex items-center px-20 sm:px-28 py-1.5 min-w-full border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                                            className={`inline-flex items-center justify-center py-1.5 min-w-full border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                                                             <BookmarkAltIcon className="w-5 h-5 mr-2 items-center"/>
                                                             Save Changes
                                                         </motion.button>

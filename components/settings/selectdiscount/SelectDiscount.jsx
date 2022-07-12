@@ -26,7 +26,7 @@ const SelectDiscount = () => {
                     <div className={"w-full bg-white"}>
                         <div className={"grid grid-cols-5 gap-2 p-5"}>
                             <div className={"col-span-4"}>
-                                <p className={"font-semibold"}>Select Discount</p>
+                                <p className={"font-medium text-gray-800"}>Select Discount</p>
                             </div>
                             <div className={"col-span-1 ml-auto"}>
                                 <Switch
@@ -57,9 +57,9 @@ const SelectDiscount = () => {
 
                         <div>
                             <div className={`bg-white`}>
-                                <div className={`grid grid-cols-2 p-5 pr-0`}>
+                                <div className={`grid grid-cols-2 p-5 pr-0 items-center`}>
                                     <div className={`col-span-1`}>
-                                        <p className={`text-xl`}>2 items</p>
+                                        <p className={`text-base`}>2 items</p>
                                     </div>
                                     <div className={`grid place-items-center`}>
                                         <div className='w-full pr-3'>
@@ -114,9 +114,9 @@ const SelectDiscount = () => {
 
                             </div>
                             <div className={`bg-white`}>
-                                <div className={`grid grid-cols-2 p-5 pr-0`}>
+                                <div className={`grid grid-cols-2 p-5 pr-0 items-center`}>
                                     <div className={`col-span-1`}>
-                                        <p className={`text-xl`}>3 items</p>
+                                        <p className={`text-base`}>3 items</p>
                                     </div>
                                     <div className={`grid place-items-center`}>
 
@@ -171,9 +171,9 @@ const SelectDiscount = () => {
                                 <hr className={`my-1`}/>
                             </div>
                             <div className={`bg-white`}>
-                                <div className={`grid grid-cols-2 p-5 pr-0`}>
+                                <div className={`grid grid-cols-2 p-5 pr-0 items-center`}>
                                     <div className={`col-span-1`}>
-                                        <p className={`text-xl`}>5 items</p>
+                                        <p className={`text-base`}>5 items</p>
                                     </div>
                                     <div className={`grid place-items-center`}>
 
