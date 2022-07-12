@@ -9,11 +9,10 @@ function classNames(...classes) {
 
 const SettingsSideBarWrapper = ({arrayElements,sidebarOpen,sidebarElement,selectedItem, setSidebarOpen,setSidebarElement,setSelectedItem  ,children}) => {
   return (
-    <div>
-        <>
-          <div className='h-full bg-white'>
-            <div className='h-full overflow-hidden'>
-              <div className="h-full flex ">
+    <>
+        <div className={'lg:mx-44 min-h-max'}>
+          <div className='min-h-fit overflow-hidden'>
+              <div className="flex ">
               <Transition.Root show={sidebarOpen} as={Fragment}>
                 <Dialog as="div" className="fixed inset-0 flex z-40 lg:hidden" onClose={setSidebarOpen}>
                   <Transition.Child
@@ -107,12 +106,12 @@ const SettingsSideBarWrapper = ({arrayElements,sidebarOpen,sidebarElement,select
               <div className="hidden lg:flex lg:flex-shrink-0 min-h-screen">
                 <div className="flex flex-col w-64">
                   {/* Sidebar component, swap this element with another sidebar if you like */}
-                  <div className="flex-1 flex flex-col border-r border-gray-200 bg-gray-100 min-h-full">
+                  <div className="flex-1 flex flex-col min-h-full">
                     <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto ">
                       <div className="flex items-center flex-shrink-0 px-4">
                         <p className='font-semibold text-2xl'>Settings</p>
                       </div>
-                      <nav className="mt-5 flex-1" aria-label="Sidebar">
+                      <nav className="mt-5" aria-label="Sidebar">
                         <div className="px-4 space-y-4 text-lg">
                           {arrayElements.map((item, idx) => (
                             <a
@@ -153,7 +152,7 @@ const SettingsSideBarWrapper = ({arrayElements,sidebarOpen,sidebarElement,select
                 <div className="lg:hidden">
                   <div className="flex items-center justify-between bg-gray-50 border-b border-gray-200 px-4 py-1.5">
                     
-                    <div className='font-semibold text-xl'>
+                    <div className='text-gray-800 font-normal text-xl capitalize'>
                         Settings
                     </div>
                     <div>
@@ -172,7 +171,7 @@ const SettingsSideBarWrapper = ({arrayElements,sidebarOpen,sidebarElement,select
                   <main className="flex-1 relative z-0 focus:outline-none xl:order-last">
                     {/* Start main area*/}
                     
-                    <div className="absolute inset-0 px-4 sm:px-6 lg:px-8 overflow-y-auto">
+                    <div className="absolute inset-0 px-4 sm:px-6 lg:px-8 overflow-y-scroll">
 
                             {children}
                     </div>
@@ -181,10 +180,9 @@ const SettingsSideBarWrapper = ({arrayElements,sidebarOpen,sidebarElement,select
                   </div>
                 </div>
               </div>
-            </div>
           </div>
-        </>
-    </div>
+        </div>
+    </>
   )
 }
 

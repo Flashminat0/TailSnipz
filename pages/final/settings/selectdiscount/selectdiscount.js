@@ -1,5 +1,5 @@
 import React from 'react'
-import SelectDiscount from '../../../components/settings/selectdiscount/SelectDiscount'
+import SelectDiscount from '../../../../components/settings/selectdiscount/SelectDiscount'
 
 const SelectDiscoutHome = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
-import DeliveryOptions from '../../../components/settings/shipping/DeliveryOptions'
-import MyAddress from '../../../components/settings/shipping/MyAddress'
+import DeliveryOptions from '../../../../components/settings/shipping/DeliveryOptions'
+import MyAddress from '../../../../components/settings/shipping/MyAddress'
 
 const ShippingHome = () => {
   return (
