@@ -1,7 +1,7 @@
 import React from 'react'
 import SelectDiscount from '../../../../components/settings/selectdiscount/SelectDiscount'
 
-const SelectDiscoutHome = () => {
+const SelectDiscountHome = () => {
   return (
     <div className='p-4'>
         <SelectDiscount />
@@ -9,4 +9,4 @@ const SelectDiscoutHome = () => {
   )
 }
 
-export default SelectDiscoutHome
+export default SelectDiscountHome
