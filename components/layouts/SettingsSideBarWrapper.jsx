@@ -11,7 +11,7 @@ const SettingsSideBarWrapper = ({arrayElements,sidebarOpen,sidebarElement,select
   return (
     <>
         <div className={'lg:mx-44 min-h-max'}>
-          <div className='min-h-fit overflow-hidden'>
+          <div className='h-full overflow-hidden'>
               <div className="flex ">
               <Transition.Root show={sidebarOpen} as={Fragment}>
                 <Dialog as="div" className="fixed inset-0 flex z-40 lg:hidden" onClose={setSidebarOpen}>
@@ -167,11 +167,11 @@ const SettingsSideBarWrapper = ({arrayElements,sidebarOpen,sidebarElement,select
                     </div>
                   </div>
                 </div>
-                <div className="flex-1 relative z-0 flex ">
+                <div className="flex-1 relative z-0 flex">
                   <main className="flex-1 relative z-0 focus:outline-none xl:order-last">
                     {/* Start main area*/}
                     
-                    <div className="absolute inset-0 px-4 sm:px-6 lg:px-8 overflow-y-scroll">
+                    <div className="absolute inset-0 px-4 sm:px-6 lg:px-8 overflow-y-auto scrollbar-hide">
 
                             {children}
                     </div>
