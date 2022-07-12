@@ -1,34 +1,20 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import {
-  MenuIcon,
-  XIcon,
-} from "@heroicons/react/outline";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Items from "./items";
-
-
-import { categoryObj } from "../../components/item/categoriesobj";
-
-
-const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Calendar", href: "#", current: false },
-  { name: "Teams", href: "#", current: false },
-  { name: "Directory", href: "#", current: false },
-  { name: "Announcements", href: "#", current: false },
-  { name: "Office Map", href: "#", current: false },
-];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Dropdown = () => {
+const Dropdown = ({subCategory}) => {
+
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+  const [subCatId, setSubCatId] = useState([]);
 
-    function SubCategories(props) {
+  function SubCategories(props) {
     return (
       <Transition
         enter="transition ease-out duration-100"
@@ -38,7 +24,7 @@ const Dropdown = () => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="origin-top absolute w-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
+      <Menu.Items className="origin-top absolute w-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
           <div className="py-1 flex">{props.children}</div>
         </Menu.Items>
       </Transition>
@@ -46,6 +32,7 @@ const Dropdown = () => {
   }
 
   return (
+
     <>
       <div className="h-full flex">
         <Transition.Root show={sidebarOpen} as={Fragment}>
@@ -73,156 +60,7 @@ const Dropdown = () => {
               leave="transition ease-in-out duration-300 transform"
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
-            >
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* 
-              <div className="relative flex-1 flex flex-col max-w-xs w-full bg-white focus:outline-none">
-                <Transition.Child
-                  as={Fragment}
-                  enter="ease-in-out duration-300"
-                  enterFrom="opacity-0"
-                  enterTo="opacity-100"
-                  leave="ease-in-out duration-300"
-                  leaveFrom="opacity-100"
-                  leaveTo="opacity-0"
-                >
-                  <div className="absolute top-0 right-0 -mr-12 pt-2">
-                    <button
-                      type="button"
-                      className="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                      onClick={() => setSidebarOpen(false)}
-                    >
-                      <span className="sr-only">Close sidebar</span>
-                      <XIcon
-                        className="h-6 w-6 text-white"
-                        aria-hidden="true"
-                      />
-                    </button>
-                  </div>
-                </Transition.Child>
-                <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto">
-                  <div className="flex-shrink-0 flex items-center px-4">
-                    <img
-                      className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-900-text.svg"
-                      alt="Workflow"
-                    />
-                  </div>
-                  <nav aria-label="Sidebar" className="mt-5">
-                    <div className="px-2 space-y-1">
-                    {navigation.map((item) => (
-                        <a
-                          key={item.name}
-                          href={item.href}
-                          className={classNames(
-                            item.current
-                              ? "bg-gray-100 text-gray-900"
-                              : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
-                            "group flex items-center px-2 py-2 text-base font-medium rounded-md"
-                          )}
-                        >
-{/* 
-                          <item.icon
-                            className={classNames(
-                              item.current
-                                ? "text-gray-500"
-                                : "text-gray-400 group-hover:text-gray-500",
-                              "mr-4 h-6 w-6"
-                            )}
-                            aria-hidden="true"
-                          />
-
-                          {item.name}
-                        </a>
-                      ))}
-                    </div>
-                  </nav>
-                </div>
-                <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
-                  <a href="#" className="flex-shrink-0 group block">
-                    <div className="flex items-center">
-                      <div>
-                        <img
-                          className="inline-block h-10 w-10 rounded-full"
-                          src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80"
-                          alt=""
-                        />
-                      </div>
-                      <div className="ml-3">
-                        <p className="text-base font-medium text-gray-700 group-hover:text-gray-900">
-                          Whitney Francis
-                        </p>
-                        <p className="text-sm font-medium text-gray-500 group-hover:text-gray-700">
-                          View profile
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-*/}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </Transition.Child>
+            ></Transition.Child>
             <div className="flex-shrink-0 w-14" aria-hidden="true">
               {/* Force sidebar to shrink to fit close icon */}
             </div>
@@ -234,36 +72,28 @@ const Dropdown = () => {
           <div className="flex flex-col w-64">
             {/* Sidebar component, swap this element with another sidebar if you like */}
             <div className="flex-1 flex flex-col min-h-0 border-r border-gray-200 bg-gray-100">
-              <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
-                <div className="flex items-center flex-shrink-0 px-4">
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-900-text.svg"
-                    alt="Workflow"
-                  />
-                </div>
+              <div className="flex-1 flex flex-col  pb-4 overflow-y-auto">
                 <nav className="mt-5 flex-1" aria-label="Sidebar">
                   <div className="px-2 space-y-1">
+                    <>
+                      {subCategory.map((subcat) => (
 
 
 
 
 
 
-
-
-
-<>
-{navigation.map((item) => (
-                      <a
-                        className={classNames(
-                          item.current
-                            ? "bg-gray-200 text-gray-900"
-                            : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
-                          "group flex items-center px-2 py-2 text-sm font-medium rounded-md"
-                        )}
-                      >
-{/* 
+                   
+                        <span  mainkey={subCategory.id} onClick={()=> {setSubCatId(subCategory.items)}}>
+                        <a
+                          className={classNames(
+                            subcat.current
+                              ? "bg-gray-200 text-gray-900"
+                              : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
+                            "group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                          )}
+                        >
+                        {/* 
                         <item.icon
                           className={classNames(
                             item.current
@@ -273,11 +103,11 @@ const Dropdown = () => {
                           )}
                           aria-hidden="true"
                         />
-*/}
-                        {item.name}
-                      </a>
-                  ))}
-</>
+                        */}
+                          {subcat.name}
+                        </a>
+                        </span>
+                       
 
 
 
@@ -286,14 +116,8 @@ const Dropdown = () => {
 
 
 
-
-
-
-
-
-
-
-
+                      ))}
+                    </>
                   </div>
                 </nav>
               </div>
@@ -323,7 +147,7 @@ const Dropdown = () => {
             </div>
           </div>
           <div className="flex-1 overflow-hidden border-4 relative z-0">
-            <Items />
+            <Items items={subCatId}/>
           </div>
         </div>
       </div>
