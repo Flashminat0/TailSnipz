@@ -1,4 +1,5 @@
 import React from "react";
+import {motion} from "framer-motion";
 
 const Name = () => {
   return (
@@ -10,8 +11,8 @@ const Name = () => {
           </div>
         </div> */}
 
-        <div className="mt-10 sm:mt-0 bg-white p-4">
-          <div className="md:grid md:grid-cols-3 md:gap-6">
+        <div className="mt-10 sm:mt-0 bg-white px-6 py-2">
+          <div className="md:grid md:grid-cols-3 md:gap-6 pb-4 border-b border-gray-200">
             <div className="md:col-span-1 flex items-center">
               <div className="px-4 sm:px-0">
                 <h3 className="text-base font-medium leading-6 text-gray-800">
@@ -35,13 +36,14 @@ const Name = () => {
                       </span>
                     </div>
 
-                    <div className="col-span-6 flex justify-center items-center">
-                      <button
-                        type="button"
-                        className="ml-5 bg-white py-2 px-3 border border-susty rounded-md shadow-sm text-sm leading-4 font-medium text-susty hover:bg-gray-50 focus:outline-none "
-                      >
+                    <div className="col-span-6 flex ml-4 justify-center items-center">
+                      <motion.button
+                          whileHover={{scale: 1.02}}
+                          whileTap={{scale: 0.98}}
+
+                          className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                         Choose Photo
-                      </button>
+                      </motion.button>
                     </div>
                   </div>
                 </div>
@@ -65,11 +67,11 @@ const Name = () => {
                       <div className="grid grid-cols-6 gap-6">
                         <div className="col-span-6">
                           <textarea
-                            type="text"
                             name="street-address"
                             id="street-address"
                             autoComplete="street-address"
-                            className="mt-1 focus:ring-susty focus:border-none block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                            placeholder={'Tell us more about yourself and your style'}
+                            className="mt-1 focus:outline-none focus:ring-susty focus:border-red-400 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                           />
                         </div>
                       </div>
