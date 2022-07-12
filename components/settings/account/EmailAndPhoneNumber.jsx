@@ -17,12 +17,12 @@ const EmailAndPhoneNumber = () => {
     return (
         <div className={``}>
             <>
-                <div className={`bg-gray-50`}>
+                <div className={`bg-white`}>
                     <div className={`grid grid-cols-4 p-5 pr-0`}>
                         <div className={`col-span-3`}>
-                            <p className={`text-xl`}>{user.email}</p>
-                            <p className={`flex items-center`}>
-                                <CheckIcon className={`h-5 w-5 mr-2 text-green-700`}/>
+                            <p className={`text-base font-medium text-gray-800`}>{user.email}</p>
+                            <p className={`flex text-xs text-gray-500 items-center`}>
+                                <CheckIcon className={`h-4 w-4 mr-2 text-green-700`}/>
                                 Verified
                             </p>
                         </div>
@@ -31,7 +31,7 @@ const EmailAndPhoneNumber = () => {
                                 onClick={() => setOpenMailModal(true)}
                                 whileHover={{scale: 1.02}}
                                 whileTap={{scale: 0.98}}
-                                className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                                 Change
                             </motion.button>
                         </div>
@@ -39,7 +39,7 @@ const EmailAndPhoneNumber = () => {
                     <hr className={`my-1`}/>
                     <div className={`grid grid-cols-4 p-5 pr-0`}>
                         <div className={`col-span-3`}>
-                            <p className={`text-lg`}>
+                            <p className={`text-base font-medium text-gray-800`}>
                                 {/*TODO change this to **** after the APIs are made*/}
                                 {user.phone}
                             </p>
@@ -49,13 +49,13 @@ const EmailAndPhoneNumber = () => {
                                 onClick={() => setOpenPhoneModal(true)}
                                 whileHover={{scale: 1.02}}
                                 whileTap={{scale: 0.98}}
-                                className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                                 Change
                             </motion.button>
                         </div>
                     </div>
                 </div>
-                <div className={`mx-2 font-thin pt-3`}>
+                <div className={`mx-2 text-xs font-normal text-gray-500 pt-3`}>
                     <p>Your phone number will only be used to help you log in. It won’t be made public or used for
                         marketing purposes.</p>
                 </div>

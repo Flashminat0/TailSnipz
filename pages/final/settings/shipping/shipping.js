@@ -5,8 +5,8 @@ import MyAddress from '../../../../components/settings/shipping/MyAddress'
 const ShippingHome = () => {
   return (
     <div className='grid gap-y-4 p-4'>
-        <DeliveryOptions />
         <MyAddress />
+        <DeliveryOptions />
     </div>
   )
 }

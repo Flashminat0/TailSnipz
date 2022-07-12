@@ -37,10 +37,10 @@ const Myaddress = () => {
         <div className={""}>
             <>
                 <div className="w-full ">
-                    <div className={"text-gray-500 text-sm pb-3"}>My Address</div>
-                    <div className="w-full p-4 bg-gray-50 rounded-xl shadow-sm">
-                        <div className={"flex items-center justify-between px-6 py-5 hover:bg-gray-100"}>
-                            <p className={"mr-36"}>Add Address</p>
+                    <div className="w-full bg-white">
+                        <div className={"text-gray-500 p-4 text-sm"}>My Address</div>
+                        <div className={"flex flex-row items-center justify-between px-4 py-3 hover:bg-gray-50"}>
+                            <p className={"text-base"}>Add Address</p>
                             <ChevronRightIcon className={"w-5 h-5"} onClick={() => setOpenAddressModal(true)}/>
                         </div>
                         <>

@@ -1,6 +1,7 @@
 import React, {Fragment, useState} from 'react';
 import {Listbox, Transition} from "@headlessui/react";
 import {CheckIcon, SelectorIcon} from "@heroicons/react/solid";
+import {motion} from "framer-motion";
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -29,8 +30,8 @@ const NameGenderAndBirthday = () => {
     return (
         <div className={``}>
             <>
-                <div className={`grid grid-cols-1 gap-3 bg-gray-50 p-4`}>
-                    <p>Name</p>
+                <div className={`grid grid-cols-1 gap-3 bg-white p-4`}>
+                    <p className={'text-base font-medium'}>Name</p>
                     <input
                         name="fullname"
                         id="fullname"
@@ -38,7 +39,7 @@ const NameGenderAndBirthday = () => {
                         placeholder="Type your name"
                     />
 
-                    <p>Gender</p>
+                    <p className={'text-base font-medium'}>Gender</p>
                     <Listbox value={selectedGender} onChange={setSelectedGender}>
                         {({open}) => (
                             <>
@@ -86,7 +87,7 @@ const NameGenderAndBirthday = () => {
                             </>)}
                     </Listbox>
 
-                    <p>Birthday</p>
+                    <p className={'text-base font-medium'}>Birthday</p>
                     <div className={`grid grid-cols-3 gap-2`}>
                         <input
                             name="day"
@@ -141,8 +142,6 @@ const NameGenderAndBirthday = () => {
                                     </div>
                                 </>)}
                         </Listbox>
-
-
                         <input
                             name="year"
                             id="year"
@@ -150,6 +149,15 @@ const NameGenderAndBirthday = () => {
                             placeholder="Year"
                         />
                     </div>
+                </div>
+                <div className={'flex mt-4 mb-5 justify-end'}>
+                    <motion.button
+                        whileHover={{scale: 1.02}}
+                        whileTap={{scale: 0.98}}
+
+                        className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                        Save
+                    </motion.button>
                 </div>
             </>
 
