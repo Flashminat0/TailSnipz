@@ -5,7 +5,7 @@ const Deliveryoptions = () => {
     const [enabled, setEnabled] = useState(false);
 
     return (
-        <div className={""}>
+        <div>
             <>
                 <div className={"w-full p-4 bg-white"}>
                     <div className={"text-gray-500 flex flex-col text-sm"}>Delivery options</div>

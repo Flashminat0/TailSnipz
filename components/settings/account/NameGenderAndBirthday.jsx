@@ -30,7 +30,7 @@ const NameGenderAndBirthday = () => {
     const [yearInput, setYearInput] = useState('');
 
     return (
-        <div className={``}>
+        <div>
             <>
                 <div className={`grid grid-cols-1 gap-3 bg-white p-4`}>
                     <p className={'text-base font-medium'}>Name</p>
@@ -173,7 +173,6 @@ const NameGenderAndBirthday = () => {
                     </motion.button>
                 </div>
             </>
-
         </div>
     );
 };

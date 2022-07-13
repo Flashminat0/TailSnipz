@@ -18,7 +18,7 @@ const EmailAndPhoneNumber = () => {
     const [newPhoneNumberInput, setNewPhoneNumberInput] = useState('');
 
     return (
-        <div className={``}>
+        <div>
             <>
                 <div className={`bg-white`}>
                     <div className={`grid grid-cols-4 px-5 py-3`}>
