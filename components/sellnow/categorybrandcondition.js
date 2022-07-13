@@ -8,11 +8,11 @@ function classNames(...classes) {
 }
 
 const people = [
-    {name: 'New with tags', username: 'A brand-new, unused item with tags attached or in the original packaging.'},
-    {name: 'New with tags', username: 'A brand-new, unused item without tags or original packaging.'},
-    {name: 'Very good', username: 'A lightly used item that may have slight imperfections, but still looks great. Include photos and descriptions of any flaws in your listing.'},
-    {name: 'Good', username: 'A used item that may show imperfections and signs of wear. Include photos and descriptions of flaws in your listing.'},
-    {name: 'Satisfactory', username: 'A frequently used item with imperfections and signs of wear. Include photos and descriptions of flaws in your listing.'},
+    {id: "cafd4da8-45ca-45dc-b556-5dd788bde801" , name: 'New with tags', username: 'A brand-new, unused item with tags attached or in the original packaging.'},
+    {id: "7a32fc08-4dcd-433b-97d3-087fcf0833e2", name: 'New with tags', username: 'A brand-new, unused item without tags or original packaging.'},
+    {id: "7f270e50-aed4-421d-9883-5e0b9fa05e89", name: 'Very good', username: 'A lightly used item that may have slight imperfections, but still looks great. Include photos and descriptions of any flaws in your listing.'},
+    {id: "2c5181ef-144f-48d9-8659-b0631bbecdd7", name: 'Good', username: 'A used item that may show imperfections and signs of wear. Include photos and descriptions of flaws in your listing.'},
+    {id: "737b58f2-76d0-412a-bc7f-dc48e96d1b7a", name: 'Satisfactory', username: 'A frequently used item with imperfections and signs of wear. Include photos and descriptions of flaws in your listing.'},
 ]
 
 const categoryFirst = [
@@ -30,7 +30,7 @@ const categoryThird = [
 const Categorybrandcondition = ({categoryOne, categoryTwo, categoryThree, setCategoryOne, setCategoryTwo, setCategoryThree ,selected, setSelected, brand, setBrand}) => {
  
     return (
-        <div className>
+        <div>
             <>
                 <div className={`bg-gray-50 w-54 p-4 shadow rounded-sm`}>
                     <div className={`grid grid-cols-5 pb-2`}>
@@ -61,8 +61,8 @@ const Categorybrandcondition = ({categoryOne, categoryTwo, categoryThree, setCat
                                             >
                                                 <Listbox.Options
                                                     className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
-                                                    {categoryFirst.map((catOne) => (
-                                                        <div>
+                                                    {categoryFirst.map((catOne, idx) => (
+                                                        <div key={catOne}>
                                                             <div>
                                                                 <Listbox.Option
                                                                     key={catOne}
@@ -136,8 +136,8 @@ const Categorybrandcondition = ({categoryOne, categoryTwo, categoryThree, setCat
                                             >
                                                 <Listbox.Options
                                                     className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
-                                                    {categorySecond.map((catTwo) => (
-                                                        <div>
+                                                    {categorySecond.map((catTwo, idx) => (
+                                                        <div key={catTwo}>
                                                             <div>
                                                                 <Listbox.Option
                                                                     key={catTwo}
@@ -210,7 +210,7 @@ const Categorybrandcondition = ({categoryOne, categoryTwo, categoryThree, setCat
                                                 <Listbox.Options
                                                     className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
                                                     {categoryThird.map((catThree) => (
-                                                        <div>
+                                                        <div key={catThree}>
                                                             <div>
                                                                 <Listbox.Option
                                                                     key={catThree}
@@ -302,7 +302,7 @@ const Categorybrandcondition = ({categoryOne, categoryTwo, categoryThree, setCat
                                                 <Listbox.Options
                                                     className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
                                                     {people.map((person) => (
-                                                        <div>
+                                                        <div key={person.id}>
                                                             <div>
                                                                 <Listbox.Option
                                                                     key={person.username}
