@@ -1,17 +1,11 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import {motion} from "framer-motion";
 
 const Language = () => {
     const [languageInput, setLanguageInput] = useState('English');
 
-    useEffect(() => {
-        setLanguageInput('English')
-        console.log(`language: ${languageInput}`);
-    }, []);
-
     const languageHandler = (e) => {
         setLanguageInput(e.target.value)
-        console.log(`selected: ${languageInput}`);
     }
 
     return (

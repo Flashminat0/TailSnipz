@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import {Switch} from "@headlessui/react";
 
 const Location = () => {
@@ -6,20 +6,12 @@ const Location = () => {
     const [countryInput, setCountryInput] = useState('New Zealand');
     const [townInput, setTownInput] = useState('Wellington');
 
-    useEffect(() => {
-        setCountryInput('New Zealand');
-        setTownInput('Wellington')
-        console.log(`country: ${countryInput}, town: ${townInput}`);
-    }, []);
-
     const countryHandler = (e) => {
         setCountryInput(e.target.value)
-        console.log(`selected: ${countryInput}`);
     }
 
     const townHandler = (e) => {
         setTownInput(e.target.value)
-        console.log(`selected: ${townInput}`);
     }
 
     return (
