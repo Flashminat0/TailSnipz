@@ -18,7 +18,7 @@ const EmailAndPhoneNumber = () => {
         <div className={``}>
             <>
                 <div className={`bg-white`}>
-                    <div className={`grid grid-cols-4 p-5 pr-0`}>
+                    <div className={`grid grid-cols-4 px-5 py-3`}>
                         <div className={`col-span-3`}>
                             <p className={`text-base font-medium text-gray-800`}>{user.email}</p>
                             <p className={`flex text-xs text-gray-500 items-center`}>
@@ -37,7 +37,7 @@ const EmailAndPhoneNumber = () => {
                         </div>
                     </div>
                     <hr className={`my-1`}/>
-                    <div className={`grid grid-cols-4 p-5 pr-0`}>
+                    <div className={`grid grid-cols-4 px-5 py-3`}>
                         <div className={`col-span-3`}>
                             <p className={`text-base font-medium text-gray-800`}>
                                 {/*TODO change this to **** after the APIs are made*/}
