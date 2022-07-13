@@ -11,7 +11,7 @@ const PrivacySettings = () => {
     const [enableDownloadData, setEnableDownloadData] = useState(false)
 
   return (
-        <div className={""}>
+        <div>
             <>
                 <div className={"w-full bg-white"}>
                     <div className='p-3'>
@@ -171,11 +171,11 @@ const PrivacySettings = () => {
 
                                         <div className='grid place-content-center'>                                        
                                             <div className=' p-4'>
-                                                <h1 className='font-bold justify-items-center text-xl'>Download account data</h1>
+                                                <h1 className='font-bold justify-items-center text-gray-800 text-xl'>Download account data</h1>
 
-                                                <p className='pt-8'>Your account data includes information that you’ve shared on your profile, your items, messages, and more.</p>
-                                                <p className='pt-4'>It can take up to a month to process your request. You’ll then receive a copy of your account data via email. The data will be in HTML files contained within a ZIP file.</p>
-                                                <p className='pt-4'>We’ll contact you at susty.co.nz@gmail.com to confirm your request.</p>
+                                                <p className='pt-6 text-sm text-gray-800 leading-relaxed'>Your account data includes information that you’ve shared on your profile, your items, messages, and more.</p>
+                                                <p className='pt-2 text-sm text-gray-800 leading-relaxed'>It can take up to a month to process your request. You’ll then receive a copy of your account data via email. The data will be in HTML files contained within a ZIP file.</p>
+                                                <p className='pt-2 text-sm text-gray-800 leading-relaxed'>We’ll contact you at susty.co.nz@gmail.com to confirm your request.</p>
 
                                                 <div className='pt-6'>
                                                     <div className={`grid place-items-center`}>
@@ -183,7 +183,7 @@ const PrivacySettings = () => {
                                                             // onClick={() => setOpenPhoneModal(true)}
                                                             whileHover={{scale: 1.02}}
                                                             whileTap={{scale: 0.98}}
-                                                            className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                                            className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                                                             Request data
                                                         </motion.button>
                                                     </div>
