@@ -8,7 +8,7 @@ const HighPriorityNotifications = () => {
   const [enabledDiscountItems, setEnabledDiscountItems] = useState(false)
 
   return (
-      <div className={""}>
+      <div>
         <>
             <div className={"w-full bg-white"}>
                 <div className='p-3'>

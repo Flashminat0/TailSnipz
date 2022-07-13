@@ -7,7 +7,7 @@ const EmailNotifications = () => {
     const [enabledAnnouncements, setEnabledAnnouncements] = useState(false)
 
     return (
-        <div className={""}>
+        <div>
             <>
                 <div className={"w-full bg-white"}>
                     <p className='p-3 text-sm text-gray-500'>News</p>

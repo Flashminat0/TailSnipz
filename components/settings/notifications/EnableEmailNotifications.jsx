@@ -6,7 +6,7 @@ const EnableEmailNotifications = () => {
     const [enabled, setEnabled] = useState(false)
 
   return (
-    <div className={""}>
+    <div>
         <>
             <div className={"w-full bg-white"}>
                 <div className={"grid grid-cols-5 gap-2 p-5"}>
