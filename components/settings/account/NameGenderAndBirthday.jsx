@@ -25,7 +25,9 @@ const NameGenderAndBirthday = () => {
 
     const [selectedGender, setSelectedGender] = useState(genders[0]);
     const [selectedMonth, setSelectedMonth] = useState(months[0]);
-
+    const [nameInput, setNameInput] = useState('');
+    const [dayInput, setDayInput] = useState('');
+    const [yearInput, setYearInput] = useState('');
 
     return (
         <div className={``}>
@@ -33,8 +35,12 @@ const NameGenderAndBirthday = () => {
                 <div className={`grid grid-cols-1 gap-3 bg-white p-4`}>
                     <p className={'text-base font-medium'}>Name</p>
                     <input
-                        name="fullname"
-                        id="fullname"
+                        onChange={(e)=>{
+                            setNameInput(e.target.value)
+                        }}
+                        value={nameInput}
+                        name="full-name"
+                        id="full-name"
                         className="pl-2 focus:outline-none focus:ring-1 focus:ring-susty focus:border-susty block w-full rounded-md sm:text-sm border border-gray-300 h-10"
                         placeholder="Type your name"
                     />
@@ -90,6 +96,10 @@ const NameGenderAndBirthday = () => {
                     <p className={'text-base font-medium'}>Birthday</p>
                     <div className={`grid grid-cols-3 gap-2`}>
                         <input
+                            onChange={(e)=>{
+                                setDayInput(e.target.value)
+                            }}
+                            value={dayInput}
                             name="day"
                             id="day"
                             className="pl-2 focus:outline-none focus:ring-1 focus:ring-susty focus:border-susty block w-full rounded-md sm:text-sm border border-gray-300 h-10"
@@ -143,6 +153,10 @@ const NameGenderAndBirthday = () => {
                                 </>)}
                         </Listbox>
                         <input
+                            onChange={(e)=>{
+                                setYearInput(e.target.value)
+                            }}
+                            value={yearInput}
                             name="year"
                             id="year"
                             className="pl-2 focus:outline-none focus:ring-1 focus:ring-susty focus:border-susty block w-full rounded-md sm:text-sm border border-gray-300 h-10 "
@@ -154,7 +168,6 @@ const NameGenderAndBirthday = () => {
                     <motion.button
                         whileHover={{scale: 1.02}}
                         whileTap={{scale: 0.98}}
-
                         className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                         Save
                     </motion.button>
