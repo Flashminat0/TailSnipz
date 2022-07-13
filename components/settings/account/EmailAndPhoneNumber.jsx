@@ -14,15 +14,18 @@ const EmailAndPhoneNumber = () => {
     const [openMailModal, setOpenMailModal] = useState(false);
     const [openPhoneModal, setOpenPhoneModal] = useState(false);
 
+    const [oldPhoneNumberInput, setOldPhoneNumberInput] = useState('');
+    const [newPhoneNumberInput, setNewPhoneNumberInput] = useState('');
+
     return (
-        <div className={``}>
+        <div>
             <>
-                <div className={`bg-gray-50`}>
-                    <div className={`grid grid-cols-4 p-5 pr-0`}>
+                <div className={`bg-white`}>
+                    <div className={`grid grid-cols-4 px-5 py-3`}>
                         <div className={`col-span-3`}>
-                            <p className={`text-xl`}>{user.email}</p>
-                            <p className={`flex items-center`}>
-                                <CheckIcon className={`h-5 w-5 mr-2 text-green-700`}/>
+                            <p className={`text-base font-medium text-gray-800`}>{user.email}</p>
+                            <p className={`flex text-xs text-gray-500 items-center`}>
+                                <CheckIcon className={`h-4 w-4 mr-2 text-green-700`}/>
                                 Verified
                             </p>
                         </div>
@@ -31,15 +34,15 @@ const EmailAndPhoneNumber = () => {
                                 onClick={() => setOpenMailModal(true)}
                                 whileHover={{scale: 1.02}}
                                 whileTap={{scale: 0.98}}
-                                className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                                 Change
                             </motion.button>
                         </div>
                     </div>
                     <hr className={`my-1`}/>
-                    <div className={`grid grid-cols-4 p-5 pr-0`}>
+                    <div className={`grid grid-cols-4 px-5 py-3`}>
                         <div className={`col-span-3`}>
-                            <p className={`text-lg`}>
+                            <p className={`text-base font-medium text-gray-800`}>
                                 {/*TODO change this to **** after the APIs are made*/}
                                 {user.phone}
                             </p>
@@ -49,13 +52,13 @@ const EmailAndPhoneNumber = () => {
                                 onClick={() => setOpenPhoneModal(true)}
                                 whileHover={{scale: 1.02}}
                                 whileTap={{scale: 0.98}}
-                                className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                                 Change
                             </motion.button>
                         </div>
                     </div>
                 </div>
-                <div className={`mx-2 font-thin pt-3`}>
+                <div className={`mx-2 text-xs font-normal text-gray-500 pt-3`}>
                     <p>Your phone number will only be used to help you log in. It won’t be made public or used for
                         marketing purposes.</p>
                 </div>
@@ -109,7 +112,7 @@ const EmailAndPhoneNumber = () => {
 
                                         </Dialog.Title>
                                         <div className="mt-2">
-                                            <p className="text-base text-gray-500">
+                                            <p className="text-sm text-gray-500 leading-relaxed">
                                                 You need to confirm <span
                                                 className={`font-semibold`}>
                                                 {user.email}</span> is your email address before you can update it.
@@ -122,7 +125,7 @@ const EmailAndPhoneNumber = () => {
                                                 whileHover={{scale: 1.02}}
                                                 whileTap={{scale: 0.98}}
                                                 
-                                                className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                                className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                                                 <ArrowUpIcon className="w-4 h-4 mr-2"/>
                                                 Send confirmation email
                                             </motion.button>
@@ -132,7 +135,7 @@ const EmailAndPhoneNumber = () => {
                                                 }}
                                                 whileHover={{scale: 1.02}}
                                                 whileTap={{scale: 0.98}}
-                                                className={`inline-flex items-center px-4 py-1.5 border border-red-300 shadow-sm text-base font-medium rounded-md text-susty bg-red-100 hover:bg-susty hover:text-white hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                                className={`inline-flex items-center px-4 py-1.5 border border-red-300 shadow-sm text-sm font-medium rounded-md text-susty bg-red-100 hover:bg-susty hover:text-white hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                                                 <SupportIcon className={`h-5 w-5 mr-2`}/>
                                                 Help
                                             </motion.button>
@@ -196,6 +199,10 @@ const EmailAndPhoneNumber = () => {
                                             <div
                                                 className="relative flex items-stretch flex-grow focus-within:z-10 flex-col">
                                                 <input
+                                                    onChange={(e)=>{
+                                                        setOldPhoneNumberInput(e.target.value)
+                                                    }}
+                                                    value={oldPhoneNumberInput}
                                                     name="oldPhoneNumber"
                                                     id="oldPhoneNumber"
                                                     className="pl-2 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 block w-full rounded-md sm:text-sm border border-gray-300 h-10"
@@ -203,13 +210,17 @@ const EmailAndPhoneNumber = () => {
                                                 />
                                                 <br/>
                                                 <input
+                                                    onChange={(e)=>{
+                                                        setNewPhoneNumberInput(e.target.value)
+                                                    }}
+                                                    value={newPhoneNumberInput}
                                                     name="newPhoneNumber"
                                                     id="newPhoneNumber"
                                                     className="pl-2 focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 block w-full rounded-md sm:text-sm border border-gray-300 h-10"
                                                     placeholder="New phone number"
                                                 />
                                                 <div className={`grid place-items-center mt-2`}
-                                                ><p className={`font-thin mx-1 text-sm text-gray-500`}>You’ll receive a verification code to this number</p></div>
+                                                ><p className={`font-thin mx-1 text-xs text-gray-500`}>You’ll receive a verification code to this number</p></div>
                                             </div>
                                         </div>
 
@@ -219,7 +230,7 @@ const EmailAndPhoneNumber = () => {
                                                 whileHover={{scale: 1.02}}
                                                 whileTap={{scale: 0.98}}
                                                 
-                                                className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                                className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                                                 Continue
                                                 <ArrowRightIcon className="w-4 h-4 ml-4 mt-0.5"/>
                                             </motion.button>
@@ -229,7 +240,7 @@ const EmailAndPhoneNumber = () => {
                                                 }}
                                                 whileHover={{scale: 1.02}}
                                                 whileTap={{scale: 0.98}}
-                                                className={`inline-flex items-center px-4 py-1.5 border border-red-300 shadow-sm text-base font-medium rounded-md text-susty bg-red-100 hover:bg-susty hover:text-white hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                                className={`inline-flex items-center px-4 py-1.5 border border-red-300 shadow-sm text-sm font-medium rounded-md text-susty bg-red-100 hover:bg-susty hover:text-white hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                                                 <SupportIcon className={`h-5 w-5 mr-2`}/>
                                                 Help
                                             </motion.button>

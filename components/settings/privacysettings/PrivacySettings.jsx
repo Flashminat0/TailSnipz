@@ -11,111 +11,107 @@ const PrivacySettings = () => {
     const [enableDownloadData, setEnableDownloadData] = useState(false)
 
   return (
-        <div className={""}>
+        <div>
             <>
-                <div className={"w-full bg-gray-50"}>
+                <div className={"w-full bg-white"}>
                     <div className='p-3'>
-                        <p>Privacy settings</p>
+                        <p className='text-sm text-gray-500'>Privacy settings</p>
                     </div>
-                    <div className={"grid grid-cols-5 gap-5 p-5"}>
+                    <div className={"grid grid-cols-5 gap-5 p-5 border-b border-gray-200"}>
                         <div className={"col-span-4"}>
-                            <p className={"font-semibold"}>Allow Susty to use my pictures for marketing purposes</p>
+                            <p className={"font-medium text-gray-800"}>Allow Susty to use my pictures for marketing purposes</p>
                         </div>
                         <div className={"col-span-1 ml-auto"}>
                             <Switch
                                 checked={allowPictures}
                                 onChange={setAllowPictures}
                                 className={`${allowPictures ? 'bg-susty' : 'bg-gray-300'}
-                                relative inline-flex h-[30px] w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                                relative inline-flex h-[24px] w-[48px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                             >
                                 <span className="sr-only">Use setting</span>
                                 <span
                                     aria-hidden="true"
-                                    className={`${allowPictures ? 'translate-x-[1.855rem]' : 'translate-x-0'}
-                                pointer-events-none inline-block h-[26px] w-[26px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                    className={`${allowPictures ? 'translate-x-[1.53rem]' : 'translate-x-0'}
+                            pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                                 />
                             </Switch>
                         </div>
                     </div>
-                    <hr className={`my-1`}/>
                 </div>
-                <div className={"w-full bg-gray-50"}>
-                    <div className={"grid grid-cols-5 gap-5 p-5"}>
+                <div className={"w-full bg-white"}>
+                    <div className={"grid grid-cols-5 gap-5 p-5 border-b border-gray-200"}>
                         <div className={"col-span-4"}>
-                            <p className={"font-semibold"}>Notify owners when I favorite their items</p>
+                            <p className={"font-medium text-gray-800"}>Notify owners when I favorite their items</p>
                         </div>
                         <div className={"col-span-1 ml-auto"}>
                             <Switch
                                 checked={notifyOwners}
                                 onChange={setNotifyOwners}
                                 className={`${notifyOwners ? 'bg-susty' : 'bg-gray-300'}
-                                relative inline-flex h-[30px] w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                                relative inline-flex h-[24px] w-[48px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                             >
                                 <span className="sr-only">Use setting</span>
                                 <span
                                     aria-hidden="true"
-                                    className={`${notifyOwners ? 'translate-x-[1.855rem]' : 'translate-x-0'}
-                                pointer-events-none inline-block h-[26px] w-[26px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                    className={`${notifyOwners ? 'translate-x-[1.53rem]' : 'translate-x-0'}
+                            pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                                 />
                             </Switch>
                         </div>
                     </div>
-                    <hr className={`my-1`}/>
                 </div>
-                <div className={"w-full bg-gray-50"}>
-                    <div className={"grid grid-cols-5 gap-5 p-5"}>
+                <div className={"w-full bg-white"}>
+                    <div className={"grid grid-cols-5 gap-5 p-5 border-b border-gray-200"}>
                         <div className={"col-span-4"}>
-                            <p className={"font-semibold"}>Allow third-party tracking</p>
+                            <p className={"font-medium text-gray-800"}>Allow third-party tracking</p>
                         </div>
                         <div className={"col-span-1 ml-auto"}>
                             <Switch
                                 checked={allowThirdPartyTracking}
                                 onChange={setAllowThirdPartyTracking}
                                 className={`${allowThirdPartyTracking ? 'bg-susty' : 'bg-gray-300'}
-                                relative inline-flex h-[30px] w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                                relative inline-flex h-[24px] w-[48px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                             >
                                 <span className="sr-only">Use setting</span>
                                 <span
                                     aria-hidden="true"
-                                    className={`${allowThirdPartyTracking ? 'translate-x-[1.855rem]' : 'translate-x-0'}
-                                pointer-events-none inline-block h-[26px] w-[26px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                    className={`${allowThirdPartyTracking ? 'translate-x-[1.53rem]' : 'translate-x-0'}
+                            pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                                 />
                             </Switch>
                         </div>
                     </div>
-                    <hr className={`my-1`}/>
                 </div>
-                <div className={"w-full bg-gray-50"}>
-                    <div className={"grid grid-cols-5 gap-5 p-5"}>
+                <div className={"w-full bg-white"}>
+                    <div className={"grid grid-cols-5 gap-2 p-5 border-b border-gray-200"}>
                         <div className={"col-span-4"}>
-                            <p className={"font-semibold"}>Allow Susty to personalize my feed and search results by evaluating <br></br> my preferences, settings, previous purchases  and usage of  <br></br>Susty website and app</p>
+                            <p className={"font-medium text-gray-800"}>Allow Susty to personalize my feed and search results by evaluating my preferences, settings, previous purchases  and usage of Susty website and app</p>
                         </div>
                         <div className={"col-span-1 ml-auto"}>
                             <Switch
                                 checked={allowToPersonalize}
                                 onChange={setAllowToPersonalize}
                                 className={`${allowToPersonalize ? 'bg-susty' : 'bg-gray-300'}
-                                relative inline-flex h-[30px] w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                                relative inline-flex h-[24px] w-[48px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                             >
                                 <span className="sr-only">Use setting</span>
                                 <span
                                     aria-hidden="true"
-                                    className={`${allowToPersonalize ? 'translate-x-[1.855rem]' : 'translate-x-0'}
-                                pointer-events-none inline-block h-[26px] w-[26px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+                                    className={`${allowToPersonalize ? 'translate-x-[1.53rem]' : 'translate-x-0'}
+                            pointer-events-none inline-block h-[20px] w-[20px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
                                 />
                             </Switch>
                         </div>
                     </div>
-                    <hr className={`my-1`}/>
                 </div>
 
-                <div className={"w-full bg-gray-50 p-5 hover:bg-gray-100 transition ease-in-out delay-50 cursor-pointer"}
+                <div className={"w-full bg-white p-5 hover:bg-gray-50 transition ease-in-out delay-50 cursor-pointer"}
                     onClick = {() => setEnableDownloadData(true)}
                 >
-                    <li className="group flex justify-between">
+                    <li className="group flex justify-between items-center">
                         <div>
-                            <p className={"font-semibold"}>Download account data</p>
-                            <p className={"font-thin"}>Request account data</p>
+                            <p className={"font-medium text-gray-800"}>Download account data</p>
+                            <p className={"font-thin text-gray-500 text-sm"}>Request a copy of your susty account data</p>
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#7d7d7d" strokeWidth="2">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -167,7 +163,7 @@ const PrivacySettings = () => {
                                                 &nbsp;
                                                 <span
                                                     onClick={() => setEnableDownloadData(false)}
-                                                    className={`mr-2 cursor-pointer`}>
+                                                    className={`mr-2 text-susty cursor-pointer`}>
                                                         Close
                                                 </span>
                                             </p>
@@ -175,11 +171,11 @@ const PrivacySettings = () => {
 
                                         <div className='grid place-content-center'>                                        
                                             <div className=' p-4'>
-                                                <h1 className='font-bold justify-items-center text-xl'>Download account data</h1>
+                                                <h1 className='font-bold justify-items-center text-gray-800 text-xl'>Download account data</h1>
 
-                                                <p className='pt-8'>Your account data includes information that you’ve shared on your profile, your items, messages, and more.</p>
-                                                <p className='pt-4'>It can take up to a month to process your request. You’ll then receive a copy of your account data via email. The data will be in HTML files contained within a ZIP file.</p>
-                                                <p className='pt-4'>We’ll contact you at susty.co.nz@gmail.com to confirm your request.</p>
+                                                <p className='pt-6 text-sm text-gray-800 leading-relaxed'>Your account data includes information that you’ve shared on your profile, your items, messages, and more.</p>
+                                                <p className='pt-2 text-sm text-gray-800 leading-relaxed'>It can take up to a month to process your request. You’ll then receive a copy of your account data via email. The data will be in HTML files contained within a ZIP file.</p>
+                                                <p className='pt-2 text-sm text-gray-800 leading-relaxed'>We’ll contact you at susty.co.nz@gmail.com to confirm your request.</p>
 
                                                 <div className='pt-6'>
                                                     <div className={`grid place-items-center`}>
@@ -187,7 +183,7 @@ const PrivacySettings = () => {
                                                             // onClick={() => setOpenPhoneModal(true)}
                                                             whileHover={{scale: 1.02}}
                                                             whileTap={{scale: 0.98}}
-                                                            className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-base font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
+                                                            className={`inline-flex items-center px-4 py-1.5 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-white bg-susty hover:bg-white hover:text-susty hover:border-susty focus:text-red-400 focus:border-susty focus:bg-red-50`}>
                                                             Request data
                                                         </motion.button>
                                                     </div>
