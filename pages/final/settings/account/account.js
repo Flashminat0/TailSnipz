@@ -1,6 +1,6 @@
 import React from 'react'
-import EmailAndPhoneNumber from '../../../components/settings/account/EmailAndPhoneNumber'
-import NameGenderAndBirthday from '../../../components/settings/account/NameGenderAndBirthday'
+import EmailAndPhoneNumber from "../../../../components/settings/account/EmailAndPhoneNumber";
+import NameGenderAndBirthday from "../../../../components/settings/account/NameGenderAndBirthday";
 
 const Account = () => {
   return (

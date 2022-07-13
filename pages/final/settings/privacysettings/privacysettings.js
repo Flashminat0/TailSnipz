@@ -1,5 +1,5 @@
 import React from 'react'
-import PrivacySettings from '../../../components/settings/privacysettings/PrivacySettings'
+import PrivacySettings from "../../../../components/settings/privacysettings/PrivacySettings";
 
 const PrivacySettingsHome = () => {
   return (
