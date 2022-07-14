@@ -125,7 +125,6 @@ const AddProduct = () => {
   const [userId, setUserId] = useState("62c53a59dd41ef13b15366a8"); //added state
 
   const toastId = React.useRef(null);
-  console.log(toastId);
 
   const onSubmitClick = () => {
     toastId.current = toast.loading("Uploading...");

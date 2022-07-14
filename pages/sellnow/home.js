@@ -4,14 +4,8 @@ import Priceandswapping from "../../components/sellnow/priceandswapping";
 import Titleanddescription from "../../components/sellnow/titleanddescription";
 import Uploadphotos from "../../components/sellnow/uploadphotos";
 import { motion } from "framer-motion";
-import { initializeApp } from "firebase/app";
-import {
-  ref,
-  uploadBytesResumable,
-  getDownloadURL,
-  getStorage,
-  uploadBytes,
-} from "firebase/storage";
+
+
 
 const people = [
   {
@@ -100,17 +94,10 @@ const categoryThird = [
 ];
 
 //
-const firebaseConfigSusty = {
-  apiKey: "AIzaSyCN0aSJ8coHgH_h4nPDbvE9rAQ7vvuWpyg",
-  authDomain: "susty-next-1d4de.firebaseapp.com",
-  projectId: "susty-next-1d4de",
-  storageBucket: "susty-next-1d4de.appspot.com",
-  messagingSenderId: "999417887251",
-  appId: "1:999417887251:web:8a7673917daaaae7f35de6",
-};
+
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfigSusty);
+// const app = initializeApp(firebaseConfigSusty);
 
 function home() {
   const [selected, setSelected] = useState(people[3]);
@@ -129,7 +116,7 @@ function home() {
   const [uploadedImages, setUploadedImages] = useState([]);
 
   // firebase
-  const storage = getStorage(app);
+//   const storage = getStorage(app);
 
   const onSubmitClick = () => {
     console.log(imageList);
@@ -145,27 +132,27 @@ function home() {
     console.log(description);
 
     // image upload process
-    if (imagesObjList.length > 0) {
-      async function uploadImage() {
-        await imagesObjList.map(async (itemO, idx) => {
-          const imageRef = ref(
-            storage,
-            `images/${title}/${Date.now()}-${itemO.item.name}`
-          );
-          await uploadBytes(imageRef, imagesObjList[idx].item).then(
-            (response) => {
-              getDownloadURL(response.ref).then((url) => {
-                setUploadedImages((prev) => [
-                  ...prev,
-                  { url: url, name: itemO.item.name },
-                ]);
-              });
-            }
-          );
-        });
-      }
-      uploadImage();
-    }
+    // if (imagesObjList.length > 0) {
+    //   async function uploadImage() {
+    //     await imagesObjList.map(async (itemO, idx) => {
+    //       const imageRef = ref(
+    //         storage,
+    //         `images/${title}/${Date.now()}-${itemO.item.name}`
+    //       );
+    //       await uploadBytes(imageRef, imagesObjList[idx].item).then(
+    //         (response) => {
+    //           getDownloadURL(response.ref).then((url) => {
+    //             setUploadedImages((prev) => [
+    //               ...prev,
+    //               { url: url, name: itemO.item.name },
+    //             ]);
+    //           });
+    //         }
+    //       );
+    //     });
+    //   }
+    //   uploadImage();
+    // }
   };
 
   // uploaded image url to DB
