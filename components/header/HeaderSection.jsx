@@ -11,76 +11,76 @@ import Notification from '../notification/Notification'
 import Link from 'next/link'
 
 const searchBarStaticOptions = [
-    {id: 1, name: 'Catalog  '},
-    {id: 2, name: 'Members'},
-    {id: 3, name: 'Forum'},
-    {id: 4, name: 'Help Center'},
-]
+  { id: 1, name: "Catalog  " },
+  { id: 2, name: "Members" },
+  { id: 3, name: "Forum" },
+  { id: 4, name: "Help Center" },
+];
 
 function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 const guestMobileArrayStaticData = [
-    {
-        id: 1,
-        name: "Men",
-        icon: "",
-        path: "#"
-    },
-    {
-        id: 2,
-        name: "Women",
-        icon: "",
-        path: "#"
-    },
-    {
-        id: 3,
-        name: "Kids",
-        icon: "",
-        path: "#"
-    },
-    {
-        id: 4,
-        name: "Home",
-        icon: "",
-        path: "#"
-    },
-    {
-        id: 5,
-        name: "Entertainment",
-        icon: "",
-        path: "#"
-    },
-]
+  {
+    id: 1,
+    name: "Men",
+    icon: "",
+    path: "#",
+  },
+  {
+    id: 2,
+    name: "Women",
+    icon: "",
+    path: "#",
+  },
+  {
+    id: 3,
+    name: "Kids",
+    icon: "",
+    path: "#",
+  },
+  {
+    id: 4,
+    name: "Home",
+    icon: "",
+    path: "#",
+  },
+  {
+    id: 5,
+    name: "Entertainment",
+    icon: "",
+    path: "#",
+  },
+];
 
 const catalogMobileArrayStaticData = [
-    {
-        id: 1,
-        name: "About",
-        path: "#",
-    },
-    {
-        id: 2,
-        name: "Members",
-        path: "#",
-    },
-    {
-        id: 3,
-        name: "Forum",
-        path: "#",
-    },
-    {
-        id: 4,
-        name: "Help center",
-        path: "#",
-    },
-    {
-        id: 5,
-        name: "FAQs",
-        path: "#",
-    },
-]
+  {
+    id: 1,
+    name: "About",
+    path: "#",
+  },
+  {
+    id: 2,
+    name: "Members",
+    path: "#",
+  },
+  {
+    id: 3,
+    name: "Forum",
+    path: "#",
+  },
+  {
+    id: 4,
+    name: "Help center",
+    path: "#",
+  },
+  {
+    id: 5,
+    name: "FAQs",
+    path: "#",
+  },
+];
 
 const userDropdown = [
     {id: '86a66b51-14df-4947-9580-2f6f44e70e07', name: "Account", path: '#', disableStatus: true},
@@ -96,24 +96,30 @@ const languageDropdown = [
 ]
 
 const HeaderSection = () => {
-    const [searchBarOptions, setSearchBarOptions] = useState(searchBarStaticOptions);
-    const [guestMobileArray, setGuestMobileArray] = useState(guestMobileArrayStaticData);
-    const [catalogMobileArray, setCatalogMobileArray] = useState(catalogMobileArrayStaticData);
-    const [userActivityArray, setUserActivityArray] = useState(userDropdown)
-    const [languageArray, setLanguageArray] = useState(languageDropdown)
-    const [selectedLanguage, setSelectedLanguage] = useState("EN")
+  const [searchBarOptions, setSearchBarOptions] = useState(
+    searchBarStaticOptions
+  );
+  const [guestMobileArray, setGuestMobileArray] = useState(
+    guestMobileArrayStaticData
+  );
+  const [catalogMobileArray, setCatalogMobileArray] = useState(
+    catalogMobileArrayStaticData
+  );
+  const [userActivityArray, setUserActivityArray] = useState(userDropdown);
+  const [languageArray, setLanguageArray] = useState(languageDropdown);
+  const [selectedLanguage, setSelectedLanguage] = useState("EN");
 
-    const router = useRouter()
+  const router = useRouter();
 
-    // const [loggedIn, setLoggedIn] = useState(false)
-    const [loggedIn, setLoggedIn] = useState(true)
+  // const [loggedIn, setLoggedIn] = useState(false)
+  const [loggedIn, setLoggedIn] = useState(true);
 
-    const [selectedSearchBarOption, setSelectedSearchBarOption] = useState(
-        searchBarOptions[0]
-    )
+  const [selectedSearchBarOption, setSelectedSearchBarOption] = useState(
+    searchBarOptions[0]
+  );
 
-    return (
-        <>
+  return (
+    <>
             <div className={'px-2 py-3 sm:px-4 lg:px-14'}>
                 <Popover className="relative ">
                     <div className="flex justify-between items-center">
@@ -406,7 +412,7 @@ const HeaderSection = () => {
                 </Popover>
             </div>
         </>
-    )
-}
+  );
+};
 
-export default HeaderSection
+export default HeaderSection;
