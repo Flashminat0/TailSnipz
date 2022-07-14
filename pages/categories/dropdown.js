@@ -73,7 +73,7 @@ const Dropdown = ({ subCategory }) => {
         <div className="hidden lg:flex lg:flex-shrink-0">
           <div className="flex flex-col w-64">
             {/* Sidebar component, swap this element with another sidebar if you like */}
-            <div className="flex-1 flex flex-col min-h-0 border-r border-gray-200 bg-gray-100">
+            <div className="flex-1 flex flex-col min-h-0 border-r border-gray-200 bg-white">
               <div className="flex-1 flex flex-col  pb-4 overflow-y-auto">
                 <nav className="mt-5 flex-1" aria-label="Sidebar">
                   <div className="px-2 space-y-1">
