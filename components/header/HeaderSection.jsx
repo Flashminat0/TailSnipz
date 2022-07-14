@@ -3,10 +3,10 @@ import {Menu, Popover, Transition} from '@headlessui/react'
 import {useRouter} from 'next/router'
 import SearchBar from './SearchBar'
 import {HiMenu, HiX,} from 'react-icons/hi'
-import { IoNotificationsOutline } from "react-icons/io5";
-import { AiOutlineMail, AiOutlineHeart, AiOutlineQuestionCircle } from "react-icons/ai";
+import {IoNotificationsOutline} from "react-icons/io5";
+import {AiOutlineMail, AiOutlineHeart, AiOutlineQuestionCircle} from "react-icons/ai";
 import LoginSignupButton from '../buttons/loginsignupbutton'
-import { ChevronDownIcon } from '@heroicons/react/outline'
+import {ChevronDownIcon} from '@heroicons/react/outline'
 import Notification from '../notification/Notification'
 import Link from 'next/link'
 
@@ -83,18 +83,16 @@ const catalogMobileArrayStaticData = [
 ]
 
 const userDropdown = [
-    {id:'86a66b51-14df-4947-9580-2f6f44e70e07', name: "Account", path : '#' },
-    {id:'03380728-d104-473b-bb9c-b7671185d114', name: "Profile", path : '#' },
-    {id:'d0960412-44f7-4120-8851-b605328b2738', name: "Settings", path : '#' },
-    {id:'6417e8c7-b9b8-46de-a25a-829700003b79', name: "Personalization", path : '#' },
-    {id:'3236825c-ac12-4656-b099-4a395adb2eb0', name: "Wallet", path : '#' },
-    {id:'bbced0e1-2e6b-4525-99e9-6b2006ad0c42', name: "Donations", path : '#' },
-    {id:'8c69d15d-3669-4ec8-a5c5-308f16cbb3aa', name: "Log out", path : '#' },
+    {id: '86a66b51-14df-4947-9580-2f6f44e70e07', name: "Account", path: '#', disableStatus: true},
+    {id: '03380728-d104-473b-bb9c-b7671185d114', name: "Profile", path: '/final/profile', disableStatus: false},
+    {id: 'd0960412-44f7-4120-8851-b605328b2738', name: "Settings", path: '/final/settings/home', disableStatus: false},
+    {id: '3236825c-ac12-4656-b099-4a395adb2eb0', name: "Wallet", path: '#', disableStatus: false},
+    {id: '8c69d15d-3669-4ec8-a5c5-308f16cbb3aa', name: "Log out", path: '#', disableStatus: false},
 ]
 
 const languageDropdown = [
-    {id: "423f9b07-1d8d-4b79-bd9a-0038dc0fb94a" ,short: "EN", long: "English, US(English)"},
-    {id: "42eb2a91-6c77-4f24-a233-e1ca1ec27f07" ,short: "US", long: "Español, US(Spanish)"}
+    {id: "423f9b07-1d8d-4b79-bd9a-0038dc0fb94a", short: "EN", long: "English, US(English)"},
+    {id: "42eb2a91-6c77-4f24-a233-e1ca1ec27f07", short: "US", long: "Español, US(Spanish)"}
 ]
 
 const HeaderSection = () => {
@@ -131,7 +129,7 @@ const HeaderSection = () => {
                         </div>
 
                         <div className={'hidden md:block w-full pl-4'}>
-                            
+
                             <SearchBar
                                 selectedSearchBarOption={selectedSearchBarOption}
                                 setSelectedSearchBarOption={setSelectedSearchBarOption}
@@ -144,18 +142,18 @@ const HeaderSection = () => {
                                 loggedIn && (
                                     <>
                                         <div className=' mr-1'>
-                                            <Link href= "/final/inbox" >
+                                            <Link href="/final/inbox">
                                                 <a>
                                                     <AiOutlineMail color="#a3a3a3" className='w-6 h-6 cursor-pointer'/>
                                                 </a>
                                             </Link>
-                                            
+
                                         </div>
                                         <div className='mx-1'>
-                                            <Notification />
+                                            <Notification/>
                                         </div>
                                         <div className='mx-1'>
-                                            <Link href='/favorite/' >
+                                            <Link href='/favorite/'>
                                                 <a>
                                                     <AiOutlineHeart color="#a3a3a3" className='w-6 h-6 cursor-pointer'/>
                                                 </a>
@@ -164,9 +162,12 @@ const HeaderSection = () => {
 
                                         <Menu as="div" className="relative inline-block text-left mx-1 hidden md:block">
                                             <div>
-                                                <Menu.Button className="inline-flex justify-center -my-1 pl-2 md:pl-0 md:mr-8 md:pr-2 w-full rounded-md ring-0 text-sm font-medium text-gray-700">
-                                                    <img alt='User' className='rounded-full' height="30" width="30" src='https://firebasestorage.googleapis.com/v0/b/susty-next.appspot.com/o/default_profile_pic.png?alt=media&token=ddfbe30b-a94f-4390-94cf-416285ac2fde' />
-                                                    <ChevronDownIcon color='#a3a3a3' className=" ml-0.5 h-8 w-3" aria-hidden="true" />
+                                                <Menu.Button
+                                                    className="inline-flex justify-center -my-1 pl-2 md:pl-0 md:mr-8 md:pr-2 w-full rounded-md ring-0 text-sm font-medium text-gray-700">
+                                                    <img alt='User' className='rounded-full' height="30" width="30"
+                                                         src='https://firebasestorage.googleapis.com/v0/b/susty-next.appspot.com/o/default_profile_pic.png?alt=media&token=ddfbe30b-a94f-4390-94cf-416285ac2fde'/>
+                                                    <ChevronDownIcon color='#a3a3a3' className=" ml-0.5 h-8 w-3"
+                                                                     aria-hidden="true"/>
                                                 </Menu.Button>
                                             </div>
 
@@ -179,30 +180,43 @@ const HeaderSection = () => {
                                                 leaveFrom="transform opacity-100 scale-100"
                                                 leaveTo="transform opacity-0 scale-95"
                                             >
-                                                <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none overflow-visible z-50">
-                                                <div className="py-1">
+                                                <Menu.Items
+                                                    className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none overflow-visible z-50">
+                                                    <div className="py-1">
 
-                                                {
-                                                    userActivityArray.map((item, idx) => {
-                                                        return (
-                                                            <Menu.Item key={item.id}>
-                                                                {({ active }) => (
-                                                                    <a
-                                                                    href={item.path}
-                                                                    className={classNames(
-                                                                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                                                        'block px-4 py-2 text-sm'
-                                                                    )}
-                                                                    >
-                                                                        {item.name}
-                                                                    </a>
-                                                                )}
-                                                            </Menu.Item>
-                                                        )
-                                                    })
-                                                }
+                                                        {
+                                                            userActivityArray.map((item, idx) => {
+                                                                return (
+                                                                    <Menu.Item key={item.id} disabled={item.disableStatus}>
+                                                                        {({active}) => (
+                                                                            <>
+                                                                                {item.name === 'Log out' ?
+                                                                                    <a
+                                                                                        href={item.path}
+                                                                                        className={classNames(
+                                                                                            active ? 'bg-gray-100 text-red-900' : 'text-red-700',
+                                                                                            'block px-4 py-2 text-sm'
+                                                                                        )}
+                                                                                    >
+                                                                                        {item.name}
+                                                                                    </a> :
+                                                                                    <a
+                                                                                        href={item.path}
+                                                                                        className={classNames(
+                                                                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                                                                            'block px-4 py-2 text-sm'
+                                                                                        )}
+                                                                                    >
+                                                                                        {item.name}
+                                                                                    </a>}
+                                                                            </>
+                                                                        )}
+                                                                    </Menu.Item>
+                                                                )
+                                                            })
+                                                        }
 
-                                                </div>
+                                                    </div>
                                                 </Menu.Items>
                                             </Transition>
                                         </Menu>
@@ -238,9 +252,10 @@ const HeaderSection = () => {
 
                         <Menu as="div" className="hidden md:block relative inline-block text-left mx-1">
                             <div>
-                                <Menu.Button className="inline-flex justify-center -my-1 pl-2 md:pl-0 md:mr-0 md:pr-0 w-full rounded-md ring-0 text-sm font-medium text-gray-700">
+                                <Menu.Button
+                                    className="inline-flex justify-center -my-1 pl-2 md:pl-0 md:mr-0 md:pr-0 w-full rounded-md ring-0 text-sm font-medium text-gray-700">
                                     <div>{selectedLanguage}</div>
-                                    <ChevronDownIcon color='#a3a3a3' className=" ml-0.5 h-5 w-3" aria-hidden="true" />
+                                    <ChevronDownIcon color='#a3a3a3' className=" ml-0.5 h-5 w-3" aria-hidden="true"/>
                                 </Menu.Button>
                             </div>
 
@@ -253,30 +268,31 @@ const HeaderSection = () => {
                                 leaveFrom="transform opacity-100 scale-100"
                                 leaveTo="transform opacity-0 scale-95"
                             >
-                                <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none overflow-visible z-50">
-                                <div className="py-1">
+                                <Menu.Items
+                                    className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none overflow-visible z-50">
+                                    <div className="py-1">
 
-                                {
-                                    languageArray.map((item, idx) => {
-                                        return (
-                                            <Menu.Item key={item.id}>
-                                                {({ active }) => (
-                                                    <a
-                                                    onClick={() => setSelectedLanguage(item.short)}
-                                                    className={classNames(
-                                                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                                        'block px-4 py-2 text-sm'
-                                                    )}
-                                                    >
-                                                        {item.long}
-                                                    </a>
-                                                )}
-                                            </Menu.Item>
-                                        )
-                                    })
-                                }
+                                        {
+                                            languageArray.map((item, idx) => {
+                                                return (
+                                                    <Menu.Item key={item.id}>
+                                                        {({active}) => (
+                                                            <a
+                                                                onClick={() => setSelectedLanguage(item.short)}
+                                                                className={classNames(
+                                                                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                                                    'block px-4 py-2 text-sm'
+                                                                )}
+                                                            >
+                                                                {item.long}
+                                                            </a>
+                                                        )}
+                                                    </Menu.Item>
+                                                )
+                                            })
+                                        }
 
-                                </div>
+                                    </div>
                                 </Menu.Items>
                             </Transition>
                         </Menu>
