@@ -43,7 +43,7 @@ const Buyer = () => {
   const [sampleData, setSampleData] = useState(historyItems)
 
   return (
-    <div className="mt-6 bg-gray-50 p-2 ">
+    <div className="mt-6 bg-gray-50 p-2">
 
         {/* mobile view */}
         <div className="block sm:hidden ">

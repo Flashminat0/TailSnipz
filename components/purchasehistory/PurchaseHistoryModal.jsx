@@ -12,48 +12,48 @@ const PurchaseHistoryModal = ({item , isOpen , setIsOpen}) => {
                     <tr>
                         <td>
                             <p className="my-1 text-xs text-gray-500">
-                                Product
+                                Product &nbsp;
                             </p>
                         </td>
                         <td>
                             <p className="my-1 text-xs text-gray-500">
-                                : {item.product}
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p className="my-1 text-xs text-gray-500">
-                                Price
-                            </p>
-                        </td>
-                        <td>
-                            <p className="my-1 text-xs text-gray-500">
-                                : {item.price}
+                                : &nbsp; {item.product}
                             </p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p className="my-1 text-xs text-gray-500">
-                                User
+                                Price &nbsp;
                             </p>
                         </td>
                         <td>
                             <p className="my-1 text-xs text-gray-500">
-                                : {item.user}
+                                : &nbsp; {item.price}
                             </p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p className="my-1 text-xs text-gray-500">
-                               Date
+                                User &nbsp;
                             </p>
                         </td>
                         <td>
                             <p className="my-1 text-xs text-gray-500">
-                                : {item.date}
+                                : &nbsp; {item.user}
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p className="my-1 text-xs text-gray-500">
+                               Date &nbsp;
+                            </p>
+                        </td>
+                        <td>
+                            <p className="my-1 text-xs text-gray-500">
+                                : &nbsp; {item.date}
                             </p>
                         </td>
                     </tr>

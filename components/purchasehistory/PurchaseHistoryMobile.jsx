@@ -1,3 +1,4 @@
+import { ChevronRightIcon } from "@heroicons/react/outline";
 import React, { useState } from "react";
 import PurchaseHistoryModal from "./PurchaseHistoryModal";
 
@@ -69,14 +70,14 @@ const PurchaseHistoryMobile = ({title,description, data}) => {
                       </th>
                       <th
                         scope="col"
-                        className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                        className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 "
                       >
                         Price
                       </th>
                       
                       <th
                         scope="col"
-                        className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                        className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 "
                       >
                         &nbsp;
                       </th>
@@ -95,14 +96,13 @@ const PurchaseHistoryMobile = ({title,description, data}) => {
                         <td className=" px-3 py-4 text-sm text-gray-500">
                           {item.price}
                         </td>
-                        <td className=" px-3 py-4 text-sm text-blue-500">
-                          <div onClick={() => {
-                            setModalData(item)
-                            setIsOpen(true);
-                          }}>
-                            <PurchaseHistoryModal isOpen={isOpen} setIsOpen={closeModalHandler} item={modalData}/>
-                            Click
-                          </div>
+                        <td className=" px-3 py-4 text-sm text-gray-500">
+                          <ChevronRightIcon className={"w-5 h-5 cursor-pointer"} 
+                            onClick={() => {
+                                setModalData(item)
+                                setIsOpen(true);
+                            }}/>
+                          <PurchaseHistoryModal isOpen={isOpen} setIsOpen={closeModalHandler} item={modalData}/>
                         </td>
                       </tr>
                     ))}
