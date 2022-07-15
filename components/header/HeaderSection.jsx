@@ -3,7 +3,6 @@ import {Menu, Popover, Transition} from '@headlessui/react'
 import {useRouter} from 'next/router'
 import SearchBar from './SearchBar'
 import {HiMenu, HiX,} from 'react-icons/hi'
-import {IoNotificationsOutline} from "react-icons/io5";
 import {AiOutlineMail, AiOutlineHeart, AiOutlineQuestionCircle} from "react-icons/ai";
 import LoginSignupButton from '../buttons/loginsignupbutton'
 import {ChevronDownIcon} from '@heroicons/react/outline'
