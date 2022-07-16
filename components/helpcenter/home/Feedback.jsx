@@ -1,6 +1,6 @@
 import React from 'react'
 
-const feedback = () => {
+const Feedback = () => {
   return (
     <div className={"h-screen w-screen grid place-content-center font-susty"}>
 
@@ -22,4 +22,4 @@ const feedback = () => {
   )
 }
 
-export default feedback
+export default Feedback

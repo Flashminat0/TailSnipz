@@ -51,7 +51,6 @@ const Location = () => {
                     </div>
                 </div>
             </div>
-
             <div className="md:grid md:grid-cols-3 md:gap-3 py-2 border-b border-gray-200">
                 <div className="md:col-span-1 flex items-center">
                     <div className="px-4 sm:px-0">
