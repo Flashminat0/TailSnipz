@@ -16,6 +16,13 @@ const CatDropDown = () => {
       <Popover className="z-0 relative">
         {({ open }) => (
           <>
+
+
+
+
+
+
+
             <div>
               <div className=" z-10 bg-white">
                 <div className="w-2/3  flex gap-5 px-4 py-6 sm:px-6 lg:px-8 ">
@@ -49,12 +56,27 @@ const CatDropDown = () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 -translate-y-1"
             >
-              <Popover.Panel className="absolute z-10 inset-x-0 transform shadow-lg pb-2">
+              
+              <Popover.Panel className="absolute z-10 inset-x-0 transform shadow-xl pb-2 w-max">
                 <div>
-                  <Dropdown subCategory={mainCatArray} />
+                  <Dropdown subCategory={mainCatArray}/>
                 </div>
               </Popover.Panel>
+            
             </Transition>
+
+
+
+
+
+
+
+
+
+
+
+
+            
           </>
         )}
       </Popover>

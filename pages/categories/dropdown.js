@@ -75,9 +75,10 @@ const Dropdown = ({ subCategory }) => {
                               "group flex items-center px-2 py-2 text-sm font-medium rounded-md gap-3"
                             )}
                           >
-                            
-<div className="flex flex-row items center gap-3">{subcat.icon}</div>
-                        
+                            <div className="flex flex-row items center gap-3">
+                              {subcat.icon}
+                            </div>
+
                             {subcat.name}
                           </a>
                         </span>
@@ -89,11 +90,10 @@ const Dropdown = ({ subCategory }) => {
             </div>
           </div>
         </div>
-       
-          <div className=" bg-orange-500 relative p-1">
-            <Items sections={subCatArray} />
-          </div>
-     
+
+        <div className="relative p-1">
+          <Items sections={subCatArray} />
+        </div>
       </div>
     </>
   );
