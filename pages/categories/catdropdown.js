@@ -16,28 +16,26 @@ const CatDropDown = () => {
       <Popover className="z-0 relative">
         {({ open }) => (
           <>
-            <div className="flex justify-start">
-              <div className="relative z-10 bg-white">
-                <div className="max-full mx-auto flex px-4 py-6 sm:px-6 lg:px-8">
-                  <Popover.Button
-                    className={classNames(
-                      open ? "text-gray-900" : "text-gray-900",
-                      "group bg-white rounded-md inline-flex items-center text-sm font-susty focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
-                    )}
-                  >
-                    <div className="flex justify-start gap-4">
-                      {categoryObj.map((singleMainCategory) => (
-                        <button
-                          key={singleMainCategory.id}
-                          onClick={() => {
-                            setMainCatArray(singleMainCategory.subCategory);
-                          }}
-                        >
-                          <span>{singleMainCategory.name}</span>
-                        </button>
-                      ))}
-                    </div>
-                  </Popover.Button>
+            <div>
+              <div className=" z-10 bg-white">
+                <div className="w-2/3  flex gap-5 px-4 py-6 sm:px-6 lg:px-8 ">
+                  {categoryObj.map((singleMainCategory) => (
+                    <Popover.Button
+                      className={classNames(
+                        open ? "text-gray-900" : "text-gray-900",
+                        "group bg-white rounded-md inline-flex items-center text-sm font-susty focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+                      )}
+                    >
+                      <span
+                        key={singleMainCategory.id}
+                        onClick={() => {
+                          setMainCatArray(singleMainCategory.subCategory);
+                        }}
+                      >
+                        <span>{singleMainCategory.name}</span>
+                      </span>
+                    </Popover.Button>
+                  ))}
                 </div>
               </div>
             </div>
@@ -51,8 +49,8 @@ const CatDropDown = () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 -translate-y-1"
             >
-              <Popover.Panel className="absolute z-10 inset-x-0 transform shadow-lg">
-                <div className="">
+              <Popover.Panel className="absolute z-10 inset-x-0 transform shadow-lg pb-2">
+                <div>
                   <Dropdown subCategory={mainCatArray} />
                 </div>
               </Popover.Panel>

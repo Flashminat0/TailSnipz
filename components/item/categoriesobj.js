@@ -1,3 +1,5 @@
+import * as Icons from "../../assets/svg/mobile-icons";
+import * as Icons2 from "../../assets/svg/icon";
 export const categoryObj = [
     {
         id: "463e989a-c4f2-4616-85c5-0cb610c5fff0",
@@ -6,7 +8,7 @@ export const categoryObj = [
             {
                 id: "91ba7308-b68e-4d0c-85d8-0cc8272c6bc8",
                 name: "All",
-                icon: "AllIcon",
+                icon: <Icons2.seeall />,
                 href: "Women/Clothes/All".split(' ').join('-').trim().toLowerCase(),
                 sections: [
                     {
@@ -100,7 +102,7 @@ export const categoryObj = [
             {
                 id: "0e0712c5-0b5a-4d4e-acf5-3d7faf2caa2a",
                 name: "Clothes",
-                icon: "ClothesIcon",
+                icon: <Icons2.frock01 />,
                 sections: [
                     {
                         id: "9b7a7a58-04a1-4aba-ba68-0e6b1390021e",
@@ -192,7 +194,7 @@ export const categoryObj = [
             {
                 id: "1a386489-d2bd-4ffb-bfbc-e590a91815e3",
                 name: "Shoes",
-                icon: "ShoesIcon",
+                icon: <Icons2.shoes06 />,
                 sections: [
                     {
                         id: "a67a36a1-601c-420d-a9b7-c00b2b1c34f7",
@@ -254,7 +256,7 @@ export const categoryObj = [
             {
                 id: "8fb6d22d-7942-408d-b77a-549d377f43b9",
                 name: "Bags",
-                icon: "BagsIcon",
+                icon: <Icons2.purse01 />,
                 sections: [
                     {
                         id: "a59e0514-edc6-4d3d-b530-9d3675609fd0",
@@ -331,7 +333,7 @@ export const categoryObj = [
             {
                 id: "4e9911c7-3c2d-4429-a13f-b677ad3d8837",
                 name: "Accessories",
-                icon: "AccessoriesIcon",
+                icon: <Icons2.bag05 />,
                 sections: [
                     {
                         id: "d4301694-a163-4e61-90cd-281fc10d3ead",
@@ -403,7 +405,7 @@ export const categoryObj = [
             {
                 id: "4687669c-9d1f-4d21-8427-bd65fd896208",
                 name: "Beauty",
-                icon: "BeautyIcon",
+                icon: <Icons2.hat02 />,
                 sections: [
                     {
                         id: "084ab2e4-5118-45c8-994c-bde471412a73",
@@ -466,7 +468,7 @@ export const categoryObj = [
             {
                 id: "436d0989-3dee-47bb-a08e-7d1f5f97d70e",
                 name: "All",
-                icon: "AllIcon",
+                icon: <Icons2.seeall  />,
                 href: "Men/Clothes/All".split(' ').join('-').trim().toLowerCase(),
                 sections: [
                     {
@@ -539,7 +541,7 @@ export const categoryObj = [
             {
                 id: "d4b0922b-934a-4456-bbb4-01d55b29ca67",
                 name: "Clothes",
-                icon: "ClothesIcon",
+                icon: <Icons2.frock01 />,
                 sections: [
                     {
                         id: "6f1494ef-3201-444f-9f51-d5c1fa4d1114",
@@ -611,7 +613,7 @@ export const categoryObj = [
             {
                 id: "7cbeb3cb-22f7-4050-b3ad-abf9ab021392",
                 name: "Shoes",
-                icon: "ShoesIcon",
+                icon: <Icons2.shoes06 />,
                 sections: [
                     {
                         id: "919b0429-461e-4428-a001-47b8c0b017c6",
@@ -663,7 +665,7 @@ export const categoryObj = [
             {
                 id: "913fde0d-5f93-4f57-8523-80398e650403",
                 name: "Accessories",
-                icon: "AccessoriesIcon",
+                icon: <Icons2.purse01 />,
                 sections: [
                     {
                         id: "d33127ab-7e50-4003-9020-6b3b54a5ec46",
@@ -725,7 +727,7 @@ export const categoryObj = [
             {
                 id: "e910d613-1135-4bf4-86b0-a7e192ff9c72",
                 name: "Grooming",
-                icon: "GroomingIcon",
+                icon: <Icons2.bag05/>,
                 sections: [
                     {
                         id: "562d99f1-0fb5-4563-a56a-b42f1e10bd76",
@@ -788,7 +790,7 @@ export const categoryObj = [
             {
                 id: "77b47071-b078-437a-a4b4-5fa855bd4b99",
                 name: "All",
-                icon: "AllIcon",
+                icon: <Icons2.seeall  />,
                 href: "Kids/Girls' clothing/All".split(' ').join('-').trim().toLowerCase(),
                 sections: [
                     {
@@ -896,7 +898,7 @@ export const categoryObj = [
             {
                 id: "8b40743a-3b06-49b8-b43c-35c0a8d0264f",
                 name: "Girls' clothing",
-                icon: "Girls' clothingIcon",
+                icon: <Icons2.frock01 />,
                 sections: [
                     {
                         id: "e12de64f-fe3f-4f28-82bd-aa9443ff0cfc",
@@ -1003,7 +1005,7 @@ export const categoryObj = [
             {
                 id: "41f3dcc8-9f44-41fd-b030-f052ae9df1dd",
                 name: "Boys' clothing",
-                icon: "Boys' clothingIcon",
+                icon: <Icons2.shoes06 />,
                 sections: [
                     {
                         id: "e2b9aa85-1431-4733-8df6-1b0f91730955",

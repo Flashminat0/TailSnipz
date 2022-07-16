@@ -16,27 +16,9 @@ const Dropdown = ({ subCategory }) => {
     setSubCatArray(subCategory[0].sections);
   }, []);
 
-
-  function SubCategories(props) {
-    return (
-      <Transition
-        enter="transition ease-out duration-100"
-        enterFrom="transform opacity-0 scale-95"
-        enterTo="transform opacity-100 scale-100"
-        leave="transition ease-in duration-75"
-        leaveFrom="transform opacity-100 scale-100"
-        leaveTo="transform opacity-0 scale-95"
-      >
-        <Menu.Items className="origin-top absolute w-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
-          <div className="py-1 flex">{props.children}</div>
-        </Menu.Items>
-      </Transition>
-    );
-  }
-
   return (
     <>
-      <div className="h-full flex">
+      <div className="h-full flex max-w-xl">
         <Transition.Root show={sidebarOpen} as={Fragment}>
           <Dialog
             as="div"
@@ -70,10 +52,10 @@ const Dropdown = ({ subCategory }) => {
         </Transition.Root>
 
         {/* Static sidebar for desktop */}
-        <div className="hidden lg:flex lg:flex-shrink-0">
-          <div className="flex flex-col w-64">
+        <div className="hidden lg:flex lg:flex-shrink-0 ">
+          <div className="flex flex-col w-64 ">
             {/* Sidebar component, swap this element with another sidebar if you like */}
-            <div className="flex-1 flex flex-col min-h-0 border-r border-gray-200 bg-white">
+            <div className="flex-1 flex flex-col min-h-0 border-r border-gray-200 bg-white shadow-md ">
               <div className="flex-1 flex flex-col  pb-4 overflow-y-auto">
                 <nav className="mt-5 flex-1" aria-label="Sidebar">
                   <div className="px-2 space-y-1">
@@ -90,20 +72,12 @@ const Dropdown = ({ subCategory }) => {
                               subcat.current
                                 ? "bg-gray-200 text-gray-900"
                                 : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
-                              "group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                              "group flex items-center px-2 py-2 text-sm font-medium rounded-md gap-3"
                             )}
                           >
-                            {/* 
-                        <item.icon
-                          className={classNames(
-                            item.current
-                              ? "text-gray-500"
-                              : "text-gray-400 group-hover:text-gray-500",
-                            "mr-3 h-6 w-6"
-                          )}
-                          aria-hidden="true"
-                        />
-                        */}
+                            
+<div className="flex flex-row items center gap-3">{subcat.icon}</div>
+                        
                             {subcat.name}
                           </a>
                         </span>
@@ -115,32 +89,11 @@ const Dropdown = ({ subCategory }) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col min-w-0 flex-1 overflow-hidden">
-          <div className="lg:hidden">
-            <div className="flex items-center justify-between bg-gray-50 border-b border-gray-200 px-4 py-1.5">
-              <div>
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                  alt="Workflow"
-                />
-              </div>
-              <div>
-                <button
-                  type="button"
-                  className="-mr-3 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900"
-                  onClick={() => setSidebarOpen(true)}
-                >
-                  <span className="sr-only">Open sidebar</span>
-                  <MenuIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="flex-1 overflow-hidden border-4 relative z-0">
+       
+          <div className=" bg-orange-500 relative p-1">
             <Items sections={subCatArray} />
           </div>
-        </div>
+     
       </div>
     </>
   );
