@@ -46,7 +46,7 @@ export const shirt1 = () => {
     </svg>);
 };
 export const shirt2 = () => {
-    return (<svg xmlns="http://www.w3.org/2000/svg" width="49.484" height="45.942" viewBox="0 0 49.484 45.942">
+    return (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 49.484 45.942">
         <g id="Group_360" data-name="Group 360" transform="translate(1.5 1.5)">
             <path id="Path_967" data-name="Path 967"
                   d="M100.684-189H77.561L66-184.045v29.729h9.91v8.258h26.426v-8.258h9.91v-29.729Z"
@@ -67,7 +67,7 @@ export const shirt2 = () => {
     </svg>);
 };
 
-export const shirt03 = () => {
+export const shirt3 = () => {
     return (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 49.245 49.858">
         <g id="Group_361" data-name="Group 361" transform="translate(1.5 2.113)">
             <path id="Path_969" data-name="Path 969"
@@ -97,8 +97,8 @@ export const shirt03 = () => {
     </svg>);
 };
 
-export const shirt04 = () => {
-    return (<svg xmlns="http://www.w3.org/2000/svg" width="49.245" height="49.858" viewBox="0 0 49.245 49.858">
+export const shirt4 = () => {
+    return (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 49.245 49.858">
         <g id="Group_362" data-name="Group 362" transform="translate(1.5 2.113)">
             <path id="Path_972" data-name="Path 972"
                   d="M205.561-187,194-182.045v31.381h9.91v4.955h26.426v-4.955h9.91v-31.381L228.684-187"
@@ -127,8 +127,8 @@ export const shirt04 = () => {
     </svg>);
 };
 
-export const shirt05 = () => {
-    return (<svg xmlns="http://www.w3.org/2000/svg" width="49.593" height="49.662" viewBox="0 0 49.593 49.662">
+export const shirt5 = () => {
+    return (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 49.593 49.662">
         <g id="Group_363" data-name="Group 363" transform="translate(1.5 1.917)">
             <path id="Path_975" data-name="Path 975"
                   d="M269.561-187,258-182.045v31.381h9.91v4.955h26.426v-4.955h9.91v-31.381L292.684-187"
@@ -158,8 +158,8 @@ export const shirt05 = () => {
 
 };
 
-export const shirt06 = () => {
-    return (<svg xmlns="http://www.w3.org/2000/svg" width="49.297" height="49.245" viewBox="0 0 49.297 49.245">
+export const shirt6 = () => {
+    return (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 49.297 49.245">
         <g id="Group_364" data-name="Group 364" transform="translate(1.5 1.5)">
             <path id="Path_978" data-name="Path 978"
                   d="M336.865-187h-3.3L322-182.045v31.381h9.91v4.955h26.426v-4.955h9.91v-31.381L356.684-187h-3.3"
@@ -201,7 +201,7 @@ export const shirt06 = () => {
     </svg>);
     ;
 }
-export const shirt07 = () => {
+export const shirt7 = () => {
     return (<svg xmlns="http://www.w3.org/2000/svg" width="49.245" height="49.245" viewBox="0 0 49.245 49.245">
         <g id="Group_365" data-name="Group 365" transform="translate(1.5 1.5)">
             <path id="Path_979" data-name="Path 979"

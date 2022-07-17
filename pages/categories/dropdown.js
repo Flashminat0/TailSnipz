@@ -18,7 +18,7 @@ const Dropdown = ({ subCategory }) => {
 
   return (
     <>
-      <div className="h-full flex max-w-xl">
+      <div className="h-full flex flex-row min-w-max">
         <Transition.Root show={sidebarOpen} as={Fragment}>
           <Dialog
             as="div"
@@ -52,13 +52,13 @@ const Dropdown = ({ subCategory }) => {
         </Transition.Root>
 
         {/* Static sidebar for desktop */}
-        <div className="hidden lg:flex lg:flex-shrink-0 ">
-          <div className="flex flex-col w-64 ">
+        <div className="hidden md:block border-r border-gray-200 w-52">
+          <div className="flex flex-col">
             {/* Sidebar component, swap this element with another sidebar if you like */}
-            <div className="flex-1 flex flex-col min-h-0 border-r border-gray-200 bg-white shadow-md ">
-              <div className="flex-1 flex flex-col  pb-4 overflow-y-auto">
+            <div className="flex-1 flex flex-col min-h-0 bg-white">
+              <div className="flex-1 flex flex-col  pb-1 overflow-y-auto">
                 <nav className="mt-5 flex-1" aria-label="Sidebar">
-                  <div className="px-2 space-y-1">
+                  <div className="inline-grid px-2 gap-y-2">
                     <>
                       {subCategory.map((subcat) => (
                         <span
@@ -72,7 +72,7 @@ const Dropdown = ({ subCategory }) => {
                               subcat.current
                                 ? "bg-gray-200 text-gray-900"
                                 : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
-                              "group flex items-center px-2 py-2 text-sm font-medium rounded-md gap-3"
+                              "group flex items-center px-2 py-2 text-sm font-medium rounded-md gap-x-3" 
                             )}
                           >
                             <div className="flex flex-row items center gap-3">
@@ -91,7 +91,7 @@ const Dropdown = ({ subCategory }) => {
           </div>
         </div>
 
-        <div className="relative p-1">
+        <div className="relative p-1 min-w-max">
           <Items sections={subCatArray} />
         </div>
       </div>
