@@ -1102,7 +1102,7 @@ export const categoryObj = [
             {
                 id: "94a39167-50d0-49f3-b010-a969053901e8",
                 name: "Toys & games",
-                icon: "Toys & gamesIcon",
+                icon:  <Icons2.toy />,
                 sections: [
                     {
                         id: "d42a7126-6fd8-4921-8889-81423284ba8e",
@@ -1169,7 +1169,7 @@ export const categoryObj = [
             {
                 id: "bc26d2f8-e277-4691-b989-967efb255231",
                 name: "Baby care",
-                icon: "Baby careIcon",
+                icon: <Icons2.babycare/>,
                 sections: [
                     {
                         id: "dcdce7f5-9df6-43dd-8936-fd042da29a04",
@@ -1216,7 +1216,7 @@ export const categoryObj = [
             {
                 id: "5fa3d406-b348-4447-b3ed-4ff6633d65da",
                 name: "Strollers",
-                icon: "StrollersIcon",
+                icon: <Icons2.strollers/>,
                 sections: [
                     {
                         id: "a1872e18-742c-48e5-8146-f988ba0b343b",
@@ -1253,7 +1253,7 @@ export const categoryObj = [
             {
                 id: "49e606f2-736a-44e1-addf-7d72dc76ff36",
                 name: "Ride-on toys",
-                icon: "Ride-on toysIcon",
+                icon: <Icons2.rideon/>,
                 sections: [
                     {
                         id: "2503b3a4-5a8c-42cb-8f0c-6a379d0eb3b3",
@@ -1310,7 +1310,7 @@ export const categoryObj = [
             {
                 id: "8a479fda-1a4d-49a6-bd09-63f8b7048a02",
                 name: "Chairs",
-                icon: "ChairsIcon",
+                icon: <Icons2.babychair/>,
                 sections: [
                     {
                         id: "9935e695-2a37-43a3-b8ed-b71824b1014a",
@@ -1327,7 +1327,7 @@ export const categoryObj = [
             {
                 id: "60e22138-bb3a-446c-9d2b-d16694214e86",
                 name: "Kids' furniture",
-                icon: "Kids' furnitureIcon",
+                icon: <Icons2.kidsfurniture/>,
                 sections: [
                     {
                         id: "d8233b2c-b0bb-442a-9d52-9947556296b4",
@@ -1359,7 +1359,7 @@ export const categoryObj = [
             {
                 id: "0a92396a-df99-402e-be82-43490d5bc4d5",
                 name: "School supplies",
-                icon: "School suppliesIcon",
+                icon: <Icons2.scoolitems/>,
                 sections: [
                     {
                         id: "4733d771-a345-4d8b-8028-cb7552da978e",
@@ -1381,7 +1381,7 @@ export const categoryObj = [
             {
                 id: "b825c65f-7b2c-4f17-82d5-6b547b4dc4fd",
                 name: "Other kids' items",
-                icon: "Other kids' itemsIcon",
+                icon:<Icons2.otherkids/>,
             },
         ]
     },
@@ -1440,7 +1440,7 @@ export const categoryObj = [
             {
                 id: "176ad67a-72ca-43a9-9006-e4b5e992dfe4",
                 name: "Textiles",
-                icon: "TextilesIcon",
+                icon: <Icons2.textiles/>,
                 sections: [
                     {
                         id: "ac02d408-82c6-473a-a628-eeef279d906a",
@@ -1492,7 +1492,7 @@ export const categoryObj = [
             {
                 id: "5f40b607-a0a0-43b9-a0a1-e46b6d2725b2",
                 name: "Home accessories",
-                icon: "Home accessoriesIcon",
+                icon: <Icons2.homeaccessories/>,
                 sections: [
                     {
                         id: "9c286464-1c82-405a-8ca5-3ef0b0203b7e",
@@ -1539,7 +1539,7 @@ export const categoryObj = [
             {
                 id: "affed912-7e53-454d-9d5f-e26826052c8a",
                 name: "Tableware",
-                icon: "TablewareIcon",
+                icon: <Icons2.tableware/>,
                 sections: [
                     {
                         id: "adaf58a2-97b8-4b72-99d6-7ea26ba21324",
@@ -1660,7 +1660,7 @@ export const categoryObj = [
             {
                 id: "7d7f1abe-07d9-4064-8cf7-6fb3e45f8b80",
                 name: "Video games & consoles",
-                icon: "Video games & consolesIcon",
+                icon: <Icons2.videogame/>,
                 sections: [
                     {
                         id: "7eaac6a5-e5a6-4e1b-8430-7af4c3dadaca",
@@ -1747,7 +1747,7 @@ export const categoryObj = [
             {
                 id: "ec258d66-99ec-49ef-9d67-f3dbf4aa74ec",
                 name: "Games & puzzles",
-                icon: "Games & puzzlesIcon",
+                icon: <Icons2.game/>,
                 sections: [
                     {
                         id: "All",
@@ -1804,7 +1804,7 @@ export const categoryObj = [
             {
                 id: "e4996c13-681f-4077-b8d7-28fe196cb496",
                 name: "Music & video",
-                icon: "Music & videoIcon",
+                icon: <Icons2.music/>,
                 sections: [
                     {
                         id: "2f649168-fcb7-4224-a7ea-074fde40d9e8",
@@ -1826,7 +1826,7 @@ export const categoryObj = [
             {
                 id: "adb8f982-acc5-49ff-8680-a1b2e32d8c25",
                 name: "Books",
-                icon: "BooksIcon",
+                icon: <Icons2.books/>,
                 sections: [
                     {
                         id: "0fe00382-1114-4980-abbd-f1fae3bfa70f",
