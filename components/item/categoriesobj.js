@@ -8,7 +8,7 @@ export const categoryObj = [
         id: "91ba7308-b68e-4d0c-85d8-0cc8272c6bc8",
         name: "All",
         icon: <Icons2.seeall />,
-        href: "Women/Clothes/All".split(" ").join("-").trim().toLowerCase(),
+        href: "Women".split(" ").join("-").trim().toLowerCase(),
         sections: [
           {
             id: "9b7a7a58-04a1-4aba-ba68-0e6b1390021e",
@@ -763,7 +763,7 @@ export const categoryObj = [
         id: "436d0989-3dee-47bb-a08e-7d1f5f97d70e",
         name: "All",
         icon: <Icons2.seeall />,
-        href: "Men/Clothes/All".split(" ").join("-").trim().toLowerCase(),
+        href: "Men".split(" ").join("-").trim().toLowerCase(),
         sections: [
           {
             id: "6f1494ef-3201-444f-9f51-d5c1fa4d1114",
@@ -1265,7 +1265,7 @@ export const categoryObj = [
         id: "77b47071-b078-437a-a4b4-5fa855bd4b99",
         name: "All",
         icon: <Icons2.seeall />,
-        href: "Kids/Girls' clothing/All"
+        href: "Kids"
           .split(" ")
           .join("-")
           .trim()
@@ -2278,7 +2278,7 @@ export const categoryObj = [
         id: "494c8c94-3d50-4a43-8477-29529f5200f9",
         name: "All",
         icon: <Icons2.seeall />,
-        href: "Home/Home accessories/All"
+        href: "Home"
           .split(" ")
           .join("-")
           .trim()
@@ -2574,7 +2574,7 @@ export const categoryObj = [
         id: "7d7f1abe-07d9-4064-8cf7-6fb3e45f8b80",
         name: "All",
         icon: <Icons2.seeall />,
-        href: "Entertainment/Video games & consoles/All"
+        href: "Entertainment"
           .split(" ")
           .join("-")
           .trim()
