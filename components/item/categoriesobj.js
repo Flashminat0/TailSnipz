@@ -269,12 +269,12 @@ export const categoryObj = [
                         href: "Women/Bags/Shoulder bags".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "0a778fc2-0d51-4afa-b556-5a6507dc7916",
+                        id: "0a778fc2-0d51-4afa-b556-5a6507dc7917",
                         name: "Tote bags",
                         href: "Women/Bags/Tote bags".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "84e77ab3-d514-4001-8814-d526b18e6c11",
+                        id: "84e77ab3-d514-4001-8814-d526b18e6c12",
                         name: "Purses & wallets",
                         href: "Women/Bags/Purses & wallets".split(' ').join('-').trim().toLowerCase()
                     },
@@ -1281,7 +1281,7 @@ export const categoryObj = [
                         href: "Kids/Ride-on toys/Sleds, skis & snowboards".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "2be6913d-067b-462b-866a-c547b782b256",
+                        id: "2be6913d-067b-462b-866a-c547b782b255",
                         name: "Baby walkers",
                         href: "Kids/Ride-on toys/Baby walkers".split(' ').join('-').trim().toLowerCase()
                     },
@@ -1318,7 +1318,7 @@ export const categoryObj = [
                         href: "Kids/Chairs/All".split(' ').join('-').trim().toLowerCase()
                     },
                     {
-                        id: "9935e695-2a37-43a3-b8ed-b71824b1014a",
+                        id: "9935e695-2a37-43a3-b8ed-b71824b1014b",
                         name: "Feeding chairs",
                         href: "Kids/Chairs/Feeding chairs".split(' ').join('-').trim().toLowerCase()
                     },
@@ -1377,12 +1377,7 @@ export const categoryObj = [
                         href: "Kids/School supplies/School bags".split(' ').join('-').trim().toLowerCase()
                     },
                 ]
-            },
-            {
-                id: "b825c65f-7b2c-4f17-82d5-6b547b4dc4fd",
-                name: "Other kids' items",
-                icon:<Icons2.otherkids/>,
-            },
+            }
         ]
     },
     {
@@ -1658,7 +1653,7 @@ export const categoryObj = [
                 ]
             },
             {
-                id: "7d7f1abe-07d9-4064-8cf7-6fb3e45f8b80",
+                id: "7d7f1abe-07d9-4064-8cf7-6fb3e45f8b81",
                 name: "Video games & consoles",
                 icon: <Icons2.videogame/>,
                 sections: [

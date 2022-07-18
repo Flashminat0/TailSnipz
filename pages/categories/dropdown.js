@@ -1,7 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment, useState, useEffect } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Items from "./items";
 
 function classNames(...classes) {
@@ -72,7 +71,7 @@ const Dropdown = ({ subCategory }) => {
                               subcat.current
                                 ? "bg-gray-200 text-gray-900"
                                 : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
-                              "group flex items-center px-2 py-2 text-sm font-medium rounded-md gap-x-3" 
+                              "group flex items-center px-2 py-2 text-sm font-medium rounded-md gap-x-3"
                             )}
                           >
                             <div className="flex flex-row items center gap-3">
@@ -91,7 +90,7 @@ const Dropdown = ({ subCategory }) => {
           </div>
         </div>
 
-        <div className="relative p-1 min-w-max">
+        <div className="relative p-1">
           <Items sections={subCatArray} />
         </div>
       </div>

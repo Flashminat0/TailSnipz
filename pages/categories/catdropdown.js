@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import Dropdown from "./dropdown";
 
@@ -15,7 +15,7 @@ const CatDropDown = () => {
     <div className="hidden md:block ">
       <div className="flex flex-row gap-2 md:w-3/4 lg:w-1/4">
         {categoryObj.map((singleMainCategory) => (
-          <Popover className="z-0 relative">
+          <Popover className="z-0 relative" key={singleMainCategory.id}>
             {({ open }) => (
               <>
                 <div>
@@ -28,7 +28,7 @@ const CatDropDown = () => {
                         )}
                       >
                         <span
-                          key={singleMainCategory.id}
+                          
                           onClick={() => {
                             setMainCatArray(singleMainCategory.subCategory);
                           }}

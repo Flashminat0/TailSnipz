@@ -44,8 +44,8 @@ export const menskinny = () => {
           transform="translate(57 190)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -55,8 +55,8 @@ export const menskinny = () => {
           transform="translate(60.91 191.303)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -80,8 +80,8 @@ export const shirt1 = () => {
           transform="translate(-2 189)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -91,8 +91,8 @@ export const shirt1 = () => {
           transform="translate(9.465 13.349)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -102,8 +102,8 @@ export const shirt1 = () => {
           transform="translate(36.465 13.349)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -113,8 +113,8 @@ export const shirt1 = () => {
           transform="translate(3.865 189)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -137,8 +137,8 @@ export const shirt2 = () => {
           transform="translate(-65.762 189)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -148,8 +148,8 @@ export const shirt2 = () => {
           transform="translate(10 13.349)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -159,8 +159,8 @@ export const shirt2 = () => {
           transform="translate(37 13.349)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -170,8 +170,8 @@ export const shirt2 = () => {
           transform="translate(-59.897 189)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -181,8 +181,8 @@ export const shirt2 = () => {
           transform="translate(0 28.349)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -192,8 +192,8 @@ export const shirt2 = () => {
           transform="translate(37 28.349)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -217,8 +217,8 @@ export const shirt3 = () => {
           transform="translate(-130 191.955)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -228,8 +228,8 @@ export const shirt3 = () => {
           transform="translate(10.058 18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -239,8 +239,8 @@ export const shirt3 = () => {
           transform="translate(36.058 18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -250,8 +250,8 @@ export const shirt3 = () => {
           transform="translate(-125.439 190)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -261,8 +261,8 @@ export const shirt3 = () => {
           transform="translate(-124.135 190)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -272,8 +272,8 @@ export const shirt3 = () => {
           transform="translate(23.058 10)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -283,8 +283,8 @@ export const shirt3 = () => {
           transform="translate(23.058 41)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -294,8 +294,8 @@ export const shirt3 = () => {
           transform="translate(0.058 21)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -305,8 +305,8 @@ export const shirt3 = () => {
           transform="translate(36.058 21)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -330,8 +330,8 @@ export const shirt4 = () => {
           transform="translate(-194 191.955)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -341,8 +341,8 @@ export const shirt4 = () => {
           transform="translate(10.355 18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -352,8 +352,8 @@ export const shirt4 = () => {
           transform="translate(36.355 18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -363,8 +363,8 @@ export const shirt4 = () => {
           transform="translate(-189.439 190)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -374,8 +374,8 @@ export const shirt4 = () => {
           transform="translate(-188.135 190)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -385,8 +385,8 @@ export const shirt4 = () => {
           transform="translate(23.355 10)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -396,8 +396,8 @@ export const shirt4 = () => {
           transform="translate(23.355 41)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -407,8 +407,8 @@ export const shirt4 = () => {
           transform="translate(0.355 36)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -418,8 +418,8 @@ export const shirt4 = () => {
           transform="translate(36.355 36)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -443,8 +443,8 @@ export const shirt5 = () => {
           transform="translate(-257.652 191.955)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -454,8 +454,8 @@ export const shirt5 = () => {
           transform="translate(10 18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -465,8 +465,8 @@ export const shirt5 = () => {
           transform="translate(37 18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -476,8 +476,8 @@ export const shirt5 = () => {
           transform="translate(-253.09 190)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -487,8 +487,8 @@ export const shirt5 = () => {
           transform="translate(-251.787 190)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -498,8 +498,8 @@ export const shirt5 = () => {
           transform="translate(23 41)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -509,8 +509,8 @@ export const shirt5 = () => {
           transform="translate(0 36)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -520,8 +520,8 @@ export const shirt5 = () => {
           transform="translate(37 36)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -531,8 +531,8 @@ export const shirt5 = () => {
           transform="translate(23 23)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -556,8 +556,8 @@ export const shirt6 = () => {
           transform="translate(-321.949 191.955)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -567,8 +567,8 @@ export const shirt6 = () => {
           transform="translate(10 18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -578,8 +578,8 @@ export const shirt6 = () => {
           transform="translate(36 18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -589,8 +589,8 @@ export const shirt6 = () => {
           transform="translate(23 5)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -600,8 +600,8 @@ export const shirt6 = () => {
           transform="translate(0 36)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -611,8 +611,8 @@ export const shirt6 = () => {
           transform="translate(0 28)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -622,8 +622,8 @@ export const shirt6 = () => {
           transform="translate(0 20)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -633,8 +633,8 @@ export const shirt6 = () => {
           transform="translate(0 12)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -644,8 +644,8 @@ export const shirt6 = () => {
           transform="translate(36 36)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -655,8 +655,8 @@ export const shirt6 = () => {
           transform="translate(36 28)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -666,8 +666,8 @@ export const shirt6 = () => {
           transform="translate(36 20)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -677,8 +677,8 @@ export const shirt6 = () => {
           transform="translate(36 12)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -689,8 +689,8 @@ export const shirt6 = () => {
           transform="translate(13)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -700,8 +700,8 @@ export const shirt6 = () => {
           transform="translate(10 18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -711,8 +711,8 @@ export const shirt6 = () => {
           transform="translate(15 10)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -722,8 +722,8 @@ export const shirt6 = () => {
           transform="translate(10 28)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -733,8 +733,8 @@ export const shirt6 = () => {
           transform="translate(10 38)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -757,8 +757,8 @@ export const shirt7 = () => {
           transform="translate(-386 191.955)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -768,8 +768,8 @@ export const shirt7 = () => {
           transform="translate(10.245 18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -779,8 +779,8 @@ export const shirt7 = () => {
           transform="translate(36.245 18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -791,8 +791,8 @@ export const shirt7 = () => {
           transform="translate(13.245)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -802,8 +802,8 @@ export const shirt7 = () => {
           transform="translate(0.245 18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -813,8 +813,8 @@ export const shirt7 = () => {
           transform="translate(0.245 28)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -824,8 +824,8 @@ export const shirt7 = () => {
           transform="translate(41.245 18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -835,8 +835,8 @@ export const shirt7 = () => {
           transform="translate(41.245 28)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -846,8 +846,8 @@ export const shirt7 = () => {
           transform="translate(-385.348 204.987)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -857,8 +857,8 @@ export const shirt7 = () => {
           transform="translate(-371.664 204.987)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -869,8 +869,8 @@ export const shirt7 = () => {
           transform="translate(16.245 31)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -880,8 +880,8 @@ export const shirt7 = () => {
           transform="translate(20.245 17)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -891,8 +891,8 @@ export const shirt7 = () => {
           transform="translate(16.245 23)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -915,8 +915,8 @@ export const blouse1 = () => {
           transform="translate(57 129.91)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -926,8 +926,8 @@ export const blouse1 = () => {
           transform="translate(59.606 126)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -950,8 +950,8 @@ export const blouse2 = () => {
           transform="translate(-7 126)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -961,8 +961,8 @@ export const blouse2 = () => {
           transform="translate(-3.09 127.303)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -985,8 +985,8 @@ export const blouse03 = () => {
           transform="translate(-66 125)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -996,8 +996,8 @@ export const blouse03 = () => {
           transform="translate(-62.742 130.213)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1007,8 +1007,8 @@ export const blouse03 = () => {
           transform="translate(-60.135 125)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -1031,8 +1031,8 @@ export const blouse04 = () => {
           transform="translate(-130 125)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1042,8 +1042,8 @@ export const blouse04 = () => {
           transform="translate(-126.742 130.213)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1053,8 +1053,8 @@ export const blouse04 = () => {
           transform="translate(-124.135 125)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1064,8 +1064,8 @@ export const blouse04 = () => {
           transform="translate(0.058 27.983)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1075,8 +1075,8 @@ export const blouse04 = () => {
           transform="translate(36.058 27.983)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -1099,8 +1099,8 @@ export const blouse05 = () => {
           transform="translate(-189.439 126)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1110,8 +1110,8 @@ export const blouse05 = () => {
           transform="translate(-188.135 126)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1121,8 +1121,8 @@ export const blouse05 = () => {
           transform="translate(-194 127.955)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1132,8 +1132,8 @@ export const blouse05 = () => {
           transform="translate(-180.316 127.955)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1143,8 +1143,8 @@ export const blouse05 = () => {
           transform="translate(-190.742 132.516)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1154,8 +1154,8 @@ export const blouse05 = () => {
           transform="translate(23.355 10.11)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1165,8 +1165,8 @@ export const blouse05 = () => {
           transform="translate(23.355 41.11)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1176,8 +1176,8 @@ export const blouse05 = () => {
           transform="translate(0.355 21.11)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1187,8 +1187,8 @@ export const blouse05 = () => {
           transform="translate(36.355 21.11)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -1211,8 +1211,8 @@ export const blouse06 = () => {
           transform="translate(-253.09 126)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1222,8 +1222,8 @@ export const blouse06 = () => {
           transform="translate(-251.787 126)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1233,8 +1233,8 @@ export const blouse06 = () => {
           transform="translate(-257.652 127.955)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1244,8 +1244,8 @@ export const blouse06 = () => {
           transform="translate(-243.968 127.955)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1255,8 +1255,8 @@ export const blouse06 = () => {
           transform="translate(-254.394 132.516)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1266,8 +1266,8 @@ export const blouse06 = () => {
           transform="translate(23 10.11)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1277,8 +1277,8 @@ export const blouse06 = () => {
           transform="translate(23 41.11)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1288,8 +1288,8 @@ export const blouse06 = () => {
           transform="translate(0 36.11)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1299,8 +1299,8 @@ export const blouse06 = () => {
           transform="translate(37 36.11)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -1323,8 +1323,8 @@ export const frock01 = () => {
           transform="translate(-323.394 126)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1334,8 +1334,8 @@ export const frock01 = () => {
           transform="translate(-326 135.123)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1346,8 +1346,8 @@ export const frock01 = () => {
           transform="translate(6.342 36.11)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1357,8 +1357,8 @@ export const frock01 = () => {
           transform="translate(16.342 41.11)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1369,8 +1369,8 @@ export const frock01 = () => {
           transform="translate(21.342 33.11)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -1393,8 +1393,8 @@ export const frock02 = () => {
           transform="translate(-387.394 128.175)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1404,8 +1404,8 @@ export const frock02 = () => {
           transform="translate(-390 134.692)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1416,8 +1416,8 @@ export const frock02 = () => {
           transform="translate(6.639 35.55)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1427,8 +1427,8 @@ export const frock02 = () => {
           transform="translate(16.639 40.55)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1439,8 +1439,8 @@ export const frock02 = () => {
           transform="translate(21.639 32.55)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1450,8 +1450,8 @@ export const frock02 = () => {
           transform="translate(9.639 -0.45)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1461,8 +1461,8 @@ export const frock02 = () => {
           transform="translate(22.639 -0.45)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -1490,8 +1490,8 @@ export const short = () => {
           transform="translate(0.168 0.143)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1501,8 +1501,8 @@ export const short = () => {
           transform="translate(62 63.33)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1512,8 +1512,8 @@ export const short = () => {
           transform="translate(23.168 15.143)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1523,8 +1523,8 @@ export const short = () => {
           transform="translate(62 63.33)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1534,8 +1534,8 @@ export const short = () => {
           transform="translate(75.684 63.33)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1545,8 +1545,8 @@ export const short = () => {
           transform="translate(0.168 38.143)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1556,8 +1556,8 @@ export const short = () => {
           transform="translate(26.168 38.143)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -1581,8 +1581,8 @@ export const trouser = () => {
           transform="translate(-8 62)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1592,8 +1592,8 @@ export const trouser = () => {
           transform="translate(1.555 5.241)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1603,8 +1603,8 @@ export const trouser = () => {
           transform="translate(13.555 12.241)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1614,8 +1614,8 @@ export const trouser = () => {
           transform="translate(-7.348 63.955)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1625,8 +1625,8 @@ export const trouser = () => {
           transform="translate(-0.832 63.955)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1636,8 +1636,8 @@ export const trouser = () => {
           transform="translate(1.555 42.241)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1647,8 +1647,8 @@ export const trouser = () => {
           transform="translate(16.555 42.241)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -1672,8 +1672,8 @@ export const skirt01 = () => {
           transform="translate(4.762 0.18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1684,8 +1684,8 @@ export const skirt01 = () => {
           transform="translate(41.107 4.793)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1696,8 +1696,8 @@ export const skirt01 = () => {
           transform="translate(0 4.793)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1707,8 +1707,8 @@ export const skirt01 = () => {
           transform="translate(-63.973 61.459)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1718,8 +1718,8 @@ export const skirt01 = () => {
           transform="translate(-53.33 61.459)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1729,8 +1729,8 @@ export const skirt01 = () => {
           transform="translate(-66 72.609)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1741,8 +1741,8 @@ export const skirt01 = () => {
           transform="translate(7.705 22.41)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1752,8 +1752,8 @@ export const skirt01 = () => {
           transform="translate(22.762 28.18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1764,8 +1764,8 @@ export const skirt01 = () => {
           transform="translate(31.762 21.18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -1789,8 +1789,8 @@ export const skirt02 = () => {
           transform="translate(5.058 0.18)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1801,8 +1801,8 @@ export const skirt02 = () => {
           transform="translate(41.107 4.793)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1813,8 +1813,8 @@ export const skirt02 = () => {
           transform="translate(0 4.793)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1824,8 +1824,8 @@ export const skirt02 = () => {
           transform="translate(-127.973 61.459)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1835,8 +1835,8 @@ export const skirt02 = () => {
           transform="translate(-117.33 61.459)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1846,8 +1846,8 @@ export const skirt02 = () => {
           transform="translate(-130 72.609)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1857,8 +1857,8 @@ export const skirt02 = () => {
           transform="translate(-129.553 70.152)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -1882,8 +1882,8 @@ export const underdress01 = () => {
           transform="translate(0.355 -0.16)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1893,8 +1893,8 @@ export const underdress01 = () => {
           transform="translate(-194 59.644)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1905,8 +1905,8 @@ export const underdress01 = () => {
           transform="translate(24.355 22.84)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1917,8 +1917,8 @@ export const underdress01 = () => {
           transform="translate(0 21.509)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1928,8 +1928,8 @@ export const underdress01 = () => {
           transform="translate(-186.832 64.206)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -1953,8 +1953,8 @@ export const underdress02 = () => {
           transform="translate(0 -0.069)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -1964,8 +1964,8 @@ export const underdress02 = () => {
           transform="translate(-257.652 59.431)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1976,8 +1976,8 @@ export const underdress02 = () => {
           transform="translate(0.348 10.395)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -1988,8 +1988,8 @@ export const underdress02 = () => {
           transform="translate(22.645 10.395)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2000,8 +2000,8 @@ export const underdress02 = () => {
           transform="translate(17 10.931)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2012,8 +2012,8 @@ export const underdress02 = () => {
           transform="translate(27 10.931)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -2036,8 +2036,8 @@ export const underdress03 = () => {
           transform="translate(-321.949 55)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2047,8 +2047,8 @@ export const underdress03 = () => {
           transform="translate(17.393 18.237)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2058,8 +2058,8 @@ export const underdress03 = () => {
           transform="translate(0 4.584)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -2086,8 +2086,8 @@ export const underdress04 = () => {
           transform="translate(-386 60.516)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -2097,8 +2097,8 @@ export const underdress04 = () => {
           transform="translate(-386 62.648)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -2108,8 +2108,8 @@ export const underdress04 = () => {
           transform="translate(-376.226 60.516)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -2119,8 +2119,8 @@ export const underdress04 = () => {
           transform="translate(-374.628 62.648)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2130,8 +2130,8 @@ export const underdress04 = () => {
           transform="translate(21.245 26.865)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2141,8 +2141,8 @@ export const underdress04 = () => {
           transform="translate(5.245 -0.135)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2152,8 +2152,8 @@ export const underdress04 = () => {
           transform="translate(42.942 0)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -2178,8 +2178,8 @@ export const bag = () => {
           transform="translate(0 11.487)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -2189,8 +2189,8 @@ export const bag = () => {
           transform="translate(59.696 -2)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2200,8 +2200,8 @@ export const bag = () => {
           transform="translate(2 39.487)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -2225,8 +2225,8 @@ export const bag2 = () => {
           transform="translate(-3.858 12.783)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -2236,8 +2236,8 @@ export const bag2 = () => {
           transform="translate(-4.51 7.57)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -2248,8 +2248,8 @@ export const bag2 = () => {
           transform="translate(14 32.848)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -2259,8 +2259,8 @@ export const bag2 = () => {
           transform="translate(0 -0.152)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -2283,8 +2283,8 @@ export const bag03 = () => {
           transform="translate(-66 0.078)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -2294,8 +2294,8 @@ export const bag03 = () => {
           transform="translate(-65.348 7.245)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -2306,8 +2306,8 @@ export const bag03 = () => {
           transform="translate(9.762 23.816)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -2318,8 +2318,8 @@ export const bag03 = () => {
           transform="translate(29.762 23.816)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2329,8 +2329,8 @@ export const bag03 = () => {
           transform="translate(16.762 26.816)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2340,8 +2340,8 @@ export const bag03 = () => {
           transform="translate(16.762 14.816)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2351,8 +2351,8 @@ export const bag03 = () => {
           transform="translate(21.762 34.816)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -2363,8 +2363,8 @@ export const bag03 = () => {
           transform="translate(11.762 -0.184)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -2388,8 +2388,8 @@ export const bag4 = () => {
           transform="translate(0 26.487)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -2399,8 +2399,8 @@ export const bag4 = () => {
           transform="translate(3 6.487)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -2411,8 +2411,8 @@ export const bag4 = () => {
           transform="translate(6 32.487)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2422,8 +2422,8 @@ export const bag4 = () => {
           transform="translate(11 19.487)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2433,8 +2433,8 @@ export const bag4 = () => {
           transform="translate(14 14.487)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -2444,8 +2444,8 @@ export const bag4 = () => {
           transform="translate(-133.149 -2)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -2455,8 +2455,8 @@ export const bag4 = () => {
           transform="translate(-125.981 -2)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -2480,8 +2480,8 @@ export const bag05 = () => {
           transform="translate(0 12.899)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -2492,8 +2492,8 @@ export const bag05 = () => {
           transform="translate(4 42.899)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -2504,8 +2504,8 @@ export const bag05 = () => {
           transform="translate(20 45.899) rotate(-180)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -2516,8 +2516,8 @@ export const bag05 = () => {
           transform="translate(5 -0.101)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2528,8 +2528,8 @@ export const bag05 = () => {
           transform="translate(8 24.899)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2540,8 +2540,8 @@ export const bag05 = () => {
           transform="translate(13.419 34.236)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2552,8 +2552,8 @@ export const bag05 = () => {
           transform="translate(6.813 19.371)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2563,8 +2563,8 @@ export const bag05 = () => {
           transform="translate(4 -0.101)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -2588,8 +2588,8 @@ export const purse01 = () => {
           transform="translate(0 37.768)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -2599,8 +2599,8 @@ export const purse01 = () => {
           transform="translate(-257.652 5.168)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2610,8 +2610,8 @@ export const purse01 = () => {
           transform="translate(20 24.768)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2621,8 +2621,8 @@ export const purse01 = () => {
           transform="translate(12 30.768)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -2632,8 +2632,8 @@ export const purse01 = () => {
           transform="translate(-254.394 -2)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -2656,8 +2656,8 @@ export const purse02 = () => {
           transform="translate(-322 -6)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -2667,8 +2667,8 @@ export const purse02 = () => {
           transform="translate(30.949 14.913)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2678,8 +2678,8 @@ export const purse02 = () => {
           transform="translate(7.949 5.913)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2688,8 +2688,8 @@ export const purse02 = () => {
           transform="translate(35.949 19.913)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2699,8 +2699,8 @@ export const purse02 = () => {
           transform="translate(1.949 28.913)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2710,8 +2710,8 @@ export const purse02 = () => {
           transform="translate(25.949 28.913)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -2734,8 +2734,8 @@ export const purse03 = () => {
           transform="translate(-386 1.637)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -2745,8 +2745,8 @@ export const purse03 = () => {
           transform="translate(-382.742 -0.318)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <ellipse
@@ -2759,8 +2759,8 @@ export const purse03 = () => {
           transform="translate(16.245 0.358)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <circle
@@ -2772,8 +2772,8 @@ export const purse03 = () => {
           transform="translate(23.245 0.358)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2784,8 +2784,8 @@ export const purse03 = () => {
           transform="translate(3.303 26.502)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2796,8 +2796,8 @@ export const purse03 = () => {
           transform="translate(32.206 26.502)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2808,8 +2808,8 @@ export const purse03 = () => {
           transform="translate(13.245 21.358)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2820,8 +2820,8 @@ export const purse03 = () => {
           transform="translate(23.123 21.547)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -2845,8 +2845,8 @@ export const childdress = () => {
           transform="translate(-386 1.637)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -2856,8 +2856,8 @@ export const childdress = () => {
           transform="translate(-382.742 -0.318)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <ellipse
@@ -2870,8 +2870,8 @@ export const childdress = () => {
           transform="translate(16.245 0.358)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <circle
@@ -2883,8 +2883,8 @@ export const childdress = () => {
           transform="translate(23.245 0.358)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2895,8 +2895,8 @@ export const childdress = () => {
           transform="translate(3.303 26.502)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2907,8 +2907,8 @@ export const childdress = () => {
           transform="translate(32.206 26.502)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2919,8 +2919,8 @@ export const childdress = () => {
           transform="translate(13.245 21.358)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2931,8 +2931,8 @@ export const childdress = () => {
           transform="translate(23.123 21.547)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -2956,8 +2956,8 @@ export const shoes1 = () => {
           transform="translate(61.523 -71)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2967,8 +2967,8 @@ export const shoes1 = () => {
           transform="translate(9.381 8.419)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -2978,8 +2978,8 @@ export const shoes1 = () => {
           transform="translate(62.055 -65.787)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -2989,8 +2989,8 @@ export const shoes1 = () => {
           transform="translate(7.381 8.419)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -3000,8 +3000,8 @@ export const shoes1 = () => {
           transform="translate(71.638 -71)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3011,8 +3011,8 @@ export const shoes1 = () => {
           transform="translate(34.381 8.419)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -3022,8 +3022,8 @@ export const shoes1 = () => {
           transform="translate(71.638 -65.787)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3033,8 +3033,8 @@ export const shoes1 = () => {
           transform="translate(32.381 8.419)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -3057,8 +3057,8 @@ export const shoes02 = () => {
           transform="translate(-2 -74)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -3068,8 +3068,8 @@ export const shoes02 = () => {
           transform="translate(-2 -67.484)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3080,8 +3080,8 @@ export const shoes02 = () => {
           transform="translate(19.819 4.129)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3092,8 +3092,8 @@ export const shoes02 = () => {
           transform="translate(26.426 7.432)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -3103,8 +3103,8 @@ export const shoes02 = () => {
           transform="translate(-2 -70.742)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -3128,8 +3128,8 @@ export const shoes03 = () => {
           transform="translate(-65.762 -73)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -3140,8 +3140,8 @@ export const shoes03 = () => {
           transform="translate(0 19.868)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3151,8 +3151,8 @@ export const shoes03 = () => {
           transform="translate(0 24.868)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3162,8 +3162,8 @@ export const shoes03 = () => {
           transform="translate(7 24.868)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3173,8 +3173,8 @@ export const shoes03 = () => {
           transform="translate(13 24.868)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3184,8 +3184,8 @@ export const shoes03 = () => {
           transform="translate(20 24.868)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3195,8 +3195,8 @@ export const shoes03 = () => {
           transform="translate(27 24.868)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3206,8 +3206,8 @@ export const shoes03 = () => {
           transform="translate(33 24.868)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3217,8 +3217,8 @@ export const shoes03 = () => {
           transform="translate(40 24.868)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3228,8 +3228,8 @@ export const shoes03 = () => {
           transform="translate(46 24.868)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3240,8 +3240,8 @@ export const shoes03 = () => {
           transform="translate(23.361 5)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3252,8 +3252,8 @@ export const shoes03 = () => {
           transform="translate(28 8.868)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -3263,8 +3263,8 @@ export const shoes03 = () => {
           transform="translate(-65.762 -68.439)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -3274,8 +3274,8 @@ export const shoes03 = () => {
           transform="translate(-57.291 -69.09)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -3298,8 +3298,8 @@ export const shoes04 = () => {
           transform="translate(-130 -73)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -3310,8 +3310,8 @@ export const shoes04 = () => {
           transform="translate(0.058 19.667)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3322,8 +3322,8 @@ export const shoes04 = () => {
           transform="translate(23.123 5)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3334,8 +3334,8 @@ export const shoes04 = () => {
           transform="translate(28.058 8.667)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -3345,8 +3345,8 @@ export const shoes04 = () => {
           transform="translate(-130 -68.439)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -3356,8 +3356,8 @@ export const shoes04 = () => {
           transform="translate(-118.271 -69.09)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -3380,8 +3380,8 @@ export const shoes05 = () => {
           transform="translate(-194 -73)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -3392,8 +3392,8 @@ export const shoes05 = () => {
           transform="translate(0.355 19.667)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -3416,8 +3416,8 @@ export const shoes06 = () => {
           transform="translate(-258 -70)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -3427,8 +3427,8 @@ export const shoes06 = () => {
           transform="translate(-257.348 -70)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3438,8 +3438,8 @@ export const shoes06 = () => {
           transform="translate(18.546 31.174)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -3462,8 +3462,8 @@ export const shoes07 = () => {
           transform="translate(-321.949 -71)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3473,8 +3473,8 @@ export const shoes07 = () => {
           transform="translate(18 24.965)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3484,8 +3484,8 @@ export const shoes07 = () => {
           transform="translate(0 19.965)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3496,8 +3496,8 @@ export const shoes07 = () => {
           transform="translate(20 7.965)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3508,8 +3508,8 @@ export const shoes07 = () => {
           transform="translate(24.826 12.849)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3519,8 +3519,8 @@ export const shoes07 = () => {
           transform="translate(0 4.965)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -3544,8 +3544,8 @@ export const shoes08 = () => {
           transform="translate(0.245 34.441)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -3555,8 +3555,8 @@ export const shoes08 = () => {
           transform="translate(-386 -66)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3566,8 +3566,8 @@ export const shoes08 = () => {
           transform="translate(6.245 34.441)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3577,8 +3577,8 @@ export const shoes08 = () => {
           transform="translate(13.245 34.441)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3588,8 +3588,8 @@ export const shoes08 = () => {
           transform="translate(20.245 34.441)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3599,8 +3599,8 @@ export const shoes08 = () => {
           transform="translate(26.245 34.441)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3610,8 +3610,8 @@ export const shoes08 = () => {
           transform="translate(33.245 34.441)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3621,8 +3621,8 @@ export const shoes08 = () => {
           transform="translate(39.245 34.441)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -3632,8 +3632,8 @@ export const shoes08 = () => {
           transform="translate(-386 -56.252)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -3656,8 +3656,8 @@ export const socks = () => {
           transform="translate(57 -130)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -3667,8 +3667,8 @@ export const socks = () => {
           transform="translate(57 -122.832)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -3678,8 +3678,8 @@ export const socks = () => {
           transform="translate(65.906 -118.923)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3689,8 +3689,8 @@ export const socks = () => {
           transform="translate(0 6.606)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -3714,8 +3714,8 @@ export const gloves = () => {
           transform="translate(9.879 39.484)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -3725,8 +3725,8 @@ export const gloves = () => {
           transform="translate(-0.373 -130)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -3736,8 +3736,8 @@ export const gloves = () => {
           transform="translate(-4.171 -122.069)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3748,8 +3748,8 @@ export const gloves = () => {
           transform="translate(15.907 8.258)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3760,8 +3760,8 @@ export const gloves = () => {
           transform="translate(20.683 22.108)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3772,8 +3772,8 @@ export const gloves = () => {
           transform="translate(12.93 30.59)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -3798,8 +3798,8 @@ export const shawls = () => {
           transform="translate(5)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -3810,8 +3810,8 @@ export const shawls = () => {
           transform="translate(5 33)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3822,8 +3822,8 @@ export const shawls = () => {
           transform="translate(5 13)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3834,8 +3834,8 @@ export const shawls = () => {
           transform="translate(25 13)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3845,8 +3845,8 @@ export const shawls = () => {
           transform="translate(0 13)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3856,8 +3856,8 @@ export const shawls = () => {
           transform="translate(0 6)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3867,8 +3867,8 @@ export const shawls = () => {
           transform="translate(0)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3878,8 +3878,8 @@ export const shawls = () => {
           transform="translate(42 46)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3889,8 +3889,8 @@ export const shawls = () => {
           transform="translate(42 39)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3900,8 +3900,8 @@ export const shawls = () => {
           transform="translate(42 33)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3911,8 +3911,8 @@ export const shawls = () => {
           transform="translate(7 39)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3922,8 +3922,8 @@ export const shawls = () => {
           transform="translate(30 39)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3933,8 +3933,8 @@ export const shawls = () => {
           transform="translate(12 6)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3944,8 +3944,8 @@ export const shawls = () => {
           transform="translate(22 6)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -3956,8 +3956,8 @@ export const shawls = () => {
           transform="translate(20.898 17.684)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -3981,8 +3981,8 @@ export const hat = () => {
           transform="translate(0 36)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -3992,8 +3992,8 @@ export const hat = () => {
           transform="translate(3 1)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -4003,8 +4003,8 @@ export const hat = () => {
           transform="translate(-124.224 -127.342)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4014,8 +4014,8 @@ export const hat = () => {
           transform="translate(8 41)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4025,8 +4025,8 @@ export const hat = () => {
           transform="translate(18 41)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4036,8 +4036,8 @@ export const hat = () => {
           transform="translate(28 41)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4047,8 +4047,8 @@ export const hat = () => {
           transform="translate(38 41)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4058,8 +4058,8 @@ export const hat = () => {
           transform="translate(23)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4069,8 +4069,8 @@ export const hat = () => {
           transform="translate(3 23)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4080,8 +4080,8 @@ export const hat = () => {
           transform="translate(3 29)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4091,8 +4091,8 @@ export const hat = () => {
           transform="translate(31 23)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -4115,8 +4115,8 @@ export const tie = () => {
           transform="translate(-203 -130)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -4126,8 +4126,8 @@ export const tie = () => {
           transform="translate(-203 -125.439)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4138,8 +4138,8 @@ export const tie = () => {
           transform="translate(1.49 26.484)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4150,8 +4150,8 @@ export const tie = () => {
           transform="translate(4.49 36.484)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4162,8 +4162,8 @@ export const tie = () => {
           transform="translate(3.49 18.484)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4174,8 +4174,8 @@ export const tie = () => {
           transform="translate(3.49 4.484)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -4198,8 +4198,8 @@ export const bow = () => {
           transform="translate(-258 -135.574)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -4210,8 +4210,8 @@ export const bow = () => {
           transform="translate(19.652 9)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4221,8 +4221,8 @@ export const bow = () => {
           transform="translate(4.652)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4233,8 +4233,8 @@ export const bow = () => {
           transform="translate(13.652 10)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4245,8 +4245,8 @@ export const bow = () => {
           transform="translate(14.652 15)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -4256,8 +4256,8 @@ export const bow = () => {
           transform="translate(-247.574 -135.574)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4267,8 +4267,8 @@ export const bow = () => {
           transform="translate(41.652)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4279,8 +4279,8 @@ export const bow = () => {
           transform="translate(26.652 10)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4291,8 +4291,8 @@ export const bow = () => {
           transform="translate(26.652 15)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4302,8 +4302,8 @@ export const bow = () => {
           transform="translate(41.652 20)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -4326,8 +4326,8 @@ export const hat02 = () => {
           transform="translate(8)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4337,8 +4337,8 @@ export const hat02 = () => {
           transform="translate(8 22)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <rect
@@ -4349,8 +4349,8 @@ export const hat02 = () => {
           transform="translate(0 29)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -4373,8 +4373,8 @@ export const hat03 = () => {
           transform="translate(-380.787 -134.922)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -4384,8 +4384,8 @@ export const hat03 = () => {
           transform="translate(-372.853 -132.278)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4396,8 +4396,8 @@ export const hat03 = () => {
           transform="translate(0.245 19)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -4407,8 +4407,8 @@ export const hat03 = () => {
           transform="translate(-386 -127.103)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <path
@@ -4418,8 +4418,8 @@ export const hat03 = () => {
           transform="translate(-380.135 -129.71)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
         <line
@@ -4429,8 +4429,8 @@ export const hat03 = () => {
           transform="translate(29.245)"
           fill="none"
           stroke="#f08080"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           strokeWidth="3"
         />
       </g>
@@ -4513,7 +4513,7 @@ export const toy = () => {
     >
       <style>
         {
-          ".st0{fill:none;stroke:#f08080;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}"
+          ".st0{fill:none;stroke:#f08080;stroke-width:2;strokeLinecap:round;strokeLinejoin:round;stroke-miterlimit:10}"
         }
       </style>
       <g
@@ -4555,26 +4555,6 @@ export const strollers = () => {
   );
 };
 
-export const otherkids = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      width="25"
-      height="25"
-    >
-      <defs>
-        <style>{".a{fill:none;stroke:#f08080;stroke-miterlimit:10}"}</style>
-      </defs>
-      <title>{"baggage"}</title>
-      <rect className="a" x={0.5} y={6} width={23} height={16} rx={3} ry={3} />
-      <path
-        className="a"
-        d="M8.5 6V4a2.006 2.006 0 0 1 2-2h3a2.006 2.006 0 0 1 2 2v2M19.5 6v16M16.5 6v16M7.5 6v16M4.5 6v16"
-      />
-    </svg>
-  );
-};
 
 export const rideon = () => {
   return (
@@ -4593,7 +4573,7 @@ export const rideon = () => {
     >
       <style>
         {
-          ".st0{fill:none;stroke:#000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}"
+          ".st0{fill:none;stroke:#000;stroke-width:2;strokeLinecap:round;strokeLinejoin:round;stroke-miterlimit:10}"
         }
       </style>
       <circle className="st0" cx={9} cy={25} r={4} />
@@ -4627,7 +4607,7 @@ export const babychair = () => {
     >
       <style>
         {
-          ".st0{fill:none;stroke:#f08080;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}"
+          ".st0{fill:none;stroke:#f08080;stroke-width:2;strokeLinecap:round;strokeLinejoin:round;stroke-miterlimit:10}"
         }
       </style>
       <ellipse className="st0" cx={16} cy={12.9} rx={8} ry={8.1} />
@@ -4688,7 +4668,7 @@ export const scoolitems = () => {
       <defs>
         <style>
           {
-            ".a{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round}"
+            ".a{fill:none;stroke:#f08080;strokeLinecap:round;strokeLinejoin:round}"
           }
         </style>
       </defs>
@@ -4718,7 +4698,7 @@ export const babycare = () => {
     >
       <style>
         {
-          ".st0{fill:none;stroke:#000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}"
+          ".st0{fill:none;stroke:#000;stroke-width:2;strokeLinecap:round;strokeLinejoin:round;stroke-miterlimit:10}"
         }
       </style>
       <path
@@ -4817,7 +4797,7 @@ export const videogame = () => {
     >
       <style>
         {
-          ".st0{fill:none;stroke:#f08080;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}"
+          ".st0{fill:none;stroke:#f08080;stroke-width:2;strokeLinecap:round;strokeLinejoin:round;stroke-miterlimit:10}"
         }
       </style>
       <path
@@ -4852,7 +4832,7 @@ export const game = () => {
     >
       <style>
         {
-          ".st0{fill:none;stroke:#f08080;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}"
+          ".st0{fill:none;stroke:#f08080;stroke-width:2;strokeLinecap:round;strokeLinejoin:round;stroke-miterlimit:10}"
         }
       </style>
       <path
