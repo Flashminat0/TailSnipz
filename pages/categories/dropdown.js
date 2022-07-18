@@ -59,29 +59,30 @@ const Dropdown = ({ subCategory }) => {
                 <nav className="mt-5 flex-1" aria-label="Sidebar">
                   <div className="inline-grid px-2 gap-y-2">
                     <>
-                      {subCategory.map((subcat) => (
-                        <span
-                          key={subcat.id}
-                          onClick={() => {
-                            setSubCatArray(subcat.sections);
-                          }}
-                        >
-                          <a
-                            className={classNames(
-                              subcat.current
-                                ? "bg-gray-200 text-gray-900"
-                                : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
-                              "group flex items-center px-2 py-2 text-sm font-medium rounded-md gap-x-3"
-                            )}
+                      {subCategory &&
+                        subCategory.map((subcat) => (
+                          <span
+                            key={subcat.id}
+                            onClick={() => {
+                              setSubCatArray(subcat.sections);
+                            }}
                           >
-                            <div className="flex flex-row items center gap-3">
-                              {subcat.icon}
-                            </div>
+                            <a
+                              className={classNames(
+                                subcat.current
+                                  ? "bg-gray-200 text-gray-900"
+                                  : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
+                                "group flex items-center px-2 py-2 text-sm font-medium rounded-md gap-x-3"
+                              )}
+                            >
+                              <div className="flex flex-row items center gap-3">
+                                {subcat.icon}
+                              </div>
 
-                            {subcat.name}
-                          </a>
-                        </span>
-                      ))}
+                              {subcat.name}
+                            </a>
+                          </span>
+                        ))}
                     </>
                   </div>
                 </nav>

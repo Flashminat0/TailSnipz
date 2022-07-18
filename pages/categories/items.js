@@ -4,7 +4,7 @@ const Items = ({ sections }) => {
   return (
     <>
       <div className="mt-1 ml-1 grid md:gap-3 md:grid-cols-2 lg:grid-cols-2 min-h-max pb-2 pr-1">
-        {sections.map((section) => (
+        {sections && sections.map((section) => (
           <div key={section.id}>
             <div className="block px-4 py-1 text-sm truncate bg-white">
               <a
