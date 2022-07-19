@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import axios from "axios";
+import moment from "moment";
+import React, { useEffect, useState } from "react";
 import PurchaseHistoryMobile from "../../components/purchasehistory/PurchaseHistoryMobile";
 
 const Buyer = () => {
@@ -41,13 +43,20 @@ const Buyer = () => {
   ];
 
   const [sampleData, setSampleData] = useState(historyItems)
+  const [sellerId, setSellerId] = useState('629a8c2f26b267cc90f62991')
+  const [items, setItems] = useState([])
+  const [productName, setProductName] = useState()
+
+  useEffect(() => {
+      axios.get('/api/orders/fetch-seller-orders', {params: {sellerId: sellerId}}).then((result) => setItems(result.data.orders))
+  }, [])
 
   return (
     <div className="mt-6 bg-gray-50 p-2">
 
         {/* mobile view */}
         <div className="block sm:hidden ">
-            <PurchaseHistoryMobile title = {"buyer"} description = {"A list of all purchasements of your accout"} data = {sampleData}/>
+            <PurchaseHistoryMobile title = {"buyer"} description = {"A list of all purchasements of your accout"} data = {items}/>
         </div>
 
         {/* desktop view - start */}
@@ -56,7 +65,7 @@ const Buyer = () => {
           <div className="sm:flex-auto">
             <h1 className="text-xl font-semibold text-gray-900">As a buyer</h1>
             <p className="mt-2 text-sm text-gray-700">
-              A list of all purchasements of your accout
+              A list of all purchasements of your account
             </p>
           </div>
         </div>
@@ -94,22 +103,27 @@ const Buyer = () => {
                     </tr>
                   </thead>
                   <tbody className="bg-white">
-                    {sampleData.map((item, itemIdx) => (
+                    {items.map((item, itemIdx) => (
                       <tr
-                        key={item.id}
+                        key={item._id}
                         className={itemIdx % 2 === 0 ? undefined : "bg-gray-50"}
                       >
-                        <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                            {item.product}
+                        <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                          // onChange={handleProducts(item.productId)}
+                        >
+                            {item.productName}
+                            {/* {productName} */}
                         </td>
                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                           {item.price}
                         </td>
                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                          {item.user}
+                          {item.sellerName}
                         </td>
                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                          {item.date}
+                          {/* {item.createdAt} */}
+                          {moment(item.createdAt).format('MMMM Do YYYY')} <br></br>
+                          {moment(item.createdAt).format('h:mm:ss a')} <br></br>
                         </td>
                       </tr>
                     ))}

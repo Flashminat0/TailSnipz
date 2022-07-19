@@ -1,7 +1,10 @@
 import React from 'react'
 import Modallayout from '../layouts/modallayout'
+import moment from "moment";
 
-const PurchaseHistoryModal = ({item , isOpen , setIsOpen}) => {
+const PurchaseHistoryModal = ({title, item , isOpen , setIsOpen}) => {
+
+    console.log(title)
     
   return (
     <div>
@@ -17,7 +20,7 @@ const PurchaseHistoryModal = ({item , isOpen , setIsOpen}) => {
                         </td>
                         <td>
                             <p className="my-1 text-xs text-gray-500">
-                                : &nbsp; {item.product}
+                                : &nbsp; {item.productName}
                             </p>
                         </td>
                     </tr>
@@ -34,16 +37,34 @@ const PurchaseHistoryModal = ({item , isOpen , setIsOpen}) => {
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <p className="my-1 text-xs text-gray-500">
-                                User &nbsp;
-                            </p>
-                        </td>
-                        <td>
-                            <p className="my-1 text-xs text-gray-500">
-                                : &nbsp; {item.user}
-                            </p>
-                        </td>
+                        {
+                            title == "buyer" ? <>
+                             <td>
+                                <p className="my-1 text-xs text-gray-500">
+                                    Seller &nbsp;
+                                </p>
+                                </td>
+                                <td>
+                                    <p className="my-1 text-xs text-gray-500">
+                                        : &nbsp; {item.buyerName}
+                                    </p>
+                            </td>
+                            </>
+                            :
+                            <>
+                                <td>
+                                    <p className="my-1 text-xs text-gray-500">
+                                        Buyer &nbsp;
+                                    </p>
+                                </td>
+                                <td>
+                                    <p className="my-1 text-xs text-gray-500">
+                                        : &nbsp; {item.sellerName}
+                                    </p>
+                                </td>
+                            </>
+                        }
+                       
                     </tr>
                     <tr>
                         <td>
@@ -53,7 +74,7 @@ const PurchaseHistoryModal = ({item , isOpen , setIsOpen}) => {
                         </td>
                         <td>
                             <p className="my-1 text-xs text-gray-500">
-                                : &nbsp; {item.date}
+                                : &nbsp; {moment(item.createdAt).format('MMMM Do YYYY, h:mm:ss a')}                                
                             </p>
                         </td>
                     </tr>

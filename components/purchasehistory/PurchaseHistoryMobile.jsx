@@ -44,6 +44,8 @@ const PurchaseHistoryMobile = ({title,description, data}) => {
     setIsOpen(modalState)
   }
 
+  console.log(data)
+
   return <div>
     
     <div className="px-4 sm:px-6 lg:px-8 ">
@@ -86,12 +88,12 @@ const PurchaseHistoryMobile = ({title,description, data}) => {
                   <tbody className="bg-white">
                     {data.map((item, itemIdx) => (
                       <tr
-                        key={item.id}
+                        key={item._id}
                         className={itemIdx % 2 === 0 ? undefined : "bg-gray-50"}
                       >
                         
                         <td className=" px-3 py-4 text-sm text-gray-500 ">
-                          {item.product}
+                          {item.productName}
                         </td>
                         <td className=" px-3 py-4 text-sm text-gray-500">
                           {item.price}
@@ -102,7 +104,7 @@ const PurchaseHistoryMobile = ({title,description, data}) => {
                                 setModalData(item)
                                 setIsOpen(true);
                             }}/>
-                          <PurchaseHistoryModal isOpen={isOpen} setIsOpen={closeModalHandler} item={modalData}/>
+                          <PurchaseHistoryModal title = {title} isOpen={isOpen} setIsOpen={closeModalHandler} item={modalData}/>
                         </td>
                       </tr>
                     ))}
