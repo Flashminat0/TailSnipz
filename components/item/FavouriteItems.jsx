@@ -79,11 +79,10 @@ const FavouriteItems = () => {
 
     const [items, setItems] = useState([]);
 
-    //TODO check how to get the current user id
+    //TODO check how to get the current user id - localstorage.getitem()
     useEffect(async () => {
-        await axios.get('/api/favourites/fetch-favourites-product-list', {params: {userId: "629a8c2f26b267cc90f62991"}})
+        await axios.get('/api/favourites/fetch-favourites-product-list', {params: {userId: "6295a5df23a7b8fc7496408c"}})
             .then((result) => {
-                console.log(result.data.favourites);
                 setItems(result.data.favourites)
             })
             .catch((err) => {
@@ -95,10 +94,9 @@ const FavouriteItems = () => {
         <FavouriteItemsWrapper>
             {items.map((item) => (
                 <div key={item}>
-                    <FavouriteItemCard id ={item}/>
+                    <FavouriteItemCard id={item}/>
                 </div>
             ))}
-
         </FavouriteItemsWrapper>
     )
 }
