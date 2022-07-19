@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import FavouriteItemsWrapper from '../layouts/FavouriteItemsWrapper';
 import FavouriteItemCard from './FavouriteItemCard';
+import axios from "axios";
 
 const itemsStaticData = [{
     id: 1,
@@ -76,19 +77,30 @@ const itemsStaticData = [{
 
 const FavouriteItems = () => {
 
-    const [items, setItems] = useState(itemsStaticData);
+    const [items, setItems] = useState([]);
 
-  return (
-    <FavouriteItemsWrapper>
-            {items.map((item)=>(
-                <div key={item.id}>
-                    <FavouriteItemCard src={item.src} alt={item.alt} price={item.price} size={item.size}
-                                      brand={item.brand}/>
+    //TODO check how to get the current user id
+    useEffect(async () => {
+        await axios.get('/api/favourites/fetch-favourites-product-list', {params: {userId: "629a8c2f26b267cc90f62991"}})
+            .then((result) => {
+                console.log(result.data.favourites);
+                setItems(result.data.favourites)
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+    }, []);
+
+    return (
+        <FavouriteItemsWrapper>
+            {items.map((item) => (
+                <div key={item}>
+                    <FavouriteItemCard id ={item}/>
                 </div>
             ))}
 
-    </FavouriteItemsWrapper>
-  )
+        </FavouriteItemsWrapper>
+    )
 }
 
 export default FavouriteItems
