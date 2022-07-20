@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PurchaseHistoryMobile from "../../components/purchasehistory/PurchaseHistoryMobile";
+import axios from "axios";
+import moment from "moment";
 
 const Seller = () => {
   const historyItems = [
@@ -41,13 +43,20 @@ const Seller = () => {
   ];
 
   const [sampleData, setSampleData] = useState(historyItems)
+  const [items, setItems] = useState([])
+  const [buyerId, setBuyerId] = useState('6295a5df23a7b8fc7496408c')
+
+  useEffect(() => {
+    axios.get('/api/orders/fetch-buyer-orders', {params: {buyerId: buyerId}}).then((result) => setItems(result.data.orders))
+}, [])
+
 
   return (
     <div className="mt-6 bg-gray-50 p-2">
 
         {/* mobile view */}
         <div className="block sm:hidden ">
-            <PurchaseHistoryMobile title = {"seller"} description = {"A list of all purchasements of other buyers shown below"} data = {sampleData}/>
+            <PurchaseHistoryMobile title = {"seller"} description = {"A list of all purchasements of other buyers shown below"} data = {items}/>
         </div>
         {/* desktop view - start */}
       <div className="px-4 sm:px-6 lg:px-8  sm:visible invisible">
@@ -93,22 +102,24 @@ const Seller = () => {
                     </tr>
                   </thead>
                   <tbody className="bg-white">
-                    {sampleData.map((item, itemIdx) => (
+                    {items.map((item, itemIdx) => (
                       <tr
-                        key={item.id}
+                        key={item._id}
                         className={itemIdx % 2 === 0 ? undefined : "bg-gray-50"}
                       >
                         <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                          {item.product}
+                          {item.productName}
                         </td>
                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                           {item.price}
                         </td>
                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                          {item.user}
+                          {item.buyerName}
                         </td>
                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                          {item.date}
+                          {/* {item.createdAt} */}
+                          {moment(item.createdAt).format('MMMM Do YYYY')} <br></br>
+                          {moment(item.createdAt).format('h:mm:ss a')} <br></br>
                         </td>
                       </tr>
                     ))}
