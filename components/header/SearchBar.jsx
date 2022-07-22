@@ -14,7 +14,6 @@ const SearchBar = ({setSelectedSearchBarOption, selectedSearchBarOption, searchB
     const [searchedItems, setSearchedItems] = useState([]);
 
     useEffect(async () => {
-        console.log(`debounced: ${debounced}`);
         await axios.get('/api/product/search-products', {params: {productName: debounced}})
             .then((result) => {
                 setSearchedItems(result.data.productsList)
