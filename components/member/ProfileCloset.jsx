@@ -3,7 +3,7 @@ import {TbArrowBigUpLine} from 'react-icons/tb';
 import {BiChevronRight} from 'react-icons/bi';
 import SellerItems from "../item/SellerItems";
 
-const ProfileCloset = ({isSameUser, percentage}) => {
+const ProfileCloset = ({userId, isSameUser, percentage}) => {
     return (
         <>
             <div className={'border border-gray-100 hover:bg-gray-50'}>
@@ -31,7 +31,7 @@ const ProfileCloset = ({isSameUser, percentage}) => {
                 </>}
             </div>
             <div className={'px-2 md:px-0 pt-8 pb-6'}>
-                <SellerItems isSameUser={isSameUser}/>
+                <SellerItems userId = {userId} isSameUser={isSameUser}/>
             </div>
         </>
     );
