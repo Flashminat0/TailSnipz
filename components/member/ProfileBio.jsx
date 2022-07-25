@@ -70,6 +70,7 @@ const ProfileBio = () => {
     const [isSameUser, setIsSameUser] = useState(false);
     const [isFollow, setIsFollow] = useState(false);
     const [anyReviews, setAnyReviews] = useState(true);
+    const [userId, setUserId] = useState('629a8c2f26b267cc90f62991')  // get user id 
 
     return (
         <>
@@ -233,7 +234,7 @@ const ProfileBio = () => {
                                 )}
                             >
                                 <ul>
-                                    <ProfileCloset isSameUser={isSameUser} percentage={discountFromBundles}/>
+                                    <ProfileCloset userId = {userId} isSameUser={isSameUser} percentage={discountFromBundles}/>
                                 </ul>
                             </Tab.Panel>
                             <Tab.Panel
@@ -398,7 +399,7 @@ const ProfileBio = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <ProfileCloset isSameUser={isSameUser} percentage={discountFromBundles}/>
+                                    <ProfileCloset userId = {userId} isSameUser={isSameUser} percentage={discountFromBundles}/>
                                 </ul>
                             </Tab.Panel>
                             <Tab.Panel
